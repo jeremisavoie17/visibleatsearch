@@ -1,25 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Be visible exactly when people search</title>
-  <meta name="description" content="Visible at Search helps businesses show up exactly when people search. Search-first visibility, no wasted traffic.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Visible at Search</title>
+  <meta name="description" content="Être visible lorsque les gens cherchent. Une présence en ligne simplifiée pour les entrepreneurs, entreprises et événements." />
+
+  <style>
+    :root{
+      --bg-dark:#111;
+      --bg-light:#f5f5f5;
+      --text-dark:#111;
+      --text-light:#fff;
+      --max:1100px;
+      --pad:24px;
+      --nav-h:64px;
+    }
+
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top: var(--nav-h);
+    }
+
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      color: var(--text-dark);
+      background:#fff;
+    }
+
+    /* NAV */
+    .nav{
+      position: sticky;
+      top:0;
+      z-index:1000;
+      height: var(--nav-h);
+      display:flex;
+      align-items:center;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-inner{
+      width:100%;
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 0 var(--pad);
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand{
+      font-weight:700;
+      letter-spacing:0.2px;
+      text-decoration:none;
+      color: var(--text-dark);
+      white-space:nowrap;
+    }
+    .links{
+      display:flex;
+      gap: 12px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
+    .links a{
+      text-decoration:none;
+      color: var(--text-dark);
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      transition: background 140ms ease, border-color 140ms ease;
+    }
+    .links a:hover{
+      background: rgba(0,0,0,0.06);
+      border-color: rgba(0,0,0,0.08);
+    }
+
+    /* SECTIONS */
+    section{
+      min-height: 100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: calc(var(--pad) + 18px) var(--pad);
+      box-sizing:border-box;
+    }
+    .wrap{
+      width:100%;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .hero{
+      background: var(--bg-dark);
+      color: var(--text-light);
+    }
+    .content{
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+    .white{
+      background:#fff;
+      color: var(--text-dark);
+    }
+
+    h1{
+      font-size: clamp(34px, 5vw, 56px);
+      margin: 0 0 12px 0;
+      line-height:1.05;
+    }
+    h2{
+      font-size: clamp(24px, 3vw, 34px);
+      margin: 0 0 14px 0;
+      line-height:1.15;
+    }
+    p{
+      margin: 0 0 14px 0;
+      line-height: 1.6;
+      font-size: 16px;
+      max-width: 70ch;
+    }
+
+    .sub{
+      opacity:0.88;
+      max-width: 70ch;
+    }
+
+    /* CTA + BUTTONS */
+    .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top: 18px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration:none;
+      font-weight:700;
+      font-size: 14px;
+      line-height: 1;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: rgba(0,0,0,0.04);
+      color: var(--text-dark);
+      box-shadow:
+        0 1px 0 rgba(0,0,0,0.06),
+        0 8px 22px rgba(0,0,0,0.08);
+      transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
+      cursor:pointer;
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(0,0,0,0.06);
+      border-color: rgba(0,0,0,0.18);
+      box-shadow:
+        0 1px 0 rgba(0,0,0,0.06),
+        0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    .btn:active{
+      transform: translateY(0px);
+      box-shadow:
+        0 1px 0 rgba(0,0,0,0.06),
+        0 6px 16px rgba(0,0,0,0.10);
+    }
+
+    .btn-primary{
+      background: #fff;
+      color: #111;
+      border-color: rgba(255,255,255,0.55);
+    }
+
+    .hero .btn-primary{
+      background: #fff;
+      color: #111;
+      border-color: rgba(255,255,255,0.65);
+    }
+
+    .hero .btn-primary:hover{
+      background: rgba(255,255,255,0.92);
+    }
+
+    .btn:focus-visible,
+    .links a:focus-visible{
+      outline: 2px solid rgba(0,0,0,0.45);
+      outline-offset: 3px;
+    }
+    .hero .btn:focus-visible{
+      outline: 2px solid rgba(255,255,255,0.70);
+    }
+
+    /* GRIDS + LISTS */
+    .grid-2{
+      display:flex;
+      gap: 28px;
+      flex-wrap:wrap;
+      align-items:flex-start;
+    }
+    .grid-2 > div{
+      flex: 1 1 340px;
+    }
+
+    .list{
+      margin: 12px 0 0 0;
+      padding: 0;
+      list-style:none;
+      display:grid;
+      gap: 10px;
+    }
+    .list li{
+      background: rgba(0,0,0,0.04);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+
+    .steps{
+      display:grid;
+      gap:12px;
+      margin-top: 12px;
+    }
+    .step{
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+    .step span{
+      display:inline-block;
+      font-weight:700;
+      margin-bottom: 6px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 520px){
+      .links a{ padding: 8px 10px; }
+      .brand{ font-size: 14px; }
+    }
+  </style>
 </head>
+
 <body>
 
-<nav aria-label="Main navigation">
-  <a href="/">Home</a>
-  <a href="/services.html">Services</a>
-  <a href="/faq.html">FAQ</a>
-  <a href="/contact.html">Contact</a>
-</nav>
+  <!-- NAV sticky -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#top">Visible at Search</a>
+      <div class="links">
+        <a href="#probleme">Problème</a>
+        <a href="#pour-qui">Pour qui</a>
+        <a href="#approche">Approche</a>
+        <a href="#cta">Contact</a>
+        <a href="/services.html">Services</a>
+        <a href="/faq.html">FAQ</a>
+      </div>
+    </div>
+  </nav>
 
-<main>
-  <h1>Be visible exactly when people search</h1>
-  <p>Visible at Search helps businesses appear at the precise moment customers are actively looking for their products or services.</p>
-</main>
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="wrap">
+      <h1>Être visible lorsque les gens cherchent.</h1>
+      <p class="sub">Une présence en ligne simplifiée pour les entrepreneurs, entreprises et événements.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#cta">Augmenter ma visibilité</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEME -->
+  <section id="probleme" class="content">
+    <div class="wrap">
+      <h2>Pourquoi beaucoup d’entreprises restent invisibles</h2>
+
+      <div class="grid-2">
+        <div>
+          <p>Aujourd’hui, beaucoup d’entreprises savent qu’elles devraient être visibles en ligne mais hésitent à se lancer.</p>
+          <p>Non pas par manque d’intérêt mais parce que les options disponibles semblent complexes, coûteuses ou difficiles à évaluer.</p>
+          <p>L’objectif n’est pas de dépenser plus. L’objectif est d’être là quand ça compte.</p>
+          <p>Être visible au moment précis où quelqu’un cherche ce que vous proposez.</p>
+        </div>
+
+        <div>
+          <ul class="list">
+            <li>Un frais fixe clair pour démarrer</li>
+            <li>Un budget marketing que vous contrôlez par la suite</li>
+            <li>Sans contrat. Aucun budget minimum requis</li>
+            <li>Vos données vous appartiennent</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POUR QUI -->
+  <section id="pour-qui" class="white">
+    <div class="wrap">
+      <h2>À qui ça s’adresse</h2>
+      <p>Ce service est pensé pour ceux qui veulent une solution simple, stable et respectueuse de leur budget.</p>
+
+      <ul class="list">
+        <li>Entrepreneurs et travailleurs autonomes</li>
+        <li>Entreprises de services</li>
+        <li>Commerces locaux</li>
+        <li>Événements ponctuels</li>
+      </ul>
+
+      <p style="margin-top:18px;">Si vous cherchez une approche efficace sans pression vous êtes au bon endroit.</p>
+    </div>
+  </section>
+
+  <!-- APPROCHE -->
+  <section id="approche" class="content">
+    <div class="wrap">
+      <h2>Notre façon de travailler</h2>
+
+      <div class="grid-2">
+        <div>
+          <p>Un frais fixe clair pour démarrer. Un budget marketing que vous contrôlez par la suite. Sans contrat. Aucun budget minimum requis.</p>
+          <p>Vos données vous appartiennent. Le message est écrit sur mesure pour votre réalité locale.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span>Étape 1 - Clarifier</span>
+            <div>On clarifie ce que vous offrez pour qui et dans quel secteur d’activité.</div>
+          </div>
+          <div class="step">
+            <span>Étape 2 - Structurer</span>
+            <div>On construit une présence simple et cohérente mettant en valeur ce qui vous différencie et la zone que vous souhaitez couvrir.</div>
+          </div>
+          <div class="step">
+            <span>Étape 3 - Suivre (optionnel)</span>
+            <div>Un suivi mensuel simple et lisible si vous le souhaitez.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta" class="white">
+    <div class="wrap">
+      <h2>Parler de votre situation simplement</h2>
+      <p>Si vous voulez discuter de votre profil et de votre visibilité en ligne cliquez sur le bouton ci-dessous pour accéder au formulaire. Nous vous répondrons rapidement sans engagement.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/contact.html">Augmenter ma visibilité</a>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
