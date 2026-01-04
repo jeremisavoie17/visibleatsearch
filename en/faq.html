@@ -16,24 +16,31 @@
 <body>
 
   <!-- NAV -->
-  <nav class="nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a class="brand" href="/en/">Visible at Search</a>
+ <nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="brand" href="/en/">Visible at Search</a>
 
-      <div class="links">
-        <a href="/en/">Home</a>
-        <a href="/en/services.html">Services</a>
-        <a class="active" href="/en/faq.html" aria-current="page">FAQ</a>
-        <a href="/en/contact.html">Contact</a>
-      </div>
+    <!-- Hamburger button (mobile) -->
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-      <div class="lang" aria-label="Language switcher">
-        <a href="/en/faq.html" aria-current="page">EN</a>
-        <span class="sep">|</span>
-        <a href="/fr/faq.html">FR</a>
-      </div>
+    <div class="links">
+      <a class="active" href="/en/" aria-current="page">Home</a>
+      <a href="/en/services.html">Services</a>
+      <a href="/en/faq.html">FAQ</a>
+      <a href="/en/contact.html">Contact</a>
     </div>
-  </nav>
+
+    <div class="lang" aria-label="Language switcher">
+      <a href="/en/" aria-current="page">EN</a>
+      <span class="sep">|</span>
+      <a href="/fr/">FR</a>
+    </div>
+  </div>
+</nav>
 
   <!-- HERO -->
   <section class="hero">
