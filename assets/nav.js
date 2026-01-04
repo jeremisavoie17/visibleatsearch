@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if(!btn || !links) return;
 
   // Inject language switch into mobile menu (once)
-  if(lang){
+  if(lang && !links.querySelector('.lang-mobile')){
     const mobileLang = lang.cloneNode(true);
     mobileLang.classList.add('lang-mobile');
     links.appendChild(mobileLang);
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.setAttribute('aria-expanded', String(open));
   });
 
+  // ferme si on clique un lien (sauf si c'est le switch langue desktop injecte)
   links.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       links.classList.remove('open');
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ferme si on clique en dehors
   document.addEventListener('click', (e) => {
     const inside = links.contains(e.target) || btn.contains(e.target);
     if(!inside){
@@ -31,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ferme avec Escape
   document.addEventListener('keydown', (e) => {
     if(e.key === 'Escape'){
       links.classList.remove('open');
