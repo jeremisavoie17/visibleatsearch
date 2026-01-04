@@ -15,10 +15,17 @@
 
 <body>
 
-  <!-- NAV sticky -->
- <nav class="nav" aria-label="Main navigation">
+ <!-- NAV sticky -->
+<nav class="nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="brand" href="/en/">Visible at Search</a>
+
+    <!-- Hamburger button (mobile) -->
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
     <div class="links">
       <a class="active" href="/en/" aria-current="page">Home</a>
@@ -34,6 +41,7 @@
     </div>
   </div>
 </nav>
+
 
   <!-- HERO -->
   <section id="top" class="hero">
@@ -127,6 +135,6 @@
       </div>
     </div>
   </section>
-
+<script src="/assets/nav.js"></script>
 </body>
 </html>
