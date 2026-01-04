@@ -17,30 +17,30 @@
 
   <!-- NAV -->
   <nav class="nav" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a class="brand" href="/fr/">Visible at Search</a>
+    <div class="nav-inner">
+      <a class="brand" href="/fr/">Visible at Search</a>
 
-    <!-- Hamburger button (mobile) -->
-    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-<div class="links">
-  <a href="/fr/">Accueil</a>
-  <a href="/fr/services.html">Services</a>
-  <a href="/fr/faq.html">FAQ</a>
-  <a class="active" href="/fr/contact.html" aria-current="page">Contact</a>
-</div>
+      <div class="links">
+        <a href="/fr/">Accueil</a>
+        <a href="/fr/services.html">Services</a>
+        <a href="/fr/faq.html">FAQ</a>
+        <a class="active" href="/fr/contact.html" aria-current="page">Contact</a>
+      </div>
 
-    <div class="lang" aria-label="Language switcher">
-      <a href="/en/contact.html">EN</a>
-      <span class="sep">|</span>
-      <a href="/fr/" aria-current="page">FR</a>
+      <div class="lang" aria-label="Language switcher">
+        <a href="/en/contact.html">EN</a>
+        <span class="sep">|</span>
+        <a href="/fr/contact.html" aria-current="page">FR</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- HERO -->
   <section class="hero">
@@ -48,21 +48,78 @@
       <h1>Contact</h1>
       <p class="sub">Écrivez-nous et nous vous répondrons rapidement, sans engagement.</p>
 
-      <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:info@visibleatsearch.com">
-          Écrire un courriel
-        </a>
-      </div>
+      <!-- FORM -->
+      <form class="contact-form" method="post" action="https://visibleatsearch.com/api/contact" autocomplete="on">
+        <div class="form-grid">
+          <label class="field">
+            <span class="label">Nom</span>
+            <input type="text" name="name" required maxlength="80" autocomplete="name" />
+          </label>
+
+          <label class="field">
+            <span class="label">Adresse courriel</span>
+            <input type="email" name="email" required maxlength="120" autocomplete="email" />
+          </label>
+
+          <label class="field">
+            <span class="label">Type d’activité</span>
+            <input
+              type="text"
+              name="activity"
+              maxlength="120"
+              autocomplete="organization"
+              placeholder="Exemple : plombier, événement, commerce local"
+            />
+          </label>
+
+          <label class="field">
+            <span class="label">Ville / région</span>
+            <input
+              type="text"
+              name="location"
+              required
+              maxlength="120"
+              autocomplete="address-level2"
+              placeholder="Exemple : Toronto, ON"
+            />
+          </label>
+
+          <label class="field field-full">
+            <span class="label">Message</span>
+            <textarea
+              name="message"
+              rows="6"
+              maxlength="2000"
+              required
+              placeholder="Décrivez brièvement ce que vous faites et ce que vous souhaitez améliorer"
+            ></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+          <p class="form-note">Nous répondons par courriel dans un délai de 24 à 72 heures.</p>
+        </div>
+
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </form>
+
     </div>
   </section>
 
   <!-- CONTENT -->
   <section class="white">
     <div class="wrap">
-      <h2>Coordonnées</h2>
-      <p>Email : <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a></p>
+      <h2>Vous préférez nous écrire directement ?</h2>
+      <p>Vous pouvez aussi nous contacter par courriel.</p>
+      <p>
+        Courriel :
+        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+      </p>
     </div>
   </section>
-<script src="/assets/nav.js"></script>
+
+  <script src="/assets/nav.js"></script>
 </body>
 </html>
