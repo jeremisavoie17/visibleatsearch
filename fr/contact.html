@@ -121,5 +121,42 @@
   </section>
 
   <script src="/assets/nav.js"></script>
+  <script>
+  (function () {
+    const form = document.querySelector(".contact-form");
+    if (!form) return;
+
+    const note = form.querySelector(".form-note");
+    const btn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const originalBtn = btn ? btn.textContent : "";
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = "Envoi...";
+      }
+      if (note) note.textContent = "Envoi...";
+
+      try {
+        const res = await fetch(form.action, { method: "POST", body: new FormData(form) });
+        const data = await res.json().catch(() => ({}));
+
+        if (!res.ok || !data.ok) throw new Error(data.error || "Echec");
+
+        form.reset();
+        if (btn) btn.textContent = "Envoyé";
+        if (note) note.textContent = "Merci - nous avons bien recu votre message. Nous répondons par courriel dans un delai de 24 a 72 heures.";
+      } catch (err) {
+        if (btn) btn.textContent = originalBtn || "Envoyer ma demande";
+        if (note) note.textContent = "Un problème est survenu. Écrivez-nous a info@visibleatsearch.com.";
+      } finally {
+        if (btn) btn.disabled = false;
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
