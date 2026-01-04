@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Visibility Services - Visible at Search</title>
+  <meta name="description" content="Search-first visibility services. Be visible exactly when people search for your business." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS : chemin ABSOLU -->
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+
+  <!-- NAV identique à index / contact -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="/index.html">Visible at Search</a>
+      <div class="links">
+        <a href="/index.html">Home</a>
+        <a class="active" href="/services.html" aria-current="page">Services</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>Search Visibility Services</h1>
+      <p class="sub">
+        We help businesses show up exactly when people are searching for their products or services.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="white">
+    <div class="wrap">
+
+      <h2>What does “search-first visibility” mean?</h2>
+      <p>
+        It means focusing on appearing when people actively search, instead of interrupting them with ads or generic messaging.
+      </p>
+
+      <h2>Is this SEO or advertising?</h2>
+      <p>
+        It is search visibility. It can include SEO, but the goal is presence at the moment of intent, not traffic for traffic’s sake.
+      </p>
+
+      <h2>Who is this for?</h2>
+      <p>
+        This approach is for businesses that want qualified demand, not mass exposure.
+      </p>
+
+    </div>
+  </section>
+
+</body>
+</html>
