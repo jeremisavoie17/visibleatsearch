@@ -368,12 +368,13 @@ p{
 
 .contact-form{
   margin-top: 18px;
-  padding: 18px;
-  border: 1px solid rgba(0,0,0,0.10);
-  border-radius: 14px;
-  background: rgba(255,255,255,0.75);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  max-width: 640px;
 }
 
 .form-grid{
@@ -382,47 +383,43 @@ p{
   gap: 14px;
 }
 
-@media (min-width: 780px){
-  .form-grid{
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-}
-
 .field{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: block;
 }
 
-.field-full{
-  grid-column: 1 / -1;
-}
-
-.label{
+.field .label{
+  display:block;
   font-size: 14px;
-  color: rgba(0,0,0,0.75);
+  color: rgba(255,255,255,0.90);
+  margin-bottom: 8px;
 }
 
 .contact-form input,
 .contact-form textarea{
+  display:block;
   width: 100%;
-  padding: 12px 12px;
+  padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.14);
-  background: #fff;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
   outline: none;
   font-size: 16px;
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color: rgba(255,255,255,0.55);
+}
+
 .contact-form textarea{
   resize: vertical;
-  min-height: 140px;
+  min-height: 160px;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus{
-  border-color: rgba(0,0,0,0.35);
+  border-color: rgba(255,255,255,0.45);
 }
 
 .form-actions{
@@ -432,10 +429,14 @@ p{
   margin-top: 14px;
 }
 
+.contact-form button.btn{
+  width: fit-content;
+}
+
 .form-note{
   margin: 0;
   font-size: 14px;
-  color: rgba(0,0,0,0.70);
+  color: rgba(255,255,255,0.80);
 }
 
 /* Honeypot anti-spam */
@@ -446,6 +447,7 @@ p{
   height: 1px;
   overflow: hidden;
 }
+
 
 /* ================= LOCK FINAL ================= */
 
