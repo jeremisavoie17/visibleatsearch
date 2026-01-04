@@ -24,7 +24,6 @@ body{
   box-sizing: border-box;
 }
 
-
 /* NAV */
 .nav{
   width: 100%;
@@ -50,6 +49,7 @@ body{
   justify-content: space-between;
   gap: 12px;
 }
+
 .brand{
   font-weight:700;
   letter-spacing:0.2px;
@@ -66,6 +66,7 @@ body{
   justify-content:flex-end;
   align-items:center;
 }
+
 .links a{
   text-decoration:none;
   color: var(--text-dark);
@@ -76,19 +77,15 @@ body{
   border: 1px solid transparent;
   transition: background 140ms ease, border-color 140ms ease;
 }
+
 .links a:hover{
   background: rgba(0,0,0,0.06);
   border-color: rgba(0,0,0,0.08);
 }
+
 .links a.active{
   background: rgba(0,0,0,0.10);
   border-color: rgba(0,0,0,0.18);
-}
-
-/* MOBILE */
-@media (max-width: 520px){
-  .links a{ padding: 8px 10px; }
-  .brand{ font-size: 14px; }
 }
 
 /* SECTIONS & LAYOUT */
@@ -184,7 +181,8 @@ p{
   font-weight:700;
   margin-bottom: 6px;
 }
-/* Bouton */
+
+/* CTA + BUTTONS */
 .cta-row{
   display:flex;
   gap:12px;
@@ -192,28 +190,23 @@ p{
   margin-top: 18px;
 }
 
-/* Base button */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:10px;
-
   padding: 12px 18px;
   border-radius: 14px;
   text-decoration:none;
   font-weight:700;
   font-size: 14px;
   line-height: 1;
-
   border: 1px solid rgba(0,0,0,0.12);
   background: rgba(0,0,0,0.04);
   color: var(--text-dark);
-
   box-shadow:
     0 1px 0 rgba(0,0,0,0.06),
     0 8px 22px rgba(0,0,0,0.08);
-
   transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
   cursor:pointer;
 }
@@ -234,7 +227,6 @@ p{
     0 6px 16px rgba(0,0,0,0.10);
 }
 
-/* Primary button */
 .btn-primary{
   background: #fff;
   color: #111;
@@ -251,7 +243,6 @@ p{
   background: rgba(255,255,255,0.92);
 }
 
-/* Secondary button */
 .btn-secondary{
   background: rgba(255,255,255,0.10);
   color: #fff;
@@ -266,29 +257,68 @@ p{
   border-color: rgba(255,255,255,0.28);
 }
 
-/* Focus visible - important for pro feel */
 .btn:focus-visible,
 .links a:focus-visible{
   outline: 2px solid rgba(0,0,0,0.45);
   outline-offset: 3px;
 }
+
 .hero .btn:focus-visible{
   outline: 2px solid rgba(255,255,255,0.70);
 }
 
-/* Small text link styled as button (optional) */
 .btn-ghost{
   background: transparent;
   color: inherit;
   border-color: rgba(0,0,0,0.14);
   box-shadow: none;
 }
+
 .hero .btn-ghost{
   border-color: rgba(255,255,255,0.22);
 }
+
 .btn-ghost:hover{
   background: rgba(0,0,0,0.04);
 }
+
 .hero .btn-ghost:hover{
   background: rgba(255,255,255,0.10);
+}
+
+/* MOBILE NAV FIX */
+@media (max-width: 520px){
+
+  /* la nav doit pouvoir grandir sur 2 lignes */
+  .nav{
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* on empile brand + liens */
+  .nav-inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .brand{
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  /* liens en grille 2 colonnes */
+  .links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    justify-content: initial;
+  }
+
+  .links a{
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 14px;
+  }
 }
