@@ -322,6 +322,11 @@ p{
   margin-top: 40px;
 }
 
+/* Ne pas ajouter d’espace avant la première question */
+.faq h2:first-of-type {
+  margin-top: 0;
+}
+
 .faq h2 + p {
   margin-top: 12px;
   padding-bottom: 28px;
