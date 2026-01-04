@@ -1,31 +1,107 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
-  padding: 40px;
+.cta-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top: 18px;
+}
+
+/* Base button */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  padding: 12px 18px;
+  border-radius: 14px;
+  text-decoration:none;
+  font-weight:700;
+  font-size: 14px;
+  line-height: 1;
+
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(0,0,0,0.04);
+  color: var(--text-dark);
+
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.06),
+    0 8px 22px rgba(0,0,0,0.08);
+
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
+  cursor:pointer;
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  background: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.18);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.06),
+    0 12px 28px rgba(0,0,0,0.12);
+}
+
+.btn:active{
+  transform: translateY(0px);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.06),
+    0 6px 16px rgba(0,0,0,0.10);
+}
+
+/* Primary button */
+.btn-primary{
+  background: #fff;
   color: #111;
+  border-color: rgba(255,255,255,0.55);
 }
 
-.main-nav {
-  margin-bottom: 40px;
-}
-
-.main-nav a {
-  margin-right: 20px;
-  text-decoration: none;
+.hero .btn-primary{
+  background: #fff;
   color: #111;
-  font-weight: 500;
+  border-color: rgba(255,255,255,0.65);
 }
 
-.main-nav a:hover {
-  text-decoration: underline;
+.hero .btn-primary:hover{
+  background: rgba(255,255,255,0.92);
 }
 
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
+/* Secondary button */
+.btn-secondary{
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  border-color: rgba(255,255,255,0.22);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.08),
+    0 10px 26px rgba(0,0,0,0.30);
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.btn-secondary:hover{
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.28);
+}
+
+/* Focus visible - important for pro feel */
+.btn:focus-visible,
+.links a:focus-visible{
+  outline: 2px solid rgba(0,0,0,0.45);
+  outline-offset: 3px;
+}
+.hero .btn:focus-visible{
+  outline: 2px solid rgba(255,255,255,0.70);
+}
+
+/* Small text link styled as button (optional) */
+.btn-ghost{
+  background: transparent;
+  color: inherit;
+  border-color: rgba(0,0,0,0.14);
+  box-shadow: none;
+}
+.hero .btn-ghost{
+  border-color: rgba(255,255,255,0.22);
+}
+.btn-ghost:hover{
+  background: rgba(0,0,0,0.04);
+}
+.hero .btn-ghost:hover{
+  background: rgba(255,255,255,0.10);
 }
