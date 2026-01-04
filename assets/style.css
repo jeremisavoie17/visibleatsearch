@@ -321,7 +321,12 @@ p{
     justify-content: center;
   }
 
-  /* on cache les liens par defaut */
+  /* cacher le switch langue desktop sur mobile */
+  .lang{
+    display: none;
+  }
+
+  /* menu dropdown */
   .links{
     position: absolute;
     top: calc(var(--nav-h) + 8px);
@@ -331,7 +336,7 @@ p{
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
-    padding: 10px;
+    padding: 12px;
     background: rgba(255,255,255,0.98);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -348,17 +353,19 @@ p{
     width: 100%;
     text-align: left;
     padding: 12px 12px;
+    color: var(--text-dark);
+  }
+
+  /* langue injectee dans le menu */
+  .lang-mobile{
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    margin-top: 6px;
+  }
+
+  .lang-mobile a{
+    font-weight: 700;
   }
 }
-.lang-mobile{
-  display: flex;
-  gap: 10px;
-  padding: 10px 14px;
-  border-top: 1px solid rgba(0,0,0,0.08);
-  margin-top: 6px;
-}
-
-.lang-mobile a{
-  font-weight: 700;
-}
-
