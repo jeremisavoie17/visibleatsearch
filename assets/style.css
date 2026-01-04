@@ -316,6 +316,7 @@ p{
     margin-top:6px;
   }
 }
+
 /* FAQ */
 .faq h2 {
   margin-top: 40px;
@@ -330,6 +331,13 @@ p{
 .faq h2:last-of-type + p {
   border-bottom: none;
 }
+
+/* FAQ - mobile (optionnel) */
+@media (max-width: 820px){
+  .faq h2 { margin-top: 28px; }
+  .faq h2 + p { padding-bottom: 20px; }
+}
+
 
 /* ================= LOCK FINAL ================= */
 
