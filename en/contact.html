@@ -17,30 +17,30 @@
 
   <!-- NAV -->
   <nav class="nav" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a class="brand" href="/en/">Visible at Search</a>
+    <div class="nav-inner">
+      <a class="brand" href="/en/">Visible at Search</a>
 
-    <!-- Hamburger button (mobile) -->
-    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-<div class="links">
-  <a href="/en/">Home</a>
-  <a href="/en/services.html">Services</a>
-  <a href="/en/faq.html">FAQ</a>
-  <a class="active" href="/en/contact.html" aria-current="page">Contact</a>
-</div>
+      <div class="links">
+        <a href="/en/">Home</a>
+        <a href="/en/services.html">Services</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a class="active" href="/en/contact.html" aria-current="page">Contact</a>
+      </div>
 
-    <div class="lang" aria-label="Language switcher">
-      <a href="/en/contact.html" aria-current="page">EN</a>
-      <span class="sep">|</span>
-      <a href="/fr/contact.html">FR</a>
+      <div class="lang" aria-label="Language switcher">
+        <a href="/en/contact.html" aria-current="page">EN</a>
+        <span class="sep">|</span>
+        <a href="/fr/contact.html">FR</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- HERO -->
   <section class="hero">
@@ -48,21 +48,56 @@
       <h1>Contact</h1>
       <p class="sub">Send us a message and we’ll get back to you quickly, with no obligation.</p>
 
-      <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:info@visibleatsearch.com">
-          Send an email
-        </a>
-      </div>
+      <!-- FORM -->
+      <form class="contact-form" method="post" action="https://visibleatsearch.com/api/contact" autocomplete="on">
+        <div class="form-grid">
+          <label class="field">
+            <span class="label">Name</span>
+            <input type="text" name="name" required maxlength="80" autocomplete="name" />
+          </label>
+
+          <label class="field">
+            <span class="label">Email</span>
+            <input type="email" name="email" required maxlength="120" autocomplete="email" />
+          </label>
+
+          <label class="field">
+            <span class="label">Business type</span>
+            <input type="text" name="activity" maxlength="120" autocomplete="organization" placeholder="Example: plumber, event, local shop" />
+          </label>
+
+          <label class="field">
+            <span class="label">City / region</span>
+            <input type="text" name="location" maxlength="120" autocomplete="address-level2" placeholder="Example: Bathurst, NB" />
+          </label>
+
+          <label class="field field-full">
+            <span class="label">Message</span>
+            <textarea name="message" rows="6" maxlength="2000" placeholder="Tell us what you do and what you want to improve"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send my request</button>
+          <p class="form-note">We reply by email within 24-72 hours.</p>
+        </div>
+
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </form>
+
     </div>
   </section>
 
   <!-- CONTENT -->
   <section class="white">
     <div class="wrap">
-      <h2>Contact details</h2>
+      <h2>Prefer email?</h2>
+      <p>If you prefer, you can also email us directly.</p>
       <p>Email: <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a></p>
     </div>
   </section>
-<script src="/assets/nav.js"></script>
+
+  <script src="/assets/nav.js"></script>
 </body>
 </html>
