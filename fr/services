@@ -2,25 +2,31 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Search Visibility Services - Visible at Search</title>
-  <meta name="description" content="Search-first visibility services. Be visible exactly when people search for your business." />
+  <title>Services - Visibilité sur Google - Visible at Search</title>
+  <meta name="description" content="Services de visibilité axée recherche. Être visible exactement quand les gens cherchent ce que vous offrez." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- CSS : chemin ABSOLU -->
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 
 <body>
 
-  <!-- NAV identique à index / contact -->
+  <!-- NAV -->
   <nav class="nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a class="brand" href="/index.html">Visible at Search</a>
+      <a class="brand" href="/fr/">Visible at Search</a>
+
       <div class="links">
-        <a href="/index.html">Home</a>
-        <a class="active" href="/services.html" aria-current="page">Services</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/fr/">Accueil</a>
+        <a class="active" href="/fr/services.html" aria-current="page">Services</a>
+        <a href="/fr/faq.html">FAQ</a>
+        <a href="/fr/contact.html">Contact</a>
+      </div>
+
+      <div class="lang" aria-label="Language switcher">
+        <a href="/en/services.html">EN</a>
+        <span class="sep">|</span>
+        <a href="/fr/services.html" aria-current="page">FR</a>
       </div>
     </div>
   </nav>
@@ -28,9 +34,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <h1>Search Visibility Services</h1>
+      <h1>Services de visibilité sur Google</h1>
       <p class="sub">
-        We help businesses show up exactly when people are searching for their products or services.
+        On aide les entreprises à apparaître exactement quand les gens cherchent leurs produits ou leurs services.
       </p>
     </div>
   </section>
@@ -39,19 +45,19 @@
   <section class="white">
     <div class="wrap">
 
-      <h2>What does “search-first visibility” mean?</h2>
+      <h2>Que veut dire "visibilité axée recherche"?</h2>
       <p>
-        It means focusing on appearing when people actively search, instead of interrupting them with ads or generic messaging.
+        C'est une approche qui vise à être présent au moment où les gens cherchent activement, plutôt que de les interrompre avec des publicités ou un message trop général.
       </p>
 
-      <h2>Is this SEO or advertising?</h2>
+      <h2>Est-ce du SEO ou de la publicité?</h2>
       <p>
-        It is search visibility. It can include SEO, but the goal is presence at the moment of intent, not traffic for traffic’s sake.
+        C'est de la visibilité sur la recherche. Ça peut inclure du SEO, mais l'objectif est d'être là au moment de l'intention, pas de faire du trafic pour du trafic.
       </p>
 
-      <h2>Who is this for?</h2>
+      <h2>À qui ça s'adresse?</h2>
       <p>
-        This approach is for businesses that want qualified demand, not mass exposure.
+        Cette approche convient aux entreprises qui veulent de la demande qualifiée, pas de l'exposition de masse.
       </p>
 
     </div>
