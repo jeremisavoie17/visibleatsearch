@@ -286,39 +286,67 @@ p{
   background: rgba(255,255,255,0.10);
 }
 
-/* MOBILE NAV FIX */
-@media (max-width: 520px){
+/* ===== HAMBURGER NAV (mobile) ===== */
 
-  /* la nav doit pouvoir grandir sur 2 lignes */
-  .nav{
-    height: auto;
-    padding: 10px 0;
-  }
+.nav-toggle{
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
 
-  /* on empile brand + liens */
+.nav-toggle .bar{
+  display: block;
+  height: 2px;
+  background: #111;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 820px){
+
+  /* ancre pour le menu dropdown */
   .nav-inner{
+    position: relative;
+  }
+
+  /* bouton hamburger visible */
+  .nav-toggle{
+    display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: center;
   }
 
-  .brand{
-    font-size: 14px;
-    line-height: 1.1;
-  }
-
-  /* liens en grille 2 colonnes */
+  /* on cache les liens par defaut */
   .links{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: absolute;
+    top: calc(var(--nav-h) + 8px);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
     gap: 8px;
-    justify-content: initial;
+    padding: 10px;
+    background: rgba(255,255,255,0.98);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.10);
+  }
+
+  .links.open{
+    display: flex;
   }
 
   .links a{
-    padding: 10px 12px;
-    text-align: center;
-    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    padding: 12px 12px;
   }
 }
