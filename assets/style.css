@@ -316,6 +316,20 @@ p{
     margin-top:6px;
   }
 }
+/* FAQ */
+.faq h2 {
+  margin-top: 40px;
+}
+
+.faq h2 + p {
+  margin-top: 12px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.faq h2:last-of-type + p {
+  border-bottom: none;
+}
 
 /* ================= LOCK FINAL ================= */
 
