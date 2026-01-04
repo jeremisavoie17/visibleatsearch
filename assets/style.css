@@ -89,11 +89,8 @@ body{
 
 /* ================= SECTIONS ================= */
 
+/* Fix global: ne force plus 100vh partout */
 section{
-  min-height: 100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   padding: calc(var(--pad) + 18px) var(--pad);
 }
 
@@ -108,11 +105,19 @@ section{
 .hero{
   background: var(--bg-dark);
   color: var(--text-light);
+
+  /* Garde le hero plein ecran */
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
+
 .content{
   background: var(--bg-light);
   color: var(--text-dark);
 }
+
 .white{
   background:#fff;
   color: var(--text-dark);
@@ -343,6 +348,104 @@ p{
   .faq h2 + p { padding-bottom: 20px; }
 }
 
+/* ================= CONTACT FORM (extras) ================= */
+
+.contact-form button.btn{
+  width: fit-content;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color: rgba(0,0,0,0.45);
+}
+
+.contact-form input,
+.contact-form textarea{
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form{
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.75);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.form-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 780px){
+  .form-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-full{
+  grid-column: 1 / -1;
+}
+
+.label{
+  font-size: 14px;
+  color: rgba(0,0,0,0.75);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.14);
+  background: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+.contact-form textarea{
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color: rgba(0,0,0,0.35);
+}
+
+.form-actions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.form-note{
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0,0,0,0.70);
+}
+
+/* Honeypot anti-spam */
+.hp{
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 /* ================= LOCK FINAL ================= */
 
