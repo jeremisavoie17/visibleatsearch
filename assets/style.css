@@ -50,8 +50,8 @@ body{
 }
 
 .brand{
-  font-weight:700;
-  letter-spacing:0.2px;
+  font-weight:800;
+  letter-spacing:0.4px;
   text-decoration:none;
   color: var(--text-dark);
   white-space:nowrap;
