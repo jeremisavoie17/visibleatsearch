@@ -190,6 +190,46 @@ p{
   font-weight:700;
   margin-bottom: 6px;
 }
+/* HERO CTA - outline clean */
+a.cta-btn,
+a.cta-btn:link,
+a.cta-btn:visited{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+
+  border: 1px solid rgba(255,255,255,0.30);
+  box-shadow: none;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+a.cta-btn:hover{
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.45);
+  color:#fff;
+}
+
+a.cta-btn:active{
+  background: rgba(255,255,255,0.22);
+  color:#fff;
+  transform: translateY(1px);
+}
+
+a.cta-btn:focus-visible{
+  outline: 2px solid rgba(255,255,255,0.55);
+  outline-offset: 3px;
+}
 
 /* ================= CTA & BUTTONS ================= */
 
