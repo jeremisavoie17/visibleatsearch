@@ -248,21 +248,32 @@ p{
 
 .nav-toggle{
   display:none;
+
+  /* reset total - clé pour Android */
+  all: unset;
+  -webkit-tap-highlight-color: transparent;
+
   width:44px;
   height:44px;
-  border:1px solid rgba(0,0,0,0.12);
-  background:#fff;
-  border-radius:12px;
-  padding:10px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+
   cursor:pointer;
 }
 
-.nav-toggle .bar{
+.nav-toggle:focus{
+  outline:none;
+}
+
+.nav-toggle span{
   display:block;
-  width:100%;
+  width:24px;
   height:2px;
   background:#111;
-  margin:5px 0;
   border-radius:2px;
 }
 
@@ -275,9 +286,7 @@ p{
   }
 
   .nav-toggle{
-    display:inline-flex;
-    flex-direction:column;
-    justify-content:center;
+    display:flex;
   }
 
   .lang{
