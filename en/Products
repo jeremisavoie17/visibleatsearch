@@ -1,119 +1,236 @@
- <!-- PRICING -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Options - Visible at Search</title>
+  <meta name="description" content="Simple, clear options. Start with a one-time setup, add monthly supervision, or request one-time changes when needed." />
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/products.html" />
+  <link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/products.html" />
+  <link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/products.html" />
+
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+
+  <!-- NAV sticky -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="/en/">Visible at Search</a>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="links">
+        <a href="/en/">Home</a>
+        <a href="/en/services.html">Services</a>
+        <a class="active" href="/en/products.html" aria-current="page">Options</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a href="/en/contact.html">Contact</a>
+      </div>
+
+      <div class="lang" aria-label="Language switcher">
+        <a href="/en/products.html" aria-current="page">EN</a>
+        <span class="sep">|</span>
+        <a href="/fr/products.html">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="content">
+    <div class="wrap">
+      <h1 class="center">Pricing and service options</h1>
+      <p class="muted center" style="margin-left:auto;margin-right:auto;">
+        Simple, clear, and structured. No contract required. You stay in control.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRICING PLANS -->
   <section id="pricing" class="white">
     <div class="wrap">
 
-      <h2>Pricing and service options</h2>
-      <p class="muted">
-        Simple, clear, and structured. No contract required. You stay in control.
-      </p>
+      <div class="pricing-grid">
 
-      <!-- 1 -->
-      <div class="content-block">
-        <h3>1. Initial setup - 375 $ (one-time)</h3>
-        <p>
-          Complete setup of a functional and autonomous Google Ads search account.
-        </p>
-        <ul class="list">
-          <li>Google Ads account creation (if needed)</li>
-          <li>Brand protection campaign</li>
-          <li>Search campaigns for up to 3-4 main services</li>
-          <li>Essential configuration (targeting, extensions, negatives)</li>
-          <li>Account ready to run independently</li>
-          <li>One included monthly analysis & supervision package</li>
-        </ul>
-      </div>
+        <!-- 1 -->
+        <article class="pricing-card">
+          <header class="pricing-head">
+            <h3>Initial setup</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">375 $</span> <span class="pricing-unit">(one-time)</span>
+            </p>
+          </header>
 
-      <!-- Optional during setup -->
-      <div class="content-block">
-        <h3>Optional additions during setup</h3>
-        <p>
-          For ecommerce or inventory-based businesses.
-        </p>
-        <ul class="list">
-          <li>Google Merchant Center + Performance Max / VLA - 375 $ (one-time)</li>
-          <li>Merchant Center setup or configuration</li>
-          <li>Google Ads linking</li>
-          <li>Performance Max or VLA campaign setup</li>
-          <li>Feed validation and assistance</li>
-        </ul>
-        <p class="muted">
-          If both setups are combined, the total setup fee can be reduced to 599 $.
-        </p>
-      </div>
+          <p>
+            Complete setup of a functional and autonomous Google Ads search account.
+          </p>
 
-      <!-- 2 -->
-      <div class="content-block">
-        <h3>2. Monthly analysis & supervision - 125 $ / month</h3>
-        <p>
-          This is not daily management. It’s a professional monthly inspection of your Google Ads performance.
-        </p>
-        <ul class="list">
-          <li>1 hour of scheduled monthly analysis</li>
-          <li>Validation that campaigns are healthy and running correctly</li>
-          <li>Market and competition reading</li>
-          <li>Identification of missed opportunities</li>
-          <li>Minor adjustments if needed</li>
-          <li>Clear written report</li>
-        </ul>
+          <ul class="pricing-features">
+            <li>Google Ads account creation (if needed)</li>
+            <li>Brand protection campaign</li>
+            <li>Search campaigns for up to 3-4 main services</li>
+            <li>Essential configuration (targeting, extensions, negatives)</li>
+            <li>Account ready to run independently</li>
+            <li>One included monthly analysis & supervision package</li>
+          </ul>
 
-        <p class="muted">The report covers:</p>
-        <ul class="list">
-          <li>What works</li>
-          <li>What works less</li>
-          <li>Why</li>
-          <li>Potential opportunities</li>
-          <li>Brand protection status</li>
-        </ul>
+          <div class="pricing-actions">
+            <a class="cta-btn full" href="#">Start setup</a>
+            <p class="muted mini">Stripe checkout link goes here.</p>
+          </div>
+        </article>
 
-        <p class="muted">What this service is NOT:</p>
-        <ul class="list">
-          <li>Daily management</li>
-          <li>Continuous optimization</li>
-          <li>Unlimited support</li>
-          <li>Permanent availability</li>
-        </ul>
+        <!-- Optional during setup -->
+        <article class="pricing-card featured">
+          <div class="pricing-badge">Optional</div>
 
-        <p class="muted">
-          Think of it as a monthly diagnostic - not full-time management.
-        </p>
-      </div>
+          <header class="pricing-head">
+            <h3>Optional additions during setup</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">375 $</span> <span class="pricing-unit">(one-time)</span>
+            </p>
+          </header>
 
-      <!-- 3 -->
-      <div class="content-block">
-        <h3>3. One-time interventions (service calls)</h3>
-        <p>
-          You can contact us anytime by email. Any intervention that requires access to your account is billed separately.
-        </p>
-        <p class="muted">Examples:</p>
-        <ul class="list">
-          <li>Campaign modifications</li>
-          <li>Ad creation</li>
-          <li>Adding services</li>
-          <li>Restructuring</li>
-          <li>Technical corrections</li>
-        </ul>
+          <p>
+            For ecommerce or inventory-based businesses.
+          </p>
 
-        <p class="muted">Conditions:</p>
-        <ul class="list">
-          <li>Minimum block: 30 minutes</li>
-          <li>60 $ / 30 minutes (120 $ / hour)</li>
-          <li>Planned interventions only</li>
-        </ul>
-      </div>
+          <ul class="pricing-features">
+            <li>Google Merchant Center + Performance Max / VLA - 375 $ (one-time)</li>
+            <li>Merchant Center setup or configuration</li>
+            <li>Google Ads linking</li>
+            <li>Performance Max or VLA campaign setup</li>
+            <li>Feed validation and assistance</li>
+          </ul>
 
-      <!-- 4 -->
-      <div class="content-block">
-        <h3>4. Advanced monthly supervision - 249 $ / month (optional)</h3>
-        <p>
-          For businesses that want regular adjustments without daily management.
-          This package remains structured and limited. It is not an unlimited service.
-        </p>
-        <ul class="list">
-          <li>Everything in the standard monthly analysis</li>
-          <li>Up to 2 hours of planned interventions per month</li>
-          <li>Bi-weekly adjustments</li>
-          <li>Prioritized changes</li>
-        </ul>
+          <p class="muted mini">
+            If both setups are combined, the total setup fee can be reduced to 599 $.
+          </p>
+
+          <div class="pricing-actions">
+            <a class="cta-btn full" href="#">Add Merchant Center setup</a>
+            <p class="muted mini">Stripe checkout link goes here.</p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="pricing-card">
+          <header class="pricing-head">
+            <h3>Monthly analysis & supervision</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">125 $</span> <span class="pricing-unit">/ month</span>
+            </p>
+          </header>
+
+          <p>
+            This is not daily management. It’s a professional monthly inspection of your Google Ads performance.
+          </p>
+
+          <ul class="pricing-features">
+            <li>1 hour of scheduled monthly analysis</li>
+            <li>Validation that campaigns are healthy and running correctly</li>
+            <li>Market and competition reading</li>
+            <li>Identification of missed opportunities</li>
+            <li>Minor adjustments if needed</li>
+            <li>Clear written report</li>
+          </ul>
+
+          <p class="muted mini">The report covers:</p>
+          <ul class="pricing-features">
+            <li>What works</li>
+            <li>What works less</li>
+            <li>Why</li>
+            <li>Potential opportunities</li>
+            <li>Brand protection status</li>
+          </ul>
+
+          <p class="muted mini">What this service is NOT:</p>
+          <ul class="pricing-features">
+            <li>Daily management</li>
+            <li>Continuous optimization</li>
+            <li>Unlimited support</li>
+            <li>Permanent availability</li>
+          </ul>
+
+          <p class="muted mini">
+            Think of it as a monthly diagnostic - not full-time management.
+          </p>
+
+          <div class="pricing-actions">
+            <a class="cta-btn full" href="#">Start monthly supervision</a>
+            <p class="muted mini">Stripe checkout link goes here.</p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="pricing-card">
+          <header class="pricing-head">
+            <h3>One-time interventions (service calls)</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">60 $</span> <span class="pricing-unit">/ 30 minutes</span>
+            </p>
+          </header>
+
+          <p>
+            You can contact us anytime by email. Any intervention that requires access to your account is billed separately.
+          </p>
+
+          <p class="muted mini">Examples:</p>
+          <ul class="pricing-features">
+            <li>Campaign modifications</li>
+            <li>Ad creation</li>
+            <li>Adding services</li>
+            <li>Restructuring</li>
+            <li>Technical corrections</li>
+          </ul>
+
+          <p class="muted mini">Conditions:</p>
+          <ul class="pricing-features">
+            <li>Minimum block: 30 minutes</li>
+            <li>60 $ / 30 minutes (120 $ / hour)</li>
+            <li>Planned interventions only</li>
+          </ul>
+
+          <div class="pricing-actions">
+            <a class="cta-btn full alt" href="/en/contact.html">Request a service call</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="pricing-card">
+          <header class="pricing-head">
+            <h3>Advanced monthly supervision</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">249 $</span> <span class="pricing-unit">/ month</span>
+            </p>
+          </header>
+
+          <p>
+            For businesses that want regular adjustments without daily management.
+            This package remains structured and limited. It is not an unlimited service.
+          </p>
+
+          <ul class="pricing-features">
+            <li>Everything in the standard monthly analysis</li>
+            <li>Up to 2 hours of planned interventions per month</li>
+            <li>Bi-weekly adjustments</li>
+            <li>Prioritized changes</li>
+          </ul>
+
+          <div class="pricing-actions">
+            <a class="cta-btn full" href="#">Start advanced supervision</a>
+            <p class="muted mini">Stripe checkout link goes here.</p>
+          </div>
+        </article>
+
       </div>
 
     </div>
@@ -167,3 +284,22 @@
       </div>
     </div>
   </section>
+
+  <!-- FINAL CTA -->
+  <section id="cta" class="white">
+    <div class="wrap">
+      <h2>Start with a simple setup</h2>
+      <p>
+        If you are not sure which option fits, you can start by filling out the form.
+        No pressure - just a clear next step.
+      </p>
+
+      <div class="cta-row">
+        <a class="cta-btn" href="/en/contact.html">Contact first</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="/assets/nav.js"></script>
+</body>
+</html>
