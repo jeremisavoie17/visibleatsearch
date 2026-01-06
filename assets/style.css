@@ -58,7 +58,6 @@ body{
   white-space:nowrap;
 }
 
-
 /* MENU LINKS (desktop) */
 .links{
   display:flex;
@@ -91,7 +90,6 @@ body{
 
 /* ================= SECTIONS ================= */
 
-/* Fix global: ne force plus 100vh partout */
 section{
   padding: calc(var(--pad) + 18px) var(--pad);
 }
@@ -107,8 +105,6 @@ section{
 .hero{
   background: var(--bg-dark);
   color: var(--text-light);
-
-  /* Garde le hero plein ecran */
   min-height: 100vh;
   display:flex;
   align-items:center;
@@ -132,21 +128,44 @@ h1{
   margin: 0 0 12px 0;
   line-height:1.05;
 }
+
+/* Hero tightening (robuste - ne depend pas des classes) */
+.hero h1{
+  margin-bottom: 8px;
+}
+
+/* IMPORTANT: resserre tous les paragraphes du hero */
+.hero p{
+  margin-top: 0;
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+/* Si tu as une 3e ligne qui doit etre un peu plus detachée */
+.hero .meta,
+.hero .tagline{
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
 h2{
   font-size: clamp(24px, 3vw, 34px);
   margin: 0 0 14px 0;
   line-height:1.15;
 }
+
 p{
   margin: 0 0 14px 0;
   line-height: 1.6;
   font-size: 16px;
   max-width: 70ch;
 }
+
 .sub{
   opacity:0.88;
   max-width: 70ch;
 }
+
 .meta{
   margin: 6px 0 0 0;
   opacity: 0.78;
@@ -154,7 +173,6 @@ p{
   line-height: 1.5;
   max-width: 70ch;
 }
-
 
 /* ================= GRIDS & LISTS ================= */
 
@@ -200,6 +218,7 @@ p{
   font-weight:700;
   margin-bottom: 6px;
 }
+
 /* HERO CTA - outline clean */
 a.cta-btn,
 a.cta-btn:link,
@@ -207,20 +226,15 @@ a.cta-btn:visited{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-
   padding: 12px 18px;
   border-radius: 999px;
-
   background: rgba(255,255,255,0.10);
   color: #fff;
-
   text-decoration: none;
   font-weight: 700;
   line-height: 1;
-
   border: 1px solid rgba(255,255,255,0.30);
   box-shadow: none;
-
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -297,21 +311,16 @@ a.cta-btn:focus-visible{
 }
 
 .nav-toggle{
-  display:none;
-
-  /* reset total - clé pour Android */
+  /* display gere uniquement par media queries */
   all: unset;
   -webkit-tap-highlight-color: transparent;
-
   width:44px;
   height:44px;
-
-  display:flex;
+  display:none;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   gap:6px;
-
   cursor:pointer;
 }
 
@@ -343,24 +352,21 @@ a.cta-btn:focus-visible{
     display:none;
   }
 
-.links{
-  position:absolute;
-  top: calc(var(--nav-h) + 8px);
-  left:0;
-  right:0;
-  z-index:2000;
-
-  display:none;
-  flex-direction:column;
-  gap:8px;
-  padding:12px;
-
-  background: #fff;
-  border:1px solid rgba(0,0,0,0.08);
-  border-radius:16px;
-  box-shadow:0 14px 30px rgba(0,0,0,0.12);
-}
-
+  .links{
+    position:absolute;
+    top: calc(var(--nav-h) + 8px);
+    left:0;
+    right:0;
+    z-index:2000;
+    display:none;
+    flex-direction:column;
+    gap:8px;
+    padding:12px;
+    background: #fff;
+    border:1px solid rgba(0,0,0,0.08);
+    border-radius:16px;
+    box-shadow:0 14px 30px rgba(0,0,0,0.12);
+  }
 
   .links.open{
     display:flex;
@@ -488,10 +494,6 @@ a.cta-btn:focus-visible{
   margin-top: 14px;
 }
 
-.contact-form button.btn{
-  width: fit-content;
-}
-
 .form-note{
   margin: 0;
   font-size: 14px;
@@ -506,7 +508,6 @@ a.cta-btn:focus-visible{
   height: 1px;
   overflow: hidden;
 }
-
 
 /* ================= LOCK FINAL ================= */
 
