@@ -530,6 +530,12 @@ a.cta-btn:focus-visible{
   overflow: hidden;
 }
 
+/* ================= Espace entre paragraphe ================= */
+p.tight{
+  margin-top: 4px;
+}
+
+
 /* ================= LOCK FINAL ================= */
 
 @media (min-width: 821px){
