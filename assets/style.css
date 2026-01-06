@@ -530,6 +530,120 @@ a.cta-btn:focus-visible{
   overflow: hidden;
 }
 
+/* ================= PRICING CARDS ================= */
+
+.center{
+  text-align:center;
+  max-width: 70ch;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:18px;
+  align-items:stretch;
+  margin-top:18px;
+}
+
+.pricing-card{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:16px;
+  padding:18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+
+.pricing-head{
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  margin-bottom:12px;
+}
+
+.pricing-price{
+  margin:8px 0 0 0;
+}
+
+.pricing-amount{
+  font-size:30px;
+  line-height:1;
+}
+
+.pricing-unit{
+  opacity:0.75;
+  font-size:14px;
+}
+
+.pricing-features{
+  margin:12px 0 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+
+.pricing-features li{
+  padding-left:22px;
+  position:relative;
+  line-height:1.45;
+}
+
+.pricing-features li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  opacity:0.75;
+}
+
+.pricing-actions{
+  margin-top:auto;
+  padding-top:14px;
+}
+
+.cta-btn.full{
+  width:100%;
+  display:inline-flex;
+  justify-content:center;
+}
+
+.cta-btn.alt{
+  background:#fff;
+  color:#111;
+  border:1px solid rgba(0,0,0,0.18);
+}
+
+.pricing-card.featured{
+  border:2px solid rgba(0,0,0,0.18);
+  transform: translateY(-6px);
+}
+
+.pricing-badge{
+  position:absolute;
+  top:12px;
+  right:12px;
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(0,0,0,0.06);
+}
+
+.mini{
+  font-size:13px;
+  margin-top:10px;
+}
+
+@media (max-width: 980px){
+  .pricing-grid{
+    grid-template-columns:1fr;
+  }
+  .pricing-card.featured{
+    transform:none;
+  }
+}
+
 
 /* ================= LOCK FINAL ================= */
 
