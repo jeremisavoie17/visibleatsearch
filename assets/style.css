@@ -139,6 +139,7 @@ h1{
   margin-top: 0;
   margin-bottom: 6px;
   line-height: 1.45;
+  max-width: 90ch;
 }
 
 /* Si tu as une 3e ligne qui doit etre un peu plus detachée */
