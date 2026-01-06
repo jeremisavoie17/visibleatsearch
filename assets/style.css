@@ -256,6 +256,26 @@ a.cta-btn:focus-visible{
   outline-offset: 3px;
 }
 
+/* CTA FINAL - lisible sur fond blanc */
+#cta a.cta-btn,
+#cta a.cta-btn:link,
+#cta a.cta-btn:visited{
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
+}
+
+#cta a.cta-btn:hover{
+  background: #000;
+  border-color: #000;
+  color:#fff;
+}
+
+#cta a.cta-btn:focus-visible{
+  outline: 2px solid rgba(0,0,0,0.35);
+  outline-offset: 3px;
+}
+
 /* ================= CTA & BUTTONS ================= */
 
 .cta-row{
