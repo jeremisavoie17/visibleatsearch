@@ -615,9 +615,10 @@ a.cta-btn:focus-visible{
   border:1px solid rgba(0,0,0,0.18);
 }
 
+/* Featured card - keep border, remove vertical shift to align */
 .pricing-card.featured{
   border:2px solid rgba(0,0,0,0.18);
-  transform: translateY(-6px);
+  transform:none;
 }
 
 .pricing-badge{
@@ -639,34 +640,25 @@ a.cta-btn:focus-visible{
   .pricing-grid{
     grid-template-columns:1fr;
   }
-  .pricing-card.featured{
-    transform:none;
-  }
 }
 
 /* ===============================
    Pricing layout fixes
    =============================== */
 
-/* Center the top pricing cards */
+/* Center the top pricing cards and force 2 columns on desktop */
 .pricing-grid-setup{
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  align-items: stretch;
 }
 
-/* Ensure equal card structure */
-.pricing-card{
-  display: flex;
-  flex-direction: column;
+/* On desktop, setup row should be 2 columns */
+@media (min-width: 981px){
+  .pricing-grid-setup{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
-
-/* Optional badge visual alignment */
-.pricing-badge{
-  top: 12px;
-}
-
 
 /* ================= LOCK FINAL ================= */
 
