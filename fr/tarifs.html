@@ -59,11 +59,8 @@
   <section id="pricing" class="white">
     <div class="wrap">
 
-      <div class="pricing-grid">
-
-        <!-- ===================== -->
-        <!-- MISE EN PLACE (HAUT)  -->
-        <!-- ===================== -->
+      <!-- ===== MISE EN PLACE (HAUT - 2) ===== -->
+      <div class="pricing-grid pricing-grid-setup">
 
         <!-- 1 -->
         <article class="pricing-card">
@@ -126,9 +123,10 @@
           </div>
         </article>
 
-        <!-- ===================== -->
-        <!-- SOUTIEN (BAS - 3)     -->
-        <!-- ===================== -->
+      </div>
+
+      <!-- ===== SOUTIEN (BAS - 3) ===== -->
+      <div class="pricing-grid pricing-grid-support">
 
         <!-- 2 -->
         <article class="pricing-card">
@@ -179,7 +177,7 @@
           </div>
         </article>
 
-        <!-- 4 (placé ici pour regrouper les 3 cartes de soutien) -->
+        <!-- 4 -->
         <article class="pricing-card">
           <header class="pricing-head">
             <h3>Supervision mensuelle avancée</h3>
@@ -206,7 +204,7 @@
           </div>
         </article>
 
-        <!-- 3 (placé en dernier dans le groupe soutien) -->
+        <!-- 3 -->
         <article class="pricing-card">
           <header class="pricing-head">
             <h3>Interventions ponctuelles (appel de service)</h3>
@@ -310,5 +308,15 @@
   </section>
 
   <script src="/assets/nav.js" defer></script>
+
+  <!--
+    NOTE:
+    Pour forcer 2 cartes en haut (desktop), ajoute ceci dans /assets/style.css:
+
+    @media (min-width: 900px){
+      .pricing-grid-setup{ grid-template-columns: repeat(2, 1fr); }
+    }
+  -->
+
 </body>
 </html>
