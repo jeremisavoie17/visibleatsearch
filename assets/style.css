@@ -147,6 +147,14 @@ p{
   opacity:0.88;
   max-width: 70ch;
 }
+.meta{
+  margin: 6px 0 0 0;
+  opacity: 0.78;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 70ch;
+}
+
 
 /* ================= GRIDS & LISTS ================= */
 
