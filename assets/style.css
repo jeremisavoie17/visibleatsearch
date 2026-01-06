@@ -420,7 +420,7 @@ a.cta-btn:focus-visible{
 
 .faq h2 + p {
   margin-top: 12px;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
@@ -528,11 +528,6 @@ a.cta-btn:focus-visible{
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-/* ================= Espace entre paragraphe ================= */
-p.tight{
-  margin-top: 4px;
 }
 
 
