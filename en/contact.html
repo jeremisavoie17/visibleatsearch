@@ -30,7 +30,9 @@
       <div class="links">
         <a href="/en/">Home</a>
         <a href="/en/services.html">Services</a>
+        <a href="/en/pricing.html">Pricing</a>
         <a href="/en/faq.html">FAQ</a>
+        <a href="/en/about.html">About</a>
         <a class="active" href="/en/contact.html" aria-current="page">Contact</a>
       </div>
 
@@ -49,46 +51,44 @@
       <p class="sub">Write to us and we’ll reply within 24 business hours.</p>
 
       <!-- FORM -->
-<form class="contact-form" method="post" action="https://visibleatsearch.com/api/contact" autocomplete="on">
-  <div class="form-grid">
-    <label class="field">
-      <span class="label">Name</span>
-      <input type="text" name="name" required maxlength="80" autocomplete="name" />
-    </label>
+      <form class="contact-form" method="post" action="https://visibleatsearch.com/api/contact" autocomplete="on">
+        <div class="form-grid">
+          <label class="field">
+            <span class="label">Name</span>
+            <input type="text" name="name" required maxlength="80" autocomplete="name" />
+          </label>
 
-    <label class="field">
-      <span class="label">Email</span>
-      <input type="email" name="email" required maxlength="120" autocomplete="email" />
-    </label>
+          <label class="field">
+            <span class="label">Email</span>
+            <input type="email" name="email" required maxlength="120" autocomplete="email" />
+          </label>
 
-    <label class="field">
-      <span class="label">Business type</span>
-      <input type="text" name="activity" maxlength="120" autocomplete="organization"
-        placeholder="Example: plumber, event, local shop" />
-    </label>
+          <label class="field">
+            <span class="label">Business type</span>
+            <input type="text" name="activity" maxlength="120" autocomplete="organization"
+              placeholder="Example: plumber, event, local shop" />
+          </label>
 
-    <label class="field">
-      <span class="label">City / region</span>
-      <input type="text" name="location" required maxlength="120"
-        autocomplete="address-level2" placeholder="Example: Toronto, ON" />
-    </label>
+          <label class="field">
+            <span class="label">City / region</span>
+            <input type="text" name="location" required maxlength="120"
+              autocomplete="address-level2" placeholder="Example: Toronto, ON" />
+          </label>
 
-    <label class="field field-full">
-      <span class="label">Message</span>
-      <textarea name="message" rows="6" maxlength="2000" required
-        placeholder="Tell us what you do"></textarea>
-    </label>
-  </div>
-
-  <div class="form-actions">
-    <button class="btn btn-primary" type="submit">Send my request</button>
-    <p class="form-note">We’ll reply within 24 business hours.</p>
-  </div>
-</form>
-
+          <label class="field field-full">
+            <span class="label">Message</span>
+            <textarea name="message" rows="6" maxlength="2000" required
+              placeholder="Tell us what you do"></textarea>
+          </label>
+        </div>
 
         <!-- Honeypot anti-spam -->
         <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send my request</button>
+          <p class="form-note">We’ll reply within 24 business hours.</p>
+        </div>
       </form>
 
     </div>
@@ -103,43 +103,45 @@
     </div>
   </section>
 
-  <script src="/assets/nav.js"></script>
-<script>
-  (function () {
-    const form = document.querySelector(".contact-form");
-    if (!form) return;
+  <!-- REQUIRED FOR MOBILE MENU -->
+  <script src="/assets/nav.js" defer></script>
 
-    const note = form.querySelector(".form-note");
-    const btn = form.querySelector('button[type="submit"]');
+  <script>
+    (function () {
+      const form = document.querySelector(".contact-form");
+      if (!form) return;
 
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
+      const note = form.querySelector(".form-note");
+      const btn = form.querySelector('button[type="submit"]');
 
-      const originalBtn = btn ? btn.textContent : "";
-      if (btn) {
-        btn.disabled = true;
-        btn.textContent = "Sending...";
-      }
-      if (note) note.textContent = "Sending...";
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-      try {
-        const res = await fetch(form.action, { method: "POST", body: new FormData(form) });
-        const data = await res.json().catch(() => ({}));
+        const originalBtn = btn ? btn.textContent : "";
+        if (btn) {
+          btn.disabled = true;
+          btn.textContent = "Sending...";
+        }
+        if (note) note.textContent = "Sending...";
 
-        if (!res.ok || !data.ok) throw new Error(data.error || "Request failed");
+        try {
+          const res = await fetch(form.action, { method: "POST", body: new FormData(form) });
+          const data = await res.json().catch(() => ({}));
 
-        form.reset();
-        if (btn) btn.textContent = "Sent";
-        if (note) note.textContent = "Thanks - we received your message. We'll reply by email within 24-72 hours.";
-      } catch (err) {
-        if (btn) btn.textContent = originalBtn || "Send my request";
-        if (note) note.textContent = "Something went wrong. Please email us at info@visibleatsearch.com.";
-      } finally {
-        if (btn) btn.disabled = false;
-      }
-    });
-  })();
-</script>
-  
+          if (!res.ok || !data.ok) throw new Error(data.error || "Request failed");
+
+          form.reset();
+          if (btn) btn.textContent = "Sent";
+          if (note) note.textContent = "Thanks - we received your message. We'll reply by email within 24-72 hours.";
+        } catch (err) {
+          if (btn) btn.textContent = originalBtn || "Send my request";
+          if (note) note.textContent = "Something went wrong. Please email us at info@visibleatsearch.com.";
+        } finally {
+          if (btn) btn.disabled = false;
+        }
+      });
+    })();
+  </script>
+
 </body>
 </html>
