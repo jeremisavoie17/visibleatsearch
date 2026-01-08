@@ -284,50 +284,28 @@ a.cta-btn:focus-visible{
 
 .cta-row{
   display:flex;
-  gap:12px;
+  gap:16px;
+  align-items:center;
   flex-wrap:wrap;
   margin-top: 18px;
 }
 
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding: 12px 18px;
-  border-radius: 14px;
-  text-decoration:none;
-  font-weight:700;
-  font-size: 14px;
-  line-height: 1;
-  border: 1px solid rgba(0,0,0,0.12);
-  background: rgba(0,0,0,0.04);
+.cta-link{
+  font-size:0.95rem;
   color: var(--text-dark);
-  box-shadow:
-    0 1px 0 rgba(0,0,0,0.06),
-    0 8px 22px rgba(0,0,0,0.08);
-  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
-  cursor:pointer;
+  text-decoration:none;
+  border-bottom:1px solid rgba(0,0,0,0.4);
+  padding:10px 4px;
 }
 
-.btn:hover{
-  transform: translateY(-1px);
-  background: rgba(0,0,0,0.06);
-  border-color: rgba(0,0,0,0.18);
-  box-shadow:
-    0 1px 0 rgba(0,0,0,0.06),
-    0 12px 28px rgba(0,0,0,0.12);
+.cta-link:hover{
+  border-bottom-color: var(--text-dark);
 }
 
-.btn-primary{
-  background: #fff;
-  color: #111;
+.cta-link:visited{
+  color: var(--text-dark);
 }
 
-.btn-secondary{
-  background: rgba(255,255,255,0.10);
-  color: #fff;
-}
 
 /* ================= HAMBURGER ================= */
 
