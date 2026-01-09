@@ -121,6 +121,11 @@ section{
   color: var(--text-dark);
 }
 
+/* Force la section WHAT en gris clair (évite tout override) */
+#what{
+  background: var(--bg-light);
+}
+
 /* ================= TYPO ================= */
 
 h1{
@@ -186,6 +191,31 @@ p{
 
 .grid-2 > div{
   flex: 1 1 340px;
+}
+
+/* ================= VISUAL (image in grid) ================= */
+
+.visual{
+  display:flex;
+  justify-content:flex-end; /* pousse l’image vers la droite */
+}
+
+.visual img{
+  width: 100%;
+  max-width: 560px; /* ajuste: 480-560 selon ton feeling */
+  height: auto;
+  display:block;
+  border-radius: 16px; /* optionnel */
+}
+
+/* Mobile: évite l’effet "gros bloc" */
+@media (max-width: 820px){
+  .visual{
+    justify-content:center;
+  }
+  .visual img{
+    max-width: 100%;
+  }
 }
 
 .list{
