@@ -750,6 +750,22 @@ a.cta-btn:focus-visible{
     background: none;
   }
 }
+/* ================= IMAGE CONTROLEE (SECTION WHAT) ================= */
+
+#what .visual{
+  align-self: center;        /* centre verticalement */
+  padding-top: 40px;         /* empêche l’image de coller au h2 */
+}
+
+#what .visual img{
+  width: 100%;
+  max-width: 420px;          /* <-- LA vraie clé */
+  height: auto;
+  display: block;
+  margin-left: auto;         /* pousse vers la droite */
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+}
 
 
 /* ================= LOCK FINAL ================= */
