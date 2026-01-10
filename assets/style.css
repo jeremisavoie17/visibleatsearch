@@ -213,10 +213,7 @@ p{
   max-width:560px;
   height:auto;
   display:block;
-}
 
-/* Fondu 4 côtés sur une image (masque) */
-.image-fade-4{
   -webkit-mask-image:
     linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
