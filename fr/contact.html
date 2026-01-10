@@ -77,6 +77,16 @@
             />
           </label>
 
+           <label class="field field-full">
+            <span class="label">Services à promouvoir</span>
+            <input
+              type="text"
+              name="services"
+              maxlength="200"
+              placeholder="Exemple : Installation thermopompe - entretien - réparation"
+            />
+          </label>
+
           <label class="field">
             <span class="label">Type de service Google Ads souhaité</span>
             <select name="service_type" required>
@@ -88,18 +98,7 @@
             </select>
           </label>
 
-          <label class="field">
-            <span class="label">Objectif principal avec Google Ads</span>
-            <select name="goal" required>
-              <option value="" selected disabled>Choisir</option>
-              <option value="leads">Générer des leads</option>
-              <option value="calls">Appels téléphoniques</option>
-              <option value="sales">Ventes en ligne</option>
-              <option value="local_visibility">Visibilité locale</option>
-            </select>
-          </label>
-
-          <label class="field">
+           <label class="field">
             <span class="label">Zone desservie (ville ou région)</span>
             <input
               type="text"
@@ -111,14 +110,15 @@
             />
           </label>
 
-          <label class="field field-full">
-            <span class="label">Services à promouvoir</span>
-            <input
-              type="text"
-              name="services"
-              maxlength="200"
-              placeholder="Exemple : Installation thermopompe - entretien - réparation"
-            />
+          <label class="field">
+            <span class="label">Objectif principal avec Google Ads</span>
+            <select name="goal" required>
+              <option value="" selected disabled>Choisir</option>
+              <option value="leads">Générer des leads</option>
+              <option value="calls">Appels téléphoniques</option>
+              <option value="sales">Ventes en ligne</option>
+              <option value="local_visibility">Visibilité locale</option>
+            </select>
           </label>
 
           <label class="field field-full">
