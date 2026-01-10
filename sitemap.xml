@@ -3,64 +3,40 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- HOME -->
   <url>
     <loc>https://visibleatsearch.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/" />
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
 
-  <!-- SERVICES -->
   <url>
     <loc>https://visibleatsearch.com/en/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/services" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/services" />
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
-  <!-- PRICING -->
   <url>
     <loc>https://visibleatsearch.com/en/pricing</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/pricing" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/tarifs" />
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-  <!-- FAQ -->
   <url>
     <loc>https://visibleatsearch.com/en/faq</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/faq" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/faq" />
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
-  <!-- ABOUT -->
   <url>
     <loc>https://visibleatsearch.com/en/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/a-propos" />
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
   </url>
 
-  <!-- CONTACT -->
   <url>
     <loc>https://visibleatsearch.com/en/contact</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/contact" />
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
   </url>
 
 </urlset>
