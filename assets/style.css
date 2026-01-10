@@ -3,9 +3,13 @@
   --bg-light:#f5f5f5;
   --text-dark:#111;
   --text-light:#fff;
+  --muted:#6b7280;
   --max:1100px;
   --pad:24px;
   --nav-h:64px;
+  --radius:16px;
+  --border:1px solid rgba(0,0,0,0.10);
+  --shadow: 0 12px 34px rgba(0,0,0,0.08);
 }
 
 html{
@@ -22,6 +26,11 @@ body{
 
 *, *::before, *::after{
   box-sizing: border-box;
+}
+
+img{
+  max-width:100%;
+  height:auto;
 }
 
 /* ================= NAV ================= */
@@ -59,6 +68,8 @@ body{
   display:flex;
   gap:12px;
   align-items:center;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
 .links a{
@@ -68,10 +79,15 @@ body{
   font-weight:600;
   padding:8px 12px;
   border-radius:12px;
+  line-height:1;
+}
+
+.links a:hover{
+  background: rgba(0,0,0,0.06);
 }
 
 .links a.active{
-  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.10);
 }
 
 /* ================= SECTIONS ================= */
@@ -90,7 +106,7 @@ section{
 .hero{
   background: var(--bg-dark);
   color: var(--text-light);
-  min-height:100vh;
+  min-height: calc(100vh - var(--nav-h));
   display:flex;
   align-items:center;
   justify-content:center;
@@ -114,11 +130,18 @@ h1{
   font-size: clamp(34px, 5vw, 56px);
   margin:0 0 12px;
   line-height:1.05;
+  letter-spacing:-0.02em;
 }
 
 h2{
   font-size: clamp(24px, 3vw, 34px);
   margin:0 0 14px;
+  letter-spacing:-0.01em;
+}
+
+h3{
+  font-size:18px;
+  margin:0 0 10px;
 }
 
 p{
@@ -129,6 +152,100 @@ p{
 
 .sub{
   opacity:0.85;
+}
+
+.muted{
+  color: var(--muted);
+}
+
+.small{
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 78ch;
+}
+
+/* ================= LINKS / BUTTONS ================= */
+
+a{
+  color: inherit;
+}
+
+a.cta-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 18px;
+  border-radius:999px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  line-height:1;
+  border:1px solid rgba(255,255,255,0.10);
+}
+
+a.cta-btn:hover{
+  filter: brightness(1.05);
+}
+
+.cta-row{
+  display:flex;
+  gap:16px;
+  margin-top:18px;
+  flex-wrap:wrap;
+}
+
+.btn,
+a.btn,
+button.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:12px 16px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,0.14);
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  line-height:1;
+  cursor:pointer;
+}
+
+.btn:hover{ filter:brightness(1.05); }
+.btn:active{ transform:translateY(1px); }
+
+.btn-secondary,
+a.btn-secondary,
+button.btn-secondary{
+  background:#fff;
+  color:#111;
+  border:1px solid rgba(0,0,0,0.14);
+}
+
+.btn-secondary:hover{
+  background: rgba(0,0,0,0.02);
+}
+
+.btn-ghost,
+a.btn-ghost,
+button.btn-ghost{
+  background: transparent;
+  color: inherit;
+  border:1px solid rgba(0,0,0,0.12);
+}
+
+.btn-ghost:hover{
+  background: rgba(0,0,0,0.05);
+}
+
+.btn:focus,
+.btn-secondary:focus,
+.btn-ghost:focus,
+a.cta-btn:focus{
+  outline: 3px solid rgba(17,17,17,0.20);
+  outline-offset: 3px;
 }
 
 /* ================= GRID ================= */
@@ -151,7 +268,7 @@ p{
   justify-content:flex-end;
 }
 
-/* ================= WHAT – TEXTE + IMAGE FONDUE ================= */
+/* ================= WHAT - TEXTE + IMAGE FONDUE ================= */
 
 #what .grid-2{
   position: relative;
@@ -191,7 +308,232 @@ p{
   );
 }
 
-/* Mobile: layout normal */
+/* ================= LISTES ================= */
+
+ul{
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+li{
+  margin: 6px 0;
+  line-height: 1.55;
+}
+
+.bullets{
+  margin-top: 10px;
+}
+
+.bullets li{
+  color: rgba(17,17,17,0.75);
+}
+
+/* ================= CARDS GENERIQUES ================= */
+
+.card{
+  background:#fff;
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,0.10);
+  background: rgba(255,255,255,0.6);
+  font-size: 13px;
+  color: rgba(17,17,17,0.75);
+}
+
+/* ================= PRICING ================= */
+
+.pricing-head{
+  margin-bottom: 18px;
+}
+
+.pricing-note{
+  color: var(--muted);
+  max-width: 80ch;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:16px;
+}
+
+.pricing-card{
+  grid-column: span 6;
+  background:#fff;
+  border: var(--border);
+  border-radius: var(--radius);
+  padding:18px;
+  box-shadow: var(--shadow);
+}
+
+.pricing-card h3{
+  margin:0 0 8px;
+  font-size: 18px;
+}
+
+.price{
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 2px 0 4px;
+}
+
+.price .period{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+.pricing-card .desc{
+  color: rgba(17,17,17,0.75);
+  max-width: 80ch;
+}
+
+.pricing-card ul{
+  margin-top: 12px;
+}
+
+.pricing-card li{
+  margin: 7px 0;
+}
+
+.pricing-card .card-bottom{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap:12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  flex-wrap:wrap;
+}
+
+.pricing-card .fine{
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+/* Option "highlight" si tu veux une carte mise en avant */
+.pricing-card.featured{
+  border: 1px solid rgba(17,17,17,0.25);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.12);
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.faq-item{
+  grid-column: span 6;
+  background:#fff;
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.faq-item h3{
+  margin:0 0 8px;
+}
+
+.faq-item p{
+  margin:0;
+  color: rgba(17,17,17,0.75);
+}
+
+/* ================= CONTACT FORM ================= */
+
+.form{
+  max-width: 820px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items:end;
+}
+
+label{
+  display:block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: rgba(17,17,17,0.78);
+}
+
+input, textarea{
+  width:100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border:1px solid rgba(0,0,0,0.16);
+  background: rgba(255,255,255,0.92);
+  font: inherit;
+}
+
+textarea{
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus{
+  outline: 3px solid rgba(17,17,17,0.18);
+  outline-offset: 2px;
+}
+
+.form-actions{
+  display:flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap:wrap;
+}
+
+.form-help{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  padding: 22px var(--pad);
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.footer .wrap{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap:wrap;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px){
+  .pricing-card{ grid-column: span 12; }
+  .faq-item{ grid-column: span 12; }
+}
+
 @media (max-width: 820px){
   #what .grid-2 > div:first-child{
     margin-right:0;
@@ -207,23 +549,10 @@ p{
   #what .visual img{
     max-width:100%;
   }
-}
 
-/* ================= CTA ================= */
-
-.cta-row{
-  display:flex;
-  gap:16px;
-  margin-top:18px;
-}
-
-a.cta-btn{
-  padding:12px 18px;
-  border-radius:999px;
-  background:#111;
-  color:#fff;
-  text-decoration:none;
-  font-weight:700;
+  .form-row{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ================= LOCK FINAL ================= */
