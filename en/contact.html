@@ -51,7 +51,7 @@
   <section class="hero">
     <div class="wrap">
       <h1>Contact</h1>
-      <p class="sub">Write to us and we’ll reply within 24 business hours.</p>
+      <p class="sub">Write to us and we'll reply within 24 business hours.</p>
 
       <!-- FORM -->
       <form class="contact-form" method="post" action="https://visibleatsearch.com/api/contact" autocomplete="on">
@@ -73,7 +73,17 @@
               name="activity"
               maxlength="120"
               autocomplete="organization"
-              placeholder="Example: plumber, local shop, e-commerce"
+              placeholder="Example: plumber, dental clinic, local business"
+            />
+          </label>
+
+          <label class="field field-full">
+            <span class="label">Services to promote</span>
+            <input
+              type="text"
+              name="services"
+              maxlength="200"
+              placeholder="Example: installation, repair, maintenance"
             />
           </label>
 
@@ -85,66 +95,30 @@
               required
               maxlength="120"
               autocomplete="address-level2"
-              placeholder="Example: Laval, North Shore, Montreal"
+              placeholder="Example: Toronto, GTA, Mississauga"
             />
           </label>
 
-          <fieldset class="field field-full" role="group" aria-label="Primary goal">
-            <span class="label">Primary goal with Google Ads</span>
-
-            <label class="option">
-              <input type="radio" name="goal" value="leads" required />
-              <span>Lead generation</span>
-            </label>
-
-            <label class="option">
-              <input type="radio" name="goal" value="calls" />
-              <span>Phone calls</span>
-            </label>
-
-            <label class="option">
-              <input type="radio" name="goal" value="sales" />
-              <span>Online sales</span>
-            </label>
-
-            <label class="option">
-              <input type="radio" name="goal" value="local_visibility" />
-              <span>Local visibility</span>
-            </label>
-          </fieldset>
-
-          <fieldset class="field field-full" role="group" aria-label="Desired Google Ads service type">
+          <label class="field">
             <span class="label">Desired Google Ads service type</span>
+            <select name="service_type" required>
+              <option value="" selected disabled>Select</option>
+              <option value="search">Google Search</option>
+              <option value="pmax">Performance Max (PMAX / VLA)</option>
+              <option value="both">Both</option>
+              <option value="unsure">Not sure - let's discuss</option>
+            </select>
+          </label>
 
-            <label class="option">
-              <input type="checkbox" name="product_search" value="1" />
-              <span>Google Search</span>
-            </label>
-
-            <label class="option">
-              <input type="checkbox" name="product_pmax" value="1" />
-              <span>Performance Max (PMAX / VLA)</span>
-            </label>
-
-            <label class="option">
-              <input type="checkbox" name="product_both" value="1" />
-              <span>Both</span>
-            </label>
-
-            <label class="option">
-              <input type="checkbox" name="product_unsure" value="1" />
-              <span>Not sure - let’s discuss</span>
-            </label>
-          </fieldset>
-
-          <label class="field field-full">
-            <span class="label">Services to promote</span>
-            <input
-              type="text"
-              name="services"
-              maxlength="200"
-              placeholder="Primary service first, then secondary if relevant - e.g., heat pump installation - maintenance - repair"
-            />
+          <label class="field">
+            <span class="label">Primary goal with Google Ads</span>
+            <select name="goal" required>
+              <option value="" selected disabled>Select</option>
+              <option value="leads">Lead generation</option>
+              <option value="calls">Phone calls</option>
+              <option value="sales">Online sales</option>
+              <option value="local_visibility">Local visibility</option>
+            </select>
           </label>
 
           <label class="field field-full">
@@ -154,7 +128,7 @@
               rows="6"
               maxlength="2000"
               required
-              placeholder="Briefly describe what you want to promote and what you need"
+              placeholder="Briefly describe your needs and what you want to promote"
             ></textarea>
           </label>
         </div>
@@ -164,7 +138,7 @@
 
         <div class="form-actions">
           <button class="cta-btn" type="submit">Send my request</button>
-          <p class="form-note">We’ll reply within 24 business hours.</p>
+          <p class="form-note">We'll reply within 24 business hours.</p>
         </div>
       </form>
 
@@ -236,7 +210,7 @@
 
           form.reset();
           if (btn) btn.textContent = "Sent";
-          if (note) note.textContent = "Thanks - we received your message. We’ll reply by email within 24 business hours.";
+          if (note) note.textContent = "Thanks - we received your message. We'll reply by email within 24 business hours.";
         } catch (err) {
           if (btn) btn.textContent = originalBtn || "Send my request";
           if (note) note.textContent = "Something went wrong. Please email us at info@visibleatsearch.com.";
