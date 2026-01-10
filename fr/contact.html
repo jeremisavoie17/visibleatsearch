@@ -73,8 +73,30 @@
               name="activity"
               maxlength="120"
               autocomplete="organization"
-              placeholder="Exemple : plombier, commerce local, e-commerce"
+              placeholder="Exemple : plombier, clinique dentaire, commerce local"
             />
+          </label>
+
+          <label class="field">
+            <span class="label">Type de service Google Ads souhaité</span>
+            <select name="service_type" required>
+              <option value="" selected disabled>Choisir</option>
+              <option value="search">Google Search</option>
+              <option value="pmax">Performance Max (PMAX / VLA)</option>
+              <option value="both">Les deux</option>
+              <option value="unsure">Je ne sais pas - à discuter</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="label">Objectif principal avec Google Ads</span>
+            <select name="goal" required>
+              <option value="" selected disabled>Choisir</option>
+              <option value="leads">Générer des leads</option>
+              <option value="calls">Appels téléphoniques</option>
+              <option value="sales">Ventes en ligne</option>
+              <option value="local_visibility">Visibilité locale</option>
+            </select>
           </label>
 
           <label class="field">
@@ -89,61 +111,13 @@
             />
           </label>
 
-          <fieldset class="field field-full" role="group" aria-label="Objectif principal">
-            <span class="label">Objectif principal avec Google Ads</span>
-
-            <label class="option">
-              <input type="radio" name="goal" value="leads" required />
-              <span>Générer des leads</span>
-            </label>
-
-            <label class="option">
-              <input type="radio" name="goal" value="calls" />
-              <span>Appels téléphoniques</span>
-            </label>
-
-            <label class="option">
-              <input type="radio" name="goal" value="sales" />
-              <span>Ventes en ligne</span>
-            </label>
-
-            <label class="option">
-              <input type="radio" name="goal" value="local_visibility" />
-              <span>Visibilité locale</span>
-            </label>
-          </fieldset>
-
-          <fieldset class="field field-full" role="group" aria-label="Type de service Google Ads souhaité">
-            <span class="label">Type de service Google Ads souhaité</span>
-
-            <label class="option">
-              <input type="checkbox" name="product_search" value="1" />
-              <span>Google Search</span>
-            </label>
-
-            <label class="option">
-              <input type="checkbox" name="product_pmax" value="1" />
-              <span>Performance Max (PMAX / VLA)</span>
-            </label>
-
-            <label class="option">
-              <input type="checkbox" name="product_both" value="1" />
-              <span>Les deux</span>
-            </label>
-
-            <label class="option">
-              <input type="checkbox" name="product_unsure" value="1" />
-              <span>Je ne sais pas - à discuter</span>
-            </label>
-          </fieldset>
-
           <label class="field field-full">
             <span class="label">Services à promouvoir</span>
             <input
               type="text"
               name="services"
               maxlength="200"
-              placeholder="Service principal en premier, puis secondaires si applicable - ex: Installation thermopompe - entretien - réparation"
+              placeholder="Exemple : Installation thermopompe - entretien - réparation"
             />
           </label>
 
