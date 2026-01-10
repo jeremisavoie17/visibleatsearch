@@ -83,7 +83,19 @@
               type="text"
               name="services"
               maxlength="200"
-              placeholder="Exemple : Installation thermopompe - entretien - réparation"
+              placeholder="Exemple : Installation - réparation"
+            />
+          </label>
+
+          <label class="field">
+            <span class="label">Zone desservie (ville ou région)</span>
+            <input
+              type="text"
+              name="location"
+              required
+              maxlength="120"
+              autocomplete="address-level2"
+              placeholder="Exemple : Toronto, GTA, Mississauga"
             />
           </label>
 
@@ -96,18 +108,6 @@
               <option value="both">Les deux</option>
               <option value="unsure">Je ne sais pas - à discuter</option>
             </select>
-          </label>
-
-           <label class="field">
-            <span class="label">Zone desservie (ville ou région)</span>
-            <input
-              type="text"
-              name="location"
-              required
-              maxlength="120"
-              autocomplete="address-level2"
-              placeholder="Exemple : Laval, Rive-Nord, Montréal"
-            />
           </label>
 
           <label class="field">
