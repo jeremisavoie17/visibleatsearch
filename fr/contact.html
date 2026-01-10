@@ -6,9 +6,9 @@
   <title>Contact - Visible at Search</title>
   <meta name="description" content="Contactez Visible at Search pour discuter simplement de votre visibilité en ligne au moment où les gens recherchent vos services." />
 
-     <!-- Favicon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
-  
+
   <link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/contact.html" />
   <link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/contact.html" />
   <link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/contact.html" />
@@ -73,19 +73,77 @@
               name="activity"
               maxlength="120"
               autocomplete="organization"
-              placeholder="Exemple : plombier, événement, commerce local"
+              placeholder="Exemple : plombier, commerce local, e-commerce"
             />
           </label>
 
           <label class="field">
-            <span class="label">Ville / région</span>
+            <span class="label">Zone desservie (ville ou région)</span>
             <input
               type="text"
               name="location"
               required
               maxlength="120"
               autocomplete="address-level2"
-              placeholder="Exemple : Toronto, ON"
+              placeholder="Exemple : Laval, Rive-Nord, Montréal"
+            />
+          </label>
+
+          <fieldset class="field field-full" role="group" aria-label="Objectif principal">
+            <span class="label">Objectif principal avec Google Ads</span>
+
+            <label class="option">
+              <input type="radio" name="goal" value="leads" required />
+              <span>Générer des leads</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="goal" value="calls" />
+              <span>Appels téléphoniques</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="goal" value="sales" />
+              <span>Ventes en ligne</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="goal" value="local_visibility" />
+              <span>Visibilité locale</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="field field-full" role="group" aria-label="Type de service Google Ads souhaité">
+            <span class="label">Type de service Google Ads souhaité</span>
+
+            <label class="option">
+              <input type="checkbox" name="product_search" value="1" />
+              <span>Google Search</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" name="product_pmax" value="1" />
+              <span>Performance Max (PMAX / VLA)</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" name="product_both" value="1" />
+              <span>Les deux</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" name="product_unsure" value="1" />
+              <span>Je ne sais pas - à discuter</span>
+            </label>
+          </fieldset>
+
+          <label class="field field-full">
+            <span class="label">Services à promouvoir</span>
+            <input
+              type="text"
+              name="services"
+              maxlength="200"
+              placeholder="Service principal en premier, puis secondaires si applicable - ex: Installation thermopompe - entretien - réparation"
             />
           </label>
 
@@ -96,7 +154,7 @@
               rows="6"
               maxlength="2000"
               required
-              placeholder="Décrivez brièvement ce que vous faites"
+              placeholder="Décrivez brièvement votre besoin et ce que vous souhaitez promouvoir"
             ></textarea>
           </label>
         </div>
@@ -126,33 +184,31 @@
   </section>
 
   <footer class="footer">
-  <div class="footer-inner">
+    <div class="footer-inner">
 
-    <div class="footer-brand">
-      <p class="footer-name">Visible at Search</p>
-      <p class="footer-tagline">
-      Services de marketing axés sur Google Ads.<br>
-      Basé au Canada.
-      </p>
+      <div class="footer-brand">
+        <p class="footer-name">Visible at Search</p>
+        <p class="footer-tagline">
+          Services de marketing sur les moteurs de recherche axés sur Google Ads. Basé au Canada.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigation du pied de page">
+        <a href="/fr/services.html">Services</a>
+        <a href="/fr/pricing.html">Tarifs</a>
+        <a href="/fr/faq.html">FAQ</a>
+        <a href="/fr/about.html">À propos</a>
+        <a href="/fr/contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-meta">
+        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+        <p>© 2026 Visible at Search</p>
+      </div>
+
     </div>
+  </footer>
 
-    <nav class="footer-nav" aria-label="Navigation du pied de page">
-      <a href="/fr/services.html">Services</a>
-      <a href="/fr/pricing.html">Tarifs</a>
-      <a href="/fr/faq.html">FAQ</a>
-      <a href="/fr/about.html">À propos</a>
-      <a href="/fr/contact.html">Contact</a>
-    </nav>
-
-    <div class="footer-meta">
-      <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
-      <p>© 2026 Visible at Search</p>
-    </div>
-
-  </div>
-</footer>
-
-  
   <!-- REQUIRED FOR MOBILE MENU -->
   <script src="/assets/nav.js" defer></script>
 
