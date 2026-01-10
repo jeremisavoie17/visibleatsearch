@@ -6,9 +6,9 @@
   <title>Contact - Visible at Search</title>
   <meta name="description" content="Contact Visible at Search to discuss your online visibility when people search for your services." />
 
-     <!-- Favicon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
-  
+
   <link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/contact.html" />
   <link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/contact.html" />
   <link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/contact.html" />
@@ -68,20 +68,94 @@
 
           <label class="field">
             <span class="label">Business type</span>
-            <input type="text" name="activity" maxlength="120" autocomplete="organization"
-              placeholder="Example: plumber, event, local shop" />
+            <input
+              type="text"
+              name="activity"
+              maxlength="120"
+              autocomplete="organization"
+              placeholder="Example: plumber, local shop, e-commerce"
+            />
           </label>
 
           <label class="field">
-            <span class="label">City / region</span>
-            <input type="text" name="location" required maxlength="120"
-              autocomplete="address-level2" placeholder="Example: Toronto, ON" />
+            <span class="label">Service area (city or region)</span>
+            <input
+              type="text"
+              name="location"
+              required
+              maxlength="120"
+              autocomplete="address-level2"
+              placeholder="Example: Laval, North Shore, Montreal"
+            />
+          </label>
+
+          <fieldset class="field field-full" role="group" aria-label="Primary goal">
+            <span class="label">Primary goal with Google Ads</span>
+
+            <label class="option">
+              <input type="radio" name="goal" value="leads" required />
+              <span>Lead generation</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="goal" value="calls" />
+              <span>Phone calls</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="goal" value="sales" />
+              <span>Online sales</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="goal" value="local_visibility" />
+              <span>Local visibility</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="field field-full" role="group" aria-label="Desired Google Ads service type">
+            <span class="label">Desired Google Ads service type</span>
+
+            <label class="option">
+              <input type="checkbox" name="product_search" value="1" />
+              <span>Google Search</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" name="product_pmax" value="1" />
+              <span>Performance Max (PMAX / VLA)</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" name="product_both" value="1" />
+              <span>Both</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" name="product_unsure" value="1" />
+              <span>Not sure - let’s discuss</span>
+            </label>
+          </fieldset>
+
+          <label class="field field-full">
+            <span class="label">Services to promote</span>
+            <input
+              type="text"
+              name="services"
+              maxlength="200"
+              placeholder="Primary service first, then secondary if relevant - e.g., heat pump installation - maintenance - repair"
+            />
           </label>
 
           <label class="field field-full">
             <span class="label">Message</span>
-            <textarea name="message" rows="6" maxlength="2000" required
-              placeholder="Tell us what you do"></textarea>
+            <textarea
+              name="message"
+              rows="6"
+              maxlength="2000"
+              required
+              placeholder="Briefly describe what you want to promote and what you need"
+            ></textarea>
           </label>
         </div>
 
@@ -106,33 +180,33 @@
     </div>
   </section>
 
-    <footer class="footer">
-  <div class="footer-inner">
+  <footer class="footer">
+    <div class="footer-inner">
 
-    <div class="footer-brand">
-      <p class="footer-name">Visible at Search</p>
-      <p class="footer-tagline">
-      Google Ads-focused marketing services.<br>
-      Based in Canada.
-      </p>
+      <div class="footer-brand">
+        <p class="footer-name">Visible at Search</p>
+        <p class="footer-tagline">
+          Google Ads-focused marketing services.<br>
+          Based in Canada.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/en/services.html">Services</a>
+        <a href="/en/pricing.html">Pricing</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-meta">
+        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+        <p>© 2026 Visible at Search</p>
+      </div>
+
     </div>
+  </footer>
 
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="/en/services.html">Services</a>
-      <a href="/en/pricing.html">Pricing</a>
-      <a href="/en/faq.html">FAQ</a>
-      <a href="/en/about.html">About</a>
-      <a href="/en/contact.html">Contact</a>
-    </nav>
-
-    <div class="footer-meta">
-      <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
-      <p>© 2026 Visible at Search</p>
-    </div>
-
-  </div>
-</footer>
-  
   <!-- REQUIRED FOR MOBILE MENU -->
   <script src="/assets/nav.js" defer></script>
 
@@ -162,7 +236,7 @@
 
           form.reset();
           if (btn) btn.textContent = "Sent";
-          if (note) note.textContent = "Thanks - we received your message. We'll reply by email within 24 business hours.";
+          if (note) note.textContent = "Thanks - we received your message. We’ll reply by email within 24 business hours.";
         } catch (err) {
           if (btn) btn.textContent = originalBtn || "Send my request";
           if (note) note.textContent = "Something went wrong. Please email us at info@visibleatsearch.com.";
@@ -173,6 +247,5 @@
     })();
   </script>
 
-  
 </body>
 </html>
