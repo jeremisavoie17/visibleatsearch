@@ -203,6 +203,19 @@ p{
   padding: 12px 14px;
 }
 
+/* Image à droite du texte (dans .grid-2) */
+.visual{
+  display:flex;
+  justify-content:flex-end;
+}
+.visual img{
+  width:100%;
+  max-width:560px;
+  height:auto;
+  display:block;
+}
+
+
 /* ================= STEPS ================= */
 
 .steps{
