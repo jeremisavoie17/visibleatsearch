@@ -6,6 +6,7 @@
   <meta name="description" content="Simple answers to common questions." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Organization -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,10 +28,160 @@
 }
 </script>
 
-  
-     <!-- Favicon -->
+  <!-- FAQPage (must match visible Q/A on this page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+
+    {
+      "@type": "Question",
+      "name": "Do I need to schedule a meeting or a call?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Everything is done in writing, through a short onboarding form and email exchanges. This keeps the service simple and affordable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you need from me to get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You’ll complete a short onboarding form covering your services, target locations, goals, and competitor names if relevant. That information is enough to structure the campaigns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I ask questions before committing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can email us at any time. Please allow up to 24 business hours for a response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I ask questions after getting started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Questions are always welcome. The account is fully set up to run independently after launch, while campaign changes are reviewed and applied during the scheduled 30-day review with reporting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a website or landing page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need a page on your website that matches the ads and allows people to contact you. Traffic is directed to the most relevant existing page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you target specific cities or regions across Canada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Campaigns can be targeted by city, region, and service area. We can also include competitor searches as keywords when it makes strategic sense."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is conversion tracking handled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conversion tracking is included when the website supports it (for example via Google Tag Manager or custom code). If the platform prevents reliable tracking, this will be communicated upfront."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Is there a minimum advertising budget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There is no required minimum budget. You decide when to increase, reduce, or stop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays Google Ads and who owns the account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You pay Google Ads directly. The account belongs to you, with full admin access on your side. We are added as a partner to manage the setup and optional supervision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why a fixed fee instead of a percentage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fixed fee keeps the service accessible and makes costs predictable. You pay for the structure and optional supervision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is monthly monitoring mandatory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Monitoring is completely optional."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Are there any restrictions on what can be advertised?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some regulated categories require certification, additional verification, or may be restricted by Google policies. If your category has special requirements, this will be flagged early in the setup process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long before I see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your industry, your local market, and existing demand. The goal is not fast volume, but to be present at the right moment, when real demand exists. No fixed timeline can be guaranteed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I’ve tried online advertising before. Why would this be different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the approach is different. We don’t try to do everything or sell everything. We focus on a clear, local, and intentional presence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I own my data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your data belongs entirely to you. You remain in control, even if you stop the supervision option."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Is there a long-term contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. No contracts, no hidden commitments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel the service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Monthly supervision can be cancelled at any time with a 30-day notice. The initial setup fee is non-refundable once work has started, as it covers custom work performed for your account. The setup is typically completed within 7 business days of purchase."
+      }
+    }
+
+  ]
+}
+</script>
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
-  
+
   <link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/faq.html" />
   <link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/faq.html" />
   <link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/faq.html" />
@@ -45,7 +196,6 @@
     <div class="nav-inner">
       <a class="brand" href="/en/">Visible at Search</a>
 
-      <!-- Hamburger button (mobile) -->
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -89,18 +239,43 @@
         This keeps the service simple and affordable.
       </p>
 
+      <h2>What do you need from me to get started?</h2>
+      <p>
+        You’ll complete a short onboarding form covering your services, target locations, goals,
+        and competitor names if relevant. That information is enough to structure the campaigns.
+      </p>
+
       <h2>Can I ask questions before committing?</h2>
       <p>
         Yes. You can email us at any time.
-        Please allow 24 business hours for a response.
+        Please allow up to 24 business hours for a response.
       </p>
 
       <h2>Can I ask questions after getting started?</h2>
       <p>
-        The account is fully set up and ready to run independently after launch.
-        Open discussion is always available, 
-        while all account changes are consolidated and applied during the scheduled 30-day review with reporting.
+        Yes. Questions are always welcome.
+        The account is fully set up to run independently after launch,
+        while campaign changes are reviewed and applied during the scheduled 30-day review with reporting.
+      </p>
+
+      <h2>Do I need a website or landing page?</h2>
       <p>
+        You need a page on your website that matches the ads and allows people to contact you.
+        Traffic is directed to the most relevant existing page.
+      </p>
+
+      <h2>Can you target specific cities or regions across Canada?</h2>
+      <p>
+        Yes. Campaigns can be targeted by city, region, and service area.
+        We can also include competitor searches as keywords when it makes strategic sense.
+      </p>
+
+      <h2>How is conversion tracking handled?</h2>
+      <p>
+        Conversion tracking is included when the website supports it (for example via Google Tag Manager or custom code).
+        If the platform prevents reliable tracking, this will be communicated upfront.
+      </p>
+
     </div>
   </section>
 
@@ -112,6 +287,13 @@
       <p>
         No. There is no required minimum budget.
         You decide when to increase, reduce, or stop.
+      </p>
+
+      <h2>Who pays Google Ads and who owns the account?</h2>
+      <p>
+        You pay Google Ads directly.
+        The account belongs to you, with full admin access on your side.
+        We are added as a partner to manage the setup and optional supervision.
       </p>
 
       <h2>Why a fixed fee instead of a percentage?</h2>
@@ -132,11 +314,18 @@
   <section class="content faq">
     <div class="wrap">
 
+      <h2>Are there any restrictions on what can be advertised?</h2>
+      <p>
+        Some regulated categories require certification, additional verification, or may be restricted by Google policies.
+        If your category has special requirements, this will be flagged early in the setup process.
+      </p>
+
       <h2>How long before I see results?</h2>
       <p>
         It depends on your industry, your local market, and existing demand.
         The goal is not fast volume, but to be present at the right moment,
         when real demand exists.
+        No fixed timeline can be guaranteed.
       </p>
 
       <h2>I’ve tried online advertising before. Why would this be different?</h2>
@@ -169,41 +358,40 @@
         Yes. Monthly supervision can be cancelled at any time with a 30-day notice.
       </p>
       <p class="muted">
-      The initial setup fee is non-refundable once work has started, as it covers custom work performed for your account.
-      The setup is typically completed within 7 business days of purchase.
+        The initial setup fee is non-refundable once work has started, as it covers custom work performed for your account.
+        The setup is typically completed within 7 business days of purchase.
       </p>
 
     </div>
   </section>
 
-    <footer class="footer">
-  <div class="footer-inner">
+  <footer class="footer">
+    <div class="footer-inner">
 
-    <div class="footer-brand">
-      <p class="footer-name">Visible at Search</p>
-      <p class="footer-tagline">
-      Google Ads-focused marketing services.<br>
-      Based in Canada.
-      </p>
+      <div class="footer-brand">
+        <p class="footer-name">Visible at Search</p>
+        <p class="footer-tagline">
+          Google Ads-focused marketing services.<br>
+          Based in Canada.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/en/services.html">Services</a>
+        <a href="/en/pricing.html">Pricing</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-meta">
+        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+        <p>© 2026 Visible at Search</p>
+      </div>
+
     </div>
+  </footer>
 
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="/en/services.html">Services</a>
-      <a href="/en/pricing.html">Pricing</a>
-      <a href="/en/faq.html">FAQ</a>
-      <a href="/en/about.html">About</a>
-      <a href="/en/contact.html">Contact</a>
-    </nav>
-
-    <div class="footer-meta">
-      <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
-      <p>© 2026 Visible at Search</p>
-    </div>
-
-  </div>
-</footer>
-  
-  <!-- REQUIRED FOR MOBILE MENU -->
   <script src="/assets/nav.js" defer></script>
 </body>
 </html>
