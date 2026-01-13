@@ -774,6 +774,39 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* =========================
+   Page-specific overrides
+   ========================= */
+
+/* Option 1: definir .muted globalement (recommande) */
+.muted{
+  opacity: 0.75;
+}
+
+/* FAQ - petit header noir */
+.page-faq section.content{
+  background:#000;
+  color:#fff;
+  padding: 48px var(--pad); /* garde le padding horizontal standard */
+}
+
+.page-faq section.content .muted,
+.page-faq section.content p{
+  color: rgba(255,255,255,0.78);
+}
+
+/* À propos - petit header noir */
+.page-about section.content{
+  background:#000;
+  color:#fff;
+  padding: 48px var(--pad);
+}
+
+.page-about section.content .muted,
+.page-about section.content p{
+  color: rgba(255,255,255,0.78);
+}
+
 
 /* ================= LOCK FINAL ================= */
 
