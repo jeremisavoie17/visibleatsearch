@@ -837,23 +837,22 @@ a.cta-btn:focus-visible{
   color: #b0b0b0;
 }
 
-/* Keep 2 columns on desktop */
-.grid-2{
+/* Services layout only */
+.page-services .grid-2{
   flex-wrap: nowrap;
 }
 
-/* Allow wrapping on smaller screens */
 @media (max-width: 980px){
-  .grid-2{
+  .page-services .grid-2{
     flex-wrap: wrap;
   }
-  
 }
-.grid-2 > div{
+
+.page-services .grid-2 > div{
   min-width: 0;
 }
 
-.visual{
+.page-services .visual{
   align-self: flex-start;
 }
 
