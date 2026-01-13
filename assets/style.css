@@ -808,7 +808,7 @@ a.cta-btn:focus-visible{
 }
 
 /* =================
-   Services – technical notes
+   Services – technical notes (readability tuned)
    ================= */
 
 .service-technical{
@@ -822,39 +822,22 @@ a.cta-btn:focus-visible{
 }
 
 .service-points li{
-  font-size: 0.9rem;
-  color: #8e8e8e;
-  line-height: 1.45;
-  margin-bottom: 0.3rem;
+  font-size: 0.95rem;      
+  color: #5f6368;        
+  line-height: 1.6;        
+  margin-bottom: 0.35rem;
   position: relative;
-  padding-left: 0.8rem;
+  padding-left: 0.9rem;    
 }
 
 .service-points li::before{
   content: "-";
   position: absolute;
   left: 0;
-  color: #b0b0b0;
+  top: 0;
+  color: #3c4043;        
 }
 
-/* Services layout only */
-.page-services .grid-2{
-  flex-wrap: nowrap;
-}
-
-@media (max-width: 980px){
-  .page-services .grid-2{
-    flex-wrap: wrap;
-  }
-}
-
-.page-services .grid-2 > div{
-  min-width: 0;
-}
-
-.page-services .visual{
-  align-self: flex-start;
-}
 
 
 /* ================= LOCK FINAL ================= */
