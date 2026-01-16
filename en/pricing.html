@@ -27,10 +27,8 @@
 }
 </script>
 
-  
-     <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
-  
+
   <!-- hreflang -->
   <link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/pricing.html" />
   <link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/tarifs.html" />
@@ -75,7 +73,7 @@
     <div class="wrap">
       <h1 class="center">Pricing and service options</h1>
       <p class="muted center" style="margin-left:auto;margin-right:auto;">
-        Here’s what you pay and what you get — simple, transparent and structured.
+        Here’s what you pay and what you get - simple, transparent and structured.
       </p>
     </div>
   </section>
@@ -98,7 +96,7 @@
 
           <p>
             Ideal for service-based businesses.
-            Complete structured Google Ads Search campaigns 
+            Complete structured Google Ads Search campaigns
             built for demand capture and brand protection.
           </p>
 
@@ -111,73 +109,66 @@
             <li>Account ready to run independently</li>
             <li>One business, one account.</li>
             <li>Monthly analysis & supervision (1 month)</li>
-            </ul>
+          </ul>
 
           <p class="muted mini">
             If both setups are combined, the total setup fee can be reduced to 799 $.
           </p>
 
-<div class="pricing-actions">
+          <div class="pricing-actions">
+            <a id="btn-search-setup"
+               class="cta-btn full disabled"
+               href="#"
+               aria-disabled="true"
+               target="_blank"
+               rel="noopener noreferrer">
+              Get Started
+            </a>
 
-  <a id="btn-search-setup"
-     class="cta-btn full disabled"
-     href="#"
-     aria-disabled="true"
-     target="_blank"
-     rel="noopener noreferrer">
-    Get Started
-  </a>
-
-  <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
-    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
-    <span>
-      I have read and understand the requirements: a valid website is required, and I must be able to install the Google tag for tracking (assistance available).
-    </span>
-  </label>
-
-</div>
-
-<script>
-(function () {
-  const checkbox = document.getElementById('ack-search-setup');
-  const btn = document.getElementById('btn-search-setup');
-  const url = 'https://square.link/u/x9DxyyMj';
-
-  function setEnabled(enabled) {
-    if (enabled) {
-      btn.classList.remove('disabled');
-      btn.setAttribute('href', url);
-      btn.setAttribute('aria-disabled', 'false');
-    } else {
-      btn.classList.add('disabled');
-      btn.setAttribute('href', '#');
-      btn.setAttribute('aria-disabled', 'true');
-    }
-  }
-
-  setEnabled(false);
-
-  checkbox.addEventListener('change', function () {
-    setEnabled(checkbox.checked);
-  });
-
-  btn.addEventListener('click', function (e) {
-    if (btn.getAttribute('aria-disabled') === 'true') {
-      e.preventDefault();
-      checkbox.focus();
-    }
-  });
-})();
-</script>
-
-
-
+            <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
+              <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
+              <span>
+                I have read and understand the requirements: a valid website is required, and I must be able to install the Google tag for tracking (assistance available).
+              </span>
+            </label>
           </div>
+
+          <script>
+          (function () {
+            const checkbox = document.getElementById('ack-search-setup');
+            const btn = document.getElementById('btn-search-setup');
+            const url = 'https://square.link/u/x9DxyyMj';
+
+            function setEnabled(enabled) {
+              if (enabled) {
+                btn.classList.remove('disabled');
+                btn.setAttribute('href', url);
+                btn.setAttribute('aria-disabled', 'false');
+              } else {
+                btn.classList.add('disabled');
+                btn.setAttribute('href', '#');
+                btn.setAttribute('aria-disabled', 'true');
+              }
+            }
+
+            setEnabled(false);
+
+            checkbox.addEventListener('change', function () {
+              setEnabled(checkbox.checked);
+            });
+
+            btn.addEventListener('click', function (e) {
+              if (btn.getAttribute('aria-disabled') === 'true') {
+                e.preventDefault();
+                checkbox.focus();
+              }
+            });
+          })();
+          </script>
         </article>
 
         <!-- 1b -->
         <article class="pricing-card featured">
-
           <header class="pricing-head">
             <h3>Google Ads Catalogue - setup</h3>
             <p class="pricing-price">
@@ -186,8 +177,8 @@
           </header>
 
           <p>
-          Ideal for inventory-driven businesses. 
-          Your products catalog distributed across Google Search, Maps, YouTube, and more.
+            Ideal for inventory-driven businesses.
+            Your products catalog distributed across Google Search, Maps, YouTube, and more.
           </p>
 
           <ul class="pricing-features">
@@ -199,66 +190,62 @@
             <li>Audience signals & exclusions</li>
             <li>Account ready to run independently</li>
             <li>Monthly analysis & supervision (1 month)</li>
-
           </ul>
 
           <p class="muted mini">
             If both setups are combined, the total setup fee can be reduced to 799 $.
           </p>
 
-<div class="pricing-actions">
+          <div class="pricing-actions">
+            <a id="btn-catalogue-setup"
+               class="cta-btn full disabled"
+               href="#"
+               aria-disabled="true"
+               target="_blank"
+               rel="noopener noreferrer">
+              Get Started
+            </a>
 
-  <a id="btn-search-setup"
-     class="cta-btn full disabled"
-     href="#"
-     aria-disabled="true"
-     target="_blank"
-     rel="noopener noreferrer">
-    Get Started
-  </a>
-
-  <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
-    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
-    <span>
-      I have read and understand the requirements: a valid website with a product feed is required, and I must be able to install the Google tag for tracking (assistance available).
-    </span>
-  </label>
-
-</div>
-
-<script>
-(function () {
-  const checkbox = document.getElementById('ack-search-setup');
-  const btn = document.getElementById('btn-search-setup');
-  const url = 'https://square.link/u/2q8OMtVm';
-
-  function setEnabled(enabled) {
-    if (enabled) {
-      btn.classList.remove('disabled');
-      btn.setAttribute('href', url);
-      btn.setAttribute('aria-disabled', 'false');
-    } else {
-      btn.classList.add('disabled');
-      btn.setAttribute('href', '#');
-      btn.setAttribute('aria-disabled', 'true');
-    }
-  }
-
-  setEnabled(false);
-
-  checkbox.addEventListener('change', function () {
-    setEnabled(checkbox.checked);
-  });
-
-  btn.addEventListener('click', function (e) {
-    if (btn.getAttribute('aria-disabled') === 'true') {
-      e.preventDefault();
-      checkbox.focus();
-    }
-  });
-})();
-</script>
+            <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
+              <input id="ack-catalogue-setup" type="checkbox" style="margin-top:4px;">
+              <span>
+                I have read and understand the requirements: a valid website with a product feed is required, and I must be able to install the Google tag for tracking (assistance available).
+              </span>
+            </label>
           </div>
+
+          <script>
+          (function () {
+            const checkbox = document.getElementById('ack-catalogue-setup');
+            const btn = document.getElementById('btn-catalogue-setup');
+            const url = 'https://square.link/u/2q8OMtVm';
+
+            function setEnabled(enabled) {
+              if (enabled) {
+                btn.classList.remove('disabled');
+                btn.setAttribute('href', url);
+                btn.setAttribute('aria-disabled', 'false');
+              } else {
+                btn.classList.add('disabled');
+                btn.setAttribute('href', '#');
+                btn.setAttribute('aria-disabled', 'true');
+              }
+            }
+
+            setEnabled(false);
+
+            checkbox.addEventListener('change', function () {
+              setEnabled(checkbox.checked);
+            });
+
+            btn.addEventListener('click', function (e) {
+              if (btn.getAttribute('aria-disabled') === 'true') {
+                e.preventDefault();
+                checkbox.focus();
+              }
+            });
+          })();
+          </script>
         </article>
 
       </div>
@@ -282,23 +269,19 @@
           <ul class="pricing-features">
             <li>1 hour of scheduled monthly analysis</li>
             <li>Validation that campaigns are healthy and running correctly</li>
-             <li>Search term analysis and intent filtering</li>
-             <li>Market and competition reading</li>
+            <li>Search term analysis and intent filtering</li>
+            <li>Market and competition reading</li>
             <li>Adjustments if needed</li>
             <li>Clear written report</li>
           </ul>
-    
 
-<div class="pricing-actions">
-  <a
-    class="cta-btn full"
-    href="https://https://square.link/u/OVKBTuyM"
-    target="_blank"
-    rel="noopener noreferrer">
-    Get Started
-  </a>
-</div>
-
+          <div class="pricing-actions">
+            <a class="cta-btn full"
+               href="https://square.link/u/OVKBTuyM"
+               target="_blank"
+               rel="noopener noreferrer">
+              Get Started
+            </a>
           </div>
         </article>
 
@@ -323,16 +306,13 @@
             <li>Priority support (48 business hours)</li>
           </ul>
 
-<div class="pricing-actions">
-  <a
-    class="cta-btn full"
-    href="https://square.link/u/1Hdb9mui"
-    target="_blank"
-    rel="noopener noreferrer">
-    Get Started
-  </a>
-</div>
-
+          <div class="pricing-actions">
+            <a class="cta-btn full"
+               href="https://square.link/u/1Hdb9mui"
+               target="_blank"
+               rel="noopener noreferrer">
+              Get Started
+            </a>
           </div>
         </article>
 
@@ -358,16 +338,13 @@
             <li>Search query filtering</li>
           </ul>
 
-<div class="pricing-actions">
-  <a
-    class="cta-btn full"
-    href="https://square.link/u/mZyTVfkK"
-    target="_blank"
-    rel="noopener noreferrer">
-    Get Started
-  </a>
-</div>
-
+          <div class="pricing-actions">
+            <a class="cta-btn full"
+               href="https://square.link/u/mZyTVfkK"
+               target="_blank"
+               rel="noopener noreferrer">
+              Get Started
+            </a>
           </div>
         </article>
 
@@ -376,11 +353,10 @@
     </div>
   </section>
 
-<!-- AFTER PAYMENT -->
-<section id="process" class="content">
-  <div class="wrap">
-
-    <h2>After payment</h2>
+  <!-- AFTER PAYMENT -->
+  <section id="process" class="content">
+    <div class="wrap">
+      <h2>After payment</h2>
 
       <p>
         Once payment is completed, everything is handled in writing.<br><br>
@@ -392,49 +368,46 @@
         A monthly inspection with targeted adjustments is scheduled approximately 30 days later.
         A clear report is then delivered.
       </p>
-
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section id="cta" class="white">
-  <div class="wrap">
-    <h2>Not sure which option is right?</h2>
-
-    <div class="cta-row">
-      <a class="cta-btn" href="/en/contact.html">Email us</a>
     </div>
-  </div>
-</section>
+  </section>
 
-    <footer class="footer">
-  <div class="footer-inner">
-
-    <div class="footer-brand">
-      <p class="footer-name">Visible at Search</p>
-      <p class="footer-tagline">
-      Google Ads-focused marketing services.<br>
-      Based in Canada.
-      </p>
+  <!-- FINAL CTA -->
+  <section id="cta" class="white">
+    <div class="wrap">
+      <h2>Not sure which option is right?</h2>
+      <div class="cta-row">
+        <a class="cta-btn" href="/en/contact.html">Email us</a>
+      </div>
     </div>
+  </section>
 
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="/en/services.html">Services</a>
-      <a href="/en/pricing.html">Pricing</a>
-      <a href="/en/faq.html">FAQ</a>
-      <a href="/en/about.html">About</a>
-      <a href="/en/contact.html">Contact</a>
-    </nav>
+  <footer class="footer">
+    <div class="footer-inner">
 
-    <div class="footer-meta">
-      <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
-      <p>© 2026 Visible at Search</p>
+      <div class="footer-brand">
+        <p class="footer-name">Visible at Search</p>
+        <p class="footer-tagline">
+          Google Ads-focused marketing services.<br>
+          Based in Canada.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/en/services.html">Services</a>
+        <a href="/en/pricing.html">Pricing</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-meta">
+        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+        <p>© 2026 Visible at Search</p>
+      </div>
+
     </div>
-
-  </div>
-</footer>
+  </footer>
 
   <script src="/assets/nav.js" defer></script>
-
 </body>
 </html>
