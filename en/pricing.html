@@ -206,8 +206,58 @@
             If both setups are combined, the total setup fee can be reduced to 799 $.
           </p>
 
-          <div class="pricing-actions">
-            <a class="cta-btn full" href="#">Add Merchant Center setup</a>
+<div class="pricing-actions">
+
+  <a id="btn-search-setup"
+     class="cta-btn full disabled"
+     href="#"
+     aria-disabled="true"
+     target="_blank"
+     rel="noopener noreferrer">
+    Get Started
+  </a>
+
+  <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
+    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
+    <span>
+      I have read and understand the requirements: a valid website with a product feed is required, and I must be able to install the Google tag for tracking (assistance available).
+    </span>
+  </label>
+
+</div>
+
+<script>
+(function () {
+  const checkbox = document.getElementById('ack-search-setup');
+  const btn = document.getElementById('btn-search-setup');
+  const url = 'https://square.link/u/2q8OMtVm';
+
+  function setEnabled(enabled) {
+    if (enabled) {
+      btn.classList.remove('disabled');
+      btn.setAttribute('href', url);
+      btn.setAttribute('aria-disabled', 'false');
+    } else {
+      btn.classList.add('disabled');
+      btn.setAttribute('href', '#');
+      btn.setAttribute('aria-disabled', 'true');
+    }
+  }
+
+  setEnabled(false);
+
+  checkbox.addEventListener('change', function () {
+    setEnabled(checkbox.checked);
+  });
+
+  btn.addEventListener('click', function (e) {
+    if (btn.getAttribute('aria-disabled') === 'true') {
+      e.preventDefault();
+      checkbox.focus();
+    }
+  });
+})();
+</script>
           </div>
         </article>
 
