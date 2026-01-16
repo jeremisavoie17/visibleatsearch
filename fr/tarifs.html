@@ -117,8 +117,58 @@
             Si les deux mises en place sont combinées, le total peut être réduit à 799 $.
           </p>
           
-          <div class="pricing-actions">
-            <a class="cta-btn full" href="#">Démarrer la mise en place</a>
+<div class="pricing-actions">
+
+  <a id="btn-search-setup"
+     class="cta-btn full disabled"
+     href="#"
+     aria-disabled="true"
+     target="_blank"
+     rel="noopener noreferrer">
+    Get Started
+  </a>
+
+  <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
+    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
+    <span>
+      J’ai lu et compris les prérequis : un site web valide est requis et je dois être en mesure d’installer la balise Google pour le suivi (assistance disponible).
+    </span>
+  </label>
+
+</div>
+
+<script>
+(function () {
+  const checkbox = document.getElementById('ack-search-setup');
+  const btn = document.getElementById('btn-search-setup');
+  const url = 'https://square.link/u/XBpfDlXj';
+
+  function setEnabled(enabled) {
+    if (enabled) {
+      btn.classList.remove('disabled');
+      btn.setAttribute('href', url);
+      btn.setAttribute('aria-disabled', 'false');
+    } else {
+      btn.classList.add('disabled');
+      btn.setAttribute('href', '#');
+      btn.setAttribute('aria-disabled', 'true');
+    }
+  }
+
+  setEnabled(false);
+
+  checkbox.addEventListener('change', function () {
+    setEnabled(checkbox.checked);
+  });
+
+  btn.addEventListener('click', function (e) {
+    if (btn.getAttribute('aria-disabled') === 'true') {
+      e.preventDefault();
+      checkbox.focus();
+    }
+  });
+})();
+</script>
           </div>
         </article>
 
@@ -153,8 +203,58 @@
             Si les deux mises en place sont combinées, le total peut être réduit à 799 $.
           </p>
 
-          <div class="pricing-actions">
-            <a class="cta-btn full" href="#">Ajouter Merchant Center</a>
+<div class="pricing-actions">
+
+  <a id="btn-search-setup"
+     class="cta-btn full disabled"
+     href="#"
+     aria-disabled="true"
+     target="_blank"
+     rel="noopener noreferrer">
+    Get Started
+  </a>
+
+  <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
+    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
+    <span>
+      J’ai lu et compris les prérequis : un site web valide avec flux produit est requis et je dois être en mesure d’installer la balise Google pour le suivi (assistance disponible).
+    </span>
+  </label>
+
+</div>
+
+<script>
+(function () {
+  const checkbox = document.getElementById('ack-search-setup');
+  const btn = document.getElementById('btn-search-setup');
+  const url = 'https://square.link/u/iO6vnMlD';
+
+  function setEnabled(enabled) {
+    if (enabled) {
+      btn.classList.remove('disabled');
+      btn.setAttribute('href', url);
+      btn.setAttribute('aria-disabled', 'false');
+    } else {
+      btn.classList.add('disabled');
+      btn.setAttribute('href', '#');
+      btn.setAttribute('aria-disabled', 'true');
+    }
+  }
+
+  setEnabled(false);
+
+  checkbox.addEventListener('change', function () {
+    setEnabled(checkbox.checked);
+  });
+
+  btn.addEventListener('click', function (e) {
+    if (btn.getAttribute('aria-disabled') === 'true') {
+      e.preventDefault();
+      checkbox.focus();
+    }
+  });
+})();
+</script>
           </div>
         </article>
 
