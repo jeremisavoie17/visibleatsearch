@@ -117,8 +117,63 @@
             If both setups are combined, the total setup fee can be reduced to 799 $.
           </p>
 
-          <div class="pricing-actions">
-            <a class="cta-btn full" href="#">Start setup</a>
+<div class="pricing-actions">
+
+  <label class="ack" style="display:flex;gap:10px;align-items:flex-start;justify-content:flex-start;margin:12px 0;">
+    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
+    <span class="muted mini">
+      I have read and understand the requirements: a valid website is required, and I must be able to install the Google tag for tracking (assistance available).
+    </span>
+  </label>
+
+  <a id="btn-search-setup"
+     class="cta-btn disabled"
+     href="#"
+     aria-disabled="true"
+     target="_blank"
+     rel="noopener noreferrer">
+    Get Started
+  </a>
+
+</div>
+
+<script>
+(function () {
+  const checkbox = document.getElementById('ack-search-setup');
+  const btn = document.getElementById('btn-search-setup');
+  const url = 'https://square.link/u/x9DxyyMj';
+
+  function setEnabled(enabled) {
+    if (enabled) {
+      btn.classList.remove('disabled');
+      btn.setAttribute('href', url);
+      btn.setAttribute('aria-disabled', 'false');
+    } else {
+      btn.classList.add('disabled');
+      btn.setAttribute('href', '#');
+      btn.setAttribute('aria-disabled', 'true');
+    }
+  }
+
+  // initial state
+  setEnabled(false);
+
+  checkbox.addEventListener('change', function () {
+    setEnabled(checkbox.checked);
+  });
+
+  // prevent click when disabled
+  btn.addEventListener('click', function (e) {
+    if (btn.getAttribute('aria-disabled') === 'true') {
+      e.preventDefault();
+      checkbox.focus();
+    }
+  });
+})();
+</script>
+
+
+
           </div>
         </article>
 
