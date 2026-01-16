@@ -119,21 +119,21 @@
 
 <div class="pricing-actions">
 
-  <label class="ack" style="display:flex;gap:10px;align-items:flex-start;justify-content:flex-start;margin:12px 0;">
-    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
-    <span class="muted mini">
-      I have read and understand the requirements: a valid website is required, and I must be able to install the Google tag for tracking (assistance available).
-    </span>
-  </label>
-
   <a id="btn-search-setup"
-     class="cta-btn disabled"
+     class="cta-btn full disabled"
      href="#"
      aria-disabled="true"
      target="_blank"
      rel="noopener noreferrer">
     Get Started
   </a>
+
+  <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
+    <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
+    <span>
+      I have read and understand the requirements: a valid website is required, and I must be able to install the Google tag for tracking (assistance available).
+    </span>
+  </label>
 
 </div>
 
@@ -155,14 +155,12 @@
     }
   }
 
-  // initial state
   setEnabled(false);
 
   checkbox.addEventListener('change', function () {
     setEnabled(checkbox.checked);
   });
 
-  // prevent click when disabled
   btn.addEventListener('click', function (e) {
     if (btn.getAttribute('aria-disabled') === 'true') {
       e.preventDefault();
