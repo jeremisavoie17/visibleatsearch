@@ -838,6 +838,25 @@ a.cta-btn:focus-visible{
   color: #3c4043;        
 }
 
+/* =================
+   Checkout acknowledgment (pricing)
+   ================= */
+
+.pricing-actions .ack{
+  margin: 12px 0;
+}
+
+.pricing-actions .ack input{
+  width: 16px;
+  height: 16px;
+}
+
+a.cta-btn.disabled,
+a.cta-btn.disabled:link,
+a.cta-btn.disabled:visited{
+  opacity: 0.45;
+  pointer-events: none;
+}
 
 
 /* ================= LOCK FINAL ================= */
