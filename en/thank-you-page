@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Thank you - Visible at Search</title>
+  <meta name="description" content="Payment received. Next steps and what to expect from Visible at Search." />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://visibleatsearch.com/#organization",
+  "name": "Visible at Search",
+  "url": "https://visibleatsearch.com/",
+  "logo": "https://visibleatsearch.com/assets/logo.png",
+  "description": "Google Ads services focused on Search visibility for small businesses and service professionals in Canada.",
+  "email": "info@visibleatsearch.com",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "info@visibleatsearch.com",
+      "availableLanguage": ["fr-CA", "en-CA"]
+    }
+  ]
+}
+</script>
+
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/thank-you-page" />
+  <link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/page-merci" />
+  <link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/thank-you-page" />
+
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <!-- Keep this page out of search results -->
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+
+<body class="page-services">
+
+  <!-- NAV sticky -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="/en/">Visible at Search</a>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="links">
+        <a href="/en/">Home</a>
+        <a href="/en/services.html">Services</a>
+        <a href="/en/pricing.html">Pricing</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/contact.html">Contact</a>
+      </div>
+
+      <div class="lang" aria-label="Language switcher">
+        <a href="/en/thank-you-page" aria-current="page">EN</a>
+        <span class="sep">|</span>
+        <a href="/fr/page-merci">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="content">
+    <div class="wrap">
+      <h1 class="center">Thank you</h1>
+      <p class="muted center" style="margin-left:auto;margin-right:auto;">
+        Payment received. Next steps are below.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <section class="white">
+    <div class="wrap">
+      <div class="grid-2">
+
+        <div>
+          <h2>What happens next</h2>
+          <p>
+            You will receive an email with your onboarding form.
+            Once we have all details, we start the setup.
+          </p>
+
+          <div class="service-technical">
+            <ul class="service-points">
+              <li>Watch for an email from info@visibleatsearch.com</li>
+              <li>Complete the onboarding form (5-10 minutes)</li>
+              <li>We confirm once everything is ready</li>
+            </ul>
+          </div>
+
+          <p style="margin-top:16px;">
+            If you do not receive the email within 24 business hours, contact us and we will resend it.
+          </p>
+
+          <div class="cta-row">
+            <a class="cta-btn" href="/en/contact.html">Contact</a>
+            <a class="cta-link" href="/en/pricing.html">Back to pricing -&gt;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <p class="footer-name">Visible at Search</p>
+        <p class="footer-tagline">
+          Google Ads-focused marketing services.<br>
+          Based in Canada.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/en/services.html">Services</a>
+        <a href="/en/pricing.html">Pricing</a>
+        <a href="/en/faq.html">FAQ</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-meta">
+        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+        <p>© 2026 Visible at Search</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>
