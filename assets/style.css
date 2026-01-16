@@ -689,9 +689,9 @@ a.cta-btn:focus-visible{
    Pricing layout fixes
    =============================== */
 
-/* Center the top pricing cards and force 2 columns on desktop */
+/* Center the top pricing cards */
 .pricing-grid-setup{
-  max-width: 900px;
+  max-width: var(--max);
   margin-left: auto;
   margin-right: auto;
 }
@@ -702,6 +702,7 @@ a.cta-btn:focus-visible{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 
 /* ================= FOOTER ================= */
 
