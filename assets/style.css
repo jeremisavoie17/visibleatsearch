@@ -842,21 +842,46 @@ a.cta-btn:focus-visible{
    Checkout acknowledgment (pricing)
    ================= */
 
+/* Bouton CTA lisible sur fond blanc (pricing cards) */
+.pricing-card a.cta-btn,
+.pricing-card a.cta-btn:link,
+.pricing-card a.cta-btn:visited{
+  background:#111;
+  color:#fff;
+  border:1px solid #111;
+}
+
+.pricing-card a.cta-btn:hover{
+  background:#000;
+  border-color:#000;
+  color:#fff;
+}
+
+/* Disabled state (avant validation checkbox) */
+.pricing-card a.cta-btn.disabled,
+.pricing-card a.cta-btn.disabled:link,
+.pricing-card a.cta-btn.disabled:visited{
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* Checkbox acknowledgment */
 .pricing-actions .ack{
-  margin: 12px 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .pricing-actions .ack input{
   width: 16px;
   height: 16px;
+  margin-top: 4px;
+  flex-shrink: 0;
 }
 
-a.cta-btn.disabled,
-a.cta-btn.disabled:link,
-a.cta-btn.disabled:visited{
-  opacity: 0.45;
-  pointer-events: none;
-}
 
 
 /* ================= LOCK FINAL ================= */
