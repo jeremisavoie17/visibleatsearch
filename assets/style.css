@@ -883,6 +883,9 @@ a.cta-btn:focus-visible{
   flex-shrink: 0;
 }
 
+.pricing-card a.cta-btn.disabled{
+  cursor: not-allowed;
+}
 
 
 /* ================= LOCK FINAL ================= */
