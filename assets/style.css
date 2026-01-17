@@ -887,6 +887,13 @@ a.cta-btn:focus-visible{
   cursor: not-allowed;
 }
 
+/* =================
+   Thank you page Form Title
+   ================= */
+.onboarding-title {
+  margin-top: 0;
+}
+
 
 /* ================= LOCK FINAL ================= */
 
