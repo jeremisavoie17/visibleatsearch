@@ -86,167 +86,145 @@
       <div class="pricing-grid pricing-grid-setup">
 
         <!-- 1 -->
-        <article class="pricing-card">
-          <header class="pricing-head">
-            <h3>Google Ads Search - setup</h3>
-            <p class="pricing-price">
-              <span class="pricing-amount">$449</span> <span class="pricing-unit">(one-time)</span>
-            </p>
-          </header>
+       <article class="pricing-card">
+  <header class="pricing-head">
+    <h3>Google Ads Search - setup</h3>
+    <p class="pricing-price">
+      <span class="pricing-amount">$449</span>
+      <span class="pricing-unit">(one-time)</span>
+    </p>
+  </header>
 
-          <p>
-            Ideal for service-based businesses.
-            Complete structured Google Ads Search campaigns
-            built for demand capture and brand protection.
-          </p>
+  <p>
+    Ideal for service-based businesses.
+    Complete structured Google Ads Search campaigns
+    built for demand capture and brand protection.
+  </p>
 
-          <ul class="pricing-features">
-            <li>Google Ads account creation</li>
-            <li>Keyword research & intent mapping</li>
-            <li>One brand protection campaign</li>
-            <li>Search campaigns for up to 3-4 primary services</li>
-            <li>Essential configuration (targeting, ad assets, negatives)</li>
-            <li>Monthly analysis & supervision (1 month)</li>
-          </ul>
+  <ul class="pricing-features">
+    <li>Google Ads account creation</li>
+    <li>Keyword research & intent mapping</li>
+    <li>One brand protection campaign</li>
+    <li>Search campaigns for up to 3-4 primary services</li>
+    <li>Essential configuration (targeting, ad assets, negatives)</li>
+    <li>Monthly analysis & supervision (1 month)</li>
+  </ul>
 
-          <p class="muted mini">
-          If both setups are combined, the total setup fee can be reduced to $799 (save $149).
-          <a class="bundle-link" href="https://square.link/u/EqPAqSic" target="_blank" rel="noopener noreferrer">Choose the combined setup</a>
-          </p>
+  <p class="muted mini">
+    If both setups are combined, the total setup fee can be reduced to $799 (save $149).
+    <a class="bundle-link" href="https://square.link/u/EqPAqSic" target="_blank" rel="noopener noreferrer">
+      Choose the combined setup
+    </a>
+  </p>
 
+  <div class="pricing-actions">
+    <a id="btn-search-setup"
+       class="cta-btn full disabled"
+       href="#"
+       aria-disabled="true"
+       rel="noopener noreferrer">
+      Get Started
+    </a>
 
-          <div class="pricing-actions">
-            <a id="btn-search-setup"
-               class="cta-btn full disabled"
-               href="#"
-               aria-disabled="true"
-               target="_blank"
-               rel="noopener noreferrer">
-              Get Started
-            </a>
+    <label class="ack muted mini">
+      <input id="ack-search-setup" type="checkbox">
+      <span>
+        I have read and understand the requirements: having a website and being able to install the Google tag for tracking (assistance available).
+      </span>
+    </label>
+  </div>
 
-            <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
-              <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
-              <span>
-                I have read and understand the requirements: having a website and being able to install the Google tag for tracking (assistance available).
-              </span>
-            </label>
-          </div>
+  <script>
+  (function () {
+    const checkbox = document.getElementById('ack-search-setup');
+    const btn = document.getElementById('btn-search-setup');
+    const url = 'https://square.link/u/x9DxyyMj';
 
-          <script>
-          (function () {
-            const checkbox = document.getElementById('ack-search-setup');
-            const btn = document.getElementById('btn-search-setup');
-            const url = 'https://square.link/u/x9DxyyMj';
+    checkbox.addEventListener('change', function () {
+      if (checkbox.checked) {
+        btn.classList.remove('disabled');
+        btn.href = url;
+        btn.setAttribute('aria-disabled', 'false');
+      } else {
+        btn.classList.add('disabled');
+        btn.href = '#';
+        btn.setAttribute('aria-disabled', 'true');
+      }
+    });
+  })();
+  </script>
+</article>
 
-            function setEnabled(enabled) {
-              if (enabled) {
-                btn.classList.remove('disabled');
-                btn.setAttribute('href', url);
-                btn.setAttribute('aria-disabled', 'false');
-              } else {
-                btn.classList.add('disabled');
-                btn.setAttribute('href', '#');
-                btn.setAttribute('aria-disabled', 'true');
-              }
-            }
-
-            setEnabled(false);
-
-            checkbox.addEventListener('change', function () {
-              setEnabled(checkbox.checked);
-            });
-
-            btn.addEventListener('click', function (e) {
-              if (btn.getAttribute('aria-disabled') === 'true') {
-                e.preventDefault();
-                checkbox.focus();
-              }
-            });
-          })();
-          </script>
-        </article>
 
         <!-- 1b -->
-        <article class="pricing-card featured">
-          <header class="pricing-head">
-            <h3>Google Ads Catalogue - setup</h3>
-            <p class="pricing-price">
-              <span class="pricing-amount">$499</span> <span class="pricing-unit">(one-time)</span>
-            </p>
-          </header>
+      <article class="pricing-card featured">
+  <header class="pricing-head">
+    <h3>Google Ads Catalogue - setup</h3>
+    <p class="pricing-price">
+      <span class="pricing-amount">$499</span>
+      <span class="pricing-unit">(one-time)</span>
+    </p>
+  </header>
 
-          <p>
-            Ideal for inventory-driven businesses.
-            Your products catalog distributed across Google Search, Maps, YouTube, and more.
-          </p>
+  <p>
+    Ideal for inventory-driven businesses.
+    Your product catalog distributed across Google Search, Maps, YouTube, and more.
+  </p>
 
-          <ul class="pricing-features">
-            <li>Creation and configuration of Google Merchant Center, Google Ads, and Business Profile accounts</li>
-            <li>One Feed validation & diagnostics</li>
-            <li>One Performance Max campaign with product feed</li>
-            <li>Asset creation (headlines, descriptions, sitelinks)</li>
-            <li>Audience signals & exclusions</li>
-            <li>Monthly analysis & supervision (1 month)</li>
-          </ul>
+  <ul class="pricing-features">
+    <li>Creation and configuration of Google Merchant Center, Google Ads, and Business Profile accounts</li>
+    <li>One feed validation & diagnostics</li>
+    <li>One Performance Max campaign with product feed</li>
+    <li>Asset creation (headlines, descriptions, sitelinks)</li>
+    <li>Audience signals & exclusions</li>
+    <li>Monthly analysis & supervision (1 month)</li>
+  </ul>
 
-         <p class="muted mini">
-          If both setups are combined, the total setup fee can be reduced to $799 (save $149).
-          <a class="bundle-link" href="https://square.link/u/PvSxaOiU" target="_blank" rel="noopener noreferrer">Choose the combined setup</a>
-          </p>
+  <p class="muted mini">
+    If both setups are combined, the total setup fee can be reduced to $799 (save $149).
+    <a class="bundle-link" href="https://square.link/u/EqPAqSic" target="_blank" rel="noopener noreferrer">
+      Choose the combined setup
+    </a>
+  </p>
 
+  <div class="pricing-actions">
+    <a id="btn-catalogue-setup"
+       class="cta-btn full disabled"
+       href="#"
+       aria-disabled="true"
+       rel="noopener noreferrer">
+      Get Started
+    </a>
 
-          <div class="pricing-actions">
-            <a id="btn-catalogue-setup"
-               class="cta-btn full disabled"
-               href="#"
-               aria-disabled="true"
-               target="_blank"
-               rel="noopener noreferrer">
-              Get Started
-            </a>
+    <label class="ack muted mini">
+      <input id="ack-catalogue-setup" type="checkbox">
+      <span>
+        I have read and understand the requirements: having a website with a product feed and being able to install the Google tag for tracking (assistance available).
+      </span>
+    </label>
+  </div>
 
-            <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
-              <input id="ack-catalogue-setup" type="checkbox" style="margin-top:4px;">
-              <span>
-                I have read and understand the requirements: having a website with product feed and being able to install the Google tag for tracking (assistance available).
-              </span>
-            </label>
-          </div>
+  <script>
+  (function () {
+    const checkbox = document.getElementById('ack-catalogue-setup');
+    const btn = document.getElementById('btn-catalogue-setup');
+    const url = 'https://square.link/u/2q8OMtVm';
 
-          <script>
-          (function () {
-            const checkbox = document.getElementById('ack-catalogue-setup');
-            const btn = document.getElementById('btn-catalogue-setup');
-            const url = 'https://square.link/u/2q8OMtVm';
+    checkbox.addEventListener('change', function () {
+      if (checkbox.checked) {
+        btn.classList.remove('disabled');
+        btn.href = url;
+        btn.setAttribute('aria-disabled', 'false');
+      } else {
+        btn.classList.add('disabled');
+        btn.href = '#';
+        btn.setAttribute('aria-disabled', 'true');
+      }
+    });
+  })();
+  </script>
+</article>
 
-            function setEnabled(enabled) {
-              if (enabled) {
-                btn.classList.remove('disabled');
-                btn.setAttribute('href', url);
-                btn.setAttribute('aria-disabled', 'false');
-              } else {
-                btn.classList.add('disabled');
-                btn.setAttribute('href', '#');
-                btn.setAttribute('aria-disabled', 'true');
-              }
-            }
-
-            setEnabled(false);
-
-            checkbox.addEventListener('change', function () {
-              setEnabled(checkbox.checked);
-            });
-
-            btn.addEventListener('click', function (e) {
-              if (btn.getAttribute('aria-disabled') === 'true') {
-                e.preventDefault();
-                checkbox.focus();
-              }
-            });
-          })();
-          </script>
-        </article>
 
       </div>
 
