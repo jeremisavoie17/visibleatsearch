@@ -665,6 +665,24 @@ a.cta-btn:focus-visible{
   transform:none;
 }
 
+/* Save badge next to price */
+.pricing-card.featured .pricing-price{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.pricing-card.featured .pricing-price::after{
+  content:"Save $149";
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:6px;
+  background:rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.18);
+  white-space:nowrap;
+}
+
+
 .pricing-badge{
   position:absolute;
   top:12px;
