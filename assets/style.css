@@ -551,75 +551,156 @@ a.cta-btn:focus-visible{
   overflow: hidden;
 }
 
+/* ================= PRICING CARDS ================= */
 
-/* ================= FOOTER ================= */
-
-.footer{
-  background: var(--bg-dark);
-  color: rgba(255,255,255,0.88);
-  border-top: 1px solid rgba(255,255,255,0.10);
-  padding: 48px 0;
+.center{
+  text-align:center;
+  max-width: 70ch;
 }
 
-.footer a{
-  color: rgba(255,255,255,0.88);
-  text-decoration: none;
+.pricing-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:18px;
+  align-items:stretch;
+  margin-top:18px;
 }
 
-.footer a:hover{
-  text-decoration: underline;
+.pricing-card{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:16px;
+  padding:18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
 }
 
-.footer-inner{
-  width: 100%;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--pad);
-
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 28px;
-  align-items: start;
+.pricing-card:hover,
+.pricing-card:focus-within{
+  background: rgba(0,0,0,0.02);
+  border-color: rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
 }
 
-.footer-name{
-  margin: 0 0 8px 0;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0.3px;
+/* Featured - garde l'alignement (pas de lift) */
+.pricing-card.featured:hover,
+.pricing-card.featured:focus-within{
+  transform: none;
 }
 
-.footer-tagline{
-  margin: 0;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.70);
-  max-width: 44ch;
+/* Optionnel: désactive l'animation pour ceux qui le demandent */
+@media (prefers-reduced-motion: reduce){
+  .pricing-card{ transition: none; }
+  .pricing-card:hover,
+  .pricing-card:focus-within{ transform: none; }
 }
 
-.footer-nav{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.pricing-head{
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  margin-bottom:12px;
 }
 
-.footer-meta{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.pricing-price{
+  margin:8px 0 0 0;
 }
 
-.footer-meta p{
-  margin: 0;
-  color: rgba(255,255,255,0.70);
+.pricing-amount{
+  font-size:30px;
+  line-height:1;
 }
 
-@media (max-width: 820px){
-  .footer-inner{
-    grid-template-columns: 1fr;
-    gap: 18px;
+.pricing-unit{
+  opacity:0.75;
+  font-size:14px;
+}
+
+.pricing-features{
+  margin:12px 0 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+
+.pricing-features li{
+  padding-left:22px;
+  position:relative;
+  line-height:1.45;
+}
+
+.pricing-features li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  opacity:0.75;
+}
+
+.pricing-actions{
+  margin-top:auto;
+  padding-top:14px;
+}
+
+.cta-btn.full{
+  width:100%;
+  display:inline-flex;
+  justify-content:center;
+}
+
+.cta-btn.alt{
+  background:#fff;
+  color:#111;
+  border:1px solid rgba(0,0,0,0.18);
+}
+
+/* Featured card - keep border, remove vertical shift to align */
+.pricing-card.featured{
+  border:2px solid rgba(0,0,0,0.18);
+  transform:none;
+}
+
+.pricing-badge{
+  position:absolute;
+  top:12px;
+  right:12px;
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(0,0,0,0.06);
+}
+
+.mini{
+  font-size:13px;
+  margin-top:10px;
+}
+
+@media (max-width: 980px){
+  .pricing-grid{
+    grid-template-columns:1fr;
   }
-  .footer-tagline{
-    max-width: 60ch;
+}
+
+/* ===============================
+   Pricing layout fixes
+   =============================== */
+
+/* Center the top pricing cards */
+.pricing-grid-setup{
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* On desktop, setup row should be 3 columns */
+@media (min-width: 981px){
+  .pricing-grid-setup{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
   }
 }
 
@@ -636,7 +717,7 @@ a.cta-btn:focus-visible{
 .page-faq section.content{
   background:#000;
   color:#fff;
-  padding: 48px var(--pad); /* garde le padding horizontal standard */
+  padding: 48px var(--pad);
 }
 
 .page-faq section.content .muted,
@@ -671,12 +752,12 @@ a.cta-btn:focus-visible{
 }
 
 .service-points li{
-  font-size: 0.95rem;      
-  color: #5f6368;        
-  line-height: 1.6;        
+  font-size: 0.95rem;
+  color: #5f6368;
+  line-height: 1.6;
   margin-bottom: 0.35rem;
   position: relative;
-  padding-left: 0.9rem;    
+  padding-left: 0.9rem;
 }
 
 .service-points li::before{
@@ -684,7 +765,7 @@ a.cta-btn:focus-visible{
   position: absolute;
   left: 0;
   top: 0;
-  color: #3c4043;        
+  color: #3c4043;
 }
 
 /* =================
@@ -738,10 +819,79 @@ a.cta-btn:focus-visible{
 /* =================
    Thank you page Form Title
    ================= */
-.onboarding-title {
+.onboarding-title{
   margin-top: 0;
 }
 
+/* ================= FOOTER ================= */
+
+.footer{
+  background: var(--bg-dark);
+  color: rgba(255,255,255,0.88);
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding: 48px 0;
+}
+
+.footer a{
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.footer-inner{
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.footer-name{
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.footer-tagline{
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.70);
+  max-width: 44ch;
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-meta{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-meta p{
+  margin: 0;
+  color: rgba(255,255,255,0.70);
+}
+
+@media (max-width: 820px){
+  .footer-inner{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .footer-tagline{
+    max-width: 60ch;
+  }
+}
 
 /* ================= LOCK FINAL ================= */
 
