@@ -917,35 +917,40 @@ a.cta-btn:focus-visible{
 }
 
 /* =================
-   HOME - clarity (FINAL)
+   HOME - clarity (FINAL - fixed)
    ================= */
 
 .page-home #clarity{
   padding-left: 0;
   padding-right: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 /* Title stays aligned with site */
 .page-home #clarity .section-center{
   max-width: var(--max);
-  margin: 0 auto;
+  margin: 0 auto 14px auto;
   padding: 0 var(--pad);
   text-align: center;
 }
 
-/* Full-width image band */
+/* Full-width image band (with controlled height) */
 .page-home #clarity .clarity-hero{
   position: relative;
   width: 100%;
   background: #000;
+  height: clamp(260px, 38vw, 520px);
+  overflow: hidden;
 }
 
-/* Image: never cropped */
+/* Image: letterbox effect (black sides/top if needed) */
 .page-home #clarity .clarity-hero img{
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
+  background: #000;
 }
 
 /* Pills overlay (desktop) */
@@ -977,16 +982,20 @@ a.cta-btn:focus-visible{
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to left,
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0) 55%
-  );
+  background: linear-gradient(to left, rgba(0,0,0,0.55), rgba(0,0,0,0) 55%);
   pointer-events: none;
 }
 
-/* Mobile: bullets under image */
+/* Mobile: pills under image */
 @media (max-width: 820px){
+  .page-home #clarity .clarity-hero{
+    height: auto;
+  }
+
+  .page-home #clarity .clarity-hero img{
+    height: auto;
+  }
+
   .page-home #clarity .pill-list{
     position: static;
     transform: none;
