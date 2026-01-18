@@ -929,7 +929,7 @@ a.cta-btn:focus-visible{
 .page-home .clarity-head{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 24px;
+  gap: 14px;
   align-items: center;
   margin-bottom: 24px;
 }
