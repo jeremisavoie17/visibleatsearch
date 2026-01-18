@@ -586,12 +586,6 @@ a.cta-btn:focus-visible{
   box-shadow: 0 14px 34px rgba(0,0,0,0.12);
 }
 
-/* Featured - garde l'alignement (pas de lift) */
-.pricing-card.featured:hover,
-.pricing-card.featured:focus-within{
-  transform: none;
-}
-
 /* Optionnel: désactive l'animation pour ceux qui le demandent */
 @media (prefers-reduced-motion: reduce){
   .pricing-card{ transition: none; }
@@ -658,10 +652,17 @@ a.cta-btn:focus-visible{
   border:1px solid rgba(0,0,0,0.18);
 }
 
-/* Featured card - keep border, remove vertical shift to align */
+/* Featured card - subtle highlight + lift */
 .pricing-card.featured{
-  border:2px solid rgba(0,0,0,0.18);
-  transform:none;
+  border: 2px solid rgba(0,0,0,0.20);
+  background: rgba(0,0,0,0.02);
+  transform: translateY(-8px);
+}
+
+/* Featured hover - small extra movement */
+.pricing-card.featured:hover,
+.pricing-card.featured:focus-within{
+  transform: translateY(-10px);
 }
 
 .pricing-badge{
