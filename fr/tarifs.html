@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
- <title>Tarifs - Visible at Search</title>
+  <title>Tarifs - Visible at Search</title>
   <meta name="description" content="Tarifs simples et clairs pour des services Google Ads et SEM. Mise en place unique, supervision mensuelle optionnelle et ajustements ponctuels au besoin." />
-
 
   <script type="application/ld+json">
 {
@@ -83,169 +82,190 @@
   <section id="pricing" class="white">
     <div class="wrap">
 
-      <!-- ===== MISE EN PLACE (HAUT - 2) ===== -->
+      <!-- ===== MISE EN PLACE (HAUT - 3) ===== -->
       <div class="pricing-grid pricing-grid-setup">
 
-    <!-- 1 -->
-<article id="search" class="pricing-card">
-  <header class="pricing-head">
-    <h3>Mise en place - Google Ads Search</h3>
-    <p class="pricing-price">
-      <span class="pricing-amount">449 $</span> <span class="pricing-unit">(unique)</span>
-    </p>
-  </header>
+        <!-- 1 -->
+        <article id="search" class="pricing-card">
+          <header class="pricing-head">
+            <h3>Google Ads Search - mise en place</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">449 $</span>
+              <span class="pricing-unit">(unique)</span>
+            </p>
+          </header>
 
-  <p>
-    Idéal pour les entreprises de services.
-    Campagnes Google Ads Search structurées, conçues pour capter la demande et protéger la marque.
-  </p>
+          <p>
+            Idéal pour les entreprises de services.
+            Campagnes Google Ads Search structurées, conçues pour capter la demande et protéger la marque.
+          </p>
 
-  <ul class="pricing-features">
-    <li>Création du compte Google Ads</li>
-    <li>Recherche de mots-clés et analyse de l’intention de recherche</li>
-    <li>Une campagne de protection de la marque</li>
-    <li>Campagnes Search pour 3 a 4 services principaux</li>
-    <li>Configuration essentielle (ciblage, assets, negatifs)</li>
-    <li>Analyse et supervision mensuelle (1 mois)</li>
-  </ul>
+          <ul class="pricing-features">
+            <li>Création du compte Google Ads</li>
+            <li>Recherche de mots-clés et analyse de l’intention</li>
+            <li>Une campagne de protection de la marque</li>
+            <li>Campagnes Search pour 3 a 4 services principaux</li>
+            <li>Configuration essentielle (ciblage, assets, negatifs)</li>
+            <li>Analyse et supervision mensuelle (1 mois)</li>
+          </ul>
 
-  <p class="muted mini">
-    Si les deux mises en place sont combinées, le total peut être réduit a 799 $ (economie de 149 $).
-    <a class="bundle-link" href="https://square.link/u/PvSxaOiU" target="_blank" rel="noopener noreferrer">Choisir la mise en place combinee</a>
-  </p>
+          <div class="pricing-actions">
+            <a id="btn-search-setup"
+               class="cta-btn full disabled"
+               href="#"
+               aria-disabled="true"
+               rel="noopener noreferrer">
+              Commencez
+            </a>
 
-  <div class="pricing-actions">
-    <a id="btn-search-setup"
-       class="cta-btn full disabled"
-       href="#"
-       aria-disabled="true"
-       target="_blank"
-       rel="noopener noreferrer">
-      Commencez
-    </a>
+            <label class="ack muted mini">
+              <input id="ack-search-setup" type="checkbox">
+              <span>
+                J’ai lu et compris les prérequis : avoir un site web et être en mesure d’installer la balise Google pour le suivi (assistance disponible).
+              </span>
+            </label>
+          </div>
 
-    <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
-      <input id="ack-search-setup" type="checkbox" style="margin-top:4px;">
-      <span>
-        J’ai lu et compris les prérequis : avoir un site web et être en mesure d’installer la balise Google pour le suivi (assistance disponible).
-      </span>
-    </label>
-  </div>
+          <script>
+          (function () {
+            const checkbox = document.getElementById('ack-search-setup');
+            const btn = document.getElementById('btn-search-setup');
+            const url = 'https://square.link/u/XBpfDlXj';
 
-  <script>
-  (function () {
-    const checkbox = document.getElementById('ack-search-setup');
-    const btn = document.getElementById('btn-search-setup');
-    const url = 'https://square.link/u/XBpfDlXj';
+            checkbox.addEventListener('change', function () {
+              if (checkbox.checked) {
+                btn.classList.remove('disabled');
+                btn.href = url;
+                btn.setAttribute('aria-disabled', 'false');
+              } else {
+                btn.classList.add('disabled');
+                btn.href = '#';
+                btn.setAttribute('aria-disabled', 'true');
+              }
+            });
+          })();
+          </script>
+        </article>
 
-    function setEnabled(enabled) {
-      if (enabled) {
-        btn.classList.remove('disabled');
-        btn.setAttribute('href', url);
-        btn.setAttribute('aria-disabled', 'false');
-      } else {
-        btn.classList.add('disabled');
-        btn.setAttribute('href', '#');
-        btn.setAttribute('aria-disabled', 'true');
-      }
-    }
+        <!-- 1b -->
+        <article id="catalogue" class="pricing-card">
+          <header class="pricing-head">
+            <h3>Google Ads Catalogue - mise en place</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">499 $</span>
+              <span class="pricing-unit">(unique)</span>
+            </p>
+          </header>
 
-    setEnabled(false);
+          <p>
+            Idéal pour les entreprises avec un inventaire.
+            Votre catalogue de produits diffusé sur Google Search, Maps, YouTube et plus.
+          </p>
 
-    checkbox.addEventListener('change', function () {
-      setEnabled(checkbox.checked);
-    });
+          <ul class="pricing-features">
+            <li>Configuration de Merchant Center, Google Ads et de la fiche d’établissement</li>
+            <li>Validation et diagnostic d'un flux</li>
+            <li>Une campagne Performance Max avec flux produits</li>
+            <li>Création des assets (titres, descriptions, extensions)</li>
+            <li>Signaux d’audience et exclusions</li>
+            <li>Analyse et supervision mensuelle (1 mois)</li>
+          </ul>
 
-    btn.addEventListener('click', function (e) {
-      if (btn.getAttribute('aria-disabled') === 'true') {
-        e.preventDefault();
-        checkbox.focus();
-      }
-    });
-  })();
-  </script>
-</article>
+          <div class="pricing-actions">
+            <a id="btn-catalogue-setup"
+               class="cta-btn full disabled"
+               href="#"
+               aria-disabled="true"
+               rel="noopener noreferrer">
+              Commencez
+            </a>
 
-<!-- 1b -->
-<article id="catalogue" class="pricing-card featured">
-  <header class="pricing-head">
-    <h3>Mise en place - Google Ads Catalogue</h3>
-    <p class="pricing-price">
-      <span class="pricing-amount">499 $</span> <span class="pricing-unit">(unique)</span>
-    </p>
-  </header>
+            <label class="ack muted mini">
+              <input id="ack-catalogue-setup" type="checkbox">
+              <span>
+                J’ai lu et compris les prérequis : avoir un site web avec flux de produits et être en mesure d’installer la balise Google pour le suivi (assistance disponible).
+              </span>
+            </label>
+          </div>
 
-  <p>
-    Idéal pour les entreprises avec un inventaire.
-    Diffusion de votre catalogue de produits sur Google Search, Maps, YouTube et plus.
-  </p>
+          <script>
+          (function () {
+            const checkbox = document.getElementById('ack-catalogue-setup');
+            const btn = document.getElementById('btn-catalogue-setup');
+            const url = 'https://square.link/u/iO6vnMlD';
 
-  <ul class="pricing-features">
-    <li>Création et configuration des comptes Google Merchant Center, Google Ads et de la fiche d’établissement</li>
-    <li>Validation et diagnostic d'un flux</li>
-    <li>Configuration d'une campagne Performance Max avec flux produits</li>
-    <li>Création des assets (titres, descriptions, extensions)</li>
-    <li>Signaux d’audience et exclusions</li>
-    <li>Analyse et supervision mensuelle (1 mois)</li>
-  </ul>
+            checkbox.addEventListener('change', function () {
+              if (checkbox.checked) {
+                btn.classList.remove('disabled');
+                btn.href = url;
+                btn.setAttribute('aria-disabled', 'false');
+              } else {
+                btn.classList.add('disabled');
+                btn.href = '#';
+                btn.setAttribute('aria-disabled', 'true');
+              }
+            });
+          })();
+          </script>
+        </article>
 
-  <p class="muted mini">
-    Si les deux mises en place sont combinées, le total peut être réduit a 799 $ (economie de 149 $).
-    <a class="bundle-link" href="https://square.link/u/PvSxaOiU" target="_blank" rel="noopener noreferrer">Choisir la mise en place combinee</a>
-  </p>
+        <!-- 1c (COMBINE - EN VEDETTE) -->
+        <article id="combined" class="pricing-card featured">
+          <header class="pricing-head">
+            <h3>Mise en place combinee - Search + Catalogue</h3>
+            <p class="pricing-price">
+              <span class="pricing-amount">799 $</span>
+              <span class="pricing-unit">(unique)</span>
+            </p>
+          </header>
 
-  <div class="pricing-actions">
-    <a id="btn-catalogue-setup"
-       class="cta-btn full disabled"
-       href="#"
-       aria-disabled="true"
-       target="_blank"
-       rel="noopener noreferrer">
-      Commencez
-    </a>
+          <p>
+            Mise en place Google Ads combinée couvrant à la fois les campagnes Search et la diffusion du catalogue de produits.
+          </p>
 
-    <label class="ack muted mini" style="display:flex;gap:10px;align-items:flex-start;margin-top:10px;">
-      <input id="ack-catalogue-setup" type="checkbox" style="margin-top:4px;">
-      <span>
-        J’ai lu et compris les prérequis : avoir un site web avec flux de produits et être en mesure d’installer la balise Google pour le suivi (assistance disponible).
-      </span>
-    </label>
-  </div>
+          <ul class="pricing-features">
+            <li>Campagnes Google Ads Search (3 a 4 services + marque)</li>
+            <li>Diffusion du catalogue de produits sur Google</li>
+            <li>Analyse et supervision mensuelle (1 mois)</li>
+          </ul>
 
-  <script>
-  (function () {
-    const checkbox = document.getElementById('ack-catalogue-setup');
-    const btn = document.getElementById('btn-catalogue-setup');
-    const url = 'https://square.link/u/iO6vnMlD';
+          <div class="pricing-actions">
+            <a id="btn-combined-setup"
+               class="cta-btn full disabled"
+               href="#"
+               aria-disabled="true"
+               rel="noopener noreferrer">
+              Commencez
+            </a>
 
-    function setEnabled(enabled) {
-      if (enabled) {
-        btn.classList.remove('disabled');
-        btn.setAttribute('href', url);
-        btn.setAttribute('aria-disabled', 'false');
-      } else {
-        btn.classList.add('disabled');
-        btn.setAttribute('href', '#');
-        btn.setAttribute('aria-disabled', 'true');
-      }
-    }
+            <label class="ack muted mini">
+              <input id="ack-combined-setup" type="checkbox">
+              <span>
+                J’ai lu et compris les prérequis : avoir un site web avec flux de produits et être en mesure d’installer la balise Google pour le suivi (assistance disponible).
+              </span>
+            </label>
+          </div>
 
-    setEnabled(false);
+          <script>
+          (function () {
+            const checkbox = document.getElementById('ack-combined-setup');
+            const btn = document.getElementById('btn-combined-setup');
+            const url = 'https://square.link/u/PvSxaOiU';
 
-    checkbox.addEventListener('change', function () {
-      setEnabled(checkbox.checked);
-    });
-
-    btn.addEventListener('click', function (e) {
-      if (btn.getAttribute('aria-disabled') === 'true') {
-        e.preventDefault();
-        checkbox.focus();
-      }
-    });
-  })();
-  </script>
-</article>
-
+            checkbox.addEventListener('change', function () {
+              if (checkbox.checked) {
+                btn.classList.remove('disabled');
+                btn.href = url;
+                btn.setAttribute('aria-disabled', 'false');
+              } else {
+                btn.classList.add('disabled');
+                btn.href = '#';
+                btn.setAttribute('aria-disabled', 'true');
+              }
+            });
+          })();
+          </script>
+        </article>
 
       </div>
 
@@ -275,11 +295,10 @@
           </ul>
 
           <div class="pricing-actions">
-            <a
-              class="cta-btn full"
-              href="https://square.link/u/6Ssu9UIP"
-              target="_blank"
-              rel="noopener noreferrer">
+            <a class="cta-btn full"
+               href="https://square.link/u/6Ssu9UIP"
+               target="_blank"
+               rel="noopener noreferrer">
               Commencez
             </a>
           </div>
@@ -307,45 +326,41 @@
           </ul>
 
           <div class="pricing-actions">
-            <a
-              class="cta-btn full"
-              href="https://square.link/u/npXwthLm"
-              target="_blank"
-              rel="noopener noreferrer">
+            <a class="cta-btn full"
+               href="https://square.link/u/npXwthLm"
+               target="_blank"
+               rel="noopener noreferrer">
               Commencez
             </a>
           </div>
         </article>
 
-        <!-- 3 -->
-        <article id="call" class="pricing-card">
+        <!-- CUSTOM WORK -->
+        <article id="custom" class="pricing-card">
           <header class="pricing-head">
-            <h3>Appel de service</h3>
+            <h3>Travaux sur mesure</h3>
             <p class="pricing-price">
-              <span class="pricing-amount">60 $</span> <span class="pricing-unit">/ 30 minutes</span>
+              <span class="pricing-amount">60 $</span>
+              <span class="pricing-unit">par bloc de 30 minutes</span>
             </p>
           </header>
 
           <p>
-            Vous pouvez nous écrire en tout temps. Toute intervention qui nécessite un accès à votre compte est facturée séparément.
+            Demandes ponctuelles qui nécessitent un accès à votre compte ou des changements hors de la mise en place et de la supervision mensuelle.
+            Le périmètre est confirmé avant de commencer.
           </p>
 
           <p class="muted mini">Exemples:</p>
           <ul class="pricing-features">
-            <li>Modifications de campagnes</li>
-            <li>Création d’annonces</li>
-            <li>Ajout de services</li>
-            <li>Analyse des termes de recherche</li>
-            <li>Filtrage des requêtes de recherche</li>
+            <li>Nettoyage des requêtes (negatifs, intention)</li>
+            <li>Mise en place d’une nouvelle campagne ou d’un flux produits</li>
+            <li>Ajustements du suivi des conversions</li>
+            <li>Expansion vers de nouveaux marchés ou territoires</li>
           </ul>
 
           <div class="pricing-actions">
-            <a
-              class="cta-btn full"
-              href="https://square.link/u/eZ31J720"
-              target="_blank"
-              rel="noopener noreferrer">
-              Commencez
+            <a class="cta-btn full" href="/fr/contact.html">
+              Écrivez-nous
             </a>
           </div>
         </article>
@@ -358,7 +373,6 @@
   <!-- AFTER PAYMENT -->
   <section id="process" class="content">
     <div class="wrap">
-
       <h2>Après le paiement</h2>
 
       <p>
@@ -372,7 +386,6 @@
         Une inspection mensuelle avec des ajustements ciblés est planifiée environ 30 jours plus tard.
         Un rapport clair est ensuite transmis.
       </p>
-
     </div>
   </section>
 
@@ -380,7 +393,6 @@
   <section id="cta" class="white">
     <div class="wrap">
       <h2>Vous n’êtes pas certain de l’option idéale ?</h2>
-
       <div class="cta-row">
         <a class="cta-btn" href="/fr/contact.html">Écrivez-nous</a>
       </div>
@@ -415,6 +427,5 @@
   </footer>
 
   <script src="/assets/nav.js" defer></script>
-
 </body>
 </html>
