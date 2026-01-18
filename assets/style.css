@@ -658,9 +658,10 @@ a.cta-btn:focus-visible{
   border:1px solid rgba(0,0,0,0.18);
 }
 
-/* Featured card - keep border, remove vertical shift to align */
+/* Featured card */
 .pricing-card.featured{
   border:2px solid rgba(0,0,0,0.18);
+  background:#f5f5f5;
   transform:none;
 }
 
