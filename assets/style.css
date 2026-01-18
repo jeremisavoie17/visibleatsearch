@@ -912,6 +912,57 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* =================
+   HOME - CLARITY + APPROACH (scoped)
+   ================= */
+
+/* Center headings only in these sections */
+#clarity .section-center,
+#approach .section-center{
+  width: 100%;
+  text-align: center;
+}
+
+/* Optional: center the intro paragraphs inside these sections */
+#clarity p,
+#approach p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Make the image feel "full" by filling empty space with black */
+#clarity .section-visual{
+  background: #000;
+  width: 100%;
+}
+
+#clarity .section-visual img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Pills ONLY for the problem list (no impact on other .list) */
+#clarity .list.pill-list{
+  display: flex;                /* overrides your grid layout */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Override your global .list li box to "hug" text */
+#clarity .list.pill-list li{
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  background: #fff;             /* cleaner than rgba grey for pills */
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
 /* ================= LOCK FINAL ================= */
 
 @media (min-width: 821px){
