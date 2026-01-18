@@ -935,28 +935,28 @@ a.cta-btn:focus-visible{
   text-align: center;
 }
 
-/* Pills between title and image */
+/* Clarity – problem statement (pro formatting) */
 .page-home #clarity .pill-list{
   max-width: var(--max);
-  margin: 0 auto 16px auto;
+  margin: 16px auto 24px auto;
   padding: 0 var(--pad);
   list-style: none;
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  gap: 8px;
+  align-items: flex-start;
 }
 
-/* Pills hug the text */
 .page-home #clarity .pill-list li{
-  width: fit-content;
-  max-width: 100%;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 12px;
-  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  border-left: 3px solid #111;
+  border-radius: 0;
+  padding: 8px 0 8px 14px;
+  font-size: 15px;
 }
+
 
 /* Full-width image band */
 .page-home #clarity .clarity-hero{
