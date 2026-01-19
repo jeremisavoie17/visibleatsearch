@@ -951,12 +951,31 @@ a.cta-btn:focus-visible{
   margin: 0;
   display: grid;
   gap: 10px;
+
+  border-left: 3px solid #111;
+  padding-left: 18px;
 }
 
 .page-home .clarity-points li{
   font-size: 15px;
-  padding: 6px 0 6px 14px; /* ajoute du vertical */
-  border-left: 3px solid #111;
+  padding: 6px 0 6px 14px;
+}
+
+/* Mobile */
+@media (max-width: 820px){
+  .page-home .clarity-points{
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .page-home .clarity-points li{
+    padding-left: 0;
+  }
+
+  .page-home .clarity-head{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 
 /* Image band */
@@ -971,20 +990,6 @@ a.cta-btn:focus-visible{
   object-fit: contain;
   background: #000;
 }
-
-/* Mobile */
-@media (max-width: 820px){
-  .page-home .clarity-head{
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .page-home .clarity-points li{
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
 
 
 
