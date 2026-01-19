@@ -938,6 +938,8 @@ a.cta-btn:focus-visible{
   gap: 3rem;
   align-items: start;
   margin-bottom: 24px;
+
+  /* IMPORTANT: padding pour eviter le texte colle a gauche */
   padding-left: var(--pad);
   padding-right: var(--pad);
 }
@@ -967,12 +969,15 @@ a.cta-btn:focus-visible{
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 4px;
+  gap: 3px;
+
+  /* IMPORTANT: jamais coller au bord */
+  padding-left: 0;
 }
 
 .page-home .clarity-points li{
   font-size: 15px;
-  line-height: 1.32;
+  line-height: 1.26;
   padding: 0;
 }
 
@@ -985,11 +990,12 @@ a.cta-btn:focus-visible{
     text-align: center;
     gap: 12px;
     margin-bottom: 16px;
-    padding-left: calc(var(--pad) + 6px);
-    padding-right: calc(var(--pad) + 6px);
+
+    /* plus de breathing room sur mobile */
+    padding-left: var(--pad);
+    padding-right: var(--pad);
   }
 
-  /* Supprime ligne verticale */
   .page-home .clarity-head::after{
     content: none;
   }
@@ -1010,7 +1016,7 @@ a.cta-btn:focus-visible{
     margin-right: auto;
   }
 
-  /* Liste – padding latéral réel + texte compact */
+  /* Liste: bloc centre, texte aligne a gauche, ET padding garanti */
   .page-home .clarity-points{
     max-width: 520px;
     margin: 0 auto;
@@ -1020,7 +1026,7 @@ a.cta-btn:focus-visible{
 
   .page-home .clarity-points li{
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.22;
   }
 }
 
@@ -1039,6 +1045,7 @@ a.cta-btn:focus-visible{
   object-position: center;
   background: #000;
 }
+
 
 
 
