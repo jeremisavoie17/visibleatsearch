@@ -951,6 +951,7 @@ a.cta-btn:focus-visible{
 .page-home .clarity-points li{
   font-size: 15px;
   padding-left: 14px;
+  padding: 6px 0 6px 14px; /* ajoute du vertical */
   border-left: 3px solid #111;
 }
 
