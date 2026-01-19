@@ -974,6 +974,15 @@ a.cta-btn:focus-visible{
   line-height: 1.45;
 }
 
+/* FR: evite que le titre deborde sur desktop */
+@media (min-width: 821px){
+  .page-home .clarity-title{
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+
 /* Mobile */
 @media (max-width: 820px){
   .page-home .clarity-head{
@@ -984,20 +993,28 @@ a.cta-btn:focus-visible{
   .page-home .clarity-head::after{
     display: none;
   }
+
+  /* Titre: centre et un peu moins "massif" visuellement */
+  .page-home .clarity-title{
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Liste: bloc centre, mais texte aligne a gauche (plus clean) */
+  .page-home .clarity-points{
+    width: 100%;
+    max-width: 520px;
+    margin: 10px auto 0 auto;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .page-home .clarity-points li{
+    padding: 4px 0;
+  }
 }
 
-/* Image band */
-.page-home .clarity-hero{
-  width: 100%;
-  background: #000;
-}
-
-.page-home .clarity-hero img{
-  width: 100%;
-  height: clamp(260px, 38vw, 520px);
-  object-fit: contain;
-  background: #000;
-}
 
 
 /* ================= LOCK FINAL ================= */
