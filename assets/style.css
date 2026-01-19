@@ -963,6 +963,13 @@ a.cta-btn:focus-visible{
   max-width: 28ch;
 }
 
+@media (min-width: 821px){
+  .page-home .clarity-points{
+    max-width: 28ch;
+  }
+}
+
+
 /* Points */
 .page-home .clarity-points{
   list-style: none;
