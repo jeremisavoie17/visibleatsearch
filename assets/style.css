@@ -200,6 +200,11 @@ p{
   gap: 10px;
 }
 
+/* Our approach - remove the top offset for steps */
+#approach .list{
+  margin-top: 0;
+}
+
 .list li{
   background: rgba(0,0,0,0.04);
   border: 1px solid rgba(0,0,0,0.06);
