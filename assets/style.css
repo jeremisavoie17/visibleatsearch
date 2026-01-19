@@ -936,7 +936,7 @@ a.cta-btn:focus-visible{
 
 /* Title */
 .page-home .clarity-title{
-  max-width: 16ch;
+  max-width: none;
 }
 
 /* Points */
