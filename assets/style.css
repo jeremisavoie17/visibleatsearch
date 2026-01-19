@@ -990,8 +990,42 @@ a.cta-btn:focus-visible{
     text-align: center;
   }
 
+  /* Ligne horizontale sous le titre (mobile) */
   .page-home .clarity-head::after{
-    display: none;
+    content: "";
+    display: block;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+
+    width: 64px;
+    height: 3px;
+    margin: 16px auto 12px auto;
+    background: #111;
+  }
+
+  /* Titre: centre et un peu moins "massif" */
+  .page-home .clarity-title{
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Liste: bloc centre, texte aligne a gauche */
+  .page-home .clarity-points{
+    width: 100%;
+    max-width: 520px;
+    margin: 10px auto 0 auto;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .page-home .clarity-points li{
+    padding: 4px 0;
+  }
+}
+
   }
 
   /* Titre: centre et un peu moins "massif" visuellement */
