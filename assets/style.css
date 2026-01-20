@@ -1007,16 +1007,6 @@ a.cta-btn:focus-visible{
     content: none;
   }
 
-  /* Ligne horizontale sous le titre */
-  .page-home .clarity-title::after{
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: #111;
-    margin: 10px auto 2px auto;
-  }
-
   .page-home .clarity-title{
     max-width: 24ch;
     margin-left: auto;
