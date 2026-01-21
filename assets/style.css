@@ -234,7 +234,6 @@ p{
   mask-composite: intersect;
 }
 
-
 /* ================= STEPS ================= */
 
 .steps{
@@ -338,7 +337,6 @@ a.cta-btn:focus-visible{
   color: var(--text-dark);
 }
 
-
 /* ================= CTA LINK - HERO (fond noir) ================= */
 
 .hero .cta-link{
@@ -436,32 +434,6 @@ a.cta-btn:focus-visible{
     border-top:1px solid rgba(0,0,0,0.08);
     margin-top:6px;
   }
-}
-
-/* FAQ */
-.faq h2{
-  margin-top: 40px;
-}
-
-/* Ne pas ajouter d’espace avant la première question */
-.faq h2:first-of-type{
-  margin-top: 0;
-}
-
-.faq h2 + p{
-  margin-top: 12px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-
-.faq h2:last-of-type + p{
-  border-bottom: none;
-}
-
-/* FAQ - mobile (optionnel) */
-@media (max-width: 820px){
-  .faq h2{ margin-top: 28px; }
-  .faq h2 + p{ padding-bottom: 20px; }
 }
 
 /* ================= CONTACT FORM (extras) ================= */
@@ -690,7 +662,6 @@ a.cta-btn:focus-visible{
   border:1px solid rgba(0,0,0,0.18);
   white-space:nowrap;
 }
-
 
 .pricing-badge{
   position:absolute;
@@ -969,7 +940,6 @@ a.cta-btn:focus-visible{
   }
 }
 
-
 /* Points */
 .page-home .clarity-points{
   list-style: none;
@@ -1067,6 +1037,10 @@ a.cta-btn:focus-visible{
   border-bottom: 1px solid var(--faq-line);
 }
 
+.faq .faq-item:last-child{
+  border-bottom: 0;
+}
+
 /* The clickable question row */
 .faq .faq-q{
   width: 100%;
@@ -1085,10 +1059,6 @@ a.cta-btn:focus-visible{
 
   -webkit-appearance: none;
   appearance: none;
-}
-
-.faq .faq-q:hover{
-  background: var(--faq-hover);
 }
 
 /* Remove spacing from h2 inside a button */
@@ -1138,6 +1108,12 @@ a.cta-btn:focus-visible{
   color: var(--faq-muted);
 }
 
+/* FAQ mobile */
+@media (max-width: 820px){
+  .faq .faq-q{ padding: 16px 0; }
+  .faq .faq-q h2{ font-size: 18px; }
+  .faq .faq-a{ padding-bottom: 16px; }
+}
 
 /* ================= LOCK FINAL ================= */
 
