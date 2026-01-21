@@ -1043,6 +1043,100 @@ a.cta-btn:focus-visible{
   background: #000;
 }
 
+/* ================= FAQ accordion ================= */
+.faq{
+  --faq-bg: #000;
+  --faq-fg: #fff;
+  --faq-muted: rgba(255,255,255,.68);
+  --faq-line: rgba(255,255,255,.18);
+  --faq-hover: rgba(255,255,255,.06);
+  background: var(--faq-bg);
+  color: var(--faq-fg);
+}
+
+.white.faq{
+  --faq-bg: #fff;
+  --faq-fg: #111;
+  --faq-muted: rgba(0,0,0,.68);
+  --faq-line: rgba(0,0,0,.16);
+  --faq-hover: rgba(0,0,0,.05);
+}
+
+/* Each row */
+.faq .faq-item{
+  border-bottom: 1px solid var(--faq-line);
+}
+
+/* The clickable question row */
+.faq .faq-q{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  background: transparent;
+  border: 0;
+  color: inherit;
+  padding: 18px 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.faq .faq-q:hover{
+  background: var(--faq-hover);
+}
+
+/* Remove spacing from h2 inside a button */
+.faq .faq-q h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 650;
+}
+
+/* The + icon (right side) */
+.faq .faq-plus{
+  width: 28px;
+  height: 28px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  flex: 0 0 28px;
+  transition: transform .18s ease;
+}
+
+/* Turn + into x when open */
+.faq .faq-q[aria-expanded="true"] .faq-plus{
+  transform: rotate(45deg);
+}
+
+/* Answer panel */
+.faq .faq-a{
+  padding: 0 0 18px 0;
+}
+
+.faq .faq-a p{
+  margin: 0;
+  max-width: 760px;
+  color: var(--faq-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Optional: tighten muted paragraph inside answer (your .muted) */
+.faq .faq-a .muted{
+  color: var(--faq-muted);
+}
 
 
 /* ================= LOCK FINAL ================= */
