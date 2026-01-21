@@ -1043,6 +1043,52 @@ a.cta-btn:focus-visible{
   background: #000;
 }
 
+/* About page layout */
+.page-about .about-grid{
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 32px;
+  margin: 24px 0 28px;
+}
+
+@media (max-width: 860px){
+  .page-about .about-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Main content */
+.page-about .about-main{
+  display: block;
+}
+
+/* Right rail */
+.page-about .about-rail{
+  border-left: 2px solid rgba(0,0,0,0.12);
+  padding-left: 20px;
+}
+
+@media (max-width: 860px){
+  .page-about .about-rail{
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+/* Distinguish bullet groups */
+.page-about .bullets-structure{
+  margin-bottom: 0;
+}
+
+.page-about .bullets-process{
+  margin-top: 0;
+}
+
+/* Divider spacing */
+.page-about .divider{
+  margin: 0 0 16px;
+}
 
 
 
