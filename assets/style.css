@@ -1043,51 +1043,73 @@ a.cta-btn:focus-visible{
   background: #000;
 }
 
-/* About page layout */
+/* About page - make it actually look designed */
 .page-about .about-grid{
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: 32px;
-  margin: 24px 0 28px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  margin: 22px 0 26px;
 }
 
 @media (max-width: 860px){
   .page-about .about-grid{
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 14px;
   }
 }
 
-/* Main content */
-.page-about .about-main{
-  display: block;
-}
-
-/* Right rail */
+/* Turn both columns into cards */
+.page-about .about-main,
 .page-about .about-rail{
-  border-left: 2px solid rgba(0,0,0,0.12);
-  padding-left: 20px;
+  background: #f7f7f7;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 18px 18px;
 }
 
-@media (max-width: 860px){
-  .page-about .about-rail{
-    border-left: none;
-    padding-left: 0;
-  }
+/* Kill the “split line” look */
+.page-about .about-rail{
+  border-left: none;
+  padding-left: 18px; /* keep consistent padding */
 }
 
-/* Distinguish bullet groups */
-.page-about .bullets-structure{
-  margin-bottom: 0;
+.page-about .about-rail .divider{
+  display: none; /* remove the <hr> visual entirely */
 }
 
-.page-about .bullets-process{
+/* Clean, compact bullets (less “Word doc”) */
+.page-about .about-main .bullets,
+.page-about .about-rail .bullets{
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-about .about-main .bullets li,
+.page-about .about-rail .bullets li{
+  position: relative;
+  padding-left: 16px;
+  margin: 8px 0;
+}
+
+.page-about .about-main .bullets li::before,
+.page-about .about-rail .bullets li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+}
+
+/* Slightly tighten paragraph rhythm inside cards */
+.page-about .about-main p{
   margin-top: 0;
 }
-
-/* Divider spacing */
-.page-about .divider{
-  margin: 0 0 16px;
+.page-about .about-main p + p{
+  margin-top: 12px;
 }
 
 
