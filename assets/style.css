@@ -1150,6 +1150,45 @@ a.cta-btn:focus-visible{
   .faq .faq-a{ padding-bottom: 18px; }
 }
 
+/* Image Home Leads */
+
+.clarity-hero--transition {
+  position: relative;
+  max-height: 520px;
+  overflow: hidden;
+  background: #000;
+}
+
+.clarity-hero--transition img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.clarity-hero--transition::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8vw;
+  height: 100%;
+  background: linear-gradient(to right, #000 70%, rgba(0,0,0,0));
+  pointer-events: none;
+}
+
+.clarity-hero--transition::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8vw;
+  height: 100%;
+  background: linear-gradient(to left, #f8f8f6 70%, rgba(248,248,246,0));
+  pointer-events: none;
+}
+
+
 /* ================= LOCK FINAL ================= */
 
 @media (min-width: 821px){
