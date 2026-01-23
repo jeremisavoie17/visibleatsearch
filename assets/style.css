@@ -1188,6 +1188,18 @@ a.cta-btn:focus-visible{
   pointer-events: none;
 }
 
+.clarity-hero--transition {
+  position: relative;
+  max-height: 520px;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    #000 0%,
+    #000 60%,
+    #f8f8f6 60%,
+    #f8f8f6 100%
+  );
+}
 
 
 /* ================= LOCK FINAL ================= */
