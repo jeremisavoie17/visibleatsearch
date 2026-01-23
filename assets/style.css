@@ -1150,7 +1150,53 @@ a.cta-btn:focus-visible{
   .faq .faq-a{ padding-bottom: 18px; }
 }
 
+/* =========================================
+   Image Home – Qualified Leads Hero
+   ========================================= */
 
+.hero-visual{
+  position:relative;
+  width:100%;
+  max-width:1920px;
+  margin:0 auto;
+}
+
+.hero-visual__img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.hero-visual__outcomes{
+  position:absolute;
+  right:6%;
+  top:55%;
+  transform:translateY(-50%);
+  max-width:320px;
+  color:#111;
+  line-height:1.25;
+}
+
+.hero-visual__item{
+  font-weight:600;
+  font-size:18px;
+  margin:0 0 12px 0;
+}
+
+/* Mobile – stack outcomes below image */
+@media (max-width: 768px){
+  .hero-visual__outcomes{
+    position:static;
+    transform:none;
+    max-width:none;
+    padding:16px 16px 0 16px;
+  }
+
+  .hero-visual__item{
+    font-size:16px;
+    margin-bottom:10px;
+  }
+}
 
 
 /* ================= LOCK FINAL ================= */
