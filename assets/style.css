@@ -1167,7 +1167,7 @@ a.cta-btn:focus-visible{
   display:block;
 }
 
-/* Lead image: full-bleed + 16:9 + un peu plus haut sur desktop */
+/* Lead image: full-bleed + 16:9 */
 .page-home .clarity-hero-lead{
   position:relative;
   width:100%;
@@ -1176,7 +1176,7 @@ a.cta-btn:focus-visible{
   overflow:hidden;
   aspect-ratio:16 / 9;
   min-height:380px;
-  max-height:560px;
+  max-height:420px;
 }
 
 .page-home .clarity-hero-lead img{
