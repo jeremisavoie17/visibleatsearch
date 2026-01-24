@@ -1157,8 +1157,8 @@ a.cta-btn:focus-visible{
 .clarity-hero{
   position:relative;
   width:100%;
-  max-width:none;       
-  margin:0;             
+  max-width:none;
+  margin:0;
 }
 
 .clarity-hero img{
@@ -1168,20 +1168,20 @@ a.cta-btn:focus-visible{
 }
 
 .page-home .clarity-hero-lead img{
-  object-fit: cover;
-  object-position: left center;
+  object-fit:cover;
+  object-position:left center;
 }
 
+/* Outcomes overlay (desktop only) */
 .hero-visual__outcomes{
   position:absolute;
-  right: 64px;        
-  top: 50%;
-  transform: translateY(-50%);
+  right:64px;
+  top:50%;
+  transform:translateY(-50%);
   max-width:320px;
   color:#f5f5f5;
   line-height:1.25;
 }
-
 
 .hero-visual__item{
   font-weight:600;
@@ -1189,8 +1189,25 @@ a.cta-btn:focus-visible{
   margin:0 0 12px 0;
 }
 
-/* Mobile – stack outcomes below image */
+/* =========================
+   Mobile fixes
+   ========================= */
 @media (max-width: 768px){
+
+  /* FULL-BLEED image on mobile */
+  .page-home .clarity-hero{
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+  }
+
+  .page-home .clarity-hero-lead img{
+    height:240px;            /* ajuste si voulu */
+    object-fit:cover;
+    object-position:left center;
+  }
+
+  /* Stack outcomes below image */
   .hero-visual__outcomes{
     position:static;
     transform:none;
@@ -1203,6 +1220,7 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
+
 
 
 /* ================= LOCK FINAL ================= */
