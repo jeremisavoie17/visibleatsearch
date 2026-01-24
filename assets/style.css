@@ -1207,14 +1207,19 @@ a.cta-btn:focus-visible{
     margin-right:calc(50% - 50vw);
   }
 
+  /* au lieu d'un height fixe */
   .page-home .clarity-hero-lead{
-    height:240px; /* ajuste si voulu */
+    height:auto;
+    aspect-ratio:16 / 9;
+    overflow:hidden;
   }
 
   .page-home .clarity-hero-lead img{
+    width:100%;
     height:100%;
     object-fit:cover;
     object-position:left center;
+    display:block;
   }
 
   .hero-visual__outcomes{
@@ -1229,6 +1234,7 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
+
 
 
 
