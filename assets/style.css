@@ -1161,16 +1161,15 @@ a.cta-btn:focus-visible{
   margin:0;
 }
 
-
 .clarity-hero img{
   width:100%;
   height:auto;
   display:block;
 }
 
-{
+.page-home .clarity-hero-lead{
   overflow:hidden;
-  height:clamp(260px, 32vw, 520px); 
+  height:clamp(260px, 32vw, 520px);
 }
 
 .page-home .clarity-hero-lead img{
@@ -1180,7 +1179,6 @@ a.cta-btn:focus-visible{
   object-position:left center;
   display:block;
 }
-
 
 .hero-visual__outcomes{
   position:absolute;
@@ -1203,14 +1201,13 @@ a.cta-btn:focus-visible{
    ========================= */
 @media (max-width: 768px){
 
- 
   .page-home .clarity-hero{
     width:100vw;
     margin-left:calc(50% - 50vw);
     margin-right:calc(50% - 50vw);
   }
 
-{
+  .page-home .clarity-hero-lead{
     height:240px; /* ajuste si voulu */
   }
 
