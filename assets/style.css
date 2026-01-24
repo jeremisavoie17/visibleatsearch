@@ -1157,8 +1157,8 @@ a.cta-btn:focus-visible{
 .clarity-hero{
   position:relative;
   width:100%;
-  max-width:var(--max);
-  margin:0 auto;
+  max-width:none;
+  margin:0;
 }
 
 .clarity-hero img{
@@ -1167,13 +1167,16 @@ a.cta-btn:focus-visible{
   display:block;
 }
 
+/* Lead image: full-bleed + 16:9 + un peu plus haut sur desktop */
 .page-home .clarity-hero-lead{
   position:relative;
   width:100%;
-  max-width:var(--max);
-  margin:0 auto;
+  max-width:none;
+  margin:0;
   overflow:hidden;
   aspect-ratio:16 / 9;
+  min-height:380px;
+  max-height:560px;
 }
 
 .page-home .clarity-hero-lead img{
@@ -1184,6 +1187,7 @@ a.cta-btn:focus-visible{
   display:block;
 }
 
+/* Outcomes overlay (desktop) */
 .hero-visual__outcomes{
   position:absolute;
   right:64px;
@@ -1205,14 +1209,19 @@ a.cta-btn:focus-visible{
    ========================= */
 @media (max-width: 768px){
 
-  .page-home .clarity-hero,
-  .page-home .clarity-hero-lead{
-    width:100vw;
-    max-width:none;
-    margin-left:calc(50% - 50vw);
-    margin-right:calc(50% - 50vw);
+  /* Full-bleed on mobile too */
+  .page-home .clarity-hero{
+    width:100%;
+    margin:0;
   }
 
+  .page-home .clarity-hero-lead{
+    aspect-ratio:16 / 9;
+    min-height:0;
+    max-height:none;
+  }
+
+  /* Stack outcomes below image */
   .hero-visual__outcomes{
     position:static;
     transform:none;
@@ -1225,7 +1234,6 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
-
 
 
 
