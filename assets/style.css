@@ -1210,13 +1210,13 @@ a.cta-btn:focus-visible{
 @media (max-width: 820px){
 
   .page-home .clarity-hero-lead{
-    aspect-ratio: 21 / 9;   
+    aspect-ratio: 24 / 9;
     max-height: none;
-    min-height: 0;
+    min-height: 220px;
   }
 
   .page-home .clarity-hero-lead img{
-    object-position: left 40%; 
+    object-position: left 35%;
   }
 
   /* Stack outcomes below image */
@@ -1232,6 +1232,7 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
+
 
 
 /* ================= LOCK FINAL ================= */
