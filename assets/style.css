@@ -1157,8 +1157,8 @@ a.cta-btn:focus-visible{
 .clarity-hero{
   position:relative;
   width:100%;
-  max-width:none;
-  margin:0;
+  max-width:var(--max);
+  margin:0 auto;
 }
 
 .clarity-hero img{
@@ -1168,8 +1168,12 @@ a.cta-btn:focus-visible{
 }
 
 .page-home .clarity-hero-lead{
+  position:relative;
+  width:100%;
+  max-width:var(--max);
+  margin:0 auto;
   overflow:hidden;
-  height: clamp(300px, 40vh, 520px);
+  aspect-ratio:16 / 9;
 }
 
 .page-home .clarity-hero-lead img{
@@ -1201,25 +1205,12 @@ a.cta-btn:focus-visible{
    ========================= */
 @media (max-width: 768px){
 
-  .page-home .clarity-hero{
+  .page-home .clarity-hero,
+  .page-home .clarity-hero-lead{
     width:100vw;
+    max-width:none;
     margin-left:calc(50% - 50vw);
     margin-right:calc(50% - 50vw);
-  }
-
-  /* au lieu d'un height fixe */
-  .page-home .clarity-hero-lead{
-    height:auto;
-    aspect-ratio:16 / 9;
-    overflow:hidden;
-  }
-
-  .page-home .clarity-hero-lead img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:left center;
-    display:block;
   }
 
   .hero-visual__outcomes{
@@ -1234,7 +1225,6 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
-
 
 
 
