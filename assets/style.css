@@ -1154,14 +1154,14 @@ a.cta-btn:focus-visible{
    Image Home – Qualified Leads Hero
    ========================================= */
 
-.hero-visual{
+.clarity-hero{
   position:relative;
   width:100%;
   max-width:1920px;
   margin:0 auto;
 }
 
-.hero-visual__img{
+.clarity-hero img{
   width:100%;
   height:auto;
   display:block;
