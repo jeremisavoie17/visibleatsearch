@@ -1151,7 +1151,7 @@ a.cta-btn:focus-visible{
 }
 
 /* =========================================
-   Image Home – Qualified Leads Hero
+   Image Home – Qualified Leads Hero (FIXED)
    ========================================= */
 
 .clarity-hero{
@@ -1159,15 +1159,14 @@ a.cta-btn:focus-visible{
   width:100%;
   max-width:none;
   margin:0;
+  aspect-ratio:16 / 9;
+  overflow:hidden;
 }
 
 .clarity-hero img{
   width:100%;
-  height:auto;
+  height:100%;
   display:block;
-}
-
-.page-home .clarity-hero-lead img{
   object-fit:cover;
   object-position:left center;
 }
@@ -1190,21 +1189,16 @@ a.cta-btn:focus-visible{
 }
 
 /* =========================
-   Mobile fixes
+   Mobile adjustments
    ========================= */
 @media (max-width: 768px){
 
-  /* FULL-BLEED image on mobile */
+  /* Full-bleed hero on mobile */
   .page-home .clarity-hero{
     width:100vw;
     margin-left:calc(50% - 50vw);
     margin-right:calc(50% - 50vw);
-  }
-
-  .page-home .clarity-hero-lead img{
-    height:240px;            /* ajuste si voulu */
-    object-fit:cover;
-    object-position:left center;
+    aspect-ratio:16 / 10; /* légèrement plus court sur mobile */
   }
 
   /* Stack outcomes below image */
@@ -1220,6 +1214,7 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
+
 
 
 
