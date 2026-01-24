@@ -1209,15 +1209,9 @@ a.cta-btn:focus-visible{
    ========================= */
 @media (max-width: 768px){
 
-  /* Full-bleed on mobile too */
-  .page-home .clarity-hero{
-    width:100%;
-    margin:0;
-  }
-
   .page-home .clarity-hero-lead{
     aspect-ratio:16 / 9;
-    min-height:0;
+    min-height:240px;
     max-height:none;
   }
 
@@ -1234,7 +1228,6 @@ a.cta-btn:focus-visible{
     margin-bottom:10px;
   }
 }
-
 
 
 /* ================= LOCK FINAL ================= */
