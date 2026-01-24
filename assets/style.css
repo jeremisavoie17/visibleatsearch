@@ -1188,10 +1188,6 @@ a.cta-btn:focus-visible{
   margin:0 0 12px 0;
 }
 
-#qualified-leads{
-  margin-top: 48px;
-}
-
 /* Mobile – stack outcomes below image */
 @media (max-width: 768px){
   .hero-visual__outcomes{
