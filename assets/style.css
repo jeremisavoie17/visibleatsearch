@@ -1157,8 +1157,8 @@ a.cta-btn:focus-visible{
 .clarity-hero{
   position:relative;
   width:100%;
-  max-width:1920px;
-  margin:0 auto;
+  max-width:none;       /* CHANGÉ: enlève la contrainte qui rapetisse l'image */
+  margin:0;             /* CHANGÉ: plus de centrage avec marges noires vides */
 }
 
 .clarity-hero img{
@@ -1167,9 +1167,10 @@ a.cta-btn:focus-visible{
   display:block;
 }
 
+/* Texte: on le rentre davantage dans l'image (zone utile) */
 .hero-visual__outcomes{
   position:absolute;
-  right: clamp(24px, 4vw, 64px);
+  right: clamp(48px, 8vw, 140px);  /* CHANGÉ: pousse le texte vers la gauche */
   top: 50%;
   transform: translateY(-50%);
   max-width:320px;
