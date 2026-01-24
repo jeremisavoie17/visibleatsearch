@@ -1204,6 +1204,10 @@ a.cta-btn:focus-visible{
   margin:0 0 12px 0;
 }
 
+/* =========================
+   Mobile fixes
+   ========================= */
+
 @media (max-width: 820px){
 
   .page-home .clarity-hero-lead{
