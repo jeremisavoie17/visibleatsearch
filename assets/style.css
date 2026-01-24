@@ -1169,7 +1169,7 @@ a.cta-btn:focus-visible{
 
 .page-home .clarity-hero-lead{
   overflow:hidden;
-  height:clamp(260px, 32vw, 520px);
+  height: clamp(300px, 40vh, 520px);
 }
 
 .page-home .clarity-hero-lead img{
