@@ -955,8 +955,8 @@ a.cta-btn:focus-visible{
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 20px;
+  margin-bottom: 26px;
   padding-left: var(--pad);
   padding-right: var(--pad);
 }
@@ -969,9 +969,9 @@ a.cta-btn:focus-visible{
 
 .page-home .clarity-points{
   max-width: 520px;
-  margin: 0 auto;
+  margin: 18 auto;
   display: grid;
-  gap: 3px;
+  gap: 10px;
 }
 
 .page-home .clarity-points p{
