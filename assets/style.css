@@ -971,8 +971,19 @@ a.cta-btn:focus-visible{
   text-align: center;
 }
 
+.ecosystem-strip{
+  text-align: center;
+}
+
 .ecosystem-strip img{
   max-width: 85%;
+}
+
+/* Mobile */
+@media (max-width: 820px){
+  .ecosystem-strip img{
+    max-width: 100%;
+  }
 }
 
 
