@@ -935,7 +935,7 @@ a.cta-btn:focus-visible{
   max-width: 520px;
   margin: 0 auto 18px;
   display: grid;
-  gap: 10px;
+  gap: 6px;
 }
 
 .page-home .clarity-points p{
