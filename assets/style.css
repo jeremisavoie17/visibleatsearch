@@ -971,6 +971,10 @@ a.cta-btn:focus-visible{
   text-align: center;
 }
 
+.ecosystem-strip img{
+  max-width: 85%;
+}
+
 
 /* ================= FAQ accordion ================= */
 .faq{
