@@ -958,6 +958,19 @@ a.cta-btn:focus-visible{
   background: #000;
 }
 
+/* =========================
+   CTA – Google ecosystem stack
+   ========================= */
+
+#cta .ecosystem-title{
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
 
 /* ================= FAQ accordion ================= */
 .faq{
