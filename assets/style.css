@@ -905,42 +905,6 @@ a.cta-btn:focus-visible{
   }
 }
 
-/* =================
-   HOME – clarity 
-   ================= */
-
-.page-home #clarity{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* Header layout (title + points) */
-.page-home .clarity-head{
-  position: relative;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 3rem;
-  align-items: start;
-  margin-bottom: 24px;
-
-  /* IMPORTANT: padding pour eviter le texte colle a gauche */
-  padding-left: var(--pad);
-  padding-right: var(--pad);
-}
-
-/* Desktop – ligne verticale centrale */
-@media (min-width: 821px){
-  .page-home .clarity-head::after{
-    content: "";
-    position: absolute;
-    top: 12%;
-    bottom: 12%;
-    left: 50%;
-    width: 3px;
-    background: #111;
-    transform: translateX(-1.5px);
-  }
-}
 
 /* =================
    HOME - clarity (centered block)
@@ -969,7 +933,7 @@ a.cta-btn:focus-visible{
 
 .page-home .clarity-points{
   max-width: 520px;
-  margin: 18 auto;
+  margin: 0 auto 18px;
   display: grid;
   gap: 10px;
 }
