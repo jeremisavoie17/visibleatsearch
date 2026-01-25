@@ -958,6 +958,11 @@ a.cta-btn:focus-visible{
   background: #000;
 }
 
+/* Fix – remove grey gap */
+.page-home #approach{
+  padding-bottom: 0;
+}
+
 /* =========================
    CTA – Google ecosystem stack
    ========================= */
