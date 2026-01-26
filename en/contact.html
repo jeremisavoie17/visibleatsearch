@@ -245,9 +245,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           if (!res.ok || !data.ok) throw new Error(data.error || "Request failed");
 
-          form.reset();
-          if (btn) btn.textContent = "Sent";
-          if (note) note.textContent = "Thanks - we received your message. We'll reply by email within 24 business hours.";
+          // Track + redirect to a dedicated confirmation page
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: "contact_form_submit" });
+          window.location.href = "/en/contact-received.html";
         } catch (err) {
           if (btn) btn.textContent = originalBtn || "Send my request";
           if (note) note.textContent = "Something went wrong. Please email us at info@visibleatsearch.com.";
