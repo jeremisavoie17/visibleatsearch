@@ -1116,41 +1116,48 @@ a.cta-btn:focus-visible{
   .faq .faq-a{ padding-bottom: 18px; }
 }
 
-/* ================= HERO (image intégrée en fond) ================= */
+/* ================= HERO – image en background ================= */
 
 .hero{
   position: relative;
+  min-height: 100vh;
+  background: #000;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-/* Assure que le texte reste lisible au-dessus */
 .hero .wrap{
   position: relative;
   z-index: 1;
+  max-width: 620px;
 }
 
-/* Image intégrée à droite */
 .hero::after{
   content:"";
   position:absolute;
   inset:0;
   background:
-    radial-gradient(circle at 70% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.92) 78%),
+    radial-gradient(circle at 72% 48%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.9) 78%),
     url("/assets/img/google-search-visibility-competitive-market-hero.png");
   background-repeat:no-repeat;
-  background-position: 78% 52%;
-  background-size: min(760px, 58vw);
+  background-position: 78% 50%;
+  background-size: min(780px, 60vw);
   opacity: 0.95;
   pointer-events:none;
-  z-index: 0;
 }
 
-/* Mobile */
 @media (max-width: 820px){
+  .hero{
+    min-height: auto;
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
+
   .hero::after{
-    background-position: 60% 25%;
+    background-position: 55% 22%;
     background-size: 520px;
-    opacity: 0.55;
+    opacity: 0.5;
   }
 }
 
