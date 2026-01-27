@@ -1125,6 +1125,7 @@ a.cta-btn:focus-visible{
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center; 
 }
 
 .hero .wrap{
