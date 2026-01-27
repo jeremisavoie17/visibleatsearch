@@ -1131,6 +1131,7 @@ a.cta-btn:focus-visible{
   position: relative;
   z-index: 1;
   max-width: 620px;
+  padding-right: 64px; /* AJOUT: plus d'air à droite -> texte visuellement plus à gauche */
 }
 
 .hero::after{
@@ -1152,6 +1153,10 @@ a.cta-btn:focus-visible{
     min-height: auto;
     padding-top: 96px;
     padding-bottom: 64px;
+  }
+
+  .hero .wrap{
+    padding-right: 0; /* AJOUT: on enlève l'air à droite sur mobile */
   }
 
   .hero::after{
