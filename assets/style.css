@@ -1125,14 +1125,47 @@ a.cta-btn:focus-visible{
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .hero .wrap{
   position: relative;
   z-index: 1;
+  width: 100%;
   max-width: 620px;
-  padding-right: 64px; 
+  padding-right: 64px;
+}
+
+/* Sous-section "Google Ads" + liste */
+.hero-subsection{
+  margin-top: 22px;
+}
+
+.hero-label{
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  opacity: 0.75;
+  letter-spacing: 0.2px;
+}
+
+.hero-points{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.hero-points li{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.88;
+}
+
+.hero-points li::before{
+  content: "→ ";
+  opacity: 0.6;
 }
 
 .hero::after{
@@ -1157,7 +1190,11 @@ a.cta-btn:focus-visible{
   }
 
   .hero .wrap{
-    padding-right: 0; 
+    padding-right: 0;
+  }
+
+  .hero-subsection{
+    margin-top: 26px;
   }
 
   .hero::after{
