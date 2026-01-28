@@ -1125,15 +1125,20 @@ a.cta-btn:focus-visible{
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .hero .wrap{
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 620px;
-  padding-right: 64px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero-copy{
+  max-width: 560px;
 }
 
 /* Sous-section "Google Ads" + liste */
@@ -1176,8 +1181,8 @@ a.cta-btn:focus-visible{
     radial-gradient(circle at 72% 48%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.9) 78%),
     url("/assets/img/google-search-visibility-competitive-market-hero.png");
   background-repeat:no-repeat;
-  background-position: 78% 50%;
-  background-size: min(780px, 60vw);
+  background-position: calc(50% + 320px) 50%;
+  background-size: min(720px, 48vw);
   opacity: 0.95;
   pointer-events:none;
 }
@@ -1189,18 +1194,14 @@ a.cta-btn:focus-visible{
     padding-bottom: 64px;
   }
 
-  .hero .wrap{
-    padding-right: 0;
-  }
-
   .hero-subsection{
     margin-top: 26px;
   }
 
   .hero::after{
-    background-position: 55% 22%;
-    background-size: 520px;
-    opacity: 0.5;
+    background-position: 60% 18%;
+    background-size: 480px;
+    opacity: 0.45;
   }
 }
 
