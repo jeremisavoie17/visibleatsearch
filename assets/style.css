@@ -1200,8 +1200,8 @@ a.cta-btn:focus-visible{
 
   .hero::after{
     background-size: 320px;      
-    background-position: 64% 14%;
-    opacity: 0.4;                
+    background-position: 76% 14%;
+    opacity: 0.5;                
   }
 }
 
