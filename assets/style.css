@@ -1211,20 +1211,20 @@ a.cta-btn:focus-visible{
       rgba(0,0,0,0.55) 42%,
       rgba(0,0,0,0.0) 62%
     ),
-    /* fondu haut */
+    /* fondu haut - court */
     linear-gradient(180deg,
-      rgba(0,0,0,0.65) 0%,
-      rgba(0,0,0,0.0) 22%
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.0) 14%
     ),
     /* fondu bas */
     linear-gradient(0deg,
       rgba(0,0,0,0.65) 0%,
       rgba(0,0,0,0.0) 26%
     ),
-    /* fondu droite (léger) */
+    /* fondu droite - court, juste pour cacher la limite */
     linear-gradient(270deg,
-      rgba(0,0,0,0.35) 0%,
-      rgba(0,0,0,0.0) 18%
+      rgba(0,0,0,0.85) 0%,
+      rgba(0,0,0,0.0) 10%
     );
 }
 
@@ -1258,17 +1258,19 @@ a.cta-btn:focus-visible{
         rgba(0,0,0,0.55) 48%,
         rgba(0,0,0,0.0) 70%
       ),
+      /* fondu haut - court (mobile) */
       linear-gradient(180deg,
         rgba(0,0,0,0.55) 0%,
-        rgba(0,0,0,0.0) 26%
+        rgba(0,0,0,0.0) 14%
       ),
       linear-gradient(0deg,
         rgba(0,0,0,0.60) 0%,
         rgba(0,0,0,0.0) 32%
       ),
+      /* fondu droite - court (mobile aussi) */
       linear-gradient(270deg,
-        rgba(0,0,0,0.25) 0%,
-        rgba(0,0,0,0.0) 22%
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.0) 10%
       );
   }
 
