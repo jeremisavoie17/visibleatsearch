@@ -1147,7 +1147,7 @@ a.cta-btn:focus-visible{
 }
 
 .hero-label{
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0; /* rapproché des bullets */
   font-size: 15px;
   opacity: 0.75;
   letter-spacing: 0.2px;
@@ -1158,7 +1158,7 @@ a.cta-btn:focus-visible{
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 6px;
+  gap: 4px; /* bullets plus serrés */
 }
 
 .hero-points li{
@@ -1199,9 +1199,9 @@ a.cta-btn:focus-visible{
   }
 
   .hero::after{
-    background-position: 60% 18%;
-    background-size: 480px;
-    opacity: 0.45;
+    background-size: 360px; /* image mobile plus petite */
+    background-position: 70% 10%; /* décollée du texte */
+    opacity: 0.35;
   }
 }
 
