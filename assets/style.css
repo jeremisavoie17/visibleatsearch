@@ -1199,9 +1199,9 @@ a.cta-btn:focus-visible{
   }
 
   .hero::after{
-    background-size: 360px; /* image mobile plus petite */
-    background-position: 70% 10%; /* décollée du texte */
-    opacity: 0.35;
+    background-size: 320px;      
+    background-position: 64% 14%;
+    opacity: 0.4;                
   }
 }
 
