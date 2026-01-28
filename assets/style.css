@@ -1181,7 +1181,7 @@ a.cta-btn:focus-visible{
     radial-gradient(circle at 72% 48%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.9) 78%),
     url("/assets/img/google-search-visibility-competitive-market-hero.png");
   background-repeat:no-repeat;
-  background-position: calc(50% + 320px) 50%;
+  background-position: calc(50% + 260px) 50%;
   background-size: min(720px, 48vw);
   opacity: 0.95;
   pointer-events:none;
