@@ -1116,6 +1116,29 @@ a.cta-btn:focus-visible{
   .faq .faq-a{ padding-bottom: 18px; }
 }
 
+/* ================= HERO – entry buttons (subtle) ================= */
+.hero-points .hero-entry{
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 2px 0;
+  color: #eaeaea;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: 
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.hero-points .hero-entry:hover{
+  background-color: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.5);
+  color: #ffffff;
+}
+
+
 /* ================= HERO – image en background ================= */
 
 .hero{
