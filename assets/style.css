@@ -907,63 +907,47 @@ a.cta-btn:focus-visible{
 
 
 /* =================
-   HOME - approach (centered + bubbles fit content)
+   HOME - approach (steps punchier)
    ================= */
 
-#approach .section-center{
-  text-align: center;
-}
-
-.approach-title{
-  margin: 0 0 8px 0;
-}
-
-.approach-subtitle{
-  margin: 0 0 24px 0;
-  opacity: 0.7;
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Steps - centered, bubbles stop at text */
 .approach-steps{
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  list-style:none;
+  padding:0;
+  margin:0 auto;
+  display:inline-flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:center;
 }
 
 .approach-steps li{
-  display: inline-block;
-  width: fit-content;
-  background: rgba(0,0,0,0.04);
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 14px;
-  padding: 12px 14px;
+  display:inline-block;
+  width:fit-content;
+  background: rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 999px;
+  padding: 14px 18px;
+  font-size: 18px;
+  line-height: 1.25;
   white-space: nowrap;
 }
 
-/* Mobile - allow wrapping */
+.approach-steps li strong{
+  font-weight: 800;
+}
+
 @media (max-width: 820px){
   .approach-steps{
-    display: flex;
-    align-items: stretch;
+    display:flex;
+    align-items:stretch;
   }
   .approach-steps li{
     white-space: normal;
-    width: 100%;
-    text-align: left;
+    width:100%;
+    text-align:left;
   }
 }
 
-/* Ecosystem strip spacing - keep centered */
-#approach .ecosystem-strip{
-  margin-top: 22px;
-}
 
 /* =================
    HOME - clarity (centered block)
