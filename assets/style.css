@@ -1004,6 +1004,12 @@ a.cta-btn:focus-visible{
   background:#000;
 }
 
+/* Image flèche - limiter la hauteur */
+.page-home #clarity > .clarity-hero img{
+  max-height: 70vh;
+  object-fit: contain;
+}
+
 /* Panneau uniquement */
 .page-home .clarity-hero-market{
   width: 100vw;
