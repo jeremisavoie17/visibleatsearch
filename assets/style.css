@@ -993,67 +993,56 @@ a.cta-btn:focus-visible{
 }
 
 /* =================
-   MARKET - full-bleed image band with left/right fades
+   MARKET - full-bleed image band (panneau) avec fades
    ================= */
 
-.page-home .clarity-hero{
+/* Base neutre: ne casse pas les autres .clarity-hero */
+.page-home .clarity-hero img{
+  display:block;
+  width:100%;
+  height:auto;
+  background:#000;
+}
+
+/* Panneau uniquement */
+.page-home .clarity-hero-market{
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background: #000;
-
+  background:#000;
   position: relative;
   overflow: hidden;
 }
 
-.page-home .clarity-hero::before,
-.page-home .clarity-hero::after{
+.page-home .clarity-hero-market::before,
+.page-home .clarity-hero-market::after{
   content:"";
   position:absolute;
   top:0;
   bottom:0;
-  width: 18vw;
-  max-width: 220px;
+  width: 10vw;
+  max-width: 140px;
   pointer-events:none;
   z-index: 2;
 }
 
-.page-home .clarity-hero::before{
+.page-home .clarity-hero-market::before{
   left:0;
-  background: linear-gradient(90deg,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.0) 100%
-  );
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
-.page-home .clarity-hero::after{
+.page-home .clarity-hero-market::after{
   right:0;
-  background: linear-gradient(270deg,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.0) 100%
-  );
+  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
-.page-home .clarity-hero img{
-  display:block;
-  width:100%;
+.page-home .clarity-hero-market img{
+  width: 100%;
   height: clamp(220px, 28vw, 420px);
-  object-fit: cover;               /* clé: plus de bandes noires "contain" */
+  object-fit: contain;
   object-position: center;
   background:#000;
-
-  -webkit-mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
 }
+
 
 
 /* Fix – remove grey gap below */
