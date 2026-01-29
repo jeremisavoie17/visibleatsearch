@@ -996,21 +996,7 @@ a.cta-btn:focus-visible{
    MARKET - full-bleed image band (panneau) avec fades
    ================= */
 
-/* Base neutre: ne casse pas les autres .clarity-hero */
-.page-home .clarity-hero img{
-  display:block;
-  width:100%;
-  height:auto;
-  background:#000;
-}
-
-/* Image flèche - limiter la hauteur */
-.page-home #clarity > .clarity-hero img{
-  max-height: 70vh;
-  object-fit: contain;
-}
-
-/* Panneau uniquement */
+/* Panneau uniquement (full-bleed) */
 .page-home .clarity-hero-market{
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -1042,8 +1028,28 @@ a.cta-btn:focus-visible{
 }
 
 .page-home .clarity-hero-market img{
-  width: 100%;
+  display:block;
+  width:100%;
   height: clamp(220px, 28vw, 420px);
+  object-fit: contain;
+  object-position: center;
+  background:#000;
+}
+
+/* =================
+   FLECHE - image dans #clarity (pas full-bleed, pas gigantesque)
+   ================= */
+
+.page-home #clarity .clarity-hero{
+  background:#000;
+}
+
+.page-home #clarity .clarity-hero img{
+  display:block;
+  width:100%;
+  max-width: var(--max);
+  height: min(70vh, 520px);
+  margin: 0 auto;
   object-fit: contain;
   object-position: center;
   background:#000;
