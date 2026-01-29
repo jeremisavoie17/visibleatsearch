@@ -910,7 +910,7 @@ a.cta-btn:focus-visible{
    HOME - approach (centered + bubbles fit content)
    ================= */
 
-.section-center{
+#approach .section-center{
   text-align: center;
 }
 
