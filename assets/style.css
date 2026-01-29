@@ -985,8 +985,15 @@ a.cta-btn:focus-visible{
   margin: 0;
 }
 
-/////* MARKET - fades left/right on the full-bleed image band */////
+/* =================
+   MARKET - full-bleed image band with left/right fades
+   ================= */
+
 .page-home .clarity-hero{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #000;
+
   position: relative;
   overflow: hidden;
 }
@@ -997,8 +1004,8 @@ a.cta-btn:focus-visible{
   position:absolute;
   top:0;
   bottom:0;
-  width: 18vw;              
-  max-width: 220px;         
+  width: 18vw;
+  max-width: 220px;
   pointer-events:none;
   z-index: 2;
 }
@@ -1019,13 +1026,6 @@ a.cta-btn:focus-visible{
   );
 }
 
-/* Image band - full bleed noir, image centrée */
-.page-home .clarity-hero{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  background: #000;
-}
-
 .page-home .clarity-hero img{
   display: block;
   width: 100%;
@@ -1035,7 +1035,7 @@ a.cta-btn:focus-visible{
   background: #000;
 }
 
-/* Fix – remove grey gap */
+/* Fix – remove grey gap below */
 .page-home #approach{
   padding-bottom: 0;
 }
