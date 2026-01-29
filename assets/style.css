@@ -907,17 +907,24 @@ a.cta-btn:focus-visible{
 
 
 /* =================
-   HOME - approach (steps punchier)
+   HOME - approach 
    ================= */
+
+.section-center{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+}
 
 .approach-steps{
   list-style:none;
   padding:0;
-  margin:0 auto;
-  display:inline-flex;
+  margin:0;
+  display:flex;                 /* PAS inline-flex */
   flex-direction:column;
   gap:12px;
   align-items:center;
+  width:100%;
 }
 
 .approach-steps li{
@@ -938,7 +945,6 @@ a.cta-btn:focus-visible{
 
 @media (max-width: 820px){
   .approach-steps{
-    display:flex;
     align-items:stretch;
   }
   .approach-steps li{
@@ -947,6 +953,7 @@ a.cta-btn:focus-visible{
     text-align:left;
   }
 }
+
 
 
 /* =================
