@@ -1300,6 +1300,39 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* CONTACT - header noir comme FAQ/About (sans impacter les autres pages) */
+.page-contact section.content{
+  background:#000;
+  color:#fff;
+  padding: 48px var(--pad);
+}
+
+/* Contact form - version lisible sur fond noir */
+.page-contact .contact-form{
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.08);
+}
+
+.page-contact .contact-form .label{
+  color: rgba(255,255,255,0.90);
+}
+
+.page-contact .contact-form input,
+.page-contact .contact-form textarea,
+.page-contact .contact-form select{
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+}
+
+.page-contact .contact-form input::placeholder,
+.page-contact .contact-form textarea::placeholder{
+  color: rgba(255,255,255,0.55);
+}
+
+.page-contact .form-note{
+  color: rgba(255,255,255,0.80);
+}
 
 
 /* ================= LOCK FINAL ================= */
