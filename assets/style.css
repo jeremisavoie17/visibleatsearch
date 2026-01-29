@@ -1235,7 +1235,7 @@ a.cta-btn:focus-visible{
   content:"";
   position:absolute;
   inset:0;
-  background-image: url("/assets/img/google-search-visibility-competitive-market-hero.png");
+  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9.png");
   background-repeat:no-repeat;
   background-position: 62% 50%;
   background-size: min(820px, 56vw);
