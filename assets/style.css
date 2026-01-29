@@ -1242,43 +1242,37 @@ a.cta-btn:focus-visible{
 }
 
 @media (max-width: 820px){
+
+  /* Position texte */
   .hero .wrap{
-    padding-top: 44px; /* décale le texte vers le bas */
+    padding-top: 96px;
   }
 
   .hero-subsection{
     margin-top: 26px;
   }
 
+  /* OMBRAGE MOBILE */
   .hero::before{
-    background:
-      linear-gradient(90deg,
-        rgba(0,0,0,1) 0%,
-        rgba(0,0,0,0.95) 26%,
-        rgba(0,0,0,0.55) 48%,
-        rgba(0,0,0,0.0) 70%
-      ),
-      /* fondu haut - court (mobile) */
-      linear-gradient(180deg,
-        rgba(0,0,0,0.55) 0%,
-        rgba(0,0,0,0.0) 14%
-      ),
-      linear-gradient(0deg,
-        rgba(0,0,0,0.60) 0%,
-        rgba(0,0,0,0.0) 32%
-      ),
-      /* fondu droite - court (mobile aussi) */
-      linear-gradient(270deg,
-        rgba(0,0,0,0.85) 0%,
-        rgba(0,0,0,0.0) 10%
-      );
+    background: none !important;
+    opacity: 0 !important;
   }
 
+  /* 3. Image claire */
   .hero::after{
-    background-size: 320px;
-    background-position: 58% 22%;
+    background-size: 360px;
+    background-position: 70% 22%;
+    opacity: 1;
+  }
+
+  /* 4. Lisibilité texte */
+  .hero .sub,
+  .hero-label,
+  .hero-points li{
+    opacity: 0.9;
   }
 }
+
 
 
 /* ================= LOCK FINAL ================= */
