@@ -985,6 +985,40 @@ a.cta-btn:focus-visible{
   margin: 0;
 }
 
+/////* MARKET - fades left/right on the full-bleed image band */////
+.page-home .clarity-hero{
+  position: relative;
+  overflow: hidden;
+}
+
+.page-home .clarity-hero::before,
+.page-home .clarity-hero::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width: 18vw;              
+  max-width: 220px;         
+  pointer-events:none;
+  z-index: 2;
+}
+
+.page-home .clarity-hero::before{
+  left:0;
+  background: linear-gradient(90deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.0) 100%
+  );
+}
+
+.page-home .clarity-hero::after{
+  right:0;
+  background: linear-gradient(270deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.0) 100%
+  );
+}
+
 /* Image band - full bleed noir, image centrée */
 .page-home .clarity-hero{
   width: 100vw;
