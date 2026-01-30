@@ -1100,6 +1100,10 @@ a.cta-btn:focus-visible{
 
 /* Mobile */
 @media (max-width: 820px){
+   .eco-item{
+    min-width: 96px;
+  }
+  
   .ecosystem-strip{
     justify-content: flex-start;   /* rend le scroll évident */
     gap: 18px;
