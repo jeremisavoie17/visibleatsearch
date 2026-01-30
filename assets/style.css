@@ -951,6 +951,10 @@ a.cta-btn:focus-visible{
     white-space: normal;
     width:100%;
     text-align:left;
+
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 16px;
   }
 }
 
