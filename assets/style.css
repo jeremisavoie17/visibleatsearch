@@ -1041,7 +1041,7 @@ a.cta-btn:focus-visible{
 }
 
 /* =================
-   FLECHE - image dans #clarity (pas full-bleed, pas gigantesque)
+   FLECHE - align height with market panel
    ================= */
 
 .page-home #clarity .clarity-hero{
@@ -1052,7 +1052,7 @@ a.cta-btn:focus-visible{
   display:block;
   width:100%;
   max-width: var(--max);
-  height: min(70vh, 520px);
+  height: clamp(220px, 28vw, 420px); /* meme hauteur que le panneau */
   margin: 0 auto;
   object-fit: contain;
   object-position: center;
