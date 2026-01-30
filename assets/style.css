@@ -1009,32 +1009,45 @@ a.cta-btn:focus-visible{
   margin: 0;
 }
 
-/* =================
-   MARKET - full-bleed image band (panneau) avec fondu fiable
-   ================= */
-
-/* Conteneur full-bleed */
+/* MARKET - full-bleed panel + fondu gauche/droite fiable */
 .page-home .clarity-hero-market{
   width: 100vw;
   margin-left: calc(50% - 50vw);
   background:#000;
   overflow:hidden;
-  position: relative; /* AJOUT */
+  position: relative;
 }
 
-/* Fondu vers le noir a la fin (bas) - fiable */
+/* Fades L/R au-dessus de l'image (cache les bords visibles) */
+.page-home .clarity-hero-market::before,
 .page-home .clarity-hero-market::after{
   content:"";
   position:absolute;
-  left:0;
-  right:0;
+  top:0;
   bottom:0;
-  height: 120px; /* ajuste au besoin */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  width: 16vw;
+  max-width: 220px;
   pointer-events:none;
+  z-index: 2;
 }
 
-/* Image avec fondu applique directement */
+.page-home .clarity-hero-market::before{
+  left:0;
+  background: linear-gradient(90deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.0) 100%
+  );
+}
+
+.page-home .clarity-hero-market::after{
+  right:0;
+  background: linear-gradient(270deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.0) 100%
+  );
+}
+
+/* Image - */
 .page-home .clarity-hero-market img{
   display:block;
   width:100%;
@@ -1043,15 +1056,10 @@ a.cta-btn:focus-visible{
   object-position: center;
   background:#000;
 
-  /* Fondu gauche-droite uniquement (on retire le haut-bas) */
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-
-  mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
+  -webkit-mask-image: none;
+  mask-image: none;
 }
+
 
 /* =================
    FLECHE - align height with market panel
