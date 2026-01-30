@@ -997,40 +997,18 @@ a.cta-btn:focus-visible{
 }
 
 /* =================
-   MARKET - full-bleed image band (panneau) avec fades
+   MARKET - full-bleed image band (panneau) avec fondu fiable
    ================= */
 
-/* Panneau uniquement (full-bleed) */
+/* Conteneur full-bleed */
 .page-home .clarity-hero-market{
   width: 100vw;
   margin-left: calc(50% - 50vw);
   background:#000;
-  position: relative;
-  overflow: hidden;
+  overflow:hidden;
 }
 
-.page-home .clarity-hero-market::before,
-.page-home .clarity-hero-market::after{
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  width: 10vw;
-  max-width: 140px;
-  pointer-events:none;
-  z-index: 2;
-}
-
-.page-home .clarity-hero-market::before{
-  left:0;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
-
-.page-home .clarity-hero-market::after{
-  right:0;
-  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
-
+/* Image avec fondu applique directement */
 .page-home .clarity-hero-market img{
   display:block;
   width:100%;
@@ -1038,7 +1016,23 @@ a.cta-btn:focus-visible{
   object-fit: contain;
   object-position: center;
   background:#000;
+
+  /* Fondu gauche-droite + haut-bas (meme logique que la fleche) */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-composite: intersect;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
 }
+
 
 /* =================
    FLECHE - align height with market panel
