@@ -1073,12 +1073,11 @@ a.cta-btn:focus-visible{
   background:#000;
 }
 
-
-
-/* Fix – remove grey gap below */
-.page-home #approach{
-  padding-bottom: 0;
+.page-home .clarity-hero{
+  background:#000;
+  padding-bottom: 24px;
 }
+
 
 /* =========================
    CTA - Google ecosystem stack
