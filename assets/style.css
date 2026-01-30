@@ -1053,13 +1053,21 @@ a.cta-btn:focus-visible{
   mask-size: 100% 100%;
 }
 
-
 /* =================
    FLECHE - align height with market panel
    ================= */
 
+/* Enlever le padding blanc autour du visuel fleche (section qui contient .clarity-hero) */
+.page-home #clarity{
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #000;
+}
+
 .page-home #clarity .clarity-hero{
-  background: linear-gradient(to bottom, #000 0%, #000 70%, var(--bg-light) 100%);
+  background:#000;
 }
 
 .page-home #clarity .clarity-hero img{
