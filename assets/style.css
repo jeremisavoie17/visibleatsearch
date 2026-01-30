@@ -1096,20 +1096,30 @@ a.cta-btn:focus-visible{
 @media (max-width: 820px){
   .ecosystem-strip{
     display: flex;
-    align-items: center;
-    gap: 16px;
+    gap: 18px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     padding: 8px 0 12px;
   }
 
-  .ecosystem-strip img{
-    height: 32px;
-    width: auto;
+  .eco-item{
     flex: 0 0 auto;
-    opacity: 0.9;
+    text-align: center;
+  }
+
+  .eco-item img{
+    height: 32px;
+    display: block;
+    margin: 0 auto 4px;
+  }
+
+  .eco-item span{
+    font-size: 12px;
+    opacity: 0.75;
+    white-space: nowrap;
   }
 }
+
 
 
 
