@@ -1088,6 +1088,11 @@ a.cta-btn:focus-visible{
   text-align: center;
 }
 
+.ecosystem-strip{
+  margin: 16px 0 22px;
+}
+
+
 /* Base (desktop + mobile) */
 .ecosystem-strip{
   display: flex;
