@@ -931,6 +931,11 @@ a.cta-btn:focus-visible{
   margin-bottom: 22px;
 }
 
+/* Assure une continuité de fond entre approach et section suivante */
+#approach{
+  background: var(--bg-light);
+}
+
 .approach-steps li{
   display:inline-block;
   width:fit-content;
