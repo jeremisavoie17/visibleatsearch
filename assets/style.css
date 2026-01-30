@@ -1059,23 +1059,18 @@ a.cta-btn:focus-visible{
    ================= */
 
 .page-home #clarity .clarity-hero{
-  background:#000;
+  background: linear-gradient(to bottom, #000 0%, #000 70%, var(--bg-light) 100%);
 }
 
 .page-home #clarity .clarity-hero img{
   display:block;
   width:100%;
   max-width: var(--max);
-  height: clamp(220px, 28vw, 420px); /* meme hauteur que le panneau */
+  height: clamp(220px, 28vw, 420px);
   margin: 0 auto;
   object-fit: contain;
   object-position: center;
   background:#000;
-}
-
-.page-home .clarity-hero{
-  background:#000;
-  padding-bottom: 24px;
 }
 
 
