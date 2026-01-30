@@ -927,6 +927,10 @@ a.cta-btn:focus-visible{
   width:100%;
 }
 
+.approach-steps{
+  margin-bottom: 18px;
+}
+
 .approach-steps li{
   display:inline-block;
   width:fit-content;
