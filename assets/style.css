@@ -1061,33 +1061,6 @@ a.cta-btn:focus-visible{
 }
 
 
-/* =================
-   FLECHE - align height with market panel
-   ================= */
-
-/* IMPORTANT: ne touche PAS au padding de #clarity (ca casse la mise en page) */
-
-/* Rend seulement le visuel fleche full-bleed (comme ton market panel) */
-.page-home #clarity .clarity-hero{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  background:#000;
-  overflow:hidden;
-  padding: 0;
-}
-
-/* Image centree dans le full-bleed */
-.page-home #clarity .clarity-hero img{
-  display:block;
-  width:100%;
-  max-width: var(--max);
-  height: clamp(220px, 28vw, 420px);
-  margin: 0 auto;
-  object-fit: contain;
-  object-position: center;
-  background:#000;
-}
-
 /* =========================
    CTA - Google ecosystem stack
    ========================= */
@@ -1159,6 +1132,25 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* CTA dans #clarity - réutilise le style noir du CTA final */
+#clarity a.cta-btn,
+#clarity a.cta-btn:link,
+#clarity a.cta-btn:visited{
+  background:#111;
+  color:#fff;
+  border:1px solid #111;
+}
+
+#clarity a.cta-btn:hover{
+  background:#000;
+  border-color:#000;
+  color:#fff;
+}
+
+#clarity a.cta-btn:focus-visible{
+  outline: 2px solid rgba(0,0,0,0.35);
+  outline-offset: 3px;
+}
 
 
 
