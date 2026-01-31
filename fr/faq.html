@@ -201,7 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- SECTION 1 - NOIR -->
+  <!-- SECTION 1 - NOIR (4) -->
 <section class="content faq">
   <div class="wrap">
 
@@ -231,13 +231,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- SECTION 2 - BLANC -->
-<section class="white faq">
-  <div class="wrap">
-
     <div class="faq-item">
       <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-fr-a-3">
         <span class="faq-title">Un site web ou une page dédiée est-il requis?</span>
@@ -263,6 +256,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
       </div>
     </div>
+
+  </div>
+</section>
+
+<!-- SECTION 2 - BLANC (4) -->
+<section class="white faq">
+  <div class="wrap">
 
     <div class="faq-item">
       <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-fr-a-5">
@@ -305,13 +305,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- SECTION 3 - NOIR -->
-<section class="content faq">
-  <div class="wrap">
-
     <div class="faq-item">
       <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-fr-a-8">
         <span class="faq-title">Y a-t-il un budget publicitaire minimum?</span>
@@ -324,6 +317,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
       </div>
     </div>
+
+  </div>
+</section>
+
+<!-- SECTION 3 - NOIR (4) -->
+<section class="content faq">
+  <div class="wrap">
 
     <div class="faq-item">
       <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-fr-a-9">
@@ -411,8 +411,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
-    <script>
+  <script>
     (function(){
+      if (window.__faqAccordionInit) return;
+      window.__faqAccordionInit = true;
+
       const items = document.querySelectorAll('.faq .faq-item');
 
       items.forEach(item => {
@@ -422,7 +425,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         btn.addEventListener('click', () => {
           const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-          // close others (accordion behavior)
           items.forEach(other => {
             if(other === item) return;
             const b = other.querySelector('.faq-q');
