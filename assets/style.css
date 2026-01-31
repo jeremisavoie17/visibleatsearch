@@ -1009,6 +1009,13 @@ a.cta-btn:focus-visible{
   margin: 0;
 }
 
+.page-home #clarity .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 /* MARKET - full-bleed panel + fondu gauche/droite fiable */
 .page-home .clarity-hero-market{
   width: 100vw;
