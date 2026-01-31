@@ -927,6 +927,11 @@ a.cta-btn:focus-visible{
   width:100%;
 }
 
+.approach-steps li{
+  padding-left: 5.5em;     
+  text-indent: -5.5em;
+}
+
 .approach-steps{
   margin-bottom: 22px;
 }
