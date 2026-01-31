@@ -411,6 +411,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
+    <script>
+    (function(){
+      const items = document.querySelectorAll('.faq .faq-item');
+
+      items.forEach(item => {
+        const btn = item.querySelector('.faq-q');
+        const panel = item.querySelector('.faq-a');
+
+        btn.addEventListener('click', () => {
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+          // close others (accordion behavior)
+          items.forEach(other => {
+            if(other === item) return;
+            const b = other.querySelector('.faq-q');
+            const p = other.querySelector('.faq-a');
+            b.setAttribute('aria-expanded', 'false');
+            p.hidden = true;
+          });
+
+          btn.setAttribute('aria-expanded', String(!isOpen));
+          panel.hidden = isOpen;
+        });
+      });
+    })();
+  </script>
+  
   <script src="/assets/nav.js" defer></script>
 </body>
 </html>
