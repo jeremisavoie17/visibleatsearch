@@ -1288,7 +1288,7 @@ a.cta-btn:focus-visible{
   .faq .faq-a{ padding-bottom: 18px; }
 }
 
-/* ================= HERO – entry links (clean) ================= */
+/* ================= HERO – entry links ================= */
 
 .hero-points{
   display: grid;
@@ -1298,16 +1298,17 @@ a.cta-btn:focus-visible{
 .hero-entry {
   display: inline-block;
   margin-top: 16px;
-  padding: 10px 18px;
+  padding: 12px 20px; 
   background: #fff;
   color: #000;
   text-decoration: none;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 12px; 
+  transition: background 0.15s ease; 
 }
 
 .hero-entry:hover {
-  background: #eaeaea;
+  background: #f2f2f2; 
 }
 
 
