@@ -1139,8 +1139,10 @@ a.cta-btn:focus-visible{
   background:#111;
   color:#fff;
   border:1px solid #111;
-}
 
+  max-width: 420px;  
+  width: 100%;       
+}
 #clarity a.cta-btn:hover{
   background:#000;
   border-color:#000;
