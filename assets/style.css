@@ -198,17 +198,6 @@ p{
   gap: 10px;
 }
 
-/* Our approach - remove the top offset for steps (legacy, harmless) */
-#approach .list{
-  margin-top: 0;
-}
-
-.list li{
-  background: rgba(0,0,0,0.04);
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 14px;
-  padding: 12px 14px;
-}
 
 /* Image à droite du texte (dans .grid-2) */
 .visual{
