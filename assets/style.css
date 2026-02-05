@@ -1505,7 +1505,7 @@ a.cta-btn:focus-visible{
   color: rgba(255,255,255,0.80);
 }
 
-/* ================= Saut br sur mobile only ================= */
+/* ================= Saut br sur mobile/desktop only ================= */
 
 .desktop-only {
   display: inline;
@@ -1517,6 +1517,15 @@ a.cta-btn:focus-visible{
   }
 }
 
+.mobile-only { 
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .mobile-only { 
+    display: inline; 
+  }
+}
 
 
 /* ================= LOCK FINAL ================= */
