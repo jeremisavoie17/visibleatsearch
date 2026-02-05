@@ -1,3 +1,7 @@
+/* =================
+   VARIABLES + BASE
+   ================= */
+
 :root{
   --bg-dark:#111;
   --bg-light:#f5f5f5;
@@ -28,7 +32,86 @@ img{
   max-width: 100%;
 }
 
-/* ================= NAV ================= */
+/* =================
+   LAYOUT GLOBAL
+   ================= */
+
+section{
+  padding: calc(var(--pad) + 18px) var(--pad);
+}
+
+.wrap{
+  width:100%;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+/* =================
+   BACKGROUNDS
+   ================= */
+
+.hero{
+  background: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.content{
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.white{
+  background:#fff;
+  color: var(--text-dark);
+}
+
+/* =================
+   TYPO GLOBAL
+   ================= */
+
+h1{
+  font-size: clamp(34px, 5vw, 56px);
+  margin: 0 0 12px 0;
+  line-height:1.05;
+}
+
+h2{
+  font-size: clamp(24px, 3vw, 34px);
+  margin: 0 0 14px 0;
+  line-height:1.15;
+}
+
+p{
+  margin: 0 0 14px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  max-width: 70ch;
+}
+
+.sub{
+  opacity:0.88;
+  max-width: 70ch;
+}
+
+.meta{
+  margin: 6px 0 0 0;
+  opacity: 0.78;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 70ch;
+}
+
+.muted{
+  opacity: 0.75;
+}
+
+/* =================
+   NAV
+   ================= */
 
 .nav{
   width: 100%;
@@ -92,94 +175,9 @@ img{
   border-color: rgba(0,0,0,0.18);
 }
 
-/* ================= SECTIONS ================= */
-
-section{
-  padding: calc(var(--pad) + 18px) var(--pad);
-}
-
-.wrap{
-  width:100%;
-  max-width: var(--max);
-  margin: 0 auto;
-}
-
-/* ================= BACKGROUNDS ================= */
-
-.hero{
-  background: var(--bg-dark);
-  color: var(--text-light);
-  min-height: 100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.content{
-  background: var(--bg-light);
-  color: var(--text-dark);
-}
-
-.white{
-  background:#fff;
-  color: var(--text-dark);
-}
-
-/* ================= TYPO ================= */
-
-h1{
-  font-size: clamp(34px, 5vw, 56px);
-  margin: 0 0 12px 0;
-  line-height:1.05;
-}
-
-/* Hero tightening (robuste - ne depend pas des classes) */
-.hero h1{
-  margin-bottom: 8px;
-}
-
-/* IMPORTANT: resserre tous les paragraphes du hero */
-.hero p{
-  margin-top: 0;
-  margin-bottom: 6px;
-  line-height: 1.45;
-  max-width: 90ch;
-}
-
-/* Si tu as une 3e ligne qui doit etre un peu plus detachée */
-.hero .meta,
-.hero .tagline{
-  margin-top: 8px;
-  margin-bottom: 0;
-}
-
-h2{
-  font-size: clamp(24px, 3vw, 34px);
-  margin: 0 0 14px 0;
-  line-height:1.15;
-}
-
-p{
-  margin: 0 0 14px 0;
-  line-height: 1.6;
-  font-size: 16px;
-  max-width: 70ch;
-}
-
-.sub{
-  opacity:0.88;
-  max-width: 70ch;
-}
-
-.meta{
-  margin: 6px 0 0 0;
-  opacity: 0.78;
-  font-size: 15px;
-  line-height: 1.5;
-  max-width: 70ch;
-}
-
-/* ================= GRIDS & LISTS ================= */
+/* =================
+   GRID + LIST (GLOBAL)
+   ================= */
 
 .grid-2{
   display:flex;
@@ -200,7 +198,7 @@ p{
   gap: 10px;
 }
 
-/* Our approach - remove the top offset for steps */
+/* Our approach - remove the top offset for steps (legacy, harmless) */
 #approach .list{
   margin-top: 0;
 }
@@ -217,6 +215,7 @@ p{
   display:flex;
   justify-content:flex-end;
 }
+
 .visual img{
   width:100%;
   max-width:560px;
@@ -234,28 +233,10 @@ p{
   mask-composite: intersect;
 }
 
-/* ================= STEPS ================= */
+/* =================
+   CTA BUTTONS (GLOBAL)
+   ================= */
 
-.steps{
-  display:grid;
-  gap:12px;
-  margin-top: 12px;
-}
-
-.step{
-  background:#fff;
-  border:1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 14px 16px;
-}
-
-.step span{
-  display:inline-block;
-  font-weight:700;
-  margin-bottom: 6px;
-}
-
-/* HERO CTA - outline clean */
 a.cta-btn,
 a.cta-btn:link,
 a.cta-btn:visited{
@@ -311,8 +292,7 @@ a.cta-btn:focus-visible{
   outline-offset: 3px;
 }
 
-/* ================= CTA & BUTTONS ================= */
-
+/* CTA links */
 .cta-row{
   display:flex;
   gap:16px;
@@ -337,8 +317,7 @@ a.cta-btn:focus-visible{
   color: var(--text-dark);
 }
 
-/* ================= CTA LINK - HERO (fond noir) ================= */
-
+/* CTA LINK - HERO (fond noir) */
 .hero .cta-link{
   color: rgba(255,255,255,0.85);
   border-bottom-color: rgba(255,255,255,0.35);
@@ -353,14 +332,15 @@ a.cta-btn:focus-visible{
   color: rgba(255,255,255,0.85);
 }
 
-/* ================= HAMBURGER ================= */
+/* =================
+   HAMBURGER
+   ================= */
 
 .lang-mobile{
   display:none;
 }
 
 .nav-toggle{
-  /* display gere uniquement par media queries */
   all: unset;
   -webkit-tap-highlight-color: transparent;
   width:44px;
@@ -385,7 +365,9 @@ a.cta-btn:focus-visible{
   border-radius:2px;
 }
 
-/* ================= MOBILE ================= */
+/* =================
+   MOBILE NAV
+   ================= */
 
 @media (max-width: 820px){
 
@@ -436,7 +418,9 @@ a.cta-btn:focus-visible{
   }
 }
 
-/* ================= CONTACT FORM (extras) ================= */
+/* =================
+   CONTACT FORM (GLOBAL)
+   ================= */
 
 .contact-form button.btn{
   width: fit-content;
@@ -451,8 +435,6 @@ a.cta-btn:focus-visible{
 .contact-form textarea{
   box-shadow: 0 1px 0 rgba(0,0,0,0.02);
 }
-
-/* ================= CONTACT FORM ================= */
 
 .contact-form{
   margin-top: 18px;
@@ -532,7 +514,9 @@ a.cta-btn:focus-visible{
   overflow: hidden;
 }
 
-/* ================= PRICING CARDS ================= */
+/* =================
+   PRICING
+   ================= */
 
 .center{
   text-align:center;
@@ -573,7 +557,6 @@ a.cta-btn:focus-visible{
   transform: none;
 }
 
-/* Optionnel: désactive l'animation pour ceux qui le demandent */
 @media (prefers-reduced-motion: reduce){
   .pricing-card{ transition: none; }
   .pricing-card:hover,
@@ -684,18 +667,13 @@ a.cta-btn:focus-visible{
   }
 }
 
-/* ===============================
-   Pricing layout fixes
-   =============================== */
-
-/* Center the top pricing cards */
+/* Pricing layout fixes */
 .pricing-grid-setup{
   max-width: var(--max);
   margin-left: auto;
   margin-right: auto;
 }
 
-/* On desktop, setup row should be 3 columns */
 @media (min-width: 981px){
   .pricing-grid-setup{
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -703,88 +681,7 @@ a.cta-btn:focus-visible{
   }
 }
 
-/* =========================
-   Page-specific overrides
-   ========================= */
-
-/* Option 1: definir .muted globalement (recommande) */
-.muted{
-  opacity: 0.75;
-}
-
-/* FAQ - petit header noir */
-.page-faq section.content{
-  background:#000;
-  color:#fff;
-  padding: 56px var(--pad);
-}
-
-/* Bigger header like the reference */
-.page-faq section.content h1{
-  font-size: clamp(44px, 6vw, 78px);
-  letter-spacing: -0.5px;
-  margin-bottom: 10px;
-}
-
-.page-faq section.content .sub{
-  opacity: 0.78;
-  font-size: 18px;
-  max-width: 60ch;
-}
-
-.page-faq section.content .muted,
-.page-faq section.content p{
-  color: rgba(255,255,255,0.78);
-}
-
-/* À propos - petit header noir */
-.page-about section.content{
-  background:#000;
-  color:#fff;
-  padding: 48px var(--pad);
-}
-
-.page-about section.content .muted,
-.page-about section.content p{
-  color: rgba(255,255,255,0.78);
-}
-
-/* =================
-   Services – technical notes (readability tuned)
-   ================= */
-
-.service-technical{
-  margin-top: 0.75rem;
-}
-
-.service-points{
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.service-points li{
-  font-size: 0.95rem;
-  color: #5f6368;
-  line-height: 1.6;
-  margin-bottom: 0.35rem;
-  position: relative;
-  padding-left: 0.9rem;
-}
-
-.service-points li::before{
-  content: "-";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #3c4043;
-}
-
-/* =================
-   Checkout acknowledgment (pricing)
-   ================= */
-
-/* Bouton CTA lisible sur fond blanc (pricing cards) */
+/* Pricing - CTA button on cards */
 .pricing-card a.cta-btn,
 .pricing-card a.cta-btn:link,
 .pricing-card a.cta-btn:visited{
@@ -799,7 +696,6 @@ a.cta-btn:focus-visible{
   color:#fff;
 }
 
-/* Disabled state (avant validation checkbox) */
 .pricing-card a.cta-btn.disabled,
 .pricing-card a.cta-btn.disabled:link,
 .pricing-card a.cta-btn.disabled:visited{
@@ -807,7 +703,6 @@ a.cta-btn:focus-visible{
   pointer-events: none;
 }
 
-/* Checkbox acknowledgment */
 .pricing-actions .ack{
   margin-top: 10px;
   display: flex;
@@ -828,14 +723,14 @@ a.cta-btn:focus-visible{
   cursor: not-allowed;
 }
 
-/* =================
-   Thank you page Form Title
-   ================= */
+/* Thank you page Form Title */
 .onboarding-title{
   margin-top: 0;
 }
 
-/* ================= FOOTER ================= */
+/* =================
+   FOOTER
+   ================= */
 
 .footer{
   background: var(--bg-dark);
@@ -905,36 +800,322 @@ a.cta-btn:focus-visible{
   }
 }
 
-
 /* =================
-   HOME - approach 
+   PAGE OVERRIDES
    ================= */
 
-.section-center{
+/* FAQ - petit header noir */
+.page-faq section.content{
+  background:#000;
+  color:#fff;
+  padding: 56px var(--pad);
+}
+
+.page-faq section.content h1{
+  font-size: clamp(44px, 6vw, 78px);
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.page-faq section.content .sub{
+  opacity: 0.78;
+  font-size: 18px;
+  max-width: 60ch;
+}
+
+.page-faq section.content .muted,
+.page-faq section.content p{
+  color: rgba(255,255,255,0.78);
+}
+
+/* À propos - petit header noir */
+.page-about section.content{
+  background:#000;
+  color:#fff;
+  padding: 48px var(--pad);
+}
+
+.page-about section.content .muted,
+.page-about section.content p{
+  color: rgba(255,255,255,0.78);
+}
+
+/* CONTACT - header noir comme FAQ/About */
+.page-contact section.content{
+  background:#000;
+  color:#fff;
+  padding: 48px var(--pad);
+}
+
+/* Contact form - version lisible sur fond noir */
+.page-contact .contact-form{
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.08);
+}
+
+.page-contact .contact-form .label{
+  color: rgba(255,255,255,0.90);
+}
+
+.page-contact .contact-form input,
+.page-contact .contact-form textarea,
+.page-contact .contact-form select{
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+}
+
+.page-contact .contact-form input::placeholder,
+.page-contact .contact-form textarea::placeholder{
+  color: rgba(255,255,255,0.55);
+}
+
+.page-contact .form-note{
+  color: rgba(255,255,255,0.80);
+}
+
+/* Services – technical notes */
+.service-technical{
+  margin-top: 0.75rem;
+}
+
+.service-points{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service-points li{
+  font-size: 0.95rem;
+  color: #5f6368;
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.service-points li::before{
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3c4043;
+}
+
+/* =================
+   HOME - HERO
+   ================= */
+
+/* Hero tightening */
+.hero h1{
+  margin-bottom: 8px;
+}
+
+.hero p{
+  margin-top: 0;
+  margin-bottom: 6px;
+  line-height: 1.45;
+  max-width: 90ch;
+}
+
+.hero .meta,
+.hero .tagline{
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* HERO – entry links */
+.hero-points{
+  display: grid;
+  gap: 2px; 
+}
+
+.hero-entry {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 20px; 
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 12px; 
+  transition: background 0.15s ease; 
+}
+
+.hero-entry:hover {
+  background: #f2f2f2; 
+}
+
+/* HERO – image en background */
+.hero{
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero .wrap{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero-copy{
+  max-width: 560px;
+}
+
+.hero-subsection{
+  margin-top: 22px;
+}
+
+.hero-label{
+  margin: 0 0 4px 0; 
+  font-size: 15px;
+  opacity: 0.75;
+  letter-spacing: 0.2px;
+}
+
+.hero-points{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.hero-points li{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.88;
+}
+
+.hero-points li::before{
+  content: "→ ";
+  opacity: 0.6;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index: 1;
+  background: linear-gradient(90deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.92) 26%,
+    rgba(0,0,0,0.55) 46%,
+    rgba(0,0,0,0.0) 66%
+  );
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9.png");
+  background-repeat:no-repeat;
+  background-position: 62% 50%;
+  background-size: min(820px, 56vw);
+  pointer-events:none;
+  z-index: 0;
+}
+
+.hero-mobile-image{
+  display: none;
+}
+
+@media (max-width: 820px){
+
+  .hero{
+    min-height: auto;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-mobile-image{
+    display: block;
+    width: 100%;
+  }
+
+  .hero-mobile-image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 60% 40%;
+    display: block;
+    background: #000;
+  }
+
+  .hero::after{
+    display: none;
+  }
+
+  .hero .wrap{
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  .hero-subsection{
+    margin-top: 18px;
+  }
+
+  .hero::before{
+    background: none !important;
+    opacity: 0 !important;
+  }
+
+  .hero .sub,
+  .hero-label,
+  .hero-points li{
+    opacity: 0.9;
+  }
+}
+
+/* =================
+   HOME - APPROACH
+   ================= */
+
+#approach{
+  background: var(--bg-light);
+}
+
+/* IMPORTANT: scope, sinon tu te tires dans le pied ailleurs */
+#approach .section-center{
   display:flex;
   justify-content:center;
   text-align:center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#approach .approach-title{
+  margin: 0 0 14px 0;
+  text-align: center;
+  max-width: 28ch;
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.15;
 }
 
 .approach-steps{
   list-style:none;
   padding:0;
   margin:0;
-  display:flex;                 /* PAS inline-flex */
+  display:flex;
   flex-direction:column;
   gap:12px;
   align-items:center;
   width:100%;
 }
 
-
 .approach-steps{
   margin-bottom: 22px;
-}
-
-/* Assure une continuité de fond entre approach et section suivante */
-#approach{
-  background: var(--bg-light);
 }
 
 .approach-steps li{
@@ -956,26 +1137,135 @@ a.cta-btn:focus-visible{
 @media (max-width: 820px){
   .approach-steps{
     align-items: stretch;
-    gap: 8px; /* plus serré */
+    gap: 8px;
   }
 
   .approach-steps li{
     width: 100%;
     text-align: left;
     white-space: normal;
-
-    font-size: 15px;       
+    font-size: 15px;
     line-height: 1.35;
-    padding: 8px 12px;      
-    border-radius: 12px;    
+    padding: 8px 12px;
+    border-radius: 12px;
   }
 }
 
+/* Ecosystem strip (home + autres pages si reutilise) */
+.ecosystem-strip{
+  margin: 16px 0 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+  margin-top: 10px;
+}
 
+.eco-item{
+  flex: 0 0 120px;     
+  text-align: center;
+}
 
+.eco-item img{
+  height: 64px;         
+  width: auto;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.eco-item span{
+  display: block;
+  font-size: 13px;
+  line-height: 1.1;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+/* Title for ecosystem inside approach */
+#approach .ecosystem-title{
+  margin: 18px 0 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.70;
+}
+
+@media (max-width: 820px){
+  .ecosystem-strip{
+    justify-content: flex-start;
+    gap: 18px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 0 12px;
+  }
+
+  .eco-item{
+    flex: 0 0 104px;     
+  }
+
+  .eco-item img{
+    height: 40px;
+    margin-bottom: 4px;
+  }
+
+  .eco-item span{
+    font-size: 12px;
+  }
+}
 
 /* =================
-   HOME - clarity (centered block)
+   HOME - MARKET IMAGE (full-bleed)
+   ================= */
+
+.page-home .clarity-hero-market{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background:#000;
+  overflow:hidden;
+  position: relative;
+}
+
+.page-home .clarity-hero-market img{
+  display:block;
+  width:100%;
+  height: clamp(220px, 28vw, 420px);
+  object-fit: contain;
+  object-position: center;
+  background:#000;
+
+  -webkit-mask-image: linear-gradient(to right,
+    transparent 0%,
+    #000 12%,
+    #000 88%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to right,
+    transparent 0%,
+    #000 12%,
+    #000 88%,
+    transparent 100%
+  );
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.page-home .clarity-hero-market::before,
+.page-home .clarity-hero-market::after{
+  content: none !important;
+}
+
+@media (max-width: 820px){
+  .page-home .clarity-hero-market::before,
+  .page-home .clarity-hero-market::after{
+    display:none;
+  }
+}
+
+/* =================
+   HOME - GROWTH BLOCK (ex-clarity)
    ================= */
 
 .page-home #clarity{
@@ -1016,131 +1306,6 @@ a.cta-btn:focus-visible{
   align-items: center;
 }
 
-
-/* MARKET - fondu direct sur l'image */
-.page-home .clarity-hero-market{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  background:#000;
-  overflow:hidden;
-  position: relative;
-}
-
-.page-home .clarity-hero-market img{
-  display:block;
-  width:100%;
-  height: clamp(220px, 28vw, 420px);
-  object-fit: contain;
-  object-position: center;
-  background:#000;
-
-  /* Fondu L/R sur le contenu de l'image */
-  -webkit-mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-}
-
-/* Plus d'overlays sur le wrapper */
-.page-home .clarity-hero-market::before,
-.page-home .clarity-hero-market::after{
-  content: none !important;
-}
-
-
-/* Mobile: rien */
-@media (max-width: 820px){
-  .page-home .clarity-hero-market::before,
-  .page-home .clarity-hero-market::after{
-    display:none;
-  }
-}
-
-
-/* =========================
-   CTA - Google ecosystem stack
-   ========================= */
-
-#cta .ecosystem-title{
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
-}
-
-.ecosystem-strip{
-  margin: 16px 0 22px;
-}
-
-
-/* Base (desktop + mobile) */
-.ecosystem-strip{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 26px;
-  margin-top: 10px;
-}
-
-.eco-item{
-  flex: 0 0 120px;     
-  text-align: center;
-}
-
-.eco-item img{
-  height: 64px;         
-  width: auto;
-  display: block;
-  margin: 0 auto 6px;
-}
-
-.eco-item span{
-  display: block;
-  font-size: 13px;
-  line-height: 1.1;
-  opacity: 0.75;
-  white-space: nowrap;
-}
-
-/* Mobile */
-@media (max-width: 820px){
-  .ecosystem-strip{
-    justify-content: flex-start;
-    gap: 18px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 8px 0 12px;
-  }
-
-  .eco-item{
-    flex: 0 0 104px;     
-  }
-
-  .eco-item img{
-    height: 40px;
-    margin-bottom: 4px;
-  }
-
-  .eco-item span{
-    font-size: 12px;
-  }
-}
-
 /* CTA dans #clarity - réutilise le style noir du CTA final */
 #clarity a.cta-btn,
 #clarity a.cta-btn:link,
@@ -1148,10 +1313,10 @@ a.cta-btn:focus-visible{
   background:#111;
   color:#fff;
   border:1px solid #111;
-
-  max-width: 420px;  
-  width: auto;       
+  max-width: 420px;
+  width: auto;
 }
+
 #clarity a.cta-btn:hover{
   background:#000;
   border-color:#000;
@@ -1163,9 +1328,10 @@ a.cta-btn:focus-visible{
   outline-offset: 3px;
 }
 
+/* =================
+   FAQ ACCORDION
+   ================= */
 
-
-/* ================= FAQ accordion ================= */
 .faq{
   --faq-bg: #000;
   --faq-fg: #fff;
@@ -1184,12 +1350,10 @@ a.cta-btn:focus-visible{
   --faq-hover: rgba(0,0,0,.04);
 }
 
-/* Remove the max-width on paragraph inside FAQ answers (keep it clean like reference) */
 .faq .faq-a p{
   max-width: 760px;
 }
 
-/* Each row */
 .faq .faq-item{
   border-bottom: 1px solid var(--faq-line);
 }
@@ -1198,14 +1362,12 @@ a.cta-btn:focus-visible{
   border-bottom: 0;
 }
 
-/* The clickable question row */
 .faq .faq-q{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-
   background: transparent;
   border: 0;
   color: inherit;
@@ -1213,24 +1375,20 @@ a.cta-btn:focus-visible{
   margin: 0;
   cursor: pointer;
   text-align: left;
-
   -webkit-appearance: none;
   appearance: none;
 }
 
-/* Subtle row hover like the reference */
 .faq .faq-q:hover{
   background: var(--faq-hover);
 }
 
-/* Keyboard focus */
 .faq .faq-q:focus-visible{
   outline: 2px solid currentColor;
   outline-offset: 6px;
   border-radius: 10px;
 }
 
-/* Title text (your HTML uses .faq-title) */
 .faq .faq-title{
   margin: 0;
   padding: 0;
@@ -1239,7 +1397,6 @@ a.cta-btn:focus-visible{
   font-weight: 650;
 }
 
-/* The + icon (right side) */
 .faq .faq-plus{
   width: 30px;
   height: 30px;
@@ -1254,12 +1411,10 @@ a.cta-btn:focus-visible{
   transition: transform 0.18s ease;
 }
 
-/* Turn + into x when open */
 .faq .faq-q[aria-expanded="true"] .faq-plus{
   transform: rotate(45deg);
 }
 
-/* Answer panel */
 .faq .faq-a{
   padding: 0 0 22px 0;
 }
@@ -1271,12 +1426,10 @@ a.cta-btn:focus-visible{
   line-height: 1.6;
 }
 
-/* Optional: tighten muted paragraph inside answer (your .muted) */
 .faq .faq-a .muted{
   color: var(--faq-muted);
 }
 
-/* FAQ mobile */
 @media (max-width: 820px){
   .page-faq section.content{
     padding: 44px var(--pad);
@@ -1289,229 +1442,33 @@ a.cta-btn:focus-visible{
   .faq .faq-a{ padding-bottom: 18px; }
 }
 
-/* ================= HERO – entry links ================= */
+/* =================
+   UTIL - BR mobile/desktop only
+   ================= */
 
-.hero-points{
-  display: grid;
-  gap: 2px; 
-}
-
-.hero-entry {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 12px 20px; 
-  background: #fff;
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 12px; 
-  transition: background 0.15s ease; 
-}
-
-.hero-entry:hover {
-  background: #f2f2f2; 
-}
-
-
-/* ================= HERO – image en background ================= */
-
-.hero{
-  position: relative;
-  min-height: 100vh;
-  background: #000;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-.hero .wrap{
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.hero-copy{
-  max-width: 560px;
-}
-
-/* Sous-section "Google Ads" + liste */
-.hero-subsection{
-  margin-top: 22px;
-}
-
-.hero-label{
-  margin: 0 0 4px 0; 
-  font-size: 15px;
-  opacity: 0.75;
-  letter-spacing: 0.2px;
-}
-
-.hero-points{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 4px; /* bullets plus serrés */
-}
-
-.hero-points li{
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  opacity: 0.88;
-}
-
-.hero-points li::before{
-  content: "→ ";
-  opacity: 0.6;
-}
-
-/* OVERLAY HOME LOUPE- fondu sur les extrémités (sans noircir le centre) */
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index: 1;
-  background: linear-gradient(90deg,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.92) 26%,
-    rgba(0,0,0,0.55) 46%,
-    rgba(0,0,0,0.0) 66%
-  );
-}
-
-/* IMAGE */
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9.png");
-  background-repeat:no-repeat;
-  background-position: 62% 50%;
-  background-size: min(820px, 56vw);
-  pointer-events:none;
-  z-index: 0;
-}
-
-/* Par défaut (desktop): caché */
-.hero-mobile-image{
-  display: none;
-}
-
-@media (max-width: 820px){
-
-  /* 1) Le hero devient une colonne (image puis texte) */
-  .hero{
-    min-height: auto;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  /* 2) Bandeau image */
-  .hero-mobile-image{
-    display: block;
-    width: 100%;
-  }
-
-  .hero-mobile-image img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 60% 40%;
-    display: block;
-    background: #000;
-  }
-
-  /* 3) On désactive le background image desktop */
-  .hero::after{
-    display: none;
-  }
-
-  /* 4) Texte */
-  .hero .wrap{
-    padding-top: 24px;
-    padding-bottom: 48px;
-  }
-
-  .hero-subsection{
-    margin-top: 18px;
-  }
-
-  /* 5) Ombre désactivée */
-  .hero::before{
-    background: none !important;
-    opacity: 0 !important;
-  }
-
-  .hero .sub,
-  .hero-label,
-  .hero-points li{
-    opacity: 0.9;
-  }
-}
-
-/* CONTACT - header noir comme FAQ/About (sans impacter les autres pages) */
-.page-contact section.content{
-  background:#000;
-  color:#fff;
-  padding: 48px var(--pad);
-}
-
-/* Contact form - version lisible sur fond noir */
-.page-contact .contact-form{
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.08);
-}
-
-.page-contact .contact-form .label{
-  color: rgba(255,255,255,0.90);
-}
-
-.page-contact .contact-form input,
-.page-contact .contact-form textarea,
-.page-contact .contact-form select{
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(0,0,0,0.25);
-  color: #fff;
-}
-
-.page-contact .contact-form input::placeholder,
-.page-contact .contact-form textarea::placeholder{
-  color: rgba(255,255,255,0.55);
-}
-
-.page-contact .form-note{
-  color: rgba(255,255,255,0.80);
-}
-
-/* ================= Saut br sur mobile/desktop only ================= */
-
-.desktop-only {
+.desktop-only{
   display: inline;
 }
 
-@media (max-width: 768px) {
-  .desktop-only {
+@media (max-width: 768px){
+  .desktop-only{
     display: none;
   }
 }
 
-.mobile-only { 
-  display: none; 
+.mobile-only{
+  display: none;
 }
 
-@media (max-width: 768px) {
-  .mobile-only { 
-    display: inline; 
+@media (max-width: 768px){
+  .mobile-only{
+    display: inline;
   }
 }
 
-/* ================= LOCK FINAL ================= */
+/* =================
+   LOCK FINAL
+   ================= */
 
 @media (min-width: 821px){
   .nav-toggle{ display:none !important; }
