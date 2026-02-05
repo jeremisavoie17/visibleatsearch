@@ -1367,38 +1367,19 @@ a.cta-btn:focus-visible{
   opacity: 0.6;
 }
 
-/* OVERLAY - fondu sur les extrémités (sans noircir le centre) */
+/* OVERLAY HOME LOUPE- fondu sur les extrémités (sans noircir le centre) */
 .hero::before{
   content:"";
   position:absolute;
   inset:0;
   pointer-events:none;
   z-index: 1;
-  background:
-    /* fondu gauche pour intégrer le texte */
-    linear-gradient(90deg,
-      rgba(0,0,0,1) 0%,
-      rgba(0,0,0,0.95) 22%,
-      rgba(0,0,0,0.55) 42%,
-      rgba(0,0,0,0.0) 62%
-    ),
-    /* fondu haut - court */
-    linear-gradient(180deg,
-      rgba(0,0,0,0.55) 0%,
-      rgba(0,0,0,0.0) 14%
-    ),
-    /* fondu bas */
-    linear-gradient(0deg,
-      rgba(0,0,0,0.65) 0%,
-      rgba(0,0,0,0.0) 26%
-    ),
-   /* fondu droite – desktop */
-    linear-gradient(270deg,
-      rgba(0,0,0,0.65) 0%,
-      rgba(0,0,0,0.25) 12%,
-      rgba(0,0,0,0.0) 22%
-    );
-
+  background: linear-gradient(90deg,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.92) 26%,
+    rgba(0,0,0,0.55) 46%,
+    rgba(0,0,0,0.0) 66%
+  );
 }
 
 /* IMAGE */
