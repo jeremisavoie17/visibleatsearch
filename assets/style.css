@@ -1033,30 +1033,36 @@ a.cta-btn:focus-visible{
   object-fit: contain;
   object-position: center;
   background:#000;
-
-  -webkit-mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
 }
 
+/* Desktop: fondu visible */
+@media (min-width: 821px){
+  .page-home .clarity-hero-market::before,
+  .page-home .clarity-hero-market::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width: 32vw;
+    max-width: 420px;
+    pointer-events:none;
+    z-index: 2;
+  }
+  .page-home .clarity-hero-market::before{
+    left:0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+  .page-home .clarity-hero-market::after{
+    right:0;
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+}
+
+/* Mobile: rien */
 @media (max-width: 820px){
-  .page-home .clarity-hero-market img{
-    -webkit-mask-image: none;
-    mask-image: none;
+  .page-home .clarity-hero-market::before,
+  .page-home .clarity-hero-market::after{
+    display:none;
   }
 }
 
