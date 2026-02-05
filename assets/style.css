@@ -1048,15 +1048,15 @@ a.cta-btn:focus-visible{
     pointer-events:none;
     z-index: 2;
   }
-  .page-home .clarity-hero-market::before{
-    left:0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-  }
-  .page-home .clarity-hero-market::after{
-    right:0;
-    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-  }
+ .page-home .clarity-hero-market::before{
+  left:0;
+  background: linear-gradient(90deg, #000 0%, rgba(0,0,0,0.85) 25%, rgba(0,0,0,0) 60%);
 }
+.page-home .clarity-hero-market::after{
+  right:0;
+  background: linear-gradient(270deg, #000 0%, rgba(0,0,0,0.85) 25%, rgba(0,0,0,0) 60%);
+}
+
 
 /* Mobile: rien */
 @media (max-width: 820px){
