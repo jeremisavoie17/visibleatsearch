@@ -614,6 +614,9 @@ a.cta-btn:focus-visible{
   position: relative;
   background: #000;
   overflow: hidden;
+   
+   width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 /* l'image */
