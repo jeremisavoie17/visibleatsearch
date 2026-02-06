@@ -491,137 +491,145 @@ a.cta-btn:focus-visible{
 
 
 /* =================
-   HOME - APPROACH (Step 1/2/3 + Google tools)
+   HOME - APPROACH (card + timeline + tools grid)
    ================= */
 
-/* IMPORTANT: header empile titre + steps (sinon ca split en 2 colonnes) */
-.section-center{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  gap: 18px;
-}
-
-.approach-title{
-  margin: 0 0 10px 0;
-  text-align: center;
-}
-
-/* Donne de l'air a la section + force un centrage coherent (titre, powered, logos, steps) */
 #approach{
   background: var(--bg-light);
-  padding: 52px 0;
+  padding: 56px 0;
 }
 
 #approach .wrap{
   display:flex;
-  flex-direction: column;
-  align-items:center;
-  text-align:center;
+  justify-content:center;
 }
 
-.approach-steps{
+.approach-card{
+  width: min(980px, 100%);
+  background: rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 34px 28px;
+}
+
+.approach-title{
+  margin: 0 0 18px 0;
+  text-align: left;
+}
+
+.approach-grid{
+  display:grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 26px;
+  align-items:start;
+}
+
+/* Left - Timeline */
+.approach-timeline{
   list-style:none;
   padding:0;
-  margin: 22px 0 0 0;
+  margin:0;
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap: 14px;
+}
+
+.approach-timeline li{
+  display:flex;
   align-items:center;
-  width:100%;
+  gap: 12px;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.65);
 }
 
-.approach-steps li{
-  display:inline-block;
-  width:fit-content;
-  background: rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.10);
+.step-dot{
+  width: 32px;
+  height: 32px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   border-radius: 999px;
-  padding: 14px 18px;
-  font-size: 18px;
+  font-weight: 800;
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.10);
+  flex: 0 0 32px;
+}
+
+.step-text{
   line-height: 1.25;
-  white-space: nowrap;
+  font-size: 16px;
 }
 
-.approach-steps li strong{ font-weight: 800; }
-
-/* Powered by Google tools (sur Home, dans #approach) */
-#approach .ecosystem-title{
-  margin-top: 14px;
-  margin-bottom: 10px;
+/* Right - Tools */
+.ecosystem-title{
   font-size: 0.95rem;
-  font-weight: 600;
-  color: #111;
-  text-align: center;
+  font-weight: 650;
+  color:#111;
+  margin: 6px 0 12px 0;
+  text-align:left;
 }
 
-/* Icon strip */
-.ecosystem-strip{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 26px;
-  margin: 12px 0 30px;
+.ecosystem-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 12px;
 }
 
 .eco-item{
-  flex: 0 0 120px;
-  text-align: center;
+  text-align:center;
+  padding: 10px 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: rgba(255,255,255,0.55);
 }
 
 .eco-item img{
-  height: 64px;
-  width: auto;
-  display: block;
+  height: 46px;
+  width:auto;
+  display:block;
   margin: 0 auto 6px;
 }
 
 .eco-item span{
-  display: block;
-  font-size: 13px;
+  display:block;
+  font-size: 12px;
   line-height: 1.1;
   opacity: 0.75;
   white-space: nowrap;
 }
 
+/* Mobile */
 @media (max-width: 820px){
-  #approach{
-    padding: 38px 0;
+  #approach{ padding: 40px 0; }
+
+  .approach-card{
+    padding: 24px 16px;
+    border-radius: 16px;
   }
 
   .approach-title{
-    margin-bottom: 8px;
+    text-align:center;
+    margin-bottom: 14px;
   }
 
-  .approach-steps{
-    align-items: stretch;
-    gap: 10px;
-  }
-
-  .approach-steps li{
-    width: 100%;
-    text-align: left;
-    white-space: normal;
-    font-size: 15px;
-    line-height: 1.35;
-    padding: 10px 12px;
-    border-radius: 12px;
-  }
-
-  .ecosystem-strip{
-    justify-content: flex-start;
+  .approach-grid{
+    grid-template-columns: 1fr;
     gap: 18px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 8px 0 12px;
-    margin: 10px 0 22px;
   }
 
-  .eco-item{ flex: 0 0 104px; }
-  .eco-item img{ height: 40px; margin-bottom: 4px; }
-  .eco-item span{ font-size: 12px; }
+  .ecosystem-title{
+    text-align:center;
+  }
+
+  .ecosystem-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .eco-item img{
+    height: 40px;
+  }
 }
 
 
