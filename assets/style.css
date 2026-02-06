@@ -914,6 +914,131 @@ a.cta-btn:focus-visible{
   color: rgba(255,255,255,0.78);
 }
 
+/* ================= FAQ accordion ================= */
+.faq{
+  --faq-bg: #000;
+  --faq-fg: #fff;
+  --faq-muted: rgba(255,255,255,.70);
+  --faq-line: rgba(255,255,255,.18);
+  --faq-hover: rgba(255,255,255,.06);
+  background: var(--faq-bg);
+  color: var(--faq-fg);
+}
+
+.white.faq{
+  --faq-bg: #fff;
+  --faq-fg: #111;
+  --faq-muted: rgba(0,0,0,.68);
+  --faq-line: rgba(0,0,0,.14);
+  --faq-hover: rgba(0,0,0,.04);
+}
+
+/* Remove the max-width on paragraph inside FAQ answers */
+.faq .faq-a p{
+  max-width: 760px;
+}
+
+/* Each row */
+.faq .faq-item{
+  border-bottom: 1px solid var(--faq-line);
+}
+
+.faq .faq-item:last-child{
+  border-bottom: 0;
+}
+
+/* The clickable question row */
+.faq .faq-q{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  background: transparent;
+  border: 0;
+  color: inherit;
+  padding: 22px 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Subtle row hover */
+.faq .faq-q:hover{
+  background: var(--faq-hover);
+}
+
+/* Keyboard focus */
+.faq .faq-q:focus-visible{
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
+  border-radius: 10px;
+}
+
+/* Title text */
+.faq .faq-title{
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 650;
+}
+
+/* The + icon */
+.faq .faq-plus{
+  width: 30px;
+  height: 30px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  flex: 0 0 30px;
+  transition: transform 0.18s ease;
+}
+
+/* Turn + into x when open */
+.faq .faq-q[aria-expanded="true"] .faq-plus{
+  transform: rotate(45deg);
+}
+
+/* Answer panel */
+.faq .faq-a{
+  padding: 0 0 22px 0;
+}
+
+.faq .faq-a p{
+  margin: 0;
+  color: var(--faq-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Optional: tighten muted paragraph inside answer */
+.faq .faq-a .muted{
+  color: var(--faq-muted);
+}
+
+/* FAQ mobile */
+@media (max-width: 820px){
+  .page-faq section.content{
+    padding: 44px var(--pad);
+  }
+  .page-faq section.content h1{
+    font-size: clamp(38px, 9vw, 56px);
+  }
+  .faq .faq-q{ padding: 18px 0; }
+  .faq .faq-title{ font-size: 18px; }
+  .faq .faq-a{ padding-bottom: 18px; }
+}
+
+
 /* ================= PRICING CARDS ================= */
 
 .center{
@@ -1133,53 +1258,6 @@ a.cta-btn:focus-visible{
     align-items: start;
   }
 }
-
-/* =========================
-   Page-specific overrides
-   ========================= */
-
-/* Option 1: definir .muted globalement (recommande) */
-.muted{
-  opacity: 0.75;
-}
-
-/* FAQ - petit header noir */
-.page-faq section.content{
-  background:#000;
-  color:#fff;
-  padding: 56px var(--pad);
-}
-
-/* Bigger header like the reference */
-.page-faq section.content h1{
-  font-size: clamp(44px, 6vw, 78px);
-  letter-spacing: -0.5px;
-  margin-bottom: 10px;
-}
-
-.page-faq section.content .sub{
-  opacity: 0.78;
-  font-size: 18px;
-  max-width: 60ch;
-}
-
-.page-faq section.content .muted,
-.page-faq section.content p{
-  color: rgba(255,255,255,0.78);
-}
-
-/* À propos - petit header noir */
-.page-about section.content{
-  background:#000;
-  color:#fff;
-  padding: 48px var(--pad);
-}
-
-.page-about section.content .muted,
-.page-about section.content p{
-  color: rgba(255,255,255,0.78);
-}
-
 
 
 /* =================
