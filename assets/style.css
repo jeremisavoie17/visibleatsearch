@@ -435,7 +435,7 @@ a.cta-btn:focus-visible{
   );
 }
 
-/* Image background (desktop) */
+//////* HOME - background (desktop) *//////
 .hero::after{
   content:"";
   position:absolute;
@@ -446,19 +446,7 @@ a.cta-btn:focus-visible{
   background-size: min(820px, 56vw);
   pointer-events:none;
   z-index: 0;
-
-  -webkit-mask-image: linear-gradient(90deg,
-    transparent 0%,
-    #000 18%,
-    #000 100%
-  );
-  mask-image: linear-gradient(90deg,
-    transparent 0%,
-    #000 18%,
-    #000 100%
-  );
 }
-
 
 /* Mobile image band */
 .hero-mobile-image{ display: none; }
