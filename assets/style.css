@@ -435,7 +435,7 @@ a.cta-btn:focus-visible{
   );
 }
 
-//////* HOME - background (desktop) *//////
+/* HOME - background (desktop) */
 .hero::after{
   content:"";
   position:absolute;
