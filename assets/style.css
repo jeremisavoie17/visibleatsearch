@@ -506,22 +506,32 @@ a.cta-btn:focus-visible{
 
 .approach-card{
   width: min(980px, 100%);
-  background: rgba(0,0,0,0.02);
+  background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 18px;
-  padding: 34px 28px;
+  border-radius: 22px;
+  padding: 34px 30px;
 }
 
 .approach-title{
-  margin: 0 0 18px 0;
+  margin: 0 0 20px 0;
   text-align: center;
 }
 
 .approach-grid{
   display:grid;
   grid-template-columns: 1.05fr 1fr;
-  gap: 34px;
-  align-items:start;
+  gap: 0;
+  align-items: stretch;
+}
+
+/* Colonnes + divider */
+.approach-left{
+  padding: 10px 28px 10px 10px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+}
+
+.approach-right{
+  padding: 10px 10px 10px 28px;
 }
 
 /* Left - Timeline */
@@ -531,22 +541,22 @@ a.cta-btn:focus-visible{
   margin:0;
   display:flex;
   flex-direction:column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .approach-timeline li{
   display:flex;
   align-items:center;
   gap: 12px;
-  padding: 12px 12px;
+  padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,0.08);
-  background: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.80);
 }
 
 .step-dot{
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -554,7 +564,7 @@ a.cta-btn:focus-visible{
   font-weight: 800;
   background: rgba(0,0,0,0.06);
   border: 1px solid rgba(0,0,0,0.10);
-  flex: 0 0 32px;
+  flex: 0 0 30px;
 }
 
 .step-text{
@@ -567,26 +577,26 @@ a.cta-btn:focus-visible{
   font-size: 0.95rem;
   font-weight: 650;
   color:#111;
-  margin: 6px 0 12px 0;
+  margin: 4px 0 14px 0;
   text-align:center;
 }
 
 .ecosystem-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px 12px;
+  gap: 12px;
 }
 
 .eco-item{
   text-align:center;
-  padding: 10px 8px;
+  padding: 12px 10px;
   border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.06);
-  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.85);
 }
 
 .eco-item img{
-  height: 46px;
+  height: 44px;
   width:auto;
   display:block;
   margin: 0 auto 6px;
@@ -609,18 +619,19 @@ a.cta-btn:focus-visible{
     border-radius: 16px;
   }
 
-  .approach-title{
-    text-align:center;
-    margin-bottom: 14px;
-  }
-
   .approach-grid{
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .ecosystem-title{
-    text-align:center;
+  /* En mobile: pas de divider, pas de padding colonnes */
+  .approach-left{
+    padding: 0;
+    border-right: none;
+  }
+
+  .approach-right{
+    padding: 0;
   }
 
   .ecosystem-grid{
