@@ -514,13 +514,13 @@ a.cta-btn:focus-visible{
 
 .approach-title{
   margin: 0 0 18px 0;
-  text-align: left;
+  text-align: center;
 }
 
 .approach-grid{
   display:grid;
   grid-template-columns: 1.05fr 1fr;
-  gap: 26px;
+  gap: 34px;
   align-items:start;
 }
 
@@ -568,7 +568,7 @@ a.cta-btn:focus-visible{
   font-weight: 650;
   color:#111;
   margin: 6px 0 12px 0;
-  text-align:left;
+  text-align:center;
 }
 
 .ecosystem-grid{
@@ -631,6 +631,7 @@ a.cta-btn:focus-visible{
     height: 40px;
   }
 }
+
 
 
 /* =========================
