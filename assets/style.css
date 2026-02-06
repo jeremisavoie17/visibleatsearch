@@ -643,6 +643,26 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* Desktop only: aligner le point de départ des 2 colonnes */
+@media (min-width: 821px){
+  .approach-grid{
+    align-items: start;
+  }
+
+  .approach-left{
+    padding-top: 0;
+  }
+
+  .approach-right{
+    padding-top: 0;
+  }
+
+  .ecosystem-title{
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+}
 
 
 /* =========================
