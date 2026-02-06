@@ -606,43 +606,41 @@ a.cta-btn:focus-visible{
 }
 
 
-/* =================
-   HOME - MARKET IMAGE (full-bleed strip)
-   ================= */
+/* =========================
+   HOME - MARKET (FADE FIX)
+   ========================= */
 
 .page-home .clarity-hero-market{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  background:#000;
-  overflow:hidden;
   position: relative;
+  background: #000;
+  overflow: hidden;
 }
 
+/* l'image */
 .page-home .clarity-hero-market img{
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
   height: clamp(220px, 28vw, 420px);
   object-fit: contain;
   object-position: center;
-  background:#000;
+  background: #000;
+  position: relative;
+  z-index: 1;
+}
 
-  -webkit-mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
+/* overlay de fondu (fiable partout) */
+.page-home .clarity-hero-market::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(90deg,
+    #000 0%,
+    rgba(0,0,0,0.95) 10%,
+    rgba(0,0,0,0.0) 22%,
+    rgba(0,0,0,0.0) 100%
   );
-  mask-image: linear-gradient(to right,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
 }
 
 
