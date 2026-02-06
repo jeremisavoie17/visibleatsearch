@@ -690,22 +690,6 @@ a.cta-btn:focus-visible{
   z-index: 1;
 }
 
-/* overlay de fondu (fiable partout) */
-.page-home .clarity-hero-market::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  background: linear-gradient(90deg,
-    #000 0%,
-    rgba(0,0,0,0.95) 10%,
-    rgba(0,0,0,0.0) 22%,
-    rgba(0,0,0,0.0) 100%
-  );
-}
-
-
 /* =================
    HOME - GROWTH BLOCK (ex "Growth opportunities exist")
    ================= */
