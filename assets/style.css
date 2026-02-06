@@ -650,7 +650,7 @@ a.cta-btn:focus-visible{
   }
 
   .approach-left{
-    padding-top: 0;
+    padding-top: 18px; 
   }
 
   .approach-right{
