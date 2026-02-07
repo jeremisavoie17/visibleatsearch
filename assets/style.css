@@ -632,7 +632,7 @@ a.cta-btn:focus-visible{
   .approach-right{
     padding: 0;
     margin-top: 26px;
-    padding-top: 22px;
+    padding-top: 28px;
     border-top: 1px solid rgba(0,0,0,0.08);
   }
 
@@ -723,7 +723,7 @@ a.cta-btn:focus-visible{
 .page-home .ad-example-media{
   border-radius: 14px;
   overflow: hidden;
-  background: rgba(0,0,0,0.02);
+  background: #fff;
   border: 1px solid rgba(0,0,0,0.06);
   height: 220px;
   display: flex;
