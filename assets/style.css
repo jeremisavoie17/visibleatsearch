@@ -691,6 +691,7 @@ a.cta-btn:focus-visible{
 
 .page-home .ad-examples .wrap{
   display: block;
+  padding: 0 16px;
 }
 
 .page-home .ad-examples-title{
