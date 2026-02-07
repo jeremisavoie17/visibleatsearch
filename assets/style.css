@@ -571,9 +571,10 @@ a.cta-btn:focus-visible{
 }
 
 .ecosystem-title{
-  font-size: 0.95rem;
-  font-weight: 650;
-  color:#111;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.6);
+  letter-spacing: 0.02em;
   margin: 4px 0 14px 0;
   text-align:center;
 }
