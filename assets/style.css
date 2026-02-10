@@ -710,7 +710,7 @@ a.cta-btn:focus-visible{
 }
 
 /* Zone media: meme hauteur visuelle */
-page-home .ad-example-media{
+.page-home .ad-example-media{
   border-radius: 14px;
   overflow: hidden;
   background: linear-gradient(90deg,
