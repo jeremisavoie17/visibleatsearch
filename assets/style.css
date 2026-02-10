@@ -428,7 +428,7 @@ a.cta-btn:focus-visible{
   inset:0;
   background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
   background-repeat:no-repeat;
-  background-position: 62% 50%;
+  background-position: 50% 50%;
   background-size: min(820px, 56vw);
   pointer-events:none;
   z-index: 0;
