@@ -383,6 +383,7 @@ a.cta-btn:focus-visible{
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .hero .wrap{
