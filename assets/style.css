@@ -383,7 +383,6 @@ a.cta-btn:focus-visible{
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .hero .wrap{
@@ -392,7 +391,7 @@ a.cta-btn:focus-visible{
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding-left: 24px;
+  padding-left: 140px;
   padding-right: 24px;
 }
 
