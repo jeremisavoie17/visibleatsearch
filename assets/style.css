@@ -709,22 +709,7 @@ a.cta-btn:focus-visible{
   flex-direction: column;
 }
 
-/* Zone media: meme hauteur visuelle */
-.page-home .ad-example-media{
-  border-radius: 14px;
-  overflow: hidden;
-  background: linear-gradient(90deg,
-    rgba(0,0,0,0.03) 0%,
-    #fff 18%,
-    #fff 82%,
-    rgba(0,0,0,0.03) 100%
-  );
-  border: 1px solid rgba(0,0,0,0.06);
-  height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* Zone ad exemple */
 
 .page-home .ad-example-media img{
   width: 100%;
