@@ -420,19 +420,6 @@ a.cta-btn:focus-visible{
 
 .hero-entry:hover{ background: #f2f2f2; }
 
-/* Overlay (fondu a gauche, laisse l’image respirer) */
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index: 1;
-  background: linear-gradient(90deg,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.92) 26%,
-    rgba(0,0,0,0.55) 46%,
-    rgba(0,0,0,0.0) 66%
-  );
 }
 
 /* HOME - background (desktop) */
@@ -440,7 +427,7 @@ a.cta-btn:focus-visible{
   content:"";
   position:absolute;
   inset:0;
-  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9.png");
+  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
   background-repeat:no-repeat;
   background-position: 62% 50%;
   background-size: min(820px, 56vw);
