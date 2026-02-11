@@ -454,8 +454,8 @@ a.cta-btn:focus-visible{
   .hero::after{ display: none; }
 
   .hero .wrap{
-    padding-top: 24px;
-    padding-bottom: 48px;
+    padding-top: 40px;    
+    padding-bottom: 72px; 
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -472,8 +472,11 @@ a.cta-btn:focus-visible{
   }
 
   .hero-label{ opacity: 0.9; }
-}
 
+  .hero h1{
+    margin-bottom: 18px;  
+  }
+}
 
 
 /* =================
