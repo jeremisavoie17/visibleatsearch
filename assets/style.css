@@ -454,9 +454,9 @@ a.cta-btn:focus-visible{
 
   .hero-mobile-image img{
     width: 100%;
-    height: 200px;
+    height: 140px;          
     object-fit: cover;
-    object-position: 60% 40%;
+    object-position: 80% 45%; 
     display: block;
     background: #000;
   }
@@ -466,6 +466,12 @@ a.cta-btn:focus-visible{
   .hero .wrap{
     padding-top: 24px;
     padding-bottom: 48px;
+    padding-left: 20px;     
+    padding-right: 20px;    
+  }
+
+  .hero-copy{
+    margin-left: 0;         
   }
 
   .hero-subsection{ margin-top: 18px; }
@@ -490,8 +496,21 @@ a.cta-btn:focus-visible{
 
 #approach .wrap{
   display:flex;
-  justify-content:center;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: flex-start; 
 }
+
+#approach .ad-examples-title,
+#approach .ad-examples-sub{
+  width: min(980px, 100%);
+  text-align: center;
+}
+
+#approach .ad-examples-sub{
+  margin-bottom: 20px; 
+}
+
 
 .approach-card{
   width: min(980px, 100%);
