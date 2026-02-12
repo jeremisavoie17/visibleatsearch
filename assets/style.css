@@ -788,7 +788,7 @@ a.cta-btn:focus-visible{
 }
 
 /* =================
-   HOME - GROWTH BLOCK (ex "Growth opportunities exist")
+   HOME - GROWTH BLOCK 
    ================= */
 
 .page-home #clarity{
@@ -807,19 +807,10 @@ a.cta-btn:focus-visible{
 }
 
 .page-home .clarity-title{
-  max-width: 28ch;
+  max-width: 44ch;
   margin-left: auto;
   margin-right: auto;
 }
-
-.page-home .clarity-points{
-  max-width: 520px;
-  margin: 0 auto 18px;
-  display: grid;
-  gap: 6px;
-}
-
-.page-home .clarity-points p{ margin: 0; }
 
 .page-home #clarity .wrap{
   display: flex;
