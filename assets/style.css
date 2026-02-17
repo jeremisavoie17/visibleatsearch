@@ -797,19 +797,12 @@ a.cta-btn:focus-visible{
 }
 
 .page-home .clarity-head{
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  gap: 20px;
   margin-bottom: 26px;
   padding-left: var(--pad);
   padding-right: var(--pad);
-}
-
-.page-home .clarity-title{
-  max-width: 44ch;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-home #clarity .wrap{
