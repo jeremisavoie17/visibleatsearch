@@ -792,6 +792,7 @@ a.cta-btn:focus-visible{
    ================= */
 
 .page-home #clarity{
+  padding: 64px 0; 
   padding-left: 0;
   padding-right: 0;
 }
