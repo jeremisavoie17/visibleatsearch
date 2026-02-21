@@ -583,7 +583,7 @@ a.cta-btn:focus-visible{
   .approach-right{
     padding: 0;
     margin-top: 26px;
-    padding-top: 32px;
+    padding-top: 26px;
     border-top: 1px solid rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
@@ -707,6 +707,12 @@ a.cta-btn:focus-visible{
   border-color: rgba(0,0,0,0.14);
   transform: translateY(-2px);
   box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+}
+
+.ad-example-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 /* Optionnel: enlever l’effet */
