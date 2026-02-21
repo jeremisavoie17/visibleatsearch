@@ -500,7 +500,7 @@ a.cta-btn:focus-visible{
   display:grid;
   grid-template-columns: 1.05fr 1fr;
   gap: 0;
-  align-items: stretch;
+  align-items: center;
 }
 
 .approach-left{
