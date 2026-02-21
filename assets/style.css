@@ -515,7 +515,7 @@ a.cta-btn:focus-visible{
   padding: 10px 10px 10px 28px;
 }
 
-/* Summary text */
+/* Summary text (replaces steps) */
 .approach-summary-title{
   margin: 0 0 10px 0;
   font-size: 18px;
@@ -620,6 +620,7 @@ a.cta-btn:focus-visible{
     padding-top: 32px;
   }
 }
+
 
 /* =================
    HOME - AD EXAMPLES
