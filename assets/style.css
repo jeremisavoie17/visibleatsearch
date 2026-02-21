@@ -606,15 +606,15 @@ a.cta-btn:focus-visible{
 
 @media (min-width: 821px){
   .approach-grid{
-    align-items: start;
+    align-items: center; 
   }
 
   .approach-left{
-    padding-top: 32px;
+    padding-top: 0; 
   }
 
   .approach-right{
-    padding-top: 32px;
+    padding-top: 0; 
   }
 }
 
