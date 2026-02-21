@@ -295,16 +295,6 @@ a.cta-btn:focus-visible{
   gap: 10px;
 }
 
-/* Legacy: n’affecte rien si tu n’utilises pas .list dans #approach */
-#approach .list{ margin-top: 0; }
-
-.list li{
-  background: rgba(0,0,0,0.04);
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 14px;
-  padding: 12px 14px;
-}
-
 
 /* =================
    SERVICES - IMAGE RIGHT + FADE
