@@ -159,10 +159,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 btn.classList.remove('disabled');
                 btn.href = url;
                 btn.setAttribute('aria-disabled', 'false');
+
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
               } else {
                 btn.classList.add('disabled');
                 btn.href = '#';
                 btn.setAttribute('aria-disabled', 'true');
+
+                btn.removeAttribute('target');
+                btn.setAttribute('rel', 'noopener noreferrer');
               }
             });
           })();
@@ -222,10 +228,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 btn.classList.remove('disabled');
                 btn.href = url;
                 btn.setAttribute('aria-disabled', 'false');
+
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
               } else {
                 btn.classList.add('disabled');
                 btn.href = '#';
                 btn.setAttribute('aria-disabled', 'true');
+
+                btn.removeAttribute('target');
+                btn.setAttribute('rel', 'noopener noreferrer');
               }
             });
           })();
@@ -281,10 +293,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 btn.classList.remove('disabled');
                 btn.href = url;
                 btn.setAttribute('aria-disabled', 'false');
+
+                btn.setAttribute('target', '_blank');
+                btn.setAttribute('rel', 'noopener noreferrer');
               } else {
                 btn.classList.add('disabled');
                 btn.href = '#';
                 btn.setAttribute('aria-disabled', 'true');
+
+                btn.removeAttribute('target');
+                btn.setAttribute('rel', 'noopener noreferrer');
               }
             });
           })();
@@ -390,7 +408,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
   </section>
-
   <!-- AFTER PAYMENT -->
   <section id="process" class="content">
     <div class="wrap">
