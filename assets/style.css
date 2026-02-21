@@ -698,6 +698,31 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* Ad examples - hover / selectable cards */
+.page-home .ad-example{
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.page-home .ad-example:hover,
+.page-home .ad-example:focus-within{
+  background: rgba(0,0,0,0.02);
+  border-color: rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+}
+
+/* Optionnel: enlever l’effet */
+@media (prefers-reduced-motion: reduce){
+  .page-home .ad-example{
+    transition: none;
+  }
+  .page-home .ad-example:hover,
+  .page-home .ad-example:focus-within{
+    transform: none;
+  }
+}
+
 
 /* =========================
    HOME - MARKET 
