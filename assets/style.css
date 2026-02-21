@@ -493,10 +493,7 @@ a.cta-btn:focus-visible{
 
 .approach-card{
   width: min(980px, 100%);
-  background: rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 22px;
-  padding: 34px 30px;
+  padding: 22px 0;
 }
 
 .approach-grid{
@@ -515,12 +512,12 @@ a.cta-btn:focus-visible{
   padding: 10px 10px 10px 28px;
 }
 
-/* Summary text (replaces steps) */
+/* Summary text */
 .approach-summary-title{
   margin: 0 0 10px 0;
   font-size: 18px;
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .approach-summary-text{
