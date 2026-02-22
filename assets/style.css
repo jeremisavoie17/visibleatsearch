@@ -762,6 +762,7 @@ a.cta-btn:focus-visible{
   z-index: 1;
 }
 
+
 /* =================
    HOME - GROWTH BLOCK 
    ================= */
@@ -785,6 +786,12 @@ a.cta-btn:focus-visible{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.clarity-subtitle {
+  margin-bottom: 30px;
+  color: #555555;
+  font-size: 1.1rem;
 }
 
 /* CTA dans #clarity sur fond clair */
