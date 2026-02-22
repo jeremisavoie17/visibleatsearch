@@ -413,32 +413,42 @@ a.cta-btn:focus-visible{
 
 .hero-entry:hover{ background: #f2f2f2; }
 
-/* Groupe le bouton et le prix pour un alignement parfait */
+/* --- Bloc CTA (Bouton + Prix) --- */
 .hero-cta-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligne à gauche (ou 'center' si ton hero est centré) */
-  margin-top: 1.5rem;
+  align-items: flex-start; 
+  margin-top: 24px; /* Un seul endroit pour gérer l'espace avec le texte du haut */
 }
 
-/* Style pour la mention de prix sous le bouton */
+.hero-entry {
+  display: inline-block;
+  margin-top: 0; /* On enlève la marge ici pour éviter le double espace */
+  padding: 12px 20px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: background 0.15s ease;
+}
+
 .hero-pricing-tag {
-  margin-top: 0.75rem; 
+  margin-top: 10px; 
   font-size: 0.85rem;  
-  color: #666;        
+  color: #999; /* Gris plus clair pour être lisible sur le NOIR */
   font-weight: 400;
   letter-spacing: 0.02em;
-  opacity: 0.9;
 }
 
-/* Sur mobile, on centre souvent tout le hero */
+/* --- Ajustement Mobile --- */
 @media (max-width: 768px) {
   .hero-cta-group {
-    align-items: center;
+    align-items: center; /* Centre parfaitement le bouton et le prix */
     text-align: center;
+    margin-top: 32px; /* Un peu plus d'espace sur mobile */
   }
 }
-
 /* HOME - background (desktop) */
 .hero::after{
   content:"";
