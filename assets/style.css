@@ -354,7 +354,7 @@ a.cta-btn:focus-visible{
 
 
 /* =================
-   HOME - HERO (image background + mobile image band)
+   HOME - HERO MAIN
    ================= */
 
 /* Hero tightening */
@@ -413,6 +413,31 @@ a.cta-btn:focus-visible{
 
 .hero-entry:hover{ background: #f2f2f2; }
 
+/* Groupe le bouton et le prix pour un alignement parfait */
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne à gauche (ou 'center' si ton hero est centré) */
+  margin-top: 1.5rem;
+}
+
+/* Style pour la mention de prix sous le bouton */
+.hero-pricing-tag {
+  margin-top: 0.75rem; 
+  font-size: 0.85rem;  
+  color: #666;        
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+}
+
+/* Sur mobile, on centre souvent tout le hero */
+@media (max-width: 768px) {
+  .hero-cta-group {
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /* HOME - background (desktop) */
 .hero::after{
