@@ -357,23 +357,13 @@ a.cta-btn:focus-visible{
    HOME - HERO MAIN
    ================= */
 
-.hero h1 { margin-bottom: 8px; }
-
-.hero p {
-  margin-top: 0;
-  margin-bottom: 6px;
-  line-height: 1.45;
-  max-width: 90ch;
-}
-
 .hero {
   position: relative;
   min-height: 100vh;
   background: #000;
   overflow: hidden;
   display: flex;
-  align-items: center; 
-  justify-content: flex-start; 
+  align-items: center;
 }
 
 .hero .wrap {
@@ -382,63 +372,65 @@ a.cta-btn:focus-visible{
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding-left: 80px; 
-  padding-right: 24px;
+  padding: 0 40px;
 }
 
 .hero-copy {
-  max-width: 540px;
-  margin-left: 0; 
+  max-width: 580px;
 }
 
-.hero-subsection { margin-top: 22px; }
+.hero h1 { 
+  margin-bottom: 12px; 
+  color: #fff;
+}
 
 .hero-label {
-  margin: 0 0 4px 0;
-  font-size: 15px;
-  opacity: 0.75;
-  letter-spacing: 0.2px;
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  opacity: 0.8;
+  color: #fff;
 }
 
-/* Bloc CTA (Bouton + Prix) */
 .hero-cta-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  margin-top: 24px; 
+  align-items: flex-start;
+  margin-top: 28px;
 }
 
 .hero-entry {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 14px 24px;
   background: #fff;
   color: #000;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 12px;
-  transition: background 0.15s ease;
+  transition: transform 0.2s ease;
 }
 
-.hero-entry:hover { background: #f2f2f2; }
+.hero-entry:hover { transform: scale(1.03); }
 
 .hero-pricing-tag {
-  margin-top: 10px; 
-  font-size: 0.85rem;  
-  color: #999; 
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  margin: 12px 0 0 0;
+  font-size: 0.85rem;
+  color: #aaa; 
 }
 
-/* IMAGE DE FOND (Desktop) */
+/* L'IMAGE DE FOND (Desktop uniquement) */
 .hero::after {
-  content:"";
-  position:absolute;
-  inset:0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5%; 
+  transform: translateY(-50%);
+  width: 500px; 
+  height: 500px;
   background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
-  background-repeat:no-repeat;
-  background-position: 85% 50%; 
-  background-size: min(780px, 50vw);
-  pointer-events:none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -447,36 +439,39 @@ a.cta-btn:focus-visible{
    ================= */
 @media (max-width: 820px) {
   .hero {
-    min-height: 70vh;
+    min-height: auto;
+    padding-top: 80px; 
+    padding-bottom: 60px;
     flex-direction: column;
-    justify-content: center;
+  }
+
+  .hero-mobile-image {
+    display: block !important;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+  }
+
+  .hero::after { display: none; } 
+
+  .hero .wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center; 
+  }
+
+  .hero-copy {
+    max-width: 100%;
   }
 
   .hero-cta-group {
-    align-items: center;
-    text-align: center;
-    margin-top: 32px;
+    align-items: center; 
   }
 
-  .hero::after { display: none; }
-
-  .hero .wrap {
-    padding-top: 40px;    
-    padding-bottom: 72px; 
-    padding-left: 20px;
-    padding-right: 20px;
+  .hero h1 {
+    font-size: 38px;
   }
-
-  .hero-copy { 
-    margin-left: 0; 
-    max-width: 100%;
-    text-align: center; 
-  }
-  
-  .hero h1 { margin-bottom: 28px; }
-  .hero-label { opacity: 0.9; }
 }
-
 
 /* =================
    HOME - AD EXAMPLES
