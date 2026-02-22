@@ -468,6 +468,112 @@ a.cta-btn:focus-visible{
   }
 }
 
+/* =================
+   HOME - AD EXAMPLES
+   ================= */
+
+.page-home .ad-examples{
+  background: #fff;
+  color: var(--text-dark);
+  padding: 56px 0;
+}
+
+.page-home .ad-examples .wrap{
+  display: block;
+  padding: 0 16px;
+}
+
+.page-home .ad-examples-title{
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.page-home .ad-examples-sub{
+  text-align: center;
+  margin: 0 auto 22px auto;
+  opacity: 0.75;
+}
+
+.page-home .ad-examples-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Cartes */
+.page-home .ad-example{
+  margin: 0;
+  background: rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Zone ad exemple */
+
+.page-home .ad-example-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Caption */
+.page-home .ad-example-caption{
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 650;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Mobile */
+@media (max-width: 820px){
+  .page-home .ad-examples{ padding: 48px 0; }
+
+  .page-home .ad-examples-grid{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .page-home .ad-example-media{
+    height: 200px;
+  }
+}
+
+/* Ad examples - hover / selectable cards */
+.page-home .ad-example{
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.page-home .ad-example:hover,
+.page-home .ad-example:focus-within{
+  background: rgba(0,0,0,0.02);
+  border-color: rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+}
+
+.ad-example-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Optionnel: enlever l’effet */
+@media (prefers-reduced-motion: reduce){
+  .page-home .ad-example{
+    transition: none;
+  }
+  .page-home .ad-example:hover,
+  .page-home .ad-example:focus-within{
+    transform: none;
+  }
+}
 
 /* =================
    HOME - APPROACH (card + tools grid)
@@ -619,111 +725,102 @@ a.cta-btn:focus-visible{
   }
 }
 
-/* =================
-   HOME - AD EXAMPLES
-   ================= */
+/* =========================================
+   AEO PAGES (Tracking, Merchant, etc.)
+   ========================================= */
 
-.page-home .ad-examples{
-  background: #fff;
-  color: var(--text-dark);
-  padding: 56px 0;
+.aeo-header {
+  padding-bottom: 20px;
 }
 
-.page-home .ad-examples .wrap{
-  display: block;
-  padding: 0 16px;
+.aeo-header-title {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.page-home .ad-examples-title{
-  text-align: center;
-  margin: 0 0 10px 0;
+.aeo-header-subtitle {
+  max-width: 600px;
+  margin: 15px auto;
+  font-size: 1.2rem;
 }
 
-.page-home .ad-examples-sub{
-  text-align: center;
-  margin: 0 auto 22px auto;
-  opacity: 0.75;
-}
-
-.page-home .ad-examples-grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  align-items: stretch;
-}
-
-/* Cartes */
-.page-home .ad-example{
-  margin: 0;
-  background: rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 18px;
-  padding: 16px;
+.aeo-header-logos {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
 }
 
-/* Zone ad exemple */
-
-.page-home .ad-example-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-/* Caption */
-.page-home .ad-example-caption{
-  margin-top: 12px;
+.aeo-header-logos .eco-item {
   text-align: center;
-  font-weight: 650;
-  font-size: 14px;
-  opacity: 0.85;
 }
 
-/* Mobile */
-@media (max-width: 820px){
-  .page-home .ad-examples{ padding: 48px 0; }
-
-  .page-home .ad-examples-grid{
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .page-home .ad-example-media{
-    height: 200px;
-  }
+.aeo-header-logos img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
 }
 
-/* Ad examples - hover / selectable cards */
-.page-home .ad-example{
-  cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+.aeo-content-block {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
 }
 
-.page-home .ad-example:hover,
-.page-home .ad-example:focus-within{
-  background: rgba(0,0,0,0.02);
-  border-color: rgba(0,0,0,0.14);
-  transform: translateY(-2px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.12);
+.aeo-list {
+  list-style: none;
+  padding: 0;
 }
 
-.ad-example-link{
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.aeo-list li {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.1rem;
+  color: #444;
 }
 
-/* Optionnel: enlever l’effet */
-@media (prefers-reduced-motion: reduce){
-  .page-home .ad-example{
-    transition: none;
-  }
-  .page-home .ad-example:hover,
-  .page-home .ad-example:focus-within{
-    transform: none;
-  }
+.aeo-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #111;
+  font-weight: bold;
+}
+
+.aeo-visual {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+.aeo-features {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.aeo-feature-item {
+  flex: 1;
+  min-width: 250px;
+}
+
+.aeo-feature-item h3 {
+  font-size: 1.1rem;
+}
+
+.aeo-feature-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.aeo-inclusion-box {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 
