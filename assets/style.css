@@ -528,14 +528,17 @@ a.cta-btn:focus-visible{
   max-width: 60ch;
 }
 
-.ecosystem-grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.ecosystem-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
   gap: 12px;
 }
 
-.eco-item{
-  text-align:center;
+/* Fusion des deux blocs en un seul */
+.eco-item {
+  flex: 0 0 calc(33.333% - 8px); 
+  text-align: center;
   padding: 12px 10px;
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,0.08);
@@ -590,11 +593,11 @@ a.cta-btn:focus-visible{
   }
 
   .ecosystem-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
 
   .eco-item{
+    flex: 0 0 calc(50% - 8px); /* Ajout pour forcer 2 colonnes sur mobile */
     padding: 14px 12px;
     min-height: 96px;
   }
@@ -608,16 +611,13 @@ a.cta-btn:focus-visible{
   .approach-grid{
     align-items: center; 
   }
-
   .approach-left{
     padding-top: 0; 
   }
-
   .approach-right{
     padding-top: 0; 
   }
 }
-
 
 /* =================
    HOME - AD EXAMPLES
