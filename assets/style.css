@@ -372,7 +372,8 @@ a.cta-btn:focus-visible{
   background: #000;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: center; 
+  justify-content: flex-start; 
 }
 
 .hero .wrap {
@@ -381,13 +382,13 @@ a.cta-btn:focus-visible{
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding-left: 140px;
+  padding-left: 80px; 
   padding-right: 24px;
 }
 
 .hero-copy {
-  max-width: 560px;
-  margin-left: 96px;
+  max-width: 540px;
+  margin-left: 0; 
 }
 
 .hero-subsection { margin-top: 22px; }
@@ -399,7 +400,7 @@ a.cta-btn:focus-visible{
   letter-spacing: 0.2px;
 }
 
-/* Bloc CTA (Contient Bouton + Prix) */
+/* Bloc CTA (Bouton + Prix) */
 .hero-cta-group {
   display: flex;
   flex-direction: column;
@@ -407,7 +408,6 @@ a.cta-btn:focus-visible{
   margin-top: 24px; 
 }
 
-/* Style du Bouton Unique */
 .hero-entry {
   display: inline-block;
   padding: 12px 20px;
@@ -421,7 +421,6 @@ a.cta-btn:focus-visible{
 
 .hero-entry:hover { background: #f2f2f2; }
 
-/* Mention de prix sous le bouton */
 .hero-pricing-tag {
   margin-top: 10px; 
   font-size: 0.85rem;  
@@ -437,10 +436,10 @@ a.cta-btn:focus-visible{
   inset:0;
   background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
   background-repeat:no-repeat;
-  background-position: 70% 50%;
-  background-size: min(820px, 56vw);
+  background-position: 85% 50%; 
+  background-size: min(780px, 50vw);
   pointer-events:none;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* =================
@@ -450,10 +449,9 @@ a.cta-btn:focus-visible{
   .hero {
     min-height: 70vh;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
   }
 
-  /* On centre le groupe bouton + prix quand le layout bascule */
   .hero-cta-group {
     align-items: center;
     text-align: center;
@@ -469,10 +467,16 @@ a.cta-btn:focus-visible{
     padding-right: 20px;
   }
 
-  .hero-copy { margin-left: 0; }
+  .hero-copy { 
+    margin-left: 0; 
+    max-width: 100%;
+    text-align: center; 
+  }
+  
   .hero h1 { margin-bottom: 28px; }
   .hero-label { opacity: 0.9; }
 }
+
 
 /* =================
    HOME - AD EXAMPLES
