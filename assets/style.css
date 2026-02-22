@@ -413,16 +413,6 @@ a.cta-btn:focus-visible{
 
 .hero-entry:hover{ background: #f2f2f2; }
 
-.pricing-hint {
-  display: block; 
-  margin-top: 10px; 
-  font-size: 0.85rem; 
-  color: #666666; 
-  text-align: center; 
-  font-weight: 500;
-}
-
-/* Si ton bouton et ton texte sont dans un conteneur flex, tu pourrais avoir besoin d'ajuster un peu, mais c'est la base ! */
 
 /* HOME - background (desktop) */
 .hero::after{
