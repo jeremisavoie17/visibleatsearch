@@ -390,6 +390,46 @@ a.cta-btn:focus-visible{
   opacity: 0.75;
   color: #fff;
 }
+/* CTA */
+a.hero-entry,
+a.hero-entry:link,
+a.hero-entry:visited{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 18px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.10);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  line-height:1;
+  border:1px solid rgba(255,255,255,0.30);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a.hero-entry:hover{
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.45);
+  color:#fff;
+}
+
+a.hero-entry:focus-visible{
+  outline:2px solid rgba(255,255,255,0.55);
+  outline-offset:3px;
+}
+
+.hero-pricing-tag{
+  margin:0;
+  opacity:0.85;
+  color:#fff;
+  font-size:15px;
+}
+
+/* Mobile: centre juste le bloc CTA */
+@media (max-width: 820px){
+  .hero-cta-group{ align-items:center; }
+}
 
 /* LA LOUPE À DROITE UNIQUE */
 .hero::after {
