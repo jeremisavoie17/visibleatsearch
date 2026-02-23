@@ -190,6 +190,34 @@ p{
   border-color: rgba(0,0,0,0.18);
 }
 
+/* =================
+   NAV - LANG SWITCH
+   ================= */
+
+.nav .lang a,
+.nav .lang a:link,
+.nav .lang a:visited{
+  text-decoration:none;
+  color: var(--text-dark);
+  font-size:15px;
+  font-weight:600;
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid transparent;
+}
+
+.nav .lang a:hover{
+  background: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.08);
+}
+
+.nav .lang a[aria-current="page"]{
+  background: rgba(0,0,0,0.10);
+  border-color: rgba(0,0,0,0.18);
+}
+
+.nav .lang .sep{ opacity:0.55; }
+
 
 /* =================
    BUTTONS + LINKS
