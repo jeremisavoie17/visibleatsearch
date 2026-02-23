@@ -405,21 +405,21 @@ a.cta-btn:focus-visible{
   padding-right: 24px;
 
   display: grid;
-  grid-template-columns: minmax(0, 540px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 540px) minmax(0, 620px);
   align-items: center;
   column-gap: clamp(28px, 4vw, 56px); 
 }
 
 .hero-media{
   justify-self: end;
-  max-width: min(620px, 44vw);
+  width: min(620px, 44vw);
   height: min(560px, 52vw);
-  transform: translateX(clamp(-56px, -4vw, -20px));
 
   background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: left center;
+
   pointer-events: none;
   opacity: 1;
 }
