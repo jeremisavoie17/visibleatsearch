@@ -395,7 +395,7 @@ a.cta-btn:focus-visible{
   justify-content: flex-start;
 }
 
-.hero .wrap {
+.hero .wrap{
   position: relative;
   z-index: 5;
   width: 100%;
@@ -403,6 +403,26 @@ a.cta-btn:focus-visible{
   margin: 0 auto;
   padding-left: 80px;
   padding-right: 24px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 540px) minmax(0, 1fr);
+  align-items: center;
+  column-gap: 56px; 
+}
+
+.hero-media{
+  width: 100%;
+  max-width: 650px;
+  height: 600px;
+
+  justify-self: end;
+
+  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+  opacity: 1;
 }
 
 .hero-copy {
@@ -453,23 +473,6 @@ a.hero-entry:hover {
 a.hero-entry:focus-visible{
   outline: 2px solid rgba(255,255,255,0.85);
   outline-offset: 3px;
-}
-
-/* LA LOUPE À DROITE UNIQUE (desktop) */
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  width: min(650px, 48vw);
-  height: 600px;
-  background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* Mobile image (between title and description) */
