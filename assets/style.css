@@ -481,14 +481,21 @@ a.hero-entry:focus-visible{
 @media (max-width: 820px) {
   .hero{
     min-height: auto;
-    padding: 84px 0 48px; /* ajuste ces 2 chiffres si tu veux plus/moins haut */
+    padding: 84px 0 48px; 
     align-items: flex-start;
     justify-content: center;
   }
-  .hero::after{ display: none !important; }
+.hero .wrap{
+  display: block;      
+  padding: 0 24px;
+  text-align: center;
+}
 
+.hero-media{
+  display: none;      
+}
   .hero .wrap{ padding: 0 24px; text-align: center; }
-  .hero-copy{ max-width: 100%; }
+  .hero-copy{ text-align:left; }
 
   .hero h1{
     font-size: 36px;
