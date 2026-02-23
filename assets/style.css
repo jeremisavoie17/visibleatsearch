@@ -487,6 +487,21 @@ a.hero-entry:hover {
   .hero-cta-group { align-items: center; }
   .hero h1 { font-size: 38px; }
 }
+.hero-mobile-media{ display:none; }
+
+@media (max-width: 820px){
+  .hero-mobile-media{
+    display:flex;
+    justify-content:center;
+    margin: 18px 0 12px;
+  }
+  .hero-mobile-media img{
+    width: min(240px, 68vw);
+    height:auto;
+    display:block;
+    opacity:0.95;
+  }
+}
 
 /* =================
    HOME - AD EXAMPLES
