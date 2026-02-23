@@ -393,44 +393,43 @@ a.cta-btn:focus-visible{
 /* CTA */
 a.hero-entry,
 a.hero-entry:link,
-a.hero-entry:visited{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:12px 18px;
-  border-radius:999px;
-  background: rgba(255,255,255,0.10);
-  color:#fff;
-  text-decoration:none;
-  font-weight:700;
-  line-height:1;
-  border:1px solid rgba(255,255,255,0.30);
-  -webkit-tap-highlight-color: transparent;
+a.hero-entry:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: #fff;  
+  color: #000;         
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+  transition: background 0.15s ease;
 }
 
-a.hero-entry:hover{
-  background: rgba(255,255,255,0.16);
-  border-color: rgba(255,255,255,0.45);
-  color:#fff;
+a.hero-entry:hover {
+  background: #f2f2f2;
+  color: #000;
 }
 
-a.hero-entry:focus-visible{
-  outline:2px solid rgba(255,255,255,0.55);
-  outline-offset:3px;
-}
-
-.hero-pricing-tag{
-  margin:0;
-  opacity:0.85;
-  color:#fff;
-  font-size:15px;
+.hero-pricing-tag {
+  margin-top: 10px;
+  opacity: 0.85;
+  color: #999; 
+  font-size: 15px;
+  display: block;
 }
 
 /* Mobile: centre juste le bloc CTA */
-@media (max-width: 820px){
-  .hero-cta-group{ align-items:center; }
+@media (max-width: 820px) {
+  .hero-cta-group { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
 }
-
 /* LA LOUPE À DROITE UNIQUE */
 .hero::after {
   content: "";
