@@ -411,15 +411,15 @@ a.cta-btn:focus-visible{
 }
 
 .hero-media {
-  justify-self: start; 
+  width: 100%; 
   max-width: min(620px, 44vw);
   height: min(560px, 52vw);
-  transform: translateX(0); 
-  
+
   background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: left center;
+
   pointer-events: none;
   opacity: 1;
 }
