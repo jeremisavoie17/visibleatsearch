@@ -481,21 +481,25 @@ a.hero-entry:focus-visible{
 @media (max-width: 820px) {
   .hero{
     min-height: auto;
-    padding: 84px 0 48px; 
+    padding: 84px 0 48px;
     align-items: flex-start;
     justify-content: center;
   }
-.hero .wrap{
-  display: block;      
-  padding: 0 24px;
-  text-align: center;
-}
 
-.hero-media{
-  display: none;      
-}
-  .hero .wrap{ padding: 0 24px; text-align: center; }
-  .hero-copy{ text-align:left; }
+  .hero .wrap{
+    display: block;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .hero-media{
+    display: none;
+  }
+
+  .hero-copy{
+    max-width: 100%;
+    text-align: center;
+  }
 
   .hero h1{
     font-size: 36px;
@@ -506,16 +510,19 @@ a.hero-entry:focus-visible{
   .hero-mobile-media{
     display:flex;
     justify-content:center;
-    margin: 10px 0 8px; 
+    margin: 10px 0 8px;
   }
+
   .hero-mobile-media img{
-    width: min(210px, 56vw); 
+    width: min(210px, 56vw);
     height:auto;
     display:block;
     opacity: 0.95;
   }
 
-  .hero-cta-group{ align-items: center; }
+  .hero-cta-group{
+    align-items: center;
+  }
 }
 /* =================
    HOME - AD EXAMPLES
