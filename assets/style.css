@@ -410,16 +410,16 @@ a.cta-btn:focus-visible{
   column-gap: clamp(28px, 4vw, 56px); 
 }
 
-.hero-media{
-  justify-self: end;
-  width: min(620px, 44vw);
+.hero-media {
+  justify-self: start; 
+  max-width: min(620px, 44vw);
   height: min(560px, 52vw);
-
+  transform: translateX(0); 
+  
   background-image: url("/assets/img/search-clarity-magnifying-glass-16x9-symbol.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left center;
-
+  background-position: center;
   pointer-events: none;
   opacity: 1;
 }
