@@ -977,84 +977,6 @@ a.hero-entry:hover {
   outline-offset: 3px;
 }
 
-/* =================
-   MOBILE-ONLY / DESKTOP-ONLY (breakpoint = 820)
-   ================= */
-
-.desktop-only{ display: inline; }
-.mobile-only{ display: none; }
-
-@media (max-width: 820px){
-  .desktop-only{ display: none; }
-  .mobile-only{ display: inline; }
-}
-
-
-/* =================
-   HAMBURGER MENU (mobile)
-   ================= */
-
-.lang-mobile{ display:none; }
-
-.nav-toggle{
-  all: unset;
-  -webkit-tap-highlight-color: transparent;
-  width:44px;
-  height:44px;
-  display:none;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:6px;
-  cursor:pointer;
-}
-
-.nav-toggle span{
-  display:block;
-  width:24px;
-  height:2px;
-  background:#111;
-  border-radius:2px;
-}
-
-@media (max-width: 820px){
-  .nav-inner{ position: relative; }
-  .nav-toggle{ display:flex; }
-  .lang{ display:none; }
-
-  .links{
-    position:absolute;
-    top: calc(var(--nav-h) + 8px);
-    left:0;
-    right:0;
-    z-index:2000;
-    display:none;
-    flex-direction:column;
-    gap:8px;
-    padding:12px;
-    background: #fff;
-    border:1px solid rgba(0,0,0,0.08);
-    border-radius:16px;
-    box-shadow:0 14px 30px rgba(0,0,0,0.12);
-  }
-
-  .links.open{ display:flex; }
-
-  .links a{
-    width:100%;
-    padding:12px;
-    text-align:left;
-  }
-
-  .lang-mobile{
-    display:flex;
-    gap:10px;
-    padding:10px 14px;
-    border-top:1px solid rgba(0,0,0,0.08);
-    margin-top:6px;
-  }
-}
-
 
 /* =================
    CONTACT FORM (base)
@@ -1143,6 +1065,19 @@ a.hero-entry:hover {
   padding: 48px var(--pad);
 }
 
+/* Centrage pour la page Message Reçu (FR et EN) */
+.page-contact-received .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-contact-received .hero-copy {
+  text-align: center;
+  margin: 0 auto;
+}
 
 /* =================
    FAQ / ABOUT headers (page-specific)
@@ -1524,6 +1459,83 @@ a.hero-entry:hover {
   .pricing-grid-setup{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: start;
+  }
+}
+
+/* =================
+   MOBILE-ONLY / DESKTOP-ONLY (breakpoint = 820)
+   ================= */
+
+.desktop-only{ display: inline; }
+.mobile-only{ display: none; }
+
+@media (max-width: 820px){
+  .desktop-only{ display: none; }
+  .mobile-only{ display: inline; }
+}
+
+/* =================
+   HAMBURGER MENU (mobile)
+   ================= */
+
+.lang-mobile{ display:none; }
+
+.nav-toggle{
+  all: unset;
+  -webkit-tap-highlight-color: transparent;
+  width:44px;
+  height:44px;
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+  cursor:pointer;
+}
+
+.nav-toggle span{
+  display:block;
+  width:24px;
+  height:2px;
+  background:#111;
+  border-radius:2px;
+}
+
+@media (max-width: 820px){
+  .nav-inner{ position: relative; }
+  .nav-toggle{ display:flex; }
+  .lang{ display:none; }
+
+  .links{
+    position:absolute;
+    top: calc(var(--nav-h) + 8px);
+    left:0;
+    right:0;
+    z-index:2000;
+    display:none;
+    flex-direction:column;
+    gap:8px;
+    padding:12px;
+    background: #fff;
+    border:1px solid rgba(0,0,0,0.08);
+    border-radius:16px;
+    box-shadow:0 14px 30px rgba(0,0,0,0.12);
+  }
+
+  .links.open{ display:flex; }
+
+  .links a{
+    width:100%;
+    padding:12px;
+    text-align:left;
+  }
+
+  .lang-mobile{
+    display:flex;
+    gap:10px;
+    padding:10px 14px;
+    border-top:1px solid rgba(0,0,0,0.08);
+    margin-top:6px;
   }
 }
 
