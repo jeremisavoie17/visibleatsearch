@@ -407,11 +407,11 @@ a.cta-btn:focus-visible{
   display: grid;
   grid-template-columns: auto 1fr; 
   align-items: center;
-  column-gap: 32px; 
+  column-gap: 20px; 
 }
 
 .hero-copy {
-  max-width: 500px; 
+  max-width: 580px; 
   text-align: left;
 }
 
