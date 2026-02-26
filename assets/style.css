@@ -1514,29 +1514,19 @@ a.hero-entry:hover {
    Thank you page
    ================= */
 
-.service-technical{ margin-top: 0.75rem; }
+.service-technical { margin-top: 0.75rem; }
 
-.service-points{
-  list-style: none;
-  padding-left: 0;
+.service-points {
+  list-style-type: decimal; 
+  padding-left: 1.2rem; 
   margin: 0;
 }
 
-.service-points li{
+.service-points li {
   font-size: 0.95rem;
   color: #5f6368;
   line-height: 1.6;
   margin-bottom: 0.35rem;
-  position: relative;
-  padding-left: 0.9rem;
-}
-
-.service-points li::before{
-  content: "-";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #3c4043;
 }
 
 
