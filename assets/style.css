@@ -352,36 +352,6 @@ a.cta-btn:focus-visible{
 
 
 /* =================
-   SERVICES - TECH NOTES (bullets)
-   ================= */
-
-.service-technical{ margin-top: 0.75rem; }
-
-.service-points{
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.service-points li{
-  font-size: 0.95rem;
-  color: #5f6368;
-  line-height: 1.6;
-  margin-bottom: 0.35rem;
-  position: relative;
-  padding-left: 0.9rem;
-}
-
-.service-points li::before{
-  content: "-";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #3c4043;
-}
-
-
-/* =================
    HOME - HERO MAIN
    ================= */
 
@@ -1242,7 +1212,9 @@ a.hero-entry:hover {
 }
 
 
-/* ================= PRICING CARDS ================= */
+/* =================
+   PRICING CARD
+   ================= */
 
 .center{
   text-align:center;
@@ -1461,6 +1433,37 @@ a.hero-entry:hover {
     align-items: start;
   }
 }
+
+/* =================
+   Thank you page
+   ================= */
+
+.service-technical{ margin-top: 0.75rem; }
+
+.service-points{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service-points li{
+  font-size: 0.95rem;
+  color: #5f6368;
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.service-points li::before{
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3c4043;
+}
+
+
 
 /* =================
    MOBILE-ONLY / DESKTOP-ONLY (breakpoint = 820)
