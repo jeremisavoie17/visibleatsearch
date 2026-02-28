@@ -1412,7 +1412,7 @@ a.hero-entry:hover {
 }
 
 .pricing-card.featured .pricing-price::after{
-  content:"Save $149";
+  content:"Save $299";
   font-size:12px;
   padding:4px 8px;
   border-radius:6px;
