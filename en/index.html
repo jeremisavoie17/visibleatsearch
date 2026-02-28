@@ -21,35 +21,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","ProfessionalService"],
-  "@id": "https://visibleatsearch.com/#organization",
-  "name": "Visible at Search",
-  "url": "https://visibleatsearch.com/",
-  "logo": "https://visibleatsearch.com/assets/logo.png",
-  "description": "SEM and Google Ads services converting high-intent Search and product-based demand into business growth opportunities.",
-  "email": "info@visibleatsearch.com",
-  "contactPoint": [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
+      "@type": "WebSite",
+      "@id": "https://visibleatsearch.com/#website",
+      "url": "https://visibleatsearch.com/",
+      "name": "Visible at Search",
+      "publisher": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "inLanguage": ["en-CA", "fr-CA"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://visibleatsearch.com/en/#webpage",
+      "url": "https://visibleatsearch.com/en/",
+      "name": "Google Ads & SEM Services - Visible at Search",
+      "description": "Dominate Google results with SEM that converts search intent into revenue through targeted Search and product-based campaigns optimized for ROAS.",
+      "isPartOf": {
+        "@id": "https://visibleatsearch.com/#website"
+      },
+      "about": {
+        "@id": "https://visibleatsearch.com/#organization"
+      }
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://visibleatsearch.com/#organization",
+      "name": "Visible at Search",
+      "url": "https://visibleatsearch.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://visibleatsearch.com/assets/logo.png"
+      },
+      "image": "https://visibleatsearch.com/assets/img/search-clarity-magnifying-glass-16x9-symbol.png",
+      "description": "SEM and Google Ads services converting high-intent Search and product-based demand into business growth opportunities.",
       "email": "info@visibleatsearch.com",
-      "availableLanguage": ["en-CA", "fr-CA"]
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "priceRange": "Starting at $749 CAD",
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Google Ads Setup",
+        "price": "749.00",
+        "priceCurrency": "CAD",
+        "description": "One-time setup for service and inventory-based businesses"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "info@visibleatsearch.com",
+        "availableLanguage": ["en", "fr"]
+      }
     }
   ]
-}
-</script>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://visibleatsearch.com/#website",
-  "url": "https://visibleatsearch.com/",
-  "name": "Visible at Search",
-  "publisher": {
-    "@id": "https://visibleatsearch.com/#organization"
-  },
-  "inLanguage": "en-CA"
 }
 </script>
 
