@@ -16,22 +16,98 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="description" content="Services Google Ads et SEM basés sur l’intention réelle. Mise en place simple, supervision mensuelle optionnelle et structure claire." />
 
 
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","ProfessionalService"],
-  "@id": "https://visibleatsearch.com/#organization",
-  "name": "Visible at Search",
-  "url": "https://visibleatsearch.com/",
-  "logo": "https://visibleatsearch.com/assets/logo.png",
-  "description": "Services Google Ads et SEM structurés, conçus pour transformer l’intention de recherche en opportunités de croissance.",
-  "email": "info@visibleatsearch.com",
-  "contactPoint": [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      "contactType": "service client",
+      "@type": "WebSite",
+      "@id": "https://visibleatsearch.com/#website",
+      "url": "https://visibleatsearch.com/",
+      "name": "Visible at Search",
+      "publisher": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "inLanguage": ["en-CA", "fr-CA"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://visibleatsearch.com/fr/services/#webpage",
+      "url": "https://visibleatsearch.com/fr/services",
+      "name": "Services Google Ads et SEM - Visible at Search",
+      "description": "Services Google Ads et SEM basés sur l’intention réelle. Mise en place simple, supervision mensuelle optionnelle et structure claire.",
+      "isPartOf": {
+        "@id": "https://visibleatsearch.com/#website"
+      },
+      "about": {
+        "@id": "https://visibleatsearch.com/#organization"
+      }
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://visibleatsearch.com/#organization",
+      "name": "Visible at Search",
+      "url": "https://visibleatsearch.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://visibleatsearch.com/assets/logo.png"
+      },
       "email": "info@visibleatsearch.com",
-      "availableLanguage": ["fr-CA", "en-CA"]
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "info@visibleatsearch.com",
+        "availableLanguage": ["en", "fr"]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://visibleatsearch.com/fr/services/#search-ads",
+      "name": "Annonces Search",
+      "description": "Apparaissez précisément lorsque vos clients cherchent vos services, grâce à un ciblage par mots-clés, région et intention d'achat.",
+      "provider": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "749.00",
+        "priceCurrency": "CAD",
+        "url": "https://visibleatsearch.com/fr/tarifs#search"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://visibleatsearch.com/fr/services/#catalog",
+      "name": "Catalogue produits",
+      "description": "Pour les entreprises avec un inventaire, nous structurons des campagnes basées sur vos produits afin qu’ils soient visibles sur Google.",
+      "provider": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "799.00",
+        "priceCurrency": "CAD",
+        "url": "https://visibleatsearch.com/fr/tarifs#catalogue"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://visibleatsearch.com/fr/services/#supervision",
+      "name": "Suivi et optimisation",
+      "description": "Suivi stratégique mensuel ou optimisation active de votre performance Google Ads. Nous fournissons une lecture claire du marché.",
+      "provider": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "125.00",
+        "priceCurrency": "CAD",
+        "url": "https://visibleatsearch.com/fr/tarifs#supervision"
+      }
     }
   ]
 }
