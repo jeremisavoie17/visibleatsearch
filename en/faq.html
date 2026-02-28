@@ -16,137 +16,151 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Organization -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","ProfessionalService"],
-  "@id": "https://visibleatsearch.com/#organization",
-  "name": "Visible at Search",
-  "url": "https://visibleatsearch.com/",
-  "logo": "https://visibleatsearch.com/assets/logo.png",
-  "description": "Structured SEM and Google Ads services converting high-intent Search and product-based demand into business growth opportunities.",
-  "email": "info@visibleatsearch.com",
-  "contactPoint": [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
+      "@type": "WebSite",
+      "@id": "https://visibleatsearch.com/#website",
+      "url": "https://visibleatsearch.com/",
+      "name": "Visible at Search",
+      "publisher": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "inLanguage": ["en-CA", "fr-CA"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://visibleatsearch.com/en/faq/#webpage",
+      "url": "https://visibleatsearch.com/en/faq",
+      "name": "FAQ - Google Ads & SEM - Visible at Search",
+      "description": "Simple answers to common questions about Google Ads, SEM, and how our campaigns work.",
+      "isPartOf": {
+        "@id": "https://visibleatsearch.com/#website"
+      },
+      "about": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is required to get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You simply complete a short onboarding form, 100% online. No calls or meetings are required. We handle everything else - account creation, structure, tracking, feeds and ad assets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can questions be asked before or after starting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Questions can be sent anytime by email only. Most are answered within 24 business hours. If a monthly service is selected, campaign changes are handled during the weekly optimization cycle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a website or landing page needed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A page is needed that matches the ads and allows people to contact the business. Traffic is sent to the most relevant existing page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cancel or request a refund?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Setup fees are non-refundable once work has started. If a monthly service is selected, it can be canceled anytime with 30 days’ notice by email."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is tracking handled?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Tag Manager must be installed on the website (or by the platform support team). Once installed, all tracking setup is handled inside Google tools. No other website changes are usually required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a product feed needed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A product feed is required for the Product Catalog service. The feed must be provided by the website platform or site manager and usually consists of a single URL. Once provided, the feed is validated and connected to the Google ecosystem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there any restrictions on what can be advertised?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some regulated categories require certification, additional verification, or may be restricted by Google policies. If a category has special requirements, it will be flagged early in the setup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a minimum ad budget?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There is no required minimum. The budget can be increased, reduced, or stopped anytime."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who pays Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Ads is paid directly by the client through their own business billing profile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the ad account and data owned by the business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The account and all data belong to the business. The client retains full admin access at all times. Our agency is granted separate admin access to complete the setup and, if purchased, provide the monthly service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should results be expected?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Initial setup typically takes 7-10 business days once the onboarding form is submitted. Results depend on the industry, local competition, and existing demand. No fixed timeline can be guaranteed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Monthly Performance Review mandatory or long-term?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. One month is included with the initial setup and does not renew automatically. If the monthly service is purchased separately, it is billed month-to-month and renews automatically. Cancellation is possible at any time with 30 days’ notice by email."
+          }
+        }
+      ]
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://visibleatsearch.com/#organization",
+      "name": "Visible at Search",
+      "url": "https://visibleatsearch.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://visibleatsearch.com/assets/logo.png"
+      },
       "email": "info@visibleatsearch.com",
-      "availableLanguage": ["en-CA", "fr-CA"]
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      }
     }
   ]
 }
 </script>
 
-  <!-- FAQPage (must match visible Q/A on this page) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-
-    {
-      "@type": "Question",
-      "name": "What is required to get started?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You simply complete a short onboarding form, 100% online. No calls or meetings are required. We handle everything else - account creation, structure, tracking, feeds and ad assets."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can questions be asked before or after starting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Questions can be sent anytime by email only. Most are answered within 24 business hours. If a monthly service is selected, campaign changes are handled during the weekly optimization cycle."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a website or landing page needed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. A page is needed that matches the ads and allows people to contact the business. Traffic is sent to the most relevant existing page."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I cancel or request a refund?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Setup fees are non-refundable once work has started. If a monthly service is selected, it can be canceled anytime with 30 days’ notice by email."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "How is tracking handled?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Tag Manager must be installed on the website (or by the platform support team). Once installed, all tracking setup is handled inside Google tools. No other website changes are usually required."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a product feed needed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. A product feed is required for the Product Catalog service. The feed must be provided by the website platform or site manager and usually consists of a single URL. Once provided, the feed is validated and connected to the Google ecosystem."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there any restrictions on what can be advertised?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some regulated categories require certification, additional verification, or may be restricted by Google policies. If a category has special requirements, it will be flagged early in the setup."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a minimum ad budget?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. There is no required minimum. The budget can be increased, reduced, or stopped anytime."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Who pays Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Ads is paid directly by the client through their own business billing profile."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the ad account and data owned by the business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The account and all data belong to the business. The client retains full admin access at all times. Our agency is granted separate admin access to complete the setup and, if purchased, provide the monthly service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When should results be expected?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Initial setup typically takes 7-10 business days once the onboarding form is submitted. Results depend on the industry, local competition, and existing demand. No fixed timeline can be guaranteed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Monthly Performance Review mandatory or long-term?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. One month is included with the initial setup and does not renew automatically. If the monthly service is purchased separately, it is billed month-to-month and renews automatically. Cancellation is possible at any time with 30 days’ notice by email."
-      }
-    }
-
-  ]
-}
-</script>
-
+  
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 
