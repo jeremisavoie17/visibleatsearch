@@ -18,41 +18,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>Google Ads & SEM - Visible at Search</title>
   <meta name="description" content="Dominez les résultats Google avec nos campagnes SEM structurées. Nous transformons l’intention d’achat en ventes grâce à des stratégies Search ciblées et des catalogues produits optimisés pour le ROAS." />
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","ProfessionalService"],
-  "@id": "https://visibleatsearch.com/#organization",
-  "name": "Visible at Search",
-  "url": "https://visibleatsearch.com/",
-  "logo": "https://visibleatsearch.com/assets/logo.png",
-  "description": "Services Google Ads et SEM structurés, conçus pour transformer l’intention de recherche en opportunités de croissance.",
-  "email": "info@visibleatsearch.com",
-  "contactPoint": [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      "contactType": "service client",
+      "@type": "WebSite",
+      "@id": "https://visibleatsearch.com/#website",
+      "url": "https://visibleatsearch.com/",
+      "name": "Visible at Search",
+      "publisher": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "inLanguage": ["en-CA", "fr-CA"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://visibleatsearch.com/fr/#webpage",
+      "url": "https://visibleatsearch.com/fr/",
+      "name": "Services Google Ads & SEM - Visible at Search",
+      "description": "Dominez les résultats Google avec une stratégie SEM qui convertit l'intention de recherche en revenus grâce à des campagnes ciblées et optimisées pour le ROAS.",
+      "isPartOf": {
+        "@id": "https://visibleatsearch.com/#website"
+      },
+      "about": {
+        "@id": "https://visibleatsearch.com/#organization"
+      }
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://visibleatsearch.com/#organization",
+      "name": "Visible at Search",
+      "url": "https://visibleatsearch.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://visibleatsearch.com/assets/logo.png"
+      },
+      "image": "https://visibleatsearch.com/assets/img/search-clarity-magnifying-glass-16x9-symbol.png",
+      "description": "Services SEM et Google Ads pour convertir la demande de recherche et de produits en croissance d'entreprise.",
       "email": "info@visibleatsearch.com",
-      "availableLanguage": ["fr-CA", "en-CA"]
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "priceRange": "À partir de 749 $ CAD",
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Configuration Google Ads",
+        "price": "749.00",
+        "priceCurrency": "CAD",
+        "description": "Configuration initiale pour les entreprises de services et de commerce en ligne"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "info@visibleatsearch.com",
+        "availableLanguage": ["en", "fr"]
+      }
     }
   ]
 }
 </script>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://visibleatsearch.com/#website",
-  "url": "https://visibleatsearch.com/",
-  "name": "Visible at Search",
-  "publisher": {
-    "@id": "https://visibleatsearch.com/#organization"
-  },
-  "inLanguage": "fr-CA"
-}
-</script>
-
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 
