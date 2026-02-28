@@ -17,133 +17,146 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Organization -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","ProfessionalService"],
-  "@id": "https://visibleatsearch.com/#organization",
-  "name": "Visible at Search",
-  "url": "https://visibleatsearch.com/",
-  "logo": "https://visibleatsearch.com/assets/logo.png",
-  "description": "Services Google Ads et SEM structurés, conçus pour transformer l’intention de recherche en opportunités de croissance.",
-  "email": "info@visibleatsearch.com",
-  "contactPoint": [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      "contactType": "service client",
+      "@type": "WebSite",
+      "@id": "https://visibleatsearch.com/#website",
+      "url": "https://visibleatsearch.com/",
+      "name": "Visible at Search",
+      "publisher": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "inLanguage": ["en-CA", "fr-CA"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://visibleatsearch.com/fr/faq/#webpage",
+      "url": "https://visibleatsearch.com/fr/faq",
+      "name": "FAQ - Google Ads et SEM - Visible at Search",
+      "description": "Réponses simples aux questions fréquentes sur Google Ads, le SEM et le fonctionnement des campagnes.",
+      "isPartOf": {
+        "@id": "https://visibleatsearch.com/#website"
+      },
+      "about": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu’est-ce qui est requis pour démarrer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vous remplissez simplement un court formulaire de démarrage, 100 % en ligne. Aucun appel ni réunion requis. Tout est pris en charge - création du compte, structure, suivi des conversions, flux produits et éléments publicitaires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on poser des questions avant ou après le démarrage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les questions peuvent être envoyées en tout temps, par courriel uniquement. La majorité reçoivent une réponse dans un délai de 24 heures ouvrables. Si un service mensuel est sélectionné, les ajustements de campagne sont effectués durant le cycle d’optimisation hebdomadaire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un site web ou une page dédiée est-il requis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Il faut une page qui correspond aux annonces et qui permet de contacter l’entreprise. Le trafic est dirigé vers la page existante la plus pertinente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je annuler ou demander un remboursement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les frais de mise en place ne sont pas remboursables une fois le travail commencé. Le suivi mensuel, s’il est choisi, peut être annulé en tout temps avec un préavis de 30 jours par courriel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne le suivi des conversions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Tag Manager doit être installé sur le site web (ou par l’équipe de support de la plateforme). Une fois installé, toute la configuration du suivi des conversions se fait dans les outils Google. Aucune autre modification du site n’est généralement requise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un flux produit est-il requis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Un flux de produits est requis pour le service Catalogue de produits. Le flux doit être fourni par la plateforme du site web ou le gestionnaire du site et consiste généralement en une seule URL. Une fois fourni, le flux est vérifié, validé et connecté à l’écosystème Google."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Y a-t-il des restrictions sur ce qui peut être annoncé?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Certaines catégories réglementées exigent une certification, une vérification additionnelle ou peuvent être restreintes par les politiques de Google. Si une catégorie a des exigences particulières, cela sera identifié tôt dans la mise en place."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Y a-t-il un budget publicitaire minimum?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Aucun minimum n’est requis. Le budget est contrôlé et peut être augmenté, réduit ou arrêté en tout temps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qui paie Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Ads est payé directement par le client via son propre profil de facturation d’entreprise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le compte publicitaire et les données appartiennent-ils à l’entreprise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Le compte et l’ensemble des données appartiennent à l’entreprise. Le client conserve en tout temps l’accès administrateur complet. Notre agence se voit accorder un accès administrateur distinct afin de compléter la mise en place et, le cas échéant, assurer le suivi mensuel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quand les résultats peuvent-ils être attendus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La mise en place initiale prend généralement 7-10 jours ouvrables une fois le formulaire de démarrage soumis. Les résultats dépendent du secteur, de la compétition locale et de la demande existante. Il n’y a pas d’échéancier fixe garanti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le suivi est-il obligatoire ou à long terme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le suivi est optionnel. Un mois de suivi est inclus avec la mise en place initiale et ne se renouvelle pas automatiquement. Si le suivi mensuel est choisi, il est facturé mensuellement et se renouvelle automatiquement. La résiliation est possible en tout temps avec un préavis de 30 jours par courriel."
+          }
+        }
+      ]
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://visibleatsearch.com/#organization",
+      "name": "Visible at Search",
+      "url": "https://visibleatsearch.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://visibleatsearch.com/assets/logo.png"
+      },
       "email": "info@visibleatsearch.com",
-      "availableLanguage": ["fr-CA", "en-CA"]
-    }
-  ]
-}
-</script>
-
-  <!-- FAQPage (doit correspondre exactement aux questions/reponses visibles sur cette page) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-
-    {
-      "@type": "Question",
-      "name": "Qu’est-ce qui est requis pour démarrer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Vous remplissez simplement un court formulaire de démarrage, 100 % en ligne. Aucun appel ni réunion requis. Tout est pris en charge - création du compte, structure, suivi des conversions, flux produits et éléments publicitaires."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Peut-on poser des questions avant ou après le démarrage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui. Les questions peuvent être envoyées en tout temps, par courriel uniquement. La majorité reçoivent une réponse dans un délai de 24 heures ouvrables. Si un service mensuel est sélectionné, les ajustements de campagne sont effectués durant le cycle d’optimisation hebdomadaire."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Un site web ou une page dédiée est-il requis?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui. Il faut une page qui correspond aux annonces et qui permet de contacter l’entreprise. Le trafic est dirigé vers la page existante la plus pertinente."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Puis-je annuler ou demander un remboursement?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Les frais de mise en place ne sont pas remboursables une fois le travail commencé. Le suivi mensuel, s’il est choisi, peut être annulé en tout temps avec un préavis de 30 jours par courriel."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment fonctionne le suivi des conversions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Tag Manager doit être installé sur le site web (ou par l’équipe de support de la plateforme). Une fois installé, toute la configuration du suivi des conversions se fait dans les outils Google. Aucune autre modification du site n’est généralement requise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Un flux produit est-il requis?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui. Un flux de produits est requis pour le service Catalogue de produits. Le flux doit être fourni par la plateforme du site web ou le gestionnaire du site et consiste généralement en une seule URL. Une fois fourni, le flux est vérifié, validé et connecté à l’écosystème Google."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Y a-t-il des restrictions sur ce qui peut être annoncé?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Certaines catégories réglementées exigent une certification, une vérification additionnelle ou peuvent être restreintes par les politiques de Google. Si une catégorie a des exigences particulières, cela sera identifié tôt dans la mise en place."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Y a-t-il un budget publicitaire minimum?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non. Aucun minimum n’est requis. Le budget est contrôlé et peut être augmenté, réduit ou arrêté en tout temps."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qui paie Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Ads est payé directement par le client via son propre profil de facturation d’entreprise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Le compte publicitaire et les données appartiennent-ils à l’entreprise?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui. Le compte et l’ensemble des données appartiennent à l’entreprise. Le client conserve en tout temps l’accès administrateur complet. Notre agence se voit accorder un accès administrateur distinct afin de compléter la mise en place et, le cas échéant, assurer le suivi mensuel."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quand les résultats peuvent-ils être attendus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "La mise en place initiale prend généralement 7-10 jours ouvrables une fois le formulaire de démarrage soumis. Les résultats dépendent du secteur, de la compétition locale et de la demande existante. Il n’y a pas d’échéancier fixe garanti."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Le suivi est-il obligatoire ou à long terme?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non. Le suivi est optionnel. Un mois de suivi est inclus avec la mise en place initiale et ne se renouvelle pas automatiquement. Si le suivi mensuel est choisi, il est facturé mensuellement et se renouvelle automatiquement. La résiliation est possible en tout temps avec un préavis de 30 jours par courriel."
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
       }
     }
-
   ]
 }
 </script>
