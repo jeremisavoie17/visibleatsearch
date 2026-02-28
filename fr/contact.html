@@ -16,22 +16,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Contactez Visible at Search pour discuter simplement de votre visibilité avec Google Ads et de vos campagnes SEM." />
 
 
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","ProfessionalService"],
-  "@id": "https://visibleatsearch.com/#organization",
-  "name": "Visible at Search",
-  "url": "https://visibleatsearch.com/",
-  "logo": "https://visibleatsearch.com/assets/logo.png",
-  "description": "Services Google Ads et SEM structurés, conçus pour transformer l’intention de recherche en opportunités de croissance.",
-  "email": "info@visibleatsearch.com",
-  "contactPoint": [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      "contactType": "service client",
+      "@type": "WebSite",
+      "@id": "https://visibleatsearch.com/#website",
+      "url": "https://visibleatsearch.com/",
+      "name": "Visible at Search",
+      "publisher": {
+        "@id": "https://visibleatsearch.com/#organization"
+      },
+      "inLanguage": ["en-CA", "fr-CA"]
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://visibleatsearch.com/fr/contact/#webpage",
+      "url": "https://visibleatsearch.com/fr/contact",
+      "name": "Contact - Visible at Search",
+      "description": "Contactez Visible at Search. Envoyez-nous un courriel pour toute question concernant nos services Google Ads et SEM.",
+      "isPartOf": {
+        "@id": "https://visibleatsearch.com/#website"
+      },
+      "about": {
+        "@id": "https://visibleatsearch.com/#organization"
+      }
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://visibleatsearch.com/#organization",
+      "name": "Visible at Search",
+      "url": "https://visibleatsearch.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://visibleatsearch.com/assets/logo.png"
+      },
       "email": "info@visibleatsearch.com",
-      "availableLanguage": ["fr-CA", "en-CA"]
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "info@visibleatsearch.com",
+        "availableLanguage": ["en", "fr"],
+        "url": "https://visibleatsearch.com/fr/contact"
+      }
     }
   ]
 }
