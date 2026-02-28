@@ -1412,11 +1412,12 @@ a.hero-entry:hover {
 }
 
 .promo-save {
-  font-size: 13px;       
-  color: #27ae60;        
-  font-weight: 700;      
-  margin-left: 10px;     
+  font-size: 15px;        
+  color: #2d9d5d;        
+  font-weight: 800;       
+  margin-left: 6px;       
   white-space: nowrap;
+  text-transform: uppercase; 
 }
 
 .pricing-badge{
