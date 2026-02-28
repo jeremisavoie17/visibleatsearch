@@ -1411,14 +1411,15 @@ a.hero-entry:hover {
   gap:10px;
 }
 
-.pricing-card.featured .pricing-price::after{
-  content:"Save $299";
-  font-size:12px;
-  padding:4px 8px;
-  border-radius:6px;
-  background:#fff;
-  border:1px solid rgba(0,0,0,0.18);
-  white-space:nowrap;
+.promo-save {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.18);
+  white-space: nowrap;
+  color: #27ae60; 
+  font-weight: bold;
 }
 
 .pricing-badge{
