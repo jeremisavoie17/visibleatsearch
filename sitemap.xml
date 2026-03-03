@@ -5,38 +5,70 @@
 
   <url>
     <loc>https://visibleatsearch.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/" />
+  </url>
+  <url>
+    <loc>https://visibleatsearch.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/services</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/services" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/services" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/services" />
+  </url>
+  <url>
+    <loc>https://visibleatsearch.com/fr/services</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/services" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/pricing" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/tarifs" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/tarifs" />
+  </url>
+  <url>
+    <loc>https://visibleatsearch.com/fr/tarifs</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/tarifs" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/faq</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/faq" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/faq" />
+  </url>
+  <url>
+    <loc>https://visibleatsearch.com/fr/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/faq" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/about" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/a-propos" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/a-propos" />
+  </url>
+  <url>
+    <loc>https://visibleatsearch.com/fr/a-propos</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/a-propos" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://visibleatsearch.com/en/contact" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://visibleatsearch.com/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/contact" />
+  </url>
+  <url>
+    <loc>https://visibleatsearch.com/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/contact" />
   </url>
 
 </urlset>
