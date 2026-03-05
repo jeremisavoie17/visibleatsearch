@@ -701,11 +701,11 @@ a.hero-entry:hover {
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 18px;
-  padding: 16px;
+  padding: 24px;
   text-align: left;
+  min-height: 150px;
 }
 
-/* H3: cohérent, pas trop gros */
 .efficiency-item h3{
   font-size: 16px;
   margin: 0 0 10px 0;
@@ -715,9 +715,9 @@ a.hero-entry:hover {
 
 /* Texte: cohérent */
 .efficiency-item p{
-  margin: 0;
+   margin: 0;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   opacity: 0.78;
   color: var(--text-dark);
 }
