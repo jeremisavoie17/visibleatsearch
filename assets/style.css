@@ -851,19 +851,21 @@ a.hero-entry:hover {
 }
 
 .aeo-list li {
-  margin-bottom: 15px;
-  padding-left: 30px;
-  position: relative;
-  font-size: 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
   color: #444;
+  line-height: 1.5;
 }
 
 .aeo-list li::before {
   content: "✓";
-  position: absolute;
-  left: 0;
+  flex-shrink: 0;
   color: #111;
   font-weight: bold;
+  margin-top: 2px;
 }
 
 .aeo-visual {
