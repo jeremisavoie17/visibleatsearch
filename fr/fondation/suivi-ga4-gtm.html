@@ -1,299 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WC6L83GW');</script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  
-  <title>Google Analytics (GA4) & GTM - Configuration et Suivi | Visible at Search</title>
-  <meta name="description" content="Configuration experte de Google Analytics 4 (GA4) et Tag Manager (GTM). Mesurez exactement ce qui génère des leads et des revenus, sans deviner." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["Organization","ProfessionalService"],
-    "@id": "https://visibleatsearch.com/#organization",
-    "name": "Visible at Search",
-    "url": "https://visibleatsearch.com/",
-    "logo": "https://visibleatsearch.com/assets/logo.png"
-  }
-  </script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WC6L83GW');</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Est-ce que GA4 suffit sans Google Tag Manager (GTM) ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bien que GA4 puisse fonctionner seul pour des visites basiques, GTM est indispensable pour traquer des actions précises (clics sur un bouton d'appel, soumission de formulaires) sans avoir à modifier le code de votre site web à chaque fois."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Combien de temps faut-il pour valider les événements de conversion ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Avec notre méthode de configuration, nous utilisons le DebugView de GA4 pour valider les événements en temps réel. Les données officielles commencent à apparaître dans vos rapports standard sous 24 à 48 heures."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Le suivi ralentira-t-il mon site web ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non. Google Tag Manager se charge de manière asynchrone, ce qui signifie qu'il n'empêche pas le reste de votre page de s'afficher rapidement pour vos utilisateurs."
-      }
-    }]
-  }
-  </script>
+<title>Suivi Google Analytics (GA4) et GTM | Visible at Search</title>
 
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
+<meta name="description" content="Configuration complète de Google Analytics 4 et Google Tag Manager pour suivre les leads et mesurer la performance de Google Ads avec précision. Configuration unique, sans approximation.">
 
-  <link rel="canonical" href="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm" />
-  
-  <link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm" />
-  <link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking" />
-  <link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": ["Organization","ProfessionalService"],
+ "@id": "https://visibleatsearch.com/#organization",
+ "name": "Visible at Search",
+ "url": "https://visibleatsearch.com/",
+ "logo": "https://visibleatsearch.com/assets/logo.png",
+ "areaServed": "CA",
+ "serviceType": "Configuration GA4 et Google Tag Manager"
+}
+</script>
 
-  <meta property="og:title" content="Configuration GA4 et Google Tag Manager - Visible at Search">
-  <meta property="og:description" content="Configuration GA4 et Google Tag Manager pour mesurer les conversions, les sources de trafic et la performance Google Ads.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm">
-  <meta property="og:image" content="https://visibleatsearch.com/assets/img/search-clarity-magnifying-glass-16x9.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [{
+   "@type": "Question",
+   "name": "GA4 est-il suffisant sans Google Tag Manager ?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "GA4 peut mesurer les visites, mais Google Tag Manager est essentiel pour suivre précisément les actions comme les clics sur un numéro de téléphone ou l'envoi d'un formulaire sans modifier le code du site."
+   }
+ },{
+   "@type": "Question",
+   "name": "Combien de temps faut-il pour valider les conversions ?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Nous utilisons DebugView dans GA4 pour vérifier les événements en temps réel. Les données apparaissent ensuite dans les rapports standards dans un délai de 24 à 48 heures."
+   }
+ },{
+   "@type": "Question",
+   "name": "Comment suivre les formulaires dans GA4 ?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Les formulaires sont suivis via Google Tag Manager avec un déclencheur fiable (page de remerciement, événement JavaScript ou déclencheur DOM). L'événement est ensuite envoyé dans GA4 et peut être marqué comme conversion."
+   }
+ },{
+   "@type": "Question",
+   "name": "Comment suivre les clics sur un numéro de téléphone ?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Nous suivons les clics sur les liens téléphone (tel:) avec Google Tag Manager. L'événement est envoyé dans GA4 puis peut être importé dans Google Ads pour optimiser les campagnes vers de vrais leads."
+   }
+ },{
+   "@type": "Question",
+   "name": "Le tracking va-t-il ralentir mon site ?",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Non. Google Tag Manager se charge de manière asynchrone et n'empêche pas l'affichage rapide de votre site."
+   }
+ }]
+}
+</script>
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Configuration GA4 et Google Tag Manager - Visible at Search">
-  <meta name="twitter:description" content="Configuration GA4 et Google Tag Manager pour mesurer les conversions, les sources de trafic et la performance Google Ads.">
-  <meta name="twitter:image" content="https://visibleatsearch.com/assets/img/search-clarity-magnifying-glass-16x9.png">
-  
-  <link rel="stylesheet" href="/assets/style.css" />
+<link rel="canonical" href="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm">
+
+<link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking">
+<link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm">
+<link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking">
+
+<meta property="og:title" content="Suivi GA4 et Google Tag Manager - Visible at Search">
+<meta property="og:description" content="Configuration complète de Google Analytics 4 et Google Tag Manager pour suivre les leads et mesurer la performance de Google Ads.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Suivi GA4 et Google Tag Manager - Visible at Search">
+<meta name="twitter:description" content="Configuration complète de GA4 et Google Tag Manager pour suivre les leads et mesurer la performance de Google Ads.">
+
+<link rel="stylesheet" href="/assets/style.css" />
 </head>
 
-<body class="page-foundation">
+<body>
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC6L83GW"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <nav class="nav" aria-label="Navigation principale">
-    <div class="nav-inner">
-      <a class="brand" href="/fr/">Visible at Search</a>
+<section class="content aeo-header">
+<div class="wrap center">
 
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<h1 class="aeo-header-title">Google Analytics (GA4) et GTM</h1>
 
-      <div class="links">
-        <a href="/fr/">Accueil</a>
-        <a href="/fr/services">Services</a>
-        <a href="/fr/tarifs">Tarifs</a>
-        <a href="/fr/faq">FAQ</a>
-        <a href="/fr/a-propos">À propos</a>
-        <a href="/fr/contact">Contact</a>
-      </div>
+<p class="muted aeo-header-subtitle">
+Suivez vos leads avec précision et voyez exactement ce que génèrent vos campagnes Google Ads.
+</p>
 
-      <div class="lang" aria-label="Sélecteur de langue">
-        <a href="/en/foundation/ga4-gtm-tracking">EN</a>
-        <span class="sep">|</span>
-        <a href="/fr/fondation/suivi-ga4-gtm" aria-current="page">FR</a>
-      </div>
-    </div>
-  </nav>
+</div>
+</section>
 
-  <section class="content aeo-header">
-    <div class="wrap center">
-      <h1 class="aeo-header-title">Google Analytics (GA4) & GTM</h1>
-      <p class="muted aeo-header-subtitle">
-        Mesurez exactement ce qui génère des leads. Arrêtez de deviner le retour de vos campagnes Google Ads.
-      </p>
+<section class="content white">
+<div class="wrap aeo-content-block">
 
-      <div class="aeo-header-logos">
-        <div class="eco-item">
-          <img src="/assets/img/google-analytics-4.svg" alt="Google Analytics 4" loading="eager">
-          <span>Analytics</span>
-        </div>
-        <div class="eco-item">
-          <img src="/assets/img/google-tag-manager.svg" alt="Google Tag Manager" loading="eager">
-          <span>Tag Manager</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<h2 class="center">Ce que vous obtenez</h2>
 
-  <section class="content white">
-    <div class="wrap aeo-content-block">
-      <h2 class="center">Ce que vous obtenez (Livrables)</h2>
-      <p>Nous ne faisons pas que "brancher" l'outil. Nous mettons en place une architecture de données fiable pour que chaque action payante soit tracée :</p>
-      
-      <ul class="aeo-list">
-        <li><strong>Installation de GA4 via GTM :</strong> Code propre, centralisé, sans alourdir votre site.</li>
-        <li><strong>Configuration des événements (Events) :</strong> Suivi des actions <code>generate_lead</code>, clics sur les numéros de téléphone et soumissions de formulaires.</li>
-        <li><strong>Conventions de nommage standards :</strong> Des rapports clairs et lisibles par n'importe quel professionnel.</li>
-        <li><strong>Vérification DebugView :</strong> Tests en temps réel pour s'assurer qu'aucun clic n'est perdu.</li>
-        <li><strong>Rapport de validation :</strong> Une checklist complète confirmant que la donnée remonte correctement vers Google Ads.</li>
-      </ul>
-    </div>
-  </section>
+<ul class="aeo-list">
 
-  <section class="content">
-    <div class="wrap aeo-content-block center">
-      <h2>Ce que vous voyez dans vos rapports</h2>
-      <p class="muted">Une vue claire de l'acquisition (Ads vs Organique) pour prendre des décisions d'affaires éclairées.</p>
-      
-      <img class="aeo-visual" src="/assets/img/ga4-traffic-by-type-mockup.png" alt="Rapport de trafic par type sur Google Analytics 4 montrant Paid, Organic et Direct" loading="lazy">
+<li><strong>Configuration GA4 via GTM :</strong> installation propre et centralisée.</li>
 
-      <div class="aeo-features">
-        <div class="aeo-feature-item">
-          <h3>1. Acquisition (Ads)</h3>
-          <p>Isolez instantanément le trafic payant de vos efforts SEO ou de votre trafic direct.</p>
-        </div>
-        <div class="aeo-feature-item">
-          <h3>2. Mesure (Conversions)</h3>
-          <p>Associez chaque visiteur à l'événement de conversion configuré via GTM.</p>
-        </div>
-        <div class="aeo-feature-item">
-          <h3>3. Qualité (Ajustements)</h3>
-          <p>Détectez les campagnes non rentables et réallouez votre budget là où la demande se trouve.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<li><strong>Configuration des événements :</strong> suivi des formulaires, clics téléphone et actions clés.</li>
 
-  <section class="content white">
-    <div class="wrap aeo-content-block center">
-      <h2>Quand est-ce inclus ?</h2>
-      <p>La configuration de la fondation analytique est la première étape obligatoire de nos services.</p>
-      
-      <div class="aeo-inclusion-box">
-        <p><strong>✅ Inclus dans :</strong> Basic Setup - Search Ads & Catalogue</p>
-        <p><strong>✅ Option de maintien :</strong> Forfait mensuel (Suivi, QA, ajustements continus)</p>
-      </div>
+<li><strong>Nomenclature standard :</strong> rapports clairs et faciles à analyser.</li>
 
-      <div class="cta-row" style="justify-content: center;">
-        <a class="cta-btn" href="/fr/services">Voir les services</a>
-        <a class="cta-link" href="/fr/tarifs">Voir le forfait mensuel -></a>
-      </div>
-    </div>
-  </section>
+<li><strong>Validation DebugView :</strong> test en temps réel pour confirmer que les événements fonctionnent.</li>
 
-  <section class="content faq">
-    <div class="wrap aeo-content-block">
-      <h2 class="center">Foire aux questions</h2>
-      
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-ga1">
-          <span class="faq-title">Est-ce que GA4 suffit sans Google Tag Manager (GTM) ?</span>
-          <span class="faq-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a" id="faq-a-ga1" role="region" hidden>
-          <p>
-            Bien que GA4 puisse fonctionner seul pour des visites basiques, GTM est indispensable pour traquer des actions précises (clics sur un bouton d'appel, soumission de formulaires) sans avoir à modifier le code de votre site web à chaque fois.
-          </p>
-        </div>
-      </div>
+<li><strong>Import des conversions dans Google Ads :</strong> pour optimiser les campagnes sur les vrais leads.</li>
 
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-ga2">
-          <span class="faq-title">Combien de temps faut-il pour valider les événements de conversion ?</span>
-          <span class="faq-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a" id="faq-a-ga2" role="region" hidden>
-          <p>
-            Avec notre méthode de configuration, nous utilisons le DebugView de GA4 pour valider les événements en temps réel. Les données officielles commencent à apparaître dans vos rapports standard sous 24 à 48 heures.
-          </p>
-        </div>
-      </div>
+</ul>
 
-      <div class="faq-item" style="border-bottom: none;">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-ga3">
-          <span class="faq-title">Le suivi ralentira-t-il mon site web ?</span>
-          <span class="faq-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a" id="faq-a-ga3" role="region" hidden>
-          <p>
-            Non. Google Tag Manager se charge de manière asynchrone, ce qui signifie qu'il s'exécute en arrière-plan et n'empêche pas le reste de votre page de s'afficher rapidement pour vos utilisateurs.
-          </p>
-        </div>
-      </div>
-      
-    </div>
-  </section>
+</div>
+</section>
 
-  <section id="cta" class="content">
-    <div class="wrap">
-      <h2>Prêt à bâtir une fondation solide ?</h2>
-      <p>
-        Configurez votre suivi correctement et commencez à capter des acheteurs à forte intention avec confiance.
-      </p>
-      <div class="cta-row">
-        <a class="cta-btn" href="/fr/services">Voir nos services</a>
-      </div>
-    </div>
-  </section>
+<section class="content">
+<div class="wrap center aeo-content-block">
 
-  <footer class="footer">
-    <div class="footer-inner">
+<h2>Pour qui</h2>
 
-      <div class="footer-brand">
-        <p class="footer-name">Visible at Search</p>
-        <p class="footer-tagline">
-          Services de marketing axés sur Google Ads.<br>
-          Basé au Canada.
-        </p>
-      </div>
+<div class="aeo-features">
 
-      <nav class="footer-nav" aria-label="Navigation du pied de page">
-        <a href="/fr/services">Services</a>
-        <a href="/fr/tarifs">Tarifs</a>
-        <a href="/fr/faq">FAQ</a>
-        <a href="/fr/a-propos">À propos</a>
-        <a href="/fr/contact">Contact</a>
-      </nav>
+<div class="aeo-feature-item">
+<h3>Vous utilisez Google Ads</h3>
+<p>mais vous ne savez pas clairement quelles campagnes génèrent des leads.</p>
+</div>
 
-      <div class="footer-meta">
-        <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
-        <p>© 2026 Visible at Search</p>
-      </div>
+<div class="aeo-feature-item">
+<h3>Vous avez des formulaires ou appels</h3>
+<p>mais le suivi des conversions n'est pas fiable.</p>
+</div>
 
-    </div>
-  </footer>
+<div class="aeo-feature-item">
+<h3>Vous voulez des rapports propres</h3>
+<p>pour distinguer Paid, Organic et Direct et prendre de meilleures décisions.</p>
+</div>
 
-  <script>
-    (function(){
-      if (window.__faqAccordionInit) return;
-      window.__faqAccordionInit = true;
+</div>
+</div>
+</section>
 
-      const items = document.querySelectorAll('.faq .faq-item');
+<section class="content white">
+<div class="wrap center aeo-content-block">
 
-      items.forEach(item => {
-        const btn = item.querySelector('.faq-q');
-        const panel = item.querySelector('.faq-a');
+<h2>Processus de configuration</h2>
 
-        btn.addEventListener('click', () => {
-          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+<ul class="aeo-list">
 
-          items.forEach(other => {
-            if(other === item) return;
-            const b = other.querySelector('.faq-q');
-            const p = other.querySelector('.faq-a');
-            b.setAttribute('aria-expanded', 'false');
-            p.hidden = true;
-          });
+<li><strong>Audit :</strong> vérification de GA4, GTM et des événements existants.</li>
 
-          btn.setAttribute('aria-expanded', String(!isOpen));
-          panel.hidden = isOpen;
-        });
-      });
-    })();
-  </script>
-  
-  <script src="/assets/nav.js" defer></script>
+<li><strong>Implantation :</strong> configuration des balises et déclencheurs dans GTM.</li>
+
+<li><strong>Validation :</strong> tests via DebugView pour confirmer le tracking.</li>
+
+<li><strong>Alignement Google Ads :</strong> import des conversions pour optimiser les campagnes sur les bons objectifs.</li>
+
+</ul>
+
+</div>
+</section>
+
+<section class="content">
+<div class="wrap center aeo-content-block">
+
+<h2>Ce que vous verrez dans vos rapports</h2>
+
+<div class="aeo-features">
+
+<div class="aeo-feature-item">
+<h3>Acquisition</h3>
+<p>Distinguer trafic Ads, organique et direct.</p>
+</div>
+
+<div class="aeo-feature-item">
+<h3>Conversions</h3>
+<p>Associer chaque visiteur à un lead réel.</p>
+</div>
+
+<div class="aeo-feature-item">
+<h3>Optimisation</h3>
+<p>Identifier les campagnes rentables et ajuster votre budget.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="content faq">
+<div class="wrap aeo-content-block">
+
+<h2 class="center">Questions fréquentes</h2>
+
+<!-- FAQ accordéon ici comme dans EN -->
+
+</div>
+</section>
+
 </body>
 </html>
