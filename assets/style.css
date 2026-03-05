@@ -655,7 +655,59 @@ a.hero-entry:hover {
 }
 
 /* =================
-   HOME - APPROACH (card + tools grid)
+   HOME - Email only 
+   ================= */
+
+.efficiency-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Un fond très léger pour séparer des autres sections */
+    text-align: center;
+}
+
+.efficiency-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.efficiency-section .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #666;
+}
+
+.efficiency-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Pour que ça soit mobile-friendly */
+}
+
+.efficiency-item {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    text-align: left; /* Plus facile à lire pour du texte de paragraphe */
+}
+
+.efficiency-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 2px solid #007bff; /* Petite ligne de couleur pour le look "Expert" */
+    display: inline-block;
+}
+
+.efficiency-item p {
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* =================
+   HOME - Logo Googles 
    ================= */
 
 #approach{
