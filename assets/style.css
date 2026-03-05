@@ -744,14 +744,14 @@ a.hero-entry:hover {
 
 .eco-item{
   text-align: center;
-  padding: 12px 8px;
+  padding: 10px 8px;
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,0.08);
   background: rgba(255,255,255,0.85);
 }
 
 .eco-item img{
-  height: 50px;
+  height: 60px;
   width:auto;
   display:block;
   margin: 0 auto 6px;
