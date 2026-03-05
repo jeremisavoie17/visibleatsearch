@@ -658,51 +658,54 @@ a.hero-entry:hover {
    HOME - EFFICIENCY
    ================= */
 
+
 .efficiency-section {
-    padding: 60px 20px;
-    background-color: #f9f9f9; /* Un fond très léger pour séparer des autres sections */
-    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-.efficiency-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
+.efficiency-section h2.center {
+    margin: 0 auto 10px auto;
 }
 
-.efficiency-section .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    color: #666;
+.efficiency-section .sub.center {
+    margin: 0 auto 50px auto;
 }
 
 .efficiency-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Pour que ça soit mobile-friendly */
+    flex-wrap: wrap;
 }
 
 .efficiency-item {
-    flex: 1;
-    min-width: 280px;
-    padding: 20px;
-    text-align: left; /* Plus facile à lire pour du texte de paragraphe */
+    flex: 1 1 300px;
+    padding: 10px;
 }
 
 .efficiency-item h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
-    color: #222;
-    border-bottom: 2px solid #007bff; /* Petite ligne de couleur pour le look "Expert" */
+    color: var(--text-dark);
+    border-bottom: 2px solid var(--bg-dark); 
     display: inline-block;
 }
 
 .efficiency-item p {
     line-height: 1.6;
-    color: #444;
+    color: var(--text-dark);
+    opacity: 0.85;
+}
+
+@media (max-width: 820px) {
+    .efficiency-section {
+        padding: 40px var(--pad);
+    }
+    .efficiency-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 
