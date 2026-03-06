@@ -892,7 +892,7 @@ a.hero-entry:hover {
 
 .aeo-content-block {
   max-width: 920px;
-  margin: 0 auto 56px;
+  margin: 0 auto;
 }
 
 .aeo-content-block > p {
@@ -907,13 +907,39 @@ a.hero-entry:hover {
   margin-right: auto;
 }
 
+.aeo-intro-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.aeo-intro-section .aeo-content-block,
+.aeo-section-alt .aeo-content-block {
+  margin-bottom: 0;
+}
+
+.aeo-tools-title {
+  margin-top: 42px;
+}
+
+.aeo-section-alt {
+  background: #f7f7f7;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.aeo-intro-section .aeo-header-logos,
+.aeo-intro-section .aeo-inclusion-box,
+.aeo-section-alt .aeo-grid {
+  margin-top: 24px;
+}
+
 .aeo-inclusion-box {
   background: #f7f7f7;
   padding: 18px;
   border-radius: 12px;
   text-align: left;
   border: 1px solid #eee;
-  margin: 24px auto 18px;
+  margin: 24px auto 0;
 }
 
 .aeo-inclusion-box p {
@@ -928,8 +954,8 @@ a.hero-entry:hover {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  margin-top: 0;
-  margin-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -1032,7 +1058,6 @@ a.hero-entry:hover {
     height: 80px;
   }
 }
-
 
 /* =========================
    HOME - MARKET 
