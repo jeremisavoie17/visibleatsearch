@@ -838,14 +838,6 @@ a.hero-entry:hover {
   margin: 0 auto;
 }
 
-.aeo-mini-title {
-  margin: 0 0 18px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #666;
-}
-
 .aeo-header-logos {
   display: flex;
   justify-content: center;
@@ -909,10 +901,6 @@ a.hero-entry:hover {
 .aeo-intro-section .aeo-content-block,
 .aeo-section-alt .aeo-content-block {
   margin-bottom: 0;
-}
-
-.aeo-tools-title {
-  margin-top: 42px;
 }
 
 .aeo-section-alt {
@@ -980,10 +968,6 @@ a.hero-entry:hover {
   margin: 0;
 }
 
-.aeo-card code {
-  font-size: 0.92em;
-}
-
 .aeo-features {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1019,24 +1003,6 @@ a.hero-entry:hover {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   margin: 22px auto 28px;
   display: block;
-}
-
-.aeo-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.aeo-list li {
-  margin: 0 0 12px;
-  padding: 0;
-  color: #444;
-  line-height: 1.55;
-  font-size: 1rem;
-}
-
-.aeo-list li::before {
-  content: "";
 }
 
 @media (max-width: 900px) {
