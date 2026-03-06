@@ -1001,15 +1001,6 @@ a.hero-entry:hover {
   margin: 0;
 }
 
-.aeo-visual {
-  max-width: 920px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  margin: 22px auto 28px;
-  display: block;
-}
-
 @media (max-width: 900px) {
   .aeo-features {
     grid-template-columns: 1fr;
