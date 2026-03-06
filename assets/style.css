@@ -953,7 +953,12 @@ a.hero-entry:hover {
   background: #fff;
   border: 1px solid #eee;
   border-radius: 12px;
-  padding: 18px;
+  padding: 24px;
+  transition: transform 0.3s ease; 
+}
+
+.aeo-card:hover {
+  transform: translateY(-4px); 
 }
 
 .aeo-card h3 {
