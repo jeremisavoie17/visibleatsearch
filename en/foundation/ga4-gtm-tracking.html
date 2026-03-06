@@ -36,35 +36,35 @@
       "name": "Is GA4 enough without Google Tag Manager (GTM)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "While GA4 can work alone for basic visits, GTM is essential for tracking precise actions (clicks on a call button, form submissions) without having to modify your website's code every time."
+        "text": "While GA4 can work alone for basic visits, GTM is essential for tracking precise actions such as call clicks, form submissions, and key button interactions without modifying your website code every time."
       }
     }, {
       "@type": "Question",
       "name": "How long does it take to validate conversion events?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "With our setup method, we use GA4's DebugView to validate events in real-time. Official data begins to appear in your standard reports within 24 to 48 hours."
+        "text": "With our setup method, we use GA4 DebugView to validate events in real time. Official data usually starts appearing in standard reports within 24 to 48 hours."
       }
     }, {
       "@type": "Question",
       "name": "Will the tracking slow down my website?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Google Tag Manager loads asynchronously, meaning it runs in the background and does not prevent the rest of your page from displaying quickly for your users."
+        "text": "No. Google Tag Manager loads asynchronously, which means it runs in the background and does not block the rest of your page from loading normally."
       }
     }, {
       "@type": "Question",
       "name": "How do I track form submissions in GA4?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We track form submissions through Google Tag Manager using a reliable trigger (thank-you page, form event, or DOM-based trigger depending on your site). The event is then sent to GA4 and marked as a conversion where applicable."
+        "text": "We track form submissions through Google Tag Manager using a reliable trigger such as a thank-you page, form event, or DOM-based trigger depending on your site. The event is then sent to GA4 and marked as a conversion where relevant."
       }
     }, {
       "@type": "Question",
       "name": "How do I track phone call clicks with GTM?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We track clicks on phone links (tel:) and call buttons using GTM click triggers. The event is sent to GA4 and can be imported into Google Ads so your campaigns optimize toward real lead actions."
+        "text": "We track clicks on phone links and call buttons using GTM click triggers. The event is sent to GA4 and can also be imported into Google Ads so campaigns optimize toward real lead actions."
       }
     }]
   }
@@ -128,120 +128,129 @@
     <div class="wrap center">
       <h1 class="aeo-header-title">Google Analytics (GA4) & GTM</h1>
       <p class="muted aeo-header-subtitle">
-        Track leads accurately and see what Google Ads really generates.
+        Track form submissions, call clicks and key lead actions with GA4 and Google Tag Manager.
       </p>
     </div>
   </section>
 
   <section class="content white">
     <div class="wrap center">
+      <h2 class="aeo-mini-title">Tools used in this setup</h2>
+
       <div class="aeo-header-logos">
         <div class="eco-item">
           <img src="/assets/img/google-analytics-4.svg" alt="Google Analytics 4" loading="eager">
-          <span>Analytics</span>
+          <span>GA4</span>
+          <small>Reporting, attribution and lead measurement</small>
         </div>
+
         <div class="eco-item">
           <img src="/assets/img/google-tag-manager.svg" alt="Google Tag Manager" loading="eager">
-          <span>Tag Manager</span>
+          <span>GTM</span>
+          <small>Event tracking and conversion triggers</small>
         </div>
       </div>
     </div>
   </section>
 
- <div class="aeo-inclusion-box">
-  <p><strong>Included:</strong> This tracking foundation is included in all Google Ads setups.</p>
-</div>
-
-<div class="aeo-grid">
-  <div class="aeo-card">
-    <h3>GA4 setup via GTM</h3>
-    <p>Clean, centralized code without slowing down your site.</p>
+  <div class="aeo-inclusion-box">
+    <p><strong>Included in every Google Ads setup:</strong> GA4 and GTM tracking are part of the foundation so lead actions can be measured correctly from the start.</p>
   </div>
 
-  <div class="aeo-card">
-    <h3>Event configuration</h3>
-    <p>Tracking for <code>generate_lead</code> actions, phone number clicks, and form submissions.</p>
-  </div>
+  <div class="aeo-grid">
+    <div class="aeo-card">
+      <h3>GA4 setup via GTM</h3>
+      <p>Clean, centralized implementation without unnecessary clutter across your site.</p>
+    </div>
 
-  <div class="aeo-card">
-    <h3>Standard naming conventions</h3>
-    <p>Clear reports readable by any professional.</p>
-  </div>
+    <div class="aeo-card">
+      <h3>Event configuration</h3>
+      <p>Tracking for generate_lead actions, phone number clicks and form submissions.</p>
+    </div>
 
-  <div class="aeo-card">
-    <h3>DebugView verification</h3>
-    <p>Real-time testing to ensure no click is lost.</p>
-  </div>
+    <div class="aeo-card">
+      <h3>Clear event naming</h3>
+      <p>Structured tracking that keeps reports easier to read and maintain.</p>
+    </div>
 
-  <div class="aeo-card">
-    <h3>Google Ads conversion import</h3>
-    <p>Ensure Google Ads receives the right conversions so campaigns optimize toward real leads.</p>
+    <div class="aeo-card">
+      <h3>DebugView testing</h3>
+      <p>Real-time validation to confirm events fire properly before relying on the data.</p>
+    </div>
+
+    <div class="aeo-card">
+      <h3>Google Ads conversion import</h3>
+      <p>Ensure Google Ads receives the right conversions so campaigns optimize toward real lead actions.</p>
+    </div>
   </div>
-</div>
 
   <section class="content">
     <div class="wrap aeo-content-block center">
-      <h2>Who it is for</h2>
-      <p class="muted">If you run Google Ads and want trustworthy lead tracking, this is the foundation.</p>
+      <h2>Who needs GA4 and GTM tracking</h2>
+      <p class="muted">This setup is built for businesses that need clear, trustworthy lead tracking from Google Ads and other traffic sources.</p>
 
       <div class="aeo-features">
         <div class="aeo-feature-item">
-          <h3>1. You run Google Ads</h3>
-          <p>But you can't clearly see which campaigns or traffic sources generate real leads.</p>
+          <h3>You run Google Ads</h3>
+          <p>But you cannot clearly see which campaigns generate real lead actions.</p>
         </div>
+
         <div class="aeo-feature-item">
-          <h3>2. You have forms or calls</h3>
-          <p>But conversion tracking is inconsistent, missing, or impossible to trust.</p>
+          <h3>You rely on forms or calls</h3>
+          <p>But your conversion tracking is incomplete, inconsistent or hard to trust.</p>
         </div>
+
         <div class="aeo-feature-item">
-          <h3>3. You want clean reporting</h3>
-          <p>So you can separate Paid vs Organic vs Direct and make decisions with confidence.</p>
+          <h3>You want cleaner reporting</h3>
+          <p>So you can compare Paid, Organic and Direct traffic with confidence.</p>
         </div>
       </div>
     </div>
   </section>
 
- <div class="aeo-grid">
-  <div class="aeo-card">
-    <h3>1. Audit</h3>
-    <p>Review GA4, GTM, existing tags, and conversion goals.</p>
-  </div>
+  <div class="aeo-grid">
+    <div class="aeo-card">
+      <h3>1. Audit</h3>
+      <p>Review GA4, GTM and current conversion tracking.</p>
+    </div>
 
-  <div class="aeo-card">
-    <h3>2. Implementation</h3>
-    <p>Configure GTM tags, triggers, and events based on your site behavior.</p>
-  </div>
+    <div class="aeo-card">
+      <h3>2. Implementation</h3>
+      <p>Set up tags, triggers and events based on your site.</p>
+    </div>
 
-  <div class="aeo-card">
-    <h3>3. Validation</h3>
-    <p>Test in DebugView and confirm events fire correctly end-to-end.</p>
-  </div>
+    <div class="aeo-card">
+      <h3>3. Validation</h3>
+      <p>Test events in DebugView and confirm they work properly.</p>
+    </div>
 
-  <div class="aeo-card">
-    <h3>4. Google Ads alignment</h3>
-    <p>Import the right conversions to Google Ads so campaigns optimize on real lead actions.</p>
+    <div class="aeo-card">
+      <h3>4. Google Ads alignment</h3>
+      <p>Import the right conversions so campaigns optimize on real leads.</p>
+    </div>
   </div>
-</div>
 
   <section class="content">
     <div class="wrap aeo-content-block center">
       <h2>What you see in your reports</h2>
-      <p class="muted">A clear view of acquisition (Ads vs Organic) to make informed business decisions.</p>
+      <p class="muted">See where leads come from, which actions are tracked and how paid traffic compares with Organic and Direct.</p>
       
       <img class="aeo-visual" src="/assets/img/ga4-traffic-by-type-mockup.png" alt="Traffic by type report on Google Analytics 4 showing Paid, Organic, and Direct" loading="lazy">
 
       <div class="aeo-features">
         <div class="aeo-feature-item">
-          <h3>1. Acquisition (Ads)</h3>
-          <p>Instantly isolate paid traffic from your SEO efforts or direct traffic.</p>
+          <h3>Traffic source clarity</h3>
+          <p>Separate paid traffic from Organic and Direct more clearly.</p>
         </div>
+
         <div class="aeo-feature-item">
-          <h3>2. Measurement (Conversions)</h3>
-          <p>Associate each visitor with the conversion event configured via GTM.</p>
+          <h3>Lead action tracking</h3>
+          <p>See form submissions, call clicks and other key conversion events.</p>
         </div>
+
         <div class="aeo-feature-item">
-          <h3>3. Quality (Adjustments)</h3>
-          <p>Detect unprofitable campaigns and reallocate your budget to where the demand is.</p>
+          <h3>Better campaign decisions</h3>
+          <p>Use cleaner data to adjust budgets and focus on what performs.</p>
         </div>
       </div>
     </div>
@@ -258,7 +267,7 @@
         </button>
         <div class="faq-a" id="faq-a-ga1" role="region" hidden>
           <p>
-            While GA4 can work alone for basic visits, GTM is essential for tracking precise actions (clicks on a call button, form submissions) without having to modify your website's code every time.
+            While GA4 can work alone for basic visits, GTM is essential for tracking precise actions such as call clicks, form submissions, and key button interactions without modifying your website code every time.
           </p>
         </div>
       </div>
@@ -270,7 +279,7 @@
         </button>
         <div class="faq-a" id="faq-a-ga2" role="region" hidden>
           <p>
-            With our setup method, we use GA4's DebugView to validate events in real-time. Official data begins to appear in your standard reports within 24 to 48 hours.
+            With our setup method, we use GA4 DebugView to validate events in real time. Official data usually starts appearing in standard reports within 24 to 48 hours.
           </p>
         </div>
       </div>
@@ -282,7 +291,7 @@
         </button>
         <div class="faq-a" id="faq-a-ga4" role="region" hidden>
           <p>
-            We track form submissions through Google Tag Manager using a reliable trigger (thank-you page, form event, or DOM-based trigger depending on your site). The event is then sent to GA4 and marked as a conversion where applicable.
+            We track form submissions through Google Tag Manager using a reliable trigger such as a thank-you page, form event, or DOM-based trigger depending on your site. The event is then sent to GA4 and marked as a conversion where relevant.
           </p>
         </div>
       </div>
@@ -294,7 +303,7 @@
         </button>
         <div class="faq-a" id="faq-a-ga5" role="region" hidden>
           <p>
-            We track clicks on phone links (tel:) and call buttons using GTM click triggers. The event is sent to GA4 and can be imported into Google Ads so your campaigns optimize toward real lead actions.
+            We track clicks on phone links and call buttons using GTM click triggers. The event is sent to GA4 and can also be imported into Google Ads so campaigns optimize toward real lead actions.
           </p>
         </div>
       </div>
@@ -306,7 +315,7 @@
         </button>
         <div class="faq-a" id="faq-a-ga3" role="region" hidden>
           <p>
-            No. Google Tag Manager loads asynchronously, meaning it runs in the background and does not prevent the rest of your page from displaying quickly for your users.
+            No. Google Tag Manager loads asynchronously, which means it runs in the background and does not block the rest of your page from loading normally.
           </p>
         </div>
       </div>
@@ -318,7 +327,7 @@
     <div class="wrap">
       <h2>Ready to build a solid foundation?</h2>
       <p>
-        Set up your tracking properly and start capturing high-intent buyers with confidence.
+        Set up your tracking properly so your reports, conversions and Google Ads decisions are based on reliable data.
       </p>
       <div class="cta-row">
         <a class="cta-btn" href="/en/services">View our services</a>
@@ -381,6 +390,7 @@
       });
     })();
   </script>
+
   <script src="/assets/nav.js" defer></script>
 </body>
 </html>
