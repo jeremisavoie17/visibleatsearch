@@ -830,7 +830,7 @@ a.hero-entry:hover {
    ========================================= */
 
 .aeo-header {
-  padding: 40px 0 24px;
+  padding: 48px 0 20px;
 }
 
 .aeo-header-title {
@@ -839,23 +839,36 @@ a.hero-entry:hover {
 }
 
 .aeo-header-subtitle {
-  max-width: 720px;
+  max-width: 760px;
   margin: 14px auto 0;
   font-size: 1.15rem;
+}
+
+.aeo-mini-title {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
 }
 
 .aeo-header-logos {
   display: flex;
   justify-content: center;
-  gap: 28px;
-  margin-top: 22px;
+  gap: 36px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .aeo-header-logos .eco-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 220px;
   text-align: center;
 }
 
-/* Remove inline padding-top on the logo section */
 .page-foundation .aeo-header-logos {
   padding-top: 18px;
 }
@@ -865,17 +878,28 @@ a.hero-entry:hover {
   height: 76px;
 }
 
+.aeo-header-logos .eco-item span {
+  font-weight: 600;
+  color: #222;
+}
+
+.aeo-header-logos .eco-item small {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #666;
+}
+
 .aeo-content-block {
   max-width: 920px;
   margin: 0 auto 56px;
 }
 
 .aeo-content-block > p {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto 18px;
 }
 
-/* These blocks are outside .content in your HTML, so we must constrain width + spacing */
 .page-foundation .aeo-grid,
 .page-foundation .aeo-inclusion-box {
   max-width: 920px;
@@ -883,7 +907,6 @@ a.hero-entry:hover {
   margin-right: auto;
 }
 
-/* Included box */
 .aeo-inclusion-box {
   background: #f7f7f7;
   padding: 18px;
@@ -897,7 +920,10 @@ a.hero-entry:hover {
   margin: 0;
 }
 
-/* Cards grid */
+.aeo-inclusion-box strong {
+  color: #222;
+}
+
 .aeo-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -931,7 +957,6 @@ a.hero-entry:hover {
   font-size: 0.92em;
 }
 
-/* Feature cards */
 .aeo-features {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -960,7 +985,6 @@ a.hero-entry:hover {
   margin: 0;
 }
 
-/* Visual */
 .aeo-visual {
   max-width: 920px;
   width: 100%;
@@ -970,7 +994,6 @@ a.hero-entry:hover {
   display: block;
 }
 
-/* Legacy list fallback (if any remain) */
 .aeo-list {
   list-style: none;
   padding: 0;
@@ -989,7 +1012,6 @@ a.hero-entry:hover {
   content: "";
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .aeo-features {
     grid-template-columns: 1fr;
@@ -1010,6 +1032,7 @@ a.hero-entry:hover {
     height: 80px;
   }
 }
+
 
 /* =========================
    HOME - MARKET 
