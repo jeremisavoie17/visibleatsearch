@@ -1436,11 +1436,13 @@ a.hero-entry:hover {
 }
 
 .pricing-group{
-  transition: border-color .15s ease;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
 }
 
 .pricing-group:hover{
-  border-color: rgba(0,0,0,0.18);
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+  transform: translateY(-1px);
 }
 
 .pricing-card{
