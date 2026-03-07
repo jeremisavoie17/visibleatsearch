@@ -1431,6 +1431,18 @@ a.hero-entry:hover {
   margin-top:18px;
 }
 
+.pricing-group:first-child{
+  background:#f7f7f7;
+}
+
+.pricing-group{
+  transition: border-color .15s ease;
+}
+
+.pricing-group:hover{
+  border-color: rgba(0,0,0,0.18);
+}
+
 .pricing-card{
   background:#fff;
   border:1px solid rgba(0,0,0,0.10);
