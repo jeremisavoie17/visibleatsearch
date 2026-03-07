@@ -54,16 +54,10 @@ section{
   flex: 1 1 340px;
 }
 
-.page-pricing .content .wrap{
-max-width:70ch;
-margin:0 auto;
-text-align:center;
-}
-
-.page-services .content .wrap{
-max-width:70ch;
-margin:0 auto;
-text-align:center;
+.page-intro .wrap{
+  max-width:70ch;
+  margin:0 auto;
+  text-align:center;
 }
 
 
