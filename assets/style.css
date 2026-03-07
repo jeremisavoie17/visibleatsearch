@@ -1451,12 +1451,6 @@ a.hero-entry:hover {
   box-shadow: 0 14px 34px rgba(0,0,0,0.12);
 }
 
-/* Featured - garde l'alignement (pas de lift) */
-.pricing-card.featured:hover,
-.pricing-card.featured:focus-within{
-  transform: none;
-}
-
 /* Optionnel: désactive l'animation pour ceux qui le demandent */
 @media (prefers-reduced-motion: reduce){
   .pricing-card{ transition: none; }
@@ -1521,13 +1515,6 @@ a.hero-entry:hover {
   background:#fff;
   color:#111;
   border:1px solid rgba(0,0,0,0.18);
-}
-
-/* Featured card */
-.pricing-card.featured{
-  border:2px solid rgba(0,0,0,0.18);
-  background:#f5f5f5;
-  transform:none;
 }
 
 .pricing-badge{
