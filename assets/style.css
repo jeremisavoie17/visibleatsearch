@@ -1615,6 +1615,107 @@ a.hero-entry:hover {
 }
 
 
+/* =================
+   Pricing sections / accordion
+   ================= */
+
+.pricing-sections{
+  display:grid;
+  gap:18px;
+}
+
+.pricing-group{
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.10);
+  border-radius:18px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.05);
+  overflow:hidden;
+}
+
+.pricing-group[open]{
+  box-shadow:0 14px 34px rgba(0,0,0,0.08);
+}
+
+.pricing-group-summary{
+  list-style:none;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  padding:22px;
+}
+
+.pricing-group-summary::-webkit-details-marker{
+  display:none;
+}
+
+.pricing-group-kicker{
+  margin:0 0 6px 0;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  opacity:.65;
+}
+
+.pricing-group-title{
+  margin:0;
+  font-size:28px;
+  line-height:1.15;
+}
+
+.pricing-group-text{
+  margin:10px 0 0 0;
+  max-width:70ch;
+  opacity:.8;
+}
+
+.pricing-group-toggle{
+  width:18px;
+  height:18px;
+  border-right:2px solid rgba(0,0,0,0.7);
+  border-bottom:2px solid rgba(0,0,0,0.7);
+  transform:rotate(45deg);
+  margin-top:10px;
+  flex-shrink:0;
+  transition:transform 160ms ease;
+}
+
+.pricing-group[open] .pricing-group-toggle{
+  transform:rotate(225deg);
+}
+
+.pricing-group-content{
+  padding:0 22px 22px;
+}
+
+.pricing-grid-2{
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  margin-top:0;
+}
+
+.pricing-grid-support-clean{
+  align-items:stretch;
+}
+
+@media (max-width: 980px){
+  .pricing-group-summary{
+    padding:18px;
+  }
+
+  .pricing-group-content{
+    padding:0 18px 18px;
+  }
+
+  .pricing-grid-2{
+    grid-template-columns:1fr;
+  }
+
+  .pricing-group-title{
+    font-size:24px;
+  }
+}
+
 /* ===============================
    Pricing layout fixes
    =============================== */
