@@ -1584,6 +1584,8 @@ a.hero-entry:hover {
 .pricing-sections{
   display:grid;
   gap:18px;
+  max-width:880px;
+  margin:0 auto;
 }
 
 .pricing-group{
