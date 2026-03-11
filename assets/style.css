@@ -874,6 +874,16 @@ a.hero-entry:hover {
   text-align: center;
 }
 
+.aeo-image{
+  max-width:750px;
+  width:100%;
+  margin:32px auto;
+  display:block;
+  border-radius:10px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+
 .eco-item-static{
   text-align: center;
   padding: 8px 8px;
