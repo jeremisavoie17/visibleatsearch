@@ -298,7 +298,7 @@ p{
 }
 
 /* =================
-   MOBILE-ONLY / DESKTOP-ONLY (breakpoint = 820)
+   MOBILE-ONLY / DESKTOP-ONLY
    ================= */
 
 .desktop-only{ display: inline; }
@@ -404,7 +404,7 @@ a.cta-btn:focus-visible{
    LISTS (GENERIC)
    ================= */
 
-/* Legacy: ancien composant .list (pas utilise sur la home actuelle, mais utile ailleurs) */
+/* Legacy */
 .list{
   margin: 12px 0 0 0;
   padding: 0;
@@ -864,13 +864,22 @@ a.hero-entry:hover {
   flex-wrap: wrap;
 }
 
-.aeo-header-logos .eco-item {
+.aeo-header-logos .eco-item,
+.aeo-header-logos .eco-item-static {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   max-width: 220px;
   text-align: center;
+}
+
+.eco-item-static{
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.85);
 }
 
 .page-foundation .aeo-header-logos {
@@ -882,12 +891,14 @@ a.hero-entry:hover {
   height: 76px;
 }
 
-.aeo-header-logos .eco-item span {
+.aeo-header-logos .eco-item span,
+.aeo-header-logos .eco-item-static span {
   font-weight: 600;
   color: #222;
 }
 
-.aeo-header-logos .eco-item small {
+.aeo-header-logos .eco-item small,
+.aeo-header-logos .eco-item-static small {
   display: block;
   font-size: 0.9rem;
   line-height: 1.45;
@@ -973,10 +984,6 @@ a.hero-entry:hover {
   border-radius: 12px;
   padding: 24px;
   transition: transform 0.3s ease; 
-}
-
-.aeo-card:hover {
-  transform: translateY(-4px); 
 }
 
 .aeo-card h3 {
