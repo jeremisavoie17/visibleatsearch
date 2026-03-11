@@ -773,11 +773,23 @@ a.hero-entry:hover {
 }
 
 .eco-item{
+  display:block;
   text-align: center;
   padding: 8px 8px;
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,0.08);
   background: rgba(255,255,255,0.85);
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.eco-item:hover,
+.eco-item:focus-visible{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(0,0,0,.12);
+  border-color: rgba(0,0,0,0.14);
 }
 
 .eco-item img{
