@@ -845,41 +845,35 @@ a.hero-entry:hover {
 /* Arrow */
 .aeo-flow-divider{
   display:flex;
-  flex-direction:column;
-  align-items:center;
   justify-content:center;
-  gap:0;
-  padding: 8px 0 2px;
+  align-items:center;
+  padding: 22px 0 18px;
   background: var(--bg-light);
 }
 
-.aeo-flow-divider-line{
-  width: 20px;
-  height: 22px;
-  border-radius: 999px 999px 0 0;
-  background: rgba(142, 102, 255, 0.55);
+.aeo-flow-arrow{
+  width: 26px;
+  height: 26px;
+  background:#111;
+  clip-path: polygon(
+    50% 100%,
+    0 45%,
+    32% 45%,
+    32% 0,
+    68% 0,
+    68% 45%,
+    100% 45%
+  );
 }
 
-.aeo-flow-divider-head{
-  width: 20px;
-  height: 14px;
-  background: rgba(142, 102, 255, 0.75);
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
-
-@media (max-width: 820px){
+@media (max-width:820px){
   .aeo-flow-divider{
-    padding: 6px 0 0;
+    padding:16px 0 14px;
   }
 
-  .aeo-flow-divider-line{
-    width: 16px;
-    height: 18px;
-  }
-
-  .aeo-flow-divider-head{
-    width: 16px;
-    height: 12px;
+  .aeo-flow-arrow{
+    width:22px;
+    height:22px;
   }
 }
 
