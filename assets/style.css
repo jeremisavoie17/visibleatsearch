@@ -919,12 +919,12 @@ a.hero-entry:hover {
 }
 
 .aeo-image{
-  max-width:750px;
-  width:100%;
-  margin:40px auto 0;
-  display:block;
-  border-radius:10px;
-  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+  max-width: 860px;
+  width: 100%;
+  margin: 44px auto 0;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.07);
 }
 
 
