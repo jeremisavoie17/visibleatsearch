@@ -875,7 +875,7 @@ a.hero-entry:hover {
 }
 
 .aeo-image-label{
-  margin: 42px 0 10px;
+  margin: 36px 0 8px;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -886,7 +886,7 @@ a.hero-entry:hover {
 .aeo-image{
   max-width: 860px;
   width: 100%;
-  margin: 44px auto 0;
+  margin: 0 auto 0;
   display: block;
   border-radius: 14px;
   box-shadow: 0 12px 34px rgba(0,0,0,0.07);
