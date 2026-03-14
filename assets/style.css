@@ -1750,8 +1750,18 @@ a.hero-entry:hover {
 }
 
 /* =================
-   Thank you page
+   SERVICE - Thank you page
    ================= */
+
+.service-bullets{
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.service-bullets li{
+  margin-bottom: 6px;
+}
+
 
 .service-technical { margin-top: 0.75rem; }
 
