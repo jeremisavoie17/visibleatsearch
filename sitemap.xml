@@ -20,60 +20,126 @@
     <loc>https://visibleatsearch.com/en/services</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/services" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/services" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/fr/services</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/services" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/services" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/pricing</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/pricing" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/tarifs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/pricing" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/fr/tarifs</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/pricing" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/tarifs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/pricing" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/faq" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/faq" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/fr/faq</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/faq" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/faq" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/about</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/a-propos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/about" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/fr/a-propos</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/about" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/a-propos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/about" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/en/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/contact" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/fr/contact</loc>
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/contact" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/en/foundation/ga4-gtm-tracking</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/suivi-ga4-gtm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/ga4-gtm-tracking" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/en/foundation/google-ads-management</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/google-ads-management" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/gestion-google-ads" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/google-ads-management" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/fr/fondation/gestion-google-ads</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/google-ads-management" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/gestion-google-ads" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/google-ads-management" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/en/foundation/google-merchant-center-product-feed</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/google-merchant-center-product-feed" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/flux-produit-google-merchant-center" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/google-merchant-center-product-feed" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/fr/fondation/flux-produit-google-merchant-center</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/google-merchant-center-product-feed" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/flux-produit-google-merchant-center" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/google-merchant-center-product-feed" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/en/foundation/google-business-profile-visibility</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/google-business-profile-visibility" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/visibilite-fiche-etablissement-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/google-business-profile-visibility" />
+  </url>
+
+  <url>
+    <loc>https://visibleatsearch.com/fr/fondation/visibilite-fiche-etablissement-google</loc>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/foundation/google-business-profile-visibility" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/fondation/visibilite-fiche-etablissement-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/foundation/google-business-profile-visibility" />
   </url>
 
 </urlset>
