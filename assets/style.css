@@ -1755,12 +1755,15 @@ a.hero-entry:hover {
 
 .service-bullets{
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 18px;
+  margin-top: 12px;
 }
 
 .service-bullets li{
   margin-bottom: 6px;
+  line-height: 1.5;
 }
+
 
 
 .service-technical { margin-top: 0.75rem; }
