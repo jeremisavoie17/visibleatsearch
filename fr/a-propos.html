@@ -223,6 +223,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
+    <div class="floating-cta" id="floatingCta">
+    <button class="floating-cta-toggle" id="floatingCtaToggle" aria-label="Open quick actions" aria-expanded="false" aria-controls="floatingCtaMenu">
+    <span>+</span>
+  </button>
+
+  <div class="floating-cta-menu" id="floatingCtaMenu">
+    <a href="/en/contact" class="floating-cta-link">Request a review</a>
+    <a href="/en/contact" class="floating-cta-link">Let’s discuss</a>
+    <a href="/en/services" class="floating-cta-link">See services</a>
+  </div>
+</div>
+  <script>
+  (function () {
+    const floatingCta = document.getElementById('floatingCta');
+    const toggle = document.getElementById('floatingCtaToggle');
+
+    if (!floatingCta || !toggle) return;
+
+    const showAfter = 260;
+
+    function updateVisibility() {
+      if (window.scrollY > showAfter) {
+        floatingCta.classList.add('is-visible');
+      } else {
+        floatingCta.classList.remove('is-visible');
+        floatingCta.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    toggle.addEventListener('click', function () {
+      const isOpen = floatingCta.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!floatingCta.contains(e.target)) {
+        floatingCta.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    updateVisibility();
+  })();
+</script>
+  
   <script src="/assets/nav.js" defer></script>
 
 </body>
