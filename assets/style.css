@@ -1010,14 +1010,13 @@ a.hero-entry:hover {
 }
 
 .aeo-features.aeo-features-2 {
-  grid-template-columns: repeat(2, minmax(220px, 320px));
+  grid-template-columns: repeat(2, 260px);
   justify-content: center;
 }
 
 @media (max-width: 900px) {
   .aeo-features.aeo-features-2 {
     grid-template-columns: 1fr;
-    justify-content: stretch;
   }
 }
 
