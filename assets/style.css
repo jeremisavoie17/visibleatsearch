@@ -1009,6 +1009,16 @@ a.hero-entry:hover {
   margin: 0;
 }
 
+.aeo-features-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .aeo-features-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .aeo-features {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1036,6 +1046,7 @@ a.hero-entry:hover {
   line-height: 1.55;
   margin: 0;
 }
+
 
 @media (max-width: 900px) {
   .aeo-features {
