@@ -358,36 +358,7 @@
     </div>
   </footer>
 
-  <script>
-    (function(){
-      if (window.__faqAccordionInit) return;
-      window.__faqAccordionInit = true;
-
-      const items = document.querySelectorAll('.faq .faq-item');
-
-      items.forEach(item => {
-        const btn = item.querySelector('.faq-q');
-        const panel = item.querySelector('.faq-a');
-
-        btn.addEventListener('click', () => {
-          const isOpen = btn.getAttribute('aria-expanded') === 'true';
-
-          items.forEach(other => {
-            if(other === item) return;
-            const b = other.querySelector('.faq-q');
-            const p = other.querySelector('.faq-a');
-            b.setAttribute('aria-expanded', 'false');
-            p.hidden = true;
-          });
-
-          btn.setAttribute('aria-expanded', String(!isOpen));
-          panel.hidden = isOpen;
-        });
-      });
-    })();
-  </script>
-
-   <div class="floating-cta" id="floatingCta">
+     <div class="floating-cta" id="floatingCta">
   <button class="floating-cta-toggle" id="floatingCtaToggle" aria-label="Open quick actions" aria-expanded="false" aria-controls="floatingCtaMenu">
     <span>+</span>
   </button>
@@ -433,6 +404,35 @@
     updateVisibility();
   })();
 </script>
+  
+  <script>
+    (function(){
+      if (window.__faqAccordionInit) return;
+      window.__faqAccordionInit = true;
+
+      const items = document.querySelectorAll('.faq .faq-item');
+
+      items.forEach(item => {
+        const btn = item.querySelector('.faq-q');
+        const panel = item.querySelector('.faq-a');
+
+        btn.addEventListener('click', () => {
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+          items.forEach(other => {
+            if(other === item) return;
+            const b = other.querySelector('.faq-q');
+            const p = other.querySelector('.faq-a');
+            b.setAttribute('aria-expanded', 'false');
+            p.hidden = true;
+          });
+
+          btn.setAttribute('aria-expanded', String(!isOpen));
+          panel.hidden = isOpen;
+        });
+      });
+    })();
+  </script>
   
   <script src="/assets/nav.js" defer></script>
 </body>
