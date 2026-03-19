@@ -779,6 +779,16 @@ a.hero-entry:hover {
   color: var(--text-dark);
 }
 
+.support-section .subtitle{
+  margin: 0 auto 22px auto;
+  max-width: 70ch;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.75;
+  color: var(--text-dark);
+  text-align: center;
+}
+
 .support-item-featured{
   background: rgba(0,0,0,0.05);
   border: 1px solid rgba(0,0,0,0.14);
