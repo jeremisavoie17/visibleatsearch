@@ -1958,10 +1958,10 @@ a.hero-entry:hover {
 
 .quick-nav a{
   display: block;
-  padding: 4px 0;
+  padding: 2px 0;
   color: #1f2937;
   text-decoration: none;
-  line-height: 1.3;
+  line-height: 1.2;
   cursor: pointer;
 }
 
