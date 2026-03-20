@@ -1949,6 +1949,7 @@ a.hero-entry:hover {
   padding: 6px 0;
   color: #1f2937;
   text-decoration: none;
+  line-height: 1.35;
   cursor: pointer; 
 }
 
