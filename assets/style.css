@@ -1938,12 +1938,6 @@ a.hero-entry:hover {
   display: block;
 }
 
-.guide-topics p{
-  max-width: 640px;
-  margin: 0 auto 32px auto;
-  line-height: 1.7;
-}
-
 html{
   scroll-behavior: smooth;
 }
