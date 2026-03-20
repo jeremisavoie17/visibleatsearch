@@ -1947,9 +1947,13 @@ a.hero-entry:hover {
 .quick-nav a{
   display: block;
   padding: 6px 0;
-  color: inherit;
+  color: #1f2937;
   text-decoration: none;
-  cursor: default;
+  cursor: pointer; 
+}
+
+.quick-nav a:hover{
+  text-decoration: underline;
 }
 
 .quick-nav h3{
