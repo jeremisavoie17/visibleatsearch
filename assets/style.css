@@ -1957,6 +1957,16 @@ a.hero-entry:hover {
   font-size: 16px;
 }
 
+.faq-group + .faq-group{
+  margin-top: 56px;
+}
+
+.faq-group-title{
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
 /* =================
    FOOTER
    ================= */
