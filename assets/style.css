@@ -1944,13 +1944,25 @@ a.hero-entry:hover {
   line-height: 1.7;
 }
 
+.quick-nav .aeo-grid{
+  gap: 28px;
+}
+
+.quick-nav .aeo-card{
+  background: #f7f7f5;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 26px 28px;
+  box-shadow: none;
+}
+
 .quick-nav a{
   display: block;
-  padding: 6px 0;
+  padding: 4px 0;
   color: #1f2937;
   text-decoration: none;
-  line-height: 1.35;
-  cursor: pointer; 
+  line-height: 1.3;
+  cursor: pointer;
 }
 
 .quick-nav a:hover{
@@ -1958,18 +1970,23 @@ a.hero-entry:hover {
 }
 
 .quick-nav h3{
-  margin-bottom: 10px;
-  font-size: 16px;
+  margin: 0 0 14px 0;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.quick-nav .aeo-card p{
+  margin: 0;
 }
 
 .faq-group + .faq-group{
-  margin-top: 56px;
+  margin-top: 72px;
 }
 
 .faq-group-title{
-  margin: 0 0 16px 0;
-  font-size: 18px;
-  line-height: 1.3;
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 /* =================
