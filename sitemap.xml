@@ -60,16 +60,16 @@
 
   <url>
     <loc>https://visibleatsearch.com/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/about" />
-    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/a-propos" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/guides" />
   </url>
 
   <url>
     <loc>https://visibleatsearch.com/fr/a-propos</loc>
-    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/about" />
-    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/a-propos" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://visibleatsearch.com/en/guides" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://visibleatsearch.com/fr/guides" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://visibleatsearch.com/en/guides" />
   </url>
 
   <url>
