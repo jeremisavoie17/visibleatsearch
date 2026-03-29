@@ -994,6 +994,11 @@ a.hero-entry:hover {
 /* =================
    AEO - ARTICLE
    ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .guide-article-page {
   padding: 40px 20px;
 }
@@ -1003,7 +1008,33 @@ a.hero-entry:hover {
   margin: 0 auto;
 }
 
+/* BREADCRUMB */
+.guide-article-breadcrumb {
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.guide-article-breadcrumb a {
+  color: #111;
+  text-decoration: none;
+}
+
+.guide-article-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.guide-article-breadcrumb-separator {
+  margin: 0 6px;
+  color: #888;
+}
+
 /* HEADER */
+.guide-article-header {
+  margin-bottom: 28px;
+}
+
 .guide-article-header h1 {
   font-size: 34px;
   line-height: 1.2;
@@ -1018,19 +1049,64 @@ a.hero-entry:hover {
 
 .guide-article-header p {
   margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* CATEGORY LABEL */
+.guide-article-category {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  background: #f3f3f3;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1;
+  color: #222;
+  text-decoration: none;
+}
+
+.guide-article-category:hover {
+  background: #ebebeb;
+}
+
+/* CTA UNDER INTRO */
+.guide-article-header-cta {
+  margin-top: 18px;
+}
+
+.guide-article-header-cta a,
+.guide-article-cta a {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  line-height: 1;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.guide-article-header-cta a:hover,
+.guide-article-cta a:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
 }
 
 /* NAVIGATION */
 .guide-article-nav {
   margin: 32px 0;
-  padding: 16px 20px;
+  padding: 18px 20px;
   background: #f5f5f5;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
 }
 
 .guide-article-nav p {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 600;
+  color: #111;
 }
 
 .guide-article-nav ul {
@@ -1040,23 +1116,54 @@ a.hero-entry:hover {
 }
 
 .guide-article-nav li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.guide-article-nav li:last-child {
+  margin-bottom: 0;
 }
 
 .guide-article-nav a {
+  display: inline-block;
+  color: #111;
   text-decoration: none;
+  line-height: 1.4;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.guide-article-nav a:hover {
+  border-bottom-color: #111;
+  opacity: 0.8;
 }
 
 /* CONTENU */
 .guide-article-body h2 {
-  margin-top: 36px;
-  margin-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 14px;
   font-size: 24px;
+  line-height: 1.25;
+  scroll-margin-top: 100px;
 }
 
 .guide-article-body p {
   margin-bottom: 16px;
   line-height: 1.6;
+}
+
+/* Highlight simple quand on clique une ancre */
+.guide-article-body section:target,
+.guide-article-body div:target {
+  animation: guideArticleTargetFade 1.8s ease;
+}
+
+@keyframes guideArticleTargetFade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 /* CONCLUSION */
@@ -1073,29 +1180,54 @@ a.hero-entry:hover {
   margin-top: 24px;
 }
 
-.guide-article-cta a {
-  display: inline-block;
-  margin-top: 8px;
-}
-
 /* FAQ */
 .guide-article-faq {
   margin-top: 48px;
+  padding-top: 8px;
 }
 
 .guide-article-faq h2 {
   margin-bottom: 20px;
 }
 
+/* Version statique propre si tu n'as pas encore l'accordéon */
+.guide-article-faq-item {
+  padding: 16px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.guide-article-faq-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .guide-article-faq h3 {
-  margin-top: 18px;
-  margin-bottom: 6px;
+  margin: 0 0 8px 0;
   font-size: 18px;
+  line-height: 1.4;
 }
 
 .guide-article-faq p {
-  margin-bottom: 12px;
-  line-height: 1.5;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .guide-article-page {
+    padding: 28px 16px;
+  }
+
+  .guide-article-header h1 {
+    font-size: 28px;
+  }
+
+  .guide-article-intro {
+    font-size: 17px;
+  }
+
+  .guide-article-nav {
+    padding: 16px;
+  }
 }
 
 /* =================
