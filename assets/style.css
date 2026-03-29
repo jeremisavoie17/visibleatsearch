@@ -991,240 +991,6 @@ a.hero-entry:hover {
   }
 }
 
-/* =================
-   AEO - ARTICLE
-   ================= */
-
-.guide-article-page {
-  padding: 40px 20px;
-}
-
-.guide-article-detail {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-/* BREADCRUMB */
-.guide-article-breadcrumb {
-  margin-bottom: 18px;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #555;
-}
-
-.guide-article-breadcrumb a {
-  color: #111;
-  text-decoration: none;
-}
-
-.guide-article-breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-.guide-article-breadcrumb-separator {
-  margin: 0 6px;
-  color: #888;
-}
-
-/* HEADER */
-.guide-article-header {
-  margin-bottom: 28px;
-}
-
-.guide-article-header h1 {
-  font-size: 34px;
-  line-height: 1.2;
-  margin-bottom: 16px;
-}
-
-.guide-article-intro {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 12px;
-}
-
-.guide-article-header p {
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-/* CATEGORY LABEL */
-.guide-article-category {
-  display: inline-block;
-  margin-bottom: 16px;
-  padding: 6px 12px;
-  background: #f3f3f3;
-  border: 1px solid #e3e3e3;
-  border-radius: 999px;
-  font-size: 13px;
-  line-height: 1;
-  color: #222;
-  text-decoration: none;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-.guide-article-category:hover {
-  background: #ebebeb;
-  border-color: #d8d8d8;
-}
-
-/* CTA UNDER INTRO */
-.guide-article-header-cta {
-  margin-top: 18px;
-}
-
-.guide-article-header-cta a,
-.guide-article-cta a {
-  display: inline-block;
-  padding: 12px 18px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 999px;
-  font-weight: 600;
-  line-height: 1;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.guide-article-header-cta a:hover,
-.guide-article-cta a:hover {
-  background: #2a2a2a;
-  transform: translateY(-1px);
-}
-
-/* NAVIGATION */
-.guide-article-nav {
-  margin: 32px 0;
-  padding: 18px 20px;
-  background: #f5f5f5;
-  border-radius: 12px;
-  border: 1px solid #e8e8e8;
-}
-
-.guide-article-nav p {
-  margin-bottom: 12px;
-  font-weight: 600;
-  color: #111;
-}
-
-.guide-article-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.guide-article-nav li {
-  margin-bottom: 8px;
-}
-
-.guide-article-nav li:last-child {
-  margin-bottom: 0;
-}
-
-.guide-article-nav a {
-  display: inline-block;
-  padding: 4px 6px;
-  margin-left: -6px;
-  color: #111;
-  text-decoration: none;
-  line-height: 1.4;
-  border-radius: 6px;
-  transition: background 0.15s ease, opacity 0.15s ease;
-}
-
-.guide-article-nav a:hover {
-  background: rgba(0,0,0,0.05);
-  opacity: 1;
-}
-
-/* CONTENU */
-.guide-article-body h2 {
-  margin-top: 40px;
-  margin-bottom: 14px;
-  font-size: 24px;
-  line-height: 1.25;
-  scroll-margin-top: calc(var(--nav-h) + 24px);
-}
-
-.guide-article-body p {
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-/* Highlight simple */
-.guide-article-body [id]:target {
-  animation: guideArticleTargetFade 1.2s ease;
-}
-
-@keyframes guideArticleTargetFade {
-  0% {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
-/* CONCLUSION */
-.guide-article-conclusion {
-  margin-top: 40px;
-}
-
-.guide-article-conclusion h2 {
-  margin-bottom: 10px;
-}
-
-/* CTA ARTICLE */
-.guide-article-cta {
-  margin-top: 24px;
-}
-
-/* FAQ */
-.guide-article-faq {
-  margin-top: 48px;
-  padding-top: 8px;
-}
-
-.guide-article-faq h2 {
-  margin-bottom: 20px;
-}
-
-.guide-article-faq .faq{
-  background: #fff;
-  border-radius: 12px;
-  border: 1px solid #e8e8e8;
-}
-
-
-.guide-article-faq .faq-item{
-  border-color: #e5e5e5;
-}
-
-.guide-article-faq .faq-q{
-  background: #fff;
-}
-
-.guide-article-faq .faq-q:hover{
-  background: rgba(0,0,0,0.04);
-}
-/* Responsive */
-@media (max-width: 767px) {
-  .guide-article-page {
-    padding: 28px 16px;
-  }
-
-  .guide-article-header h1 {
-    font-size: 28px;
-  }
-
-  .guide-article-intro {
-    font-size: 17px;
-  }
-
-  .guide-article-nav {
-    padding: 16px;
-  }
-}
 
 /* =================
    HOME - EFFICIENCY
@@ -2261,6 +2027,240 @@ html{
   opacity: 0.9;
 }
 
+/* =================
+   AEO - ARTICLE
+   ================= */
+
+.guide-article-page {
+  padding: 40px 20px;
+}
+
+.guide-article-detail {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* BREADCRUMB */
+.guide-article-breadcrumb {
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.guide-article-breadcrumb a {
+  color: #111;
+  text-decoration: none;
+}
+
+.guide-article-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.guide-article-breadcrumb-separator {
+  margin: 0 6px;
+  color: #888;
+}
+
+/* HEADER */
+.guide-article-header {
+  margin-bottom: 28px;
+}
+
+.guide-article-header h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.guide-article-intro {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.guide-article-header p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* CATEGORY LABEL */
+.guide-article-category {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  background: #f3f3f3;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1;
+  color: #222;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.guide-article-category:hover {
+  background: #ebebeb;
+  border-color: #d8d8d8;
+}
+
+/* CTA UNDER INTRO */
+.guide-article-header-cta {
+  margin-top: 18px;
+}
+
+.guide-article-header-cta a,
+.guide-article-cta a {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  line-height: 1;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.guide-article-header-cta a:hover,
+.guide-article-cta a:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+/* NAVIGATION */
+.guide-article-nav {
+  margin: 32px 0;
+  padding: 18px 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.guide-article-nav p {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #111;
+}
+
+.guide-article-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guide-article-nav li {
+  margin-bottom: 4px;
+}
+
+.guide-article-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.guide-article-nav a {
+  display: inline-block;
+  padding: 4px 6px;
+  margin-left: -6px;
+  color: #111;
+  text-decoration: none;
+  line-height: 1.4;
+  border-radius: 6px;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.guide-article-nav a:hover {
+  background: rgba(0,0,0,0.05);
+  opacity: 1;
+}
+
+/* CONTENU */
+.guide-article-body h2 {
+  margin-top: 40px;
+  margin-bottom: 14px;
+  font-size: 24px;
+  line-height: 1.25;
+  scroll-margin-top: calc(var(--nav-h) + 24px);
+}
+
+.guide-article-body p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Highlight simple */
+.guide-article-body [id]:target {
+  animation: guideArticleTargetFade 1.2s ease;
+}
+
+@keyframes guideArticleTargetFade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* CONCLUSION */
+.guide-article-conclusion {
+  margin-top: 40px;
+}
+
+.guide-article-conclusion h2 {
+  margin-bottom: 10px;
+}
+
+/* CTA ARTICLE */
+.guide-article-cta {
+  margin-top: 24px;
+}
+
+/* FAQ */
+.guide-article-faq {
+  margin-top: 48px;
+  padding-top: 8px;
+}
+
+.guide-article-faq h2 {
+  margin-bottom: 20px;
+}
+
+.guide-article-faq .faq{
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+
+.guide-article-faq .faq-item{
+  border-color: #e5e5e5;
+}
+
+.guide-article-faq .faq-q{
+  background: #fff;
+}
+
+.guide-article-faq .faq-q:hover{
+  background: rgba(0,0,0,0.04);
+}
+/* Responsive */
+@media (max-width: 767px) {
+  .guide-article-page {
+    padding: 28px 16px;
+  }
+
+  .guide-article-header h1 {
+    font-size: 28px;
+  }
+
+  .guide-article-intro {
+    font-size: 17px;
+  }
+
+  .guide-article-nav {
+    padding: 16px;
+  }
+}
 
 /* =================
    FOOTER
