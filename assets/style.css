@@ -995,10 +995,6 @@ a.hero-entry:hover {
    AEO - ARTICLE
    ================= */
 
-html {
-  scroll-behavior: smooth;
-}
-
 .guide-article-page {
   padding: 40px 20px;
 }
@@ -1064,10 +1060,12 @@ html {
   line-height: 1;
   color: #222;
   text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .guide-article-category:hover {
   background: #ebebeb;
+  border-color: #d8d8d8;
 }
 
 /* CTA UNDER INTRO */
@@ -1125,16 +1123,18 @@ html {
 
 .guide-article-nav a {
   display: inline-block;
+  padding: 4px 6px;
+  margin-left: -6px;
   color: #111;
   text-decoration: none;
   line-height: 1.4;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, opacity 0.2s ease;
+  border-radius: 6px;
+  transition: background 0.15s ease, opacity 0.15s ease;
 }
 
 .guide-article-nav a:hover {
-  border-bottom-color: #111;
-  opacity: 0.8;
+  background: rgba(0,0,0,0.05);
+  opacity: 1;
 }
 
 /* CONTENU */
@@ -1143,7 +1143,7 @@ html {
   margin-bottom: 14px;
   font-size: 24px;
   line-height: 1.25;
-  scroll-margin-top: 100px;
+  scroll-margin-top: calc(var(--nav-h) + 24px);
 }
 
 .guide-article-body p {
@@ -1152,9 +1152,8 @@ html {
 }
 
 /* Highlight simple quand on clique une ancre */
-.guide-article-body section:target,
-.guide-article-body div:target {
-  animation: guideArticleTargetFade 1.8s ease;
+.guide-article-body [id]:target {
+  animation: guideArticleTargetFade 1.2s ease;
 }
 
 @keyframes guideArticleTargetFade {
@@ -1190,7 +1189,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* Version statique propre si tu n'as pas encore l'accordéon */
+/* Version statique */
 .guide-article-faq-item {
   padding: 16px 0;
   border-top: 1px solid #e5e5e5;
