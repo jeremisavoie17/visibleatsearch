@@ -2104,30 +2104,6 @@ html{
   border-color: #d8d8d8;
 }
 
-/* CTA UNDER INTRO */
-.guide-article-header-cta {
-  margin-top: 18px;
-}
-
-.guide-article-header-cta a,
-.guide-article-cta a {
-  display: inline-block;
-  padding: 12px 18px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 999px;
-  font-weight: 600;
-  line-height: 1;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.guide-article-header-cta a:hover,
-.guide-article-cta a:hover {
-  background: #2a2a2a;
-  transform: translateY(-1px);
-}
-
 /* NAVIGATION */
 .guide-article-nav {
   margin: 32px 0;
@@ -2204,21 +2180,16 @@ html{
 /* CONCLUSION */
 .guide-article-conclusion {
   margin-top: 40px;
+  margin-bottom: 12px;
 }
 
 .guide-article-conclusion h2 {
   margin-bottom: 10px;
 }
 
-/* CTA ARTICLE */
-.guide-article-cta {
-  margin-top: 24px;
-}
-
 /* FAQ */
 .guide-article-faq {
-  margin-top: 48px;
-  padding-top: 8px;
+  margin-top: 36px;
 }
 
 .guide-article-faq h2 {
