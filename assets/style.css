@@ -992,6 +992,113 @@ a.hero-entry:hover {
 }
 
 /* =================
+   AEO - ARTICLE
+   ================= */
+.guide-article-page {
+  padding: 40px 20px;
+}
+
+.guide-article-detail {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.guide-article-header h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.guide-article-intro {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.guide-article-header p {
+  margin-bottom: 12px;
+}
+
+/* NAVIGATION */
+.guide-article-nav {
+  margin: 32px 0;
+  padding: 16px 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.guide-article-nav p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.guide-article-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guide-article-nav li {
+  margin-bottom: 6px;
+}
+
+.guide-article-nav a {
+  text-decoration: none;
+}
+
+/* CONTENU */
+.guide-article-body h2 {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.guide-article-body p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* CONCLUSION */
+.guide-article-conclusion {
+  margin-top: 40px;
+}
+
+.guide-article-conclusion h2 {
+  margin-bottom: 10px;
+}
+
+/* CTA ARTICLE */
+.guide-article-cta {
+  margin-top: 24px;
+}
+
+.guide-article-cta a {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* FAQ */
+.guide-article-faq {
+  margin-top: 48px;
+}
+
+.guide-article-faq h2 {
+  margin-bottom: 20px;
+}
+
+.guide-article-faq h3 {
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.guide-article-faq p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* =================
    HOME - EFFICIENCY
    ================= */
 
