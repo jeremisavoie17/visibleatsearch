@@ -1151,7 +1151,7 @@ a.hero-entry:hover {
   line-height: 1.6;
 }
 
-/* Highlight simple quand on clique une ancre */
+/* Highlight simple */
 .guide-article-body [id]:target {
   animation: guideArticleTargetFade 1.2s ease;
 }
@@ -1189,27 +1189,24 @@ a.hero-entry:hover {
   margin-bottom: 20px;
 }
 
-/* Version statique */
-.guide-article-faq-item {
-  padding: 16px 0;
-  border-top: 1px solid #e5e5e5;
+.guide-article-faq .faq{
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
 }
 
-.guide-article-faq-item:last-child {
-  border-bottom: 1px solid #e5e5e5;
+
+.guide-article-faq .faq-item{
+  border-color: #e5e5e5;
 }
 
-.guide-article-faq h3 {
-  margin: 0 0 8px 0;
-  font-size: 18px;
-  line-height: 1.4;
+.guide-article-faq .faq-q{
+  background: #fff;
 }
 
-.guide-article-faq p {
-  margin-bottom: 0;
-  line-height: 1.6;
+.guide-article-faq .faq-q:hover{
+  background: rgba(0,0,0,0.04);
 }
-
 /* Responsive */
 @media (max-width: 767px) {
   .guide-article-page {
