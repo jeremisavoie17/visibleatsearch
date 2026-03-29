@@ -2188,6 +2188,7 @@ html{
 }
 
 /* FAQ */
+/* FAQ */
 .guide-article-faq {
   margin-top: 36px;
 }
@@ -2196,24 +2197,34 @@ html{
   margin-bottom: 20px;
 }
 
-.guide-article-faq .faq{
+.guide-article-faq .faq {
   background: #fff;
   border-radius: 12px;
   border: 1px solid #e8e8e8;
+  color: #111;
 }
 
-
-.guide-article-faq .faq-item{
+.guide-article-faq .faq-item {
   border-color: #e5e5e5;
 }
 
-.guide-article-faq .faq-q{
+.guide-article-faq .faq-q {
   background: #fff;
+  color: #111;
 }
 
-.guide-article-faq .faq-q:hover{
+.guide-article-faq .faq-q:hover {
   background: rgba(0,0,0,0.04);
 }
+
+.guide-article-faq .faq-title,
+.guide-article-faq .faq-plus,
+.guide-article-faq .faq-a,
+.guide-article-faq .faq-a p {
+  color: #111;
+}
+
+
 /* Responsive */
 @media (max-width: 767px) {
   .guide-article-page {
