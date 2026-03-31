@@ -67,171 +67,309 @@
         }
       },
       {
-  "@type": "FAQPage",
-  "@id": "https://visibleatsearch.com/en/guides/#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Google Ads and how does it work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Ads is Google’s advertising platform for businesses that want to appear in search results, Shopping placements, and other Google surfaces. Advertisers target demand through keywords, audiences, and campaign structure, then optimize toward leads, calls, or sales."
+        "@type": "FAQPage",
+        "@id": "https://visibleatsearch.com/en/guides/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Google Ads and how does it work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Ads is Google’s advertising platform for businesses that want to appear in search results, Shopping placements, and other Google surfaces. Advertisers target demand through keywords, audiences, and campaign structure, then optimize toward leads, calls, or sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Google Ads cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Ads costs depend on competition, geography, intent, and account quality. The budget is controlled by the advertiser, but real efficiency usually comes from campaign structure, exclusions, and conversion tracking rather than spend alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Search and Performance Max in Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Search campaigns focus on keyword-based demand from users actively searching, while Performance Max uses automation to expand visibility across Google’s inventory. Search offers more control, while Performance Max depends more heavily on signal quality and tracking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What KPIs should you track in Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Useful Google Ads KPIs often include cost per lead, cost per click, click-through rate, conversion volume, and impression share. The best reporting also connects those numbers to lead quality and actual business outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good cost per lead (CPL) in Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good CPL depends on your margins, close rate, industry, and customer value. The right goal is not the lowest lead cost possible, but a lead cost that still produces profitable business."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my Google Ads campaigns not performing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Weak performance often comes from broad targeting, poor structure, missing negatives, weak landing pages, or inaccurate tracking. In many cases, the problem is not budget alone but a poor account foundation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why am I getting clicks but no leads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Clicks don’t guarantee intent. Broad queries, weak keyword control, or missing negatives often bring low-intent traffic. If the landing page does not clearly match what the user expects, clicks increase but lead volume stays low."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my cost per lead increasing over time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CPL often rises when campaigns are left without active control. Over time, search terms expand, negatives are not updated, and targeting becomes less precise. If the account is not monitored or relies too heavily on automated settings, performance can drift quickly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Performance Max targeting irrelevant search terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Performance Max uses signals to expand beyond your initial targeting. If conversion tracking is weak or audience signals are unclear, the system explores broader queries, including low-intent searches. This often creates visible noise in search term insights and reduces lead quality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my Google Ads performance unstable or inconsistent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inconsistent performance often comes from limited data, unstable conversion tracking, or algorithm adjustments reacting to weak signals. Small accounts or poorly structured campaigns tend to amplify these variations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does intent-based targeting work in Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Intent-based targeting focuses on searches that signal real buying or inquiry intent instead of casual browsing. This usually means tighter keyword targeting, stronger exclusions, and landing pages built for lead generation or product demand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is conversion tracking in Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Conversion tracking measures the actions that matter after an ad click, such as form submissions, calls, purchases, or lead events. It allows Google Ads to optimize toward real business actions instead of traffic alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you track Google Ads conversions with GA4 and Google Tag Manager?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A strong setup usually uses Google Tag Manager to fire events, Google Analytics 4 to record them, and Google Ads to import key events. This helps tie ad spend to measurable lead generation or sales outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my Google Ads conversions inaccurate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inaccurate conversions often come from duplicate triggers, weak form logic, broken thank-you flows, or poor attribution settings. The issue is usually technical setup, not just platform reporting differences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What events should you track for a lead generation website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most lead generation websites should track form submissions, calls, quote requests, contact interactions, and other actions that signal real business intent. Good tracking prioritizes meaningful outcomes, not every small click."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you test and validate Google Ads tracking (GTM, GA4)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tracking should be tested with GTM preview mode, GA4 DebugView, and real form or event checks across the full path. Validation means confirming that events fire correctly, once, and reach the right platform with the right values."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you import conversions into Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Conversions can be imported from Google Analytics 4 or sent directly into Google Ads depending on your setup. The best choice depends on accuracy, attribution needs, and how your lead or purchase events are configured."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my tracking show conversions but no real leads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some setups track low-value actions like clicks, scrolls, or partial form interactions as conversions. This inflates results in reports but doesn’t reflect actual leads, giving a false sense of performance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my conversions duplicated in Google Ads or GA4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Duplicate conversions often come from multiple tags firing for the same action, overlapping GA4 and Google Ads tracking, or incorrect event configuration in Tag Manager."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is GA4 showing different numbers than Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GA4 and Google Ads use different attribution models and tracking logic. Time differences, attribution windows, and event definitions often cause discrepancies between platforms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why did my conversions suddenly drop or disappear?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tracking can break after website changes, form updates, GTM modifications, or consent or banner issues. A small technical change can completely stop data collection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does poor tracking affect Google Ads performance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Ads optimization depends on conversion signals. If tracking is missing, inaccurate, or based on low-quality actions, bidding strategies like Maximize Conversions or tCPA will optimize toward the wrong outcomes. This can lead to wasted spend and unstable performance, especially in Performance Max where conversion data is critical."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Google Business Profile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Business Profile is Google’s local listing platform used for Maps visibility, business details, reviews, and local discovery. It helps businesses appear more clearly in nearby searches and trust-based local results."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you show up on Google Maps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Showing up on Google Maps usually starts with a verified Google Business Profile, accurate categories, complete business details, and local trust signals like reviews. Relevance, competition, and proximity also affect visibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you improve local visibility on Google?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Local visibility improves when your profile is complete, your categories are correct, your website supports local relevance, and your business information is consistent. Reviews, profile quality, and local competition also matter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my Google Business Profile not showing on Google Maps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A profile may not show because of verification issues, weak relevance, category problems, policy limitations, or local competition. Sometimes the listing exists but is not visible for the searches that actually matter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my business not showing for important local searches?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google matches listings based on relevance, proximity, and authority. If your profile doesn’t align with key search terms or categories, it won’t appear for high-value queries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do my competitors rank above me on Google Maps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Competitors may have stronger categories, better reviews, or more relevant content. In some cases, they may also run Google Ads with location extensions, which can increase visibility and push their business above organic listings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why am I getting views but no calls or visits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Views do not always translate into actions. If business information is incomplete, hours are unclear, or contact options are limited, users may not engage. In some cases, call extensions, availability settings, or better alignment with user intent are needed to turn visibility into real actions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Google Merchant Center?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Merchant Center is the platform that processes product data for Google Shopping and other product-based placements. It helps Google understand your inventory, validate product data, and decide what can be shown."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my products disapproved in Google Merchant Center?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Products are often disapproved because of missing attributes, policy issues, landing page mismatches, inconsistent pricing or availability, or low-quality feed data. Merchant Center diagnostics usually points to the category of issue first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you optimize a product feed for Google Shopping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Feed optimization usually means cleaner titles, stronger product data, complete attributes, accurate landing pages, and consistent prices and availability. Better feed quality improves product visibility and Shopping traffic quality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my vehicles or products not showing in Google Ads (VLA / Shopping)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Products or vehicles may not show if the wrong program or campaign type is used. Vehicle Listing Ads, Shopping, and Performance Max rely on different setups and eligibility requirements. Feed structure, program selection, and campaign configuration all affect visibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my Performance Max campaign showing irrelevant inventory?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Performance Max distributes inventory based on feed data and structure. If listing groups are not properly segmented or filtered, campaigns may show less relevant products or vehicles, reducing overall performance and lead quality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my listings getting impressions but no clicks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Low click volume often comes from weak titles, pricing issues, poor images, or strong competition. Visibility alone does not guarantee engagement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my Performance Max campaign spending but not generating qualified leads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Automation may prioritize volume over intent if signals are unclear. Without strong tracking and segmentation, campaigns can spend efficiently but produce low-quality traffic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my products approved but still not performing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Approval only confirms compliance with Google policies. Performance depends on how the feed is structured and activated within Google Ads. Without proper segmentation, prioritization, and campaign structure, even high-quality feeds may underperform."
+            }
+          }
+        ]
       }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does Google Ads cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Ads costs depend on competition, geography, intent, and account quality. The budget is controlled by the advertiser, but real efficiency usually comes from campaign structure, exclusions, and conversion tracking rather than spend alone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between Search and Performance Max in Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Search campaigns focus on keyword-based demand from users actively searching, while Performance Max uses automation to expand visibility across Google’s inventory. Search offers more control, while Performance Max depends more heavily on signal quality and tracking."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What KPIs should you track in Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Useful Google Ads KPIs often include cost per lead, cost per click, click-through rate, conversion volume, and impression share. The best reporting also connects those numbers to lead quality and actual business outcomes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a good cost per lead (CPL) in Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A good CPL depends on your margins, close rate, industry, and customer value. The right goal is not the lowest lead cost possible, but a lead cost that still produces profitable business."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are my Google Ads campaigns not performing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Weak performance often comes from broad targeting, poor structure, missing negatives, weak landing pages, or inaccurate tracking. In many cases, the problem is not budget alone but a poor account foundation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does intent-based targeting work in Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Intent-based targeting focuses on searches that signal real buying or inquiry intent instead of casual browsing. This usually means tighter keyword targeting, stronger exclusions, and landing pages built for lead generation or product demand."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is conversion tracking in Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Conversion tracking measures the actions that matter after an ad click, such as form submissions, calls, purchases, or lead events. It allows Google Ads to optimize toward real business actions instead of traffic alone."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you track Google Ads conversions with GA4 and Google Tag Manager?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A strong setup usually uses Google Tag Manager to fire events, Google Analytics 4 to record them, and Google Ads to import key events. This helps tie ad spend to measurable lead generation or sales outcomes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are my Google Ads conversions inaccurate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Inaccurate conversions often come from duplicate triggers, weak form logic, broken thank-you flows, or poor attribution settings. The issue is usually technical setup, not just platform reporting differences."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What events should you track for a lead generation website?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most lead generation websites should track form submissions, calls, quote requests, contact interactions, and other actions that signal real business intent. Good tracking prioritizes meaningful outcomes, not every small click."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you test and validate Google Ads tracking (GTM, GA4)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tracking should be tested with GTM preview mode, GA4 DebugView, and real form or event checks across the full path. Validation means confirming that events fire correctly, once, and reach the right platform with the right values."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you import conversions into Google Ads?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Conversions can be imported from Google Analytics 4 or sent directly into Google Ads depending on your setup. The best choice depends on accuracy, attribution needs, and how your lead or purchase events are configured."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Google Business Profile?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Business Profile is Google’s local listing platform used for Maps visibility, business details, reviews, and local discovery. It helps businesses appear more clearly in nearby searches and trust-based local results."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you show up on Google Maps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Showing up on Google Maps usually starts with a verified Google Business Profile, accurate categories, complete business details, and local trust signals like reviews. Relevance, competition, and proximity also affect visibility."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you improve local visibility on Google?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Local visibility improves when your profile is complete, your categories are correct, your website supports local relevance, and your business information is consistent. Reviews, profile quality, and local competition also matter."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is my Google Business Profile not showing on Google Maps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A profile may not show because of verification issues, weak relevance, category problems, policy limitations, or local competition. Sometimes the listing exists but is not visible for the searches that actually matter."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Google Merchant Center?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Merchant Center is the platform that processes product data for Google Shopping and other product-based placements. It helps Google understand your inventory, validate product data, and decide what can be shown."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are my products disapproved in Google Merchant Center?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Products are often disapproved because of missing attributes, policy issues, landing page mismatches, inconsistent pricing or availability, or low-quality feed data. Merchant Center diagnostics usually points to the category of issue first."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you optimize a product feed for Google Shopping?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Feed optimization usually means cleaner titles, stronger product data, complete attributes, accurate landing pages, and consistent prices and availability. Better feed quality improves product visibility and Shopping traffic quality."
-      }
-    }
-  ]
-}
+    ]
+  }
   </script>
 
   <link rel="icon" type="image/png" href="/assets/favicon.png">
@@ -357,6 +495,10 @@
           <a href="#q4">What KPIs should you track?</a>
           <a href="#q5">What is a good CPL?</a>
           <a href="#q6">Why are campaigns not performing?</a>
+          <a href="#q21">Why am I getting clicks but no leads?</a>
+          <a href="#q22">Why is my cost per lead increasing over time?</a>
+          <a href="#q23">Why is Performance Max targeting irrelevant search terms?</a>
+          <a href="#q24">Why is my Google Ads performance unstable or inconsistent?</a>
           <a href="#q7">Intent-based targeting</a>
         </p>
       </div>
@@ -370,6 +512,11 @@
           <a href="#q11">What events should you track?</a>
           <a href="#q12">How do you validate tracking?</a>
           <a href="#q13">Importing conversions into Google Ads</a>
+          <a href="#q25">Why does my tracking show conversions but no real leads?</a>
+          <a href="#q26">Why are my conversions duplicated in Google Ads or GA4?</a>
+          <a href="#q27">Why is GA4 showing different numbers than Google Ads?</a>
+          <a href="#q28">Why did my conversions suddenly drop or disappear?</a>
+          <a href="#q29">How does poor tracking affect Google Ads performance?</a>
         </p>
       </div>
 
@@ -380,6 +527,9 @@
           <a href="#q15">How do you show up on Google Maps?</a>
           <a href="#q16">How do you improve local visibility?</a>
           <a href="#q17">Why is my profile not showing?</a>
+          <a href="#q30">Why is my business not showing for important local searches?</a>
+          <a href="#q31">Why do my competitors rank above me on Google Maps?</a>
+          <a href="#q32">Why am I getting views but no calls or visits?</a>
         </p>
       </div>
 
@@ -389,6 +539,11 @@
           <a href="#q18">What is Google Merchant Center?</a>
           <a href="#q19">Why are products disapproved?</a>
           <a href="#q20">How do you optimize a product feed?</a>
+          <a href="#q33">Why are my vehicles or products not showing in Google Ads (VLA / Shopping)?</a>
+          <a href="#q34">Why is my Performance Max campaign showing irrelevant inventory?</a>
+          <a href="#q35">Why are my listings getting impressions but no clicks?</a>
+          <a href="#q36">Why is my Performance Max campaign spending but not generating qualified leads?</a>
+          <a href="#q37">Why are my products approved but still not performing?</a>
         </p>
       </div>
     </div>
@@ -470,6 +625,54 @@
         <div class="faq-a" id="faq-a-6" role="region" hidden>
           <p>
             Weak performance often comes from broad targeting, poor structure, missing negatives, weak landing pages, or inaccurate tracking. In many cases, the problem is not budget alone but a poor account foundation.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q21">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-21">
+          <span class="faq-title">Why am I getting clicks but no leads?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-21" role="region" hidden>
+          <p>
+            Clicks don’t guarantee intent. Broad queries, weak keyword control, or missing negatives often bring low-intent traffic. If the landing page does not clearly match what the user expects, clicks increase but lead volume stays low.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q22">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-22">
+          <span class="faq-title">Why is my cost per lead increasing over time?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-22" role="region" hidden>
+          <p>
+            CPL often rises when campaigns are left without active control. Over time, search terms expand, negatives are not updated, and targeting becomes less precise. If the account is not monitored or relies too heavily on automated settings, performance can drift quickly.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q23">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-23">
+          <span class="faq-title">Why is Performance Max targeting irrelevant search terms?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-23" role="region" hidden>
+          <p>
+            Performance Max uses signals to expand beyond your initial targeting. If conversion tracking is weak or audience signals are unclear, the system explores broader queries, including low-intent searches. This often creates visible “noise” in search term insights and reduces lead quality.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q24">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-24">
+          <span class="faq-title">Why is my Google Ads performance unstable or inconsistent?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-24" role="region" hidden>
+          <p>
+            Inconsistent performance often comes from limited data, unstable conversion tracking, or algorithm adjustments reacting to weak signals. Small accounts or poorly structured campaigns tend to amplify these variations.
           </p>
         </div>
       </div>
@@ -562,6 +765,66 @@
           </p>
         </div>
       </div>
+
+      <div class="faq-item" id="q25">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-25">
+          <span class="faq-title">Why does my tracking show conversions but no real leads?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-25" role="region" hidden>
+          <p>
+            Some setups track low-value actions like clicks, scrolls, or partial form interactions as conversions. This inflates results in reports but doesn’t reflect actual leads, giving a false sense of performance.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q26">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-26">
+          <span class="faq-title">Why are my conversions duplicated in Google Ads or GA4?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-26" role="region" hidden>
+          <p>
+            Duplicate conversions often come from multiple tags firing for the same action, overlapping GA4 and Google Ads tracking, or incorrect event configuration in Tag Manager.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q27">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-27">
+          <span class="faq-title">Why is GA4 showing different numbers than Google Ads?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-27" role="region" hidden>
+          <p>
+            GA4 and Google Ads use different attribution models and tracking logic. Time differences, attribution windows, and event definitions often cause discrepancies between platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q28">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-28">
+          <span class="faq-title">Why did my conversions suddenly drop or disappear?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-28" role="region" hidden>
+          <p>
+            Tracking can break after website changes, form updates, GTM modifications, or consent/banner issues. A small technical change can completely stop data collection.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q29">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-29">
+          <span class="faq-title">How does poor tracking affect Google Ads performance?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-29" role="region" hidden>
+          <p>
+            Google Ads optimization depends on conversion signals. If tracking is missing, inaccurate, or based on low-quality actions, bidding strategies like Maximize Conversions or tCPA will optimize toward the wrong outcomes. This can lead to wasted spend and unstable performance, especially in Performance Max where conversion data is critical.
+          </p>
+        </div>
+      </div>
     </div>
       
    <div class="faq-group" id="gbp-group">
@@ -614,6 +877,42 @@
           </p>
         </div>
       </div>
+
+      <div class="faq-item" id="q30">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-30">
+          <span class="faq-title">Why is my business not showing for important local searches?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-30" role="region" hidden>
+          <p>
+            Google matches listings based on relevance, proximity, and authority. If your profile doesn’t align with key search terms or categories, it won’t appear for high-value queries.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q31">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-31">
+          <span class="faq-title">Why do my competitors rank above me on Google Maps?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-31" role="region" hidden>
+          <p>
+            Competitors may have stronger categories, better reviews, or more relevant content. In some cases, they may also run Google Ads with location extensions, which can increase visibility and push their business above organic listings.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q32">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-32">
+          <span class="faq-title">Why am I getting views but no calls or visits?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-32" role="region" hidden>
+          <p>
+            Views do not always translate into actions. If business information is incomplete, hours are unclear, or contact options are limited, users may not engage. In some cases, call extensions, availability settings, or better alignment with user intent are needed to turn visibility into real actions.
+          </p>
+        </div>
+      </div>
      </div>
       
      <div class="faq-group" id="merchant-center-group">
@@ -651,6 +950,66 @@
         <div class="faq-a" id="faq-a-20" role="region" hidden>
           <p>
             Feed optimization usually means cleaner titles, stronger product data, complete attributes, accurate landing pages, and consistent prices and availability. Better feed quality improves product visibility and Shopping traffic quality.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q33">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-33">
+          <span class="faq-title">Why are my vehicles or products not showing in Google Ads (VLA / Shopping)?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-33" role="region" hidden>
+          <p>
+            Products or vehicles may not show if the wrong program or campaign type is used. Vehicle Listing Ads, Shopping, and Performance Max rely on different setups and eligibility requirements. Feed structure, program selection, and campaign configuration all affect visibility.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q34">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-34">
+          <span class="faq-title">Why is my Performance Max campaign showing irrelevant inventory?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-34" role="region" hidden>
+          <p>
+            Performance Max distributes inventory based on feed data and structure. If listing groups are not properly segmented or filtered, campaigns may show less relevant products or vehicles, reducing overall performance and lead quality.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q35">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-35">
+          <span class="faq-title">Why are my listings getting impressions but no clicks?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-35" role="region" hidden>
+          <p>
+            Low click volume often comes from weak titles, pricing issues, poor images, or strong competition. Visibility alone does not guarantee engagement.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q36">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-36">
+          <span class="faq-title">Why is my Performance Max campaign spending but not generating qualified leads?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-36" role="region" hidden>
+          <p>
+            Automation may prioritize volume over intent if signals are unclear. Without strong tracking and segmentation, campaigns can spend efficiently but produce low-quality traffic.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="q37">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-37">
+          <span class="faq-title">Why are my products approved but still not performing?</span>
+          <span class="faq-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id="faq-a-37" role="region" hidden>
+          <p>
+            Approval only confirms compliance with Google policies. Performance depends on how the feed is structured and activated within Google Ads. Without proper segmentation, prioritization, and campaign structure, even high-quality feeds may underperform.
           </p>
         </div>
       </div>
