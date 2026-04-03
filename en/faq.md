@@ -3,7 +3,7 @@ layout: default
 lang: en
 title: "Google Ads FAQ - Budget, Setup and Management - Visible at Search"
 description: "Clear answers about Google Ads: campaign setup, budget, conversion tracking and account management."
-permalink: /en/faq/index.html
+permalink: /en/faq/
 alt_lang_url: /fr/faq/
 nav: faq
 body_class: page-faq
