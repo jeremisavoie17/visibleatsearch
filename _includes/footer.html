@@ -17,21 +17,23 @@
       {% endif %}
     </div>
 
-    <nav class="footer-nav" aria-label="Footer navigation">
-      {% if page.lang == "fr" %}
-        <a href="{{ site.baseurl }}/fr/services">Services</a>
-        <a href="{{ site.baseurl }}/fr/tarifs">Tarifs</a>
-        <a href="{{ site.baseurl }}/fr/faq">FAQ</a>
-        <a href="{{ site.baseurl }}/fr/guides">Guides</a>
-        <a href="{{ site.baseurl }}/fr/contact">Contact</a>
-      {% else %}
-        <a href="{{ site.baseurl }}/en/services">Services</a>
-        <a href="{{ site.baseurl }}/en/pricing">Pricing</a>
-        <a href="{{ site.baseurl }}/en/faq">FAQ</a>
-        <a href="{{ site.baseurl }}/en/guides">Learn</a>
-        <a href="{{ site.baseurl }}/en/contact">Contact</a>
-      {% endif %}
-    </nav>
+   <nav class="footer-nav" aria-label="Footer navigation">
+  {% if page.lang == "fr" %}
+    <a href="{{ site.baseurl }}/fr/">Accueil</a>
+    <a href="{{ site.baseurl }}/fr/services">Services</a>
+    <a href="{{ site.baseurl }}/fr/tarifs">Tarifs</a>
+    <a href="{{ site.baseurl }}/fr/faq">FAQ</a>
+    <a href="{{ site.baseurl }}/fr/guides">Guides</a>
+    <a href="{{ site.baseurl }}/fr/contact">Contact</a>
+  {% else %}
+    <a href="{{ site.baseurl }}/en/">Home</a>
+    <a href="{{ site.baseurl }}/en/services">Services</a>
+    <a href="{{ site.baseurl }}/en/pricing">Pricing</a>
+    <a href="{{ site.baseurl }}/en/faq">FAQ</a>
+    <a href="{{ site.baseurl }}/en/guides">Learn</a>
+    <a href="{{ site.baseurl }}/en/contact">Contact</a>
+  {% endif %}
+</nav>
 
     <div class="footer-meta">
       <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
