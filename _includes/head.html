@@ -1,1 +1,50 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WC6L83GW');</script>
+<!-- End Google Tag Manager -->
+
+{% if page.preload_image %}
+<link rel="preload" as="image" href="{{ page.preload_image }}" fetchpriority="high">
+{% endif %}
+
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}"/>
+
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+<link rel="canonical" href="{{ site.url }}{{ page.permalink | replace:'index.html','' }}" />
+
+{% if page.lang == "fr" %}
+<link rel="alternate" hreflang="fr-CA" href="{{ site.url }}{{ page.permalink | replace:'index.html','' }}" />
+<link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ page.alt_lang_url }}" />
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/" />
+{% else %}
+<link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ page.permalink | replace:'index.html','' }}" />
+<link rel="alternate" hreflang="fr-CA" href="{{ site.url }}{{ page.alt_lang_url }}" />
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/" />
+{% endif %}
+
+<meta property="og:title" content="{{ page.og_title | default: page.title }}">
+<meta property="og:description" content="{{ page.og_description | default: page.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.permalink | replace:'index.html','' }}">
+<meta property="og:image" content="{{ page.og_image | default: site.url | append: '/assets/img/search-clarity-magnifying-glass-16x9.png' }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.twitter_title | default: page.title }}">
+<meta name="twitter:description" content="{{ page.twitter_description | default: page.description }}">
+<meta name="twitter:image" content="{{ page.twitter_image | default: page.og_image | default: site.url | append: '/assets/img/search-clarity-magnifying-glass-16x9.png' }}">
+
+<link rel="stylesheet" href="/assets/style.css">
+
+{% if page.schema %}
+<script type="application/ld+json">
+{{ page.schema }}
+</script>
+{% endif %}
