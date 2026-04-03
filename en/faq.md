@@ -1,8 +1,8 @@
 ---
 layout: default
 lang: en
-title: Google Ads FAQ - Budget, Setup and Management - Visible at Search
-description: Clear answers about Google Ads: campaign setup, budget, conversion tracking and account management.
+title: "Google Ads FAQ - Budget, Setup and Management - Visible at Search"
+description: "Clear answers about Google Ads: campaign setup, budget, conversion tracking and account management."
 permalink: /en/faq/
 alt_lang_url: /fr/faq/
 nav: faq
