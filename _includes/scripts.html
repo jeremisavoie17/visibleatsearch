@@ -1,1 +1,37 @@
+<script>
+  (function () {
+    const floatingCta = document.getElementById('floatingCta');
+    const toggle = document.getElementById('floatingCtaToggle');
 
+    if (!floatingCta || !toggle) return;
+
+    const showAfter = 260;
+
+    function updateVisibility() {
+      if (window.scrollY > showAfter) {
+        floatingCta.classList.add('is-visible');
+      } else {
+        floatingCta.classList.remove('is-visible');
+        floatingCta.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    toggle.addEventListener('click', function () {
+      const isOpen = floatingCta.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!floatingCta.contains(e.target)) {
+        floatingCta.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    updateVisibility();
+  })();
+</script>
+
+<script src="/assets/nav.js" defer></script>
