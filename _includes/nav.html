@@ -1,1 +1,45 @@
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    {% if page.lang == "fr" %}
+      <a class="brand" href="/fr/">Visible at Search</a>
+    {% else %}
+      <a class="brand" href="/en/">Visible at Search</a>
+    {% endif %}
 
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="links">
+      {% if page.lang == "fr" %}
+        <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="/fr/">Accueil</a>
+        <a{% if page.nav == "services" %} class="active" aria-current="page"{% endif %} href="/fr/services">Services</a>
+        <a{% if page.nav == "pricing" %} class="active" aria-current="page"{% endif %} href="/fr/tarifs">Tarifs</a>
+        <a{% if page.nav == "faq" %} class="active" aria-current="page"{% endif %} href="/fr/faq">FAQ</a>
+        <a{% if page.nav == "guides" %} class="active" aria-current="page"{% endif %} href="/fr/guides">Guides</a>
+        <a{% if page.nav == "contact" %} class="active" aria-current="page"{% endif %} href="/fr/contact">Contact</a>
+      {% else %}
+        <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="/en/">Home</a>
+        <a{% if page.nav == "services" %} class="active" aria-current="page"{% endif %} href="/en/services">Services</a>
+        <a{% if page.nav == "pricing" %} class="active" aria-current="page"{% endif %} href="/en/pricing">Pricing</a>
+        <a{% if page.nav == "faq" %} class="active" aria-current="page"{% endif %} href="/en/faq">FAQ</a>
+        <a{% if page.nav == "guides" %} class="active" aria-current="page"{% endif %} href="/en/guides">Learn</a>
+        <a{% if page.nav == "contact" %} class="active" aria-current="page"{% endif %} href="/en/contact">Contact</a>
+      {% endif %}
+    </div>
+
+    <div class="lang" aria-label="Language switcher">
+      {% if page.lang == "fr" %}
+        <a href="{{ page.alt_lang_url }}">EN</a>
+        <span class="sep">|</span>
+        <a href="{{ page.permalink | replace:'index.html','' }}" aria-current="page">FR</a>
+      {% else %}
+        <a href="{{ page.permalink | replace:'index.html','' }}" aria-current="page">EN</a>
+        <span class="sep">|</span>
+        <a href="{{ page.alt_lang_url }}">FR</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
