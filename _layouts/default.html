@@ -3,7 +3,14 @@
 <head>
   {% include head.html %}
 </head>
-<body class="{{ page.body_class }}">
+
+<body class="{{ page.body_class | default: '' }}">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC6L83GW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   {% include nav.html %}
 
   {{ content }}
@@ -11,5 +18,6 @@
   {% include footer.html %}
   {% include floating-cta.html %}
   {% include scripts.html %}
+
 </body>
 </html>
