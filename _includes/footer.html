@@ -1,1 +1,42 @@
+<footer class="footer">
+  <div class="footer-inner">
 
+    <div class="footer-brand">
+      <p class="footer-name">Visible at Search</p>
+
+      {% if page.lang == "fr" %}
+        <p class="footer-tagline">
+          Services marketing axés sur Google Ads.<br>
+          Basé au Canada.
+        </p>
+      {% else %}
+        <p class="footer-tagline">
+          Google Ads-focused marketing services.<br>
+          Based in Canada.
+        </p>
+      {% endif %}
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      {% if page.lang == "fr" %}
+        <a href="/fr/services">Services</a>
+        <a href="/fr/tarifs">Tarifs</a>
+        <a href="/fr/faq">FAQ</a>
+        <a href="/fr/guides">Guides</a>
+        <a href="/fr/contact">Contact</a>
+      {% else %}
+        <a href="/en/services">Services</a>
+        <a href="/en/pricing">Pricing</a>
+        <a href="/en/faq">FAQ</a>
+        <a href="/en/guides">Learn</a>
+        <a href="/en/contact">Contact</a>
+      {% endif %}
+    </nav>
+
+    <div class="footer-meta">
+      <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+      <p>© 2026 Visible at Search</p>
+    </div>
+
+  </div>
+</footer>
