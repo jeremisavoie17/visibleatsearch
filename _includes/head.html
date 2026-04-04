@@ -16,6 +16,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}"/>
 
+{% if page.robots %}
+<meta name="robots" content="{{ page.robots }}" />
+{% endif %}
+
 <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.png">
 
 <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
