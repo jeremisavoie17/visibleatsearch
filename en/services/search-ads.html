@@ -287,18 +287,17 @@ nav: services
 
 <script>
 (function () {
-  const checkoutUrl = 'https://square.link/u/x9DxyyMj';
-
   const setups = [
-    ['ack-search-complete-top', 'btn-search-complete-top'],
-    ['ack-search-simple-top', 'btn-search-simple-top'],
-    ['ack-search-complete-bottom', 'btn-search-complete-bottom'],
-    ['ack-search-simple-bottom', 'btn-search-simple-bottom']
+    ['ack-search-complete-top', 'btn-search-complete-top', 'https://square.link/u/x9DxyyMj'],
+    ['ack-search-simple-top', 'btn-search-simple-top', 'https://square.link/u/hht3gSXc'],
+    ['ack-search-complete-bottom', 'btn-search-complete-bottom', 'https://square.link/u/x9DxyyMj'],
+    ['ack-search-simple-bottom', 'btn-search-simple-bottom', 'https://square.link/u/hht3gSXc']
   ];
 
   setups.forEach(function (pair) {
     const checkbox = document.getElementById(pair[0]);
     const btn = document.getElementById(pair[1]);
+    const checkoutUrl = pair[2];
 
     if (!checkbox || !btn) return;
 
