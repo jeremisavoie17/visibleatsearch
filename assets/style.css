@@ -1348,6 +1348,11 @@ a.hero-entry:hover {
   font-weight:600;
 }
 
+.industry-examples-section .center{
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .industry-list{
   display:grid;
   gap:28px;
