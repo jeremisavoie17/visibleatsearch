@@ -225,6 +225,29 @@ nav: services
           <div class="pricing-grid pricing-grid-2">
             <article class="pricing-card">
               <header class="pricing-head">
+                <h3>Search Ads Setup Only</h3>
+                <p class="pricing-price">
+                  <span class="pricing-amount">$399</span>
+                  <span class="pricing-unit">(one-time)</span>
+                </p>
+              </header>
+              <p>
+                Campaign setup for businesses that already have a Google Ads account and conversion tracking in place.
+              </p>
+              <ul class="pricing-features">
+                <li>One brand protection Search campaign</li>
+                <li>Search campaign for up to 3 primary services</li>
+                <li>Keyword research and intent mapping</li>
+                <li>Asset creation (headlines, descriptions, sitelinks)</li>
+                <li>Monthly review (1 month included)</li>
+              </ul>
+              <div class="pricing-actions">
+                <a id="btn-search-simple-bottom" class="cta-btn full" href="https://square.link/u/hht3gSXc" target="_blank" rel="noopener noreferrer">Activate</a>
+              </div>
+            </article>
+
+            <article class="pricing-card">
+              <header class="pricing-head">
                 <h3>Search Ads Setup + Tracking</h3>
                 <p class="pricing-price">
                   <span class="pricing-amount">$749</span>
@@ -244,38 +267,7 @@ nav: services
                 <li>Monthly review (1 month included)</li>
               </ul>
               <div class="pricing-actions">
-                <a id="btn-search-complete-bottom" class="cta-btn full disabled" href="#" aria-disabled="true" rel="noopener noreferrer">Activate</a>
-                <label class="ack muted mini">
-                  <input id="ack-search-complete-bottom" type="checkbox">
-                  <span>I have read and understand the requirements: having a website and being able to install the Google tag for tracking (assistance available).</span>
-                </label>
-              </div>
-            </article>
-
-            <article class="pricing-card">
-              <header class="pricing-head">
-                <h3>Search Ads Setup Only</h3>
-                <p class="pricing-price">
-                  <span class="pricing-amount">$399</span>
-                  <span class="pricing-unit">(one-time)</span>
-                </p>
-              </header>
-              <p>
-                Campaign setup for businesses that already have a Google Ads account and conversion tracking in place.
-              </p>
-              <ul class="pricing-features">
-                <li>One brand protection Search campaign</li>
-                <li>Search campaign for up to 3 primary services</li>
-                <li>Keyword research and intent mapping</li>
-                <li>Asset creation (headlines, descriptions, sitelinks)</li>
-                <li>Monthly review (1 month included)</li>
-              </ul>
-              <div class="pricing-actions">
-                <a id="btn-search-simple-bottom" class="cta-btn full disabled" href="#" aria-disabled="true" rel="noopener noreferrer">Activate</a>
-                <label class="ack muted mini">
-                  <input id="ack-search-simple-bottom" type="checkbox">
-                  <span>I have read and understand the requirements: having an existing Google Ads account and active conversion tracking.</span>
-                </label>
+                <a id="btn-search-complete-bottom" class="cta-btn full" href="https://square.link/u/x9DxyyMj" target="_blank" rel="noopener noreferrer">Activate</a>
               </div>
             </article>
           </div>
@@ -284,38 +276,3 @@ nav: services
     </div>
   </div>
 </section>
-
-<script>
-(function () {
-  const setups = [
-    ['ack-search-complete-top', 'btn-search-complete-top', 'https://square.link/u/x9DxyyMj'],
-    ['ack-search-simple-top', 'btn-search-simple-top', 'https://square.link/u/hht3gSXc'],
-    ['ack-search-complete-bottom', 'btn-search-complete-bottom', 'https://square.link/u/x9DxyyMj'],
-    ['ack-search-simple-bottom', 'btn-search-simple-bottom', 'https://square.link/u/hht3gSXc']
-  ];
-
-  setups.forEach(function (pair) {
-    const checkbox = document.getElementById(pair[0]);
-    const btn = document.getElementById(pair[1]);
-    const checkoutUrl = pair[2];
-
-    if (!checkbox || !btn) return;
-
-    checkbox.addEventListener('change', function () {
-      if (checkbox.checked) {
-        btn.classList.remove('disabled');
-        btn.href = checkoutUrl;
-        btn.setAttribute('aria-disabled', 'false');
-        btn.setAttribute('target', '_blank');
-        btn.setAttribute('rel', 'noopener noreferrer');
-      } else {
-        btn.classList.add('disabled');
-        btn.href = '#';
-        btn.setAttribute('aria-disabled', 'true');
-        btn.removeAttribute('target');
-        btn.setAttribute('rel', 'noopener noreferrer');
-      }
-    });
-  });
-})();
-</script>
