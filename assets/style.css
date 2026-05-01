@@ -146,7 +146,9 @@ p{
 
 .center{
   text-align:center;
-  max-width: 70ch;
+  max-width:70ch;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .muted{
