@@ -1477,6 +1477,12 @@ a.hero-entry:hover {
   background:linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.48));
 }
 
+.industry-visual.wasted-budget::before,
+.industry-visual.poor-tracking::before,
+.industry-visual.compliance-issues::before{
+  display:none;
+}
+
 .industry-visual-label{
   position:relative;
   z-index:2;
