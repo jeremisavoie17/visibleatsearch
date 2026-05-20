@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.setAttribute('aria-expanded', String(open));
   });
 
+  document.querySelectorAll('.nav-dropdown-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const dropdown = button.closest('.nav-dropdown');
+    dropdown.classList.toggle('open');
+  });
+});
+
   // Close when clicking a link
   links.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
