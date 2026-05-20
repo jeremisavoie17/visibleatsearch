@@ -260,6 +260,7 @@ p{
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 14px;
   box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  z-index: 50;
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
