@@ -222,6 +222,76 @@ p{
   border-color: rgba(0,0,0,0.18);
 }
 
+.nav-dropdown{
+  position: relative;
+}
+
+.nav-dropdown-toggle{
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dropdown-menu{
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu{
+  display: flex;
+}
+
+.nav-dropdown-menu a{
+  width: 100%;
+  white-space: nowrap;
+  padding: 10px 12px;
+}
+
+.nav-dropdown.active > .nav-dropdown-toggle{
+  background: rgba(0,0,0,0.10);
+  border-color: rgba(0,0,0,0.18);
+}
+
+@media (max-width: 820px){
+  .nav-dropdown{
+    width: 100%;
+  }
+
+  .nav-dropdown-toggle{
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .nav-dropdown-menu{
+    position: static;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    margin-top: -2px;
+    padding: 0 0 0 12px;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .nav-dropdown-menu a{
+    padding: 10px 12px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+}
+
 /* =================
    NAV - LANG SWITCH
    ================= */
