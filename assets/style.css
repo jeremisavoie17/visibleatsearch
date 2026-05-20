@@ -1217,7 +1217,15 @@ a.hero-entry:hover {
   justify-content: center;
   min-height: 138px;
   text-align: center;
-  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.support-item:hover,
+.support-item-link:focus-visible .support-item{
+  background: rgba(0,0,0,0.02);
+  border-color: rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
 }
 
 .support-item-link:focus-visible{
