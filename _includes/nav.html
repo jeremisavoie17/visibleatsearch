@@ -17,7 +17,7 @@
         <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/">Accueil</a>
 
         <div class="nav-dropdown{% if page.nav == "services" or page.nav == "pricing" %} active{% endif %}">
-          <a class="nav-dropdown-toggle" href="{{ site.baseurl }}/fr/services"{% if page.nav == "services" or page.nav == "pricing" %} aria-current="page"{% endif %}>Services et tarifs</a>
+          <button class="nav-dropdown-toggle" type="button">Services et tarifs</button>
           <div class="nav-dropdown-menu">
             <a href="{{ site.baseurl }}/fr/services/annonces-search">Annonces Search</a>
             <a href="{{ site.baseurl }}/fr/services/catalogue-produits">Catalogue produits</a>
@@ -35,7 +35,7 @@
         <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/en/">Home</a>
 
         <div class="nav-dropdown{% if page.nav == "services" or page.nav == "pricing" %} active{% endif %}">
-          <a class="nav-dropdown-toggle" href="{{ site.baseurl }}/en/services"{% if page.nav == "services" or page.nav == "pricing" %} aria-current="page"{% endif %}>Services & Pricing</a>
+         <button class="nav-dropdown-toggle" type="button">Services & Pricing</button>
           <div class="nav-dropdown-menu">
             <a href="{{ site.baseurl }}/en/services/search-ads">Search Ads</a>
             <a href="{{ site.baseurl }}/en/services/product-catalog">Product Catalog</a>
