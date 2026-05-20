@@ -15,32 +15,36 @@
     <div class="links">
       {% if page.lang == "fr" %}
         <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/">Accueil</a>
-        <div class="nav-dropdown{% if page.nav == "services" %} active{% endif %}">
-        <a class="nav-dropdown-toggle" href="{{ site.baseurl }}/fr/services"{% if page.nav == "services" %} aria-current="page"{% endif %}>Services</a>
-        <div class="nav-dropdown-menu">
-        <a href="{{ site.baseurl }}/fr/services/annonces-search">Annonces Search</a>
-        <a href="{{ site.baseurl }}/fr/services/catalogue-produits">Catalogue produits</a>
-        <a href="{{ site.baseurl }}/fr/services/management">Gestion</a>
-        <a href="{{ site.baseurl }}/fr/services">Tous les services</a>
-        <a href="{{ site.baseurl }}/fr/tarifs">Tous les tarifs</a>
-      </div>
-    </div>
+
+        <div class="nav-dropdown{% if page.nav == "services" or page.nav == "pricing" %} active{% endif %}">
+          <a class="nav-dropdown-toggle" href="{{ site.baseurl }}/fr/services"{% if page.nav == "services" or page.nav == "pricing" %} aria-current="page"{% endif %}>Services et tarifs</a>
+          <div class="nav-dropdown-menu">
+            <a href="{{ site.baseurl }}/fr/services/annonces-search">Annonces Search</a>
+            <a href="{{ site.baseurl }}/fr/services/catalogue-produits">Catalogue produits</a>
+            <a href="{{ site.baseurl }}/fr/services/management">Gestion</a>
+            <a href="{{ site.baseurl }}/fr/services">Tous les services</a>
+            <a href="{{ site.baseurl }}/fr/tarifs">Tous les tarifs</a>
+          </div>
+        </div>
+
         <a{% if page.nav == "faq" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/faq">FAQ</a>
         <a{% if page.nav == "guides" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/guides">Guides</a>
         <a{% if page.nav == "about" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/a-propos">À propos</a>
         <a{% if page.nav == "contact" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/contact">Contact</a>
       {% else %}
         <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/en/">Home</a>
-        <div class="nav-dropdown{% if page.nav == "services" %} active{% endif %}">
-        <a class="nav-dropdown-toggle" href="{{ site.baseurl }}/en/services"{% if page.nav == "services" %} aria-current="page"{% endif %}>Services</a>
-        <div class="nav-dropdown-menu">
-        <a href="{{ site.baseurl }}/en/services/search-ads">Search Ads</a>
-        <a href="{{ site.baseurl }}/en/services/product-catalog">Product Catalog</a>
-        <a href="{{ site.baseurl }}/en/services/management">Management</a>
-        <a href="{{ site.baseurl }}/en/services">All services</a>
-        <a href="{{ site.baseurl }}/en/pricing">All pricing</a>
-      </div>
-    </div>
+
+        <div class="nav-dropdown{% if page.nav == "services" or page.nav == "pricing" %} active{% endif %}">
+          <a class="nav-dropdown-toggle" href="{{ site.baseurl }}/en/services"{% if page.nav == "services" or page.nav == "pricing" %} aria-current="page"{% endif %}>Services & Pricing</a>
+          <div class="nav-dropdown-menu">
+            <a href="{{ site.baseurl }}/en/services/search-ads">Search Ads</a>
+            <a href="{{ site.baseurl }}/en/services/product-catalog">Product Catalog</a>
+            <a href="{{ site.baseurl }}/en/services/management">Management</a>
+            <a href="{{ site.baseurl }}/en/services">All services</a>
+            <a href="{{ site.baseurl }}/en/pricing">All pricing</a>
+          </div>
+        </div>
+
         <a{% if page.nav == "faq" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/en/faq">FAQ</a>
         <a{% if page.nav == "guides" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/en/guides">Learn</a>
         <a{% if page.nav == "about" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/en/about">About</a>
