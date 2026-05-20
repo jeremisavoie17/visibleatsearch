@@ -1205,15 +1205,14 @@ a.hero-entry:hover {
   justify-content: center;
   min-height: 138px;
   text-align: center;
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
 .support-item:hover,
 .support-item-link:focus-visible .support-item{
   background: rgba(0,0,0,0.02);
   border-color: rgba(0,0,0,0.14);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .support-item-link:focus-visible{
@@ -1241,17 +1240,6 @@ a.hero-entry:hover {
 @media (max-width: 820px){
   .support-grid{
     grid-template-columns: 1fr;
-  }
-}
-
-@media (prefers-reduced-motion: reduce){
-  .support-item{
-    transition: none;
-  }
-
-  .support-item:hover,
-  .support-item-link:focus-visible .support-item{
-    transform: none;
   }
 }
 
