@@ -1208,13 +1208,6 @@ a.hero-entry:hover {
   transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
-.support-item:hover,
-.support-item-link:focus-visible .support-item{
-  background: rgba(0,0,0,0.02);
-  border-color: rgba(0,0,0,0.14);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
 .support-item-link:focus-visible{
   outline: none;
 }
