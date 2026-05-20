@@ -229,11 +229,22 @@ p{
 .nav-dropdown-toggle{
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
+  color: var(--text-dark);
   font: inherit;
-  color: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid transparent;
   background: none;
-  border: 0;
   cursor: default;
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+.nav-dropdown-toggle:hover{
+  background: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.08);
 }
 
 .nav-dropdown-menu{
