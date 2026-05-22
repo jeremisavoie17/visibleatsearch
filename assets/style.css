@@ -1908,15 +1908,12 @@ a.hero-entry:hover {
   margin-top:18px;
 }
 
+.pricing-group{
+  transition: background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
 .pricing-group:hover{
   background:#f7f7f7;
-}
-
-.pricing-group{
-  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
-}
-
-.pricing-group:hover{
   border-color: rgba(0,0,0,0.16);
   box-shadow: 0 10px 24px rgba(0,0,0,0.05);
   transform: translateY(-1px);
