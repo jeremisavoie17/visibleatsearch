@@ -37,6 +37,17 @@
 
     <div class="footer-meta">
       <a href="mailto:info@visibleatsearch.com">info@visibleatsearch.com</a>
+
+      <div class="footer-legal">
+        {% if page.lang == "fr" %}
+          <a href="{{ site.baseurl }}/fr/politique-confidentialite">Politique de confidentialité</a>
+          <a href="{{ site.baseurl }}/fr/conditions-utilisation">Conditions d’utilisation</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/en/privacy-policy">Privacy Policy</a>
+          <a href="{{ site.baseurl }}/en/terms-of-service">Terms of Service</a>
+        {% endif %}
+      </div>
+
       <p>© 2026 Visible at Search</p>
     </div>
 
