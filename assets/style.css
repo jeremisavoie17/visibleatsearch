@@ -1824,7 +1824,7 @@ a.hero-entry:hover {
   grid-template-columns:minmax(0, 1fr) 420px;
   gap:42px;
   align-items:center;
-  background:#f3f3f1;
+  background:#f6f6f4;
   border-radius:28px;
   padding:36px;
 }
