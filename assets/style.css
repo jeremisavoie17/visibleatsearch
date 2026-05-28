@@ -1778,6 +1778,10 @@ a.hero-entry:hover {
   box-shadow:0 16px 38px rgba(0,0,0,0.14);
 }
 
+.page-about .about-intro-experience p{
+  max-width:none;
+}
+
 .page-about .about-intro-experience{
   margin-top:34px;
   padding-top:30px;
