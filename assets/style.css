@@ -1745,6 +1745,52 @@ a.hero-entry:hover {
 }
 
 /* =================
+   ABOUT - FOUNDER
+   ================= */
+
+.page-about .about-founder{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 42px;
+  align-items: center;
+}
+
+.page-about .about-founder-copy{
+  min-width: 0;
+}
+
+.page-about .about-founder-photo{
+  margin: 0;
+  justify-self: end;
+}
+
+.page-about .about-founder-photo img{
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 16px 38px rgba(0,0,0,0.14);
+}
+
+@media (max-width: 820px){
+  .page-about .about-founder{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .page-about .about-founder-photo{
+    justify-self: start;
+  }
+
+  .page-about .about-founder-photo img{
+    width: min(280px, 100%);
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* =================
    FAQ / ABOUT headers (page-specific)
    ================= */
 
