@@ -1818,6 +1818,9 @@ a.hero-entry:hover {
    ABOUT - IMAGE CARDS
    ================= */
 
+.page-about .about-card-photo{
+  order:-1;
+}
 .page-about .about-card{
   display:grid;
   grid-template-columns:minmax(0, 1fr) 420px;
