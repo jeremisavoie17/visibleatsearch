@@ -1863,6 +1863,23 @@ a.hero-entry:hover {
   }
 }
 
+@media (max-width: 820px){
+  .page-about .about-location-photo{
+    width: 100%;
+    margin: 0 auto;
+    justify-self: center;
+  }
+
+  .page-about .about-location-photo img{
+    width: min(100%, 420px);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 /* =================
    FAQ / ABOUT headers (page-specific)
    ================= */
