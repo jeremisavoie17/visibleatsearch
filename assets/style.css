@@ -1809,6 +1809,55 @@ a.hero-entry:hover {
     padding-top:24px;
   }
 }
+
+/* =================
+   ABOUT - IMAGE CARDS
+   ================= */
+
+.page-about .about-card{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 420px;
+  gap:42px;
+  align-items:center;
+  background:#f3f3f1;
+  border-radius:28px;
+  padding:36px;
+}
+
+.page-about .about-card-reverse{
+  grid-template-columns:420px minmax(0, 1fr);
+}
+
+.page-about .about-card-copy{
+  min-width:0;
+}
+
+.page-about .about-card-photo{
+  margin:0;
+}
+
+.page-about .about-card-photo img{
+  width:100%;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+  display:block;
+  border-radius:22px;
+  box-shadow:0 14px 34px rgba(0,0,0,0.10);
+}
+
+@media (max-width:820px){
+  .page-about .about-card,
+  .page-about .about-card-reverse{
+    grid-template-columns:1fr;
+    gap:24px;
+    padding:24px;
+  }
+
+  .page-about .about-card-photo{
+    order:-1;
+  }
+}
+
 /* =================
    FAQ / ABOUT headers (page-specific)
    ================= */
