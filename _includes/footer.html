@@ -41,9 +41,11 @@
       <div class="footer-legal">
         {% if page.lang == "fr" %}
           <a href="{{ site.baseurl }}/fr/politique-confidentialite">Politique de confidentialité</a>
+          <span aria-hidden="true">|</span>
           <a href="{{ site.baseurl }}/fr/conditions-utilisation">Conditions d’utilisation</a>
         {% else %}
           <a href="{{ site.baseurl }}/en/privacy-policy">Privacy Policy</a>
+          <span aria-hidden="true">|</span>
           <a href="{{ site.baseurl }}/en/terms-of-service">Terms of Service</a>
         {% endif %}
       </div>
