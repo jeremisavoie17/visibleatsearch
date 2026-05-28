@@ -1789,6 +1789,44 @@ a.hero-entry:hover {
     aspect-ratio: 1 / 1;
   }
 }
+/* =================
+   ABOUT - INTRO CARD
+   ================= */
+
+.page-about .about-intro-card{
+  background:#f3f3f1;
+  border-radius:28px;
+  padding:36px;
+}
+
+.page-about .about-intro-top{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 320px;
+  gap:42px;
+  align-items:center;
+}
+
+.page-about .about-intro-experience{
+  margin-top:34px;
+  padding-top:30px;
+  border-top:1px solid rgba(0,0,0,0.08);
+}
+
+@media (max-width: 820px){
+  .page-about .about-intro-card{
+    padding:24px;
+  }
+
+  .page-about .about-intro-top{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .page-about .about-intro-experience{
+    margin-top:26px;
+    padding-top:24px;
+  }
+}
 
 /* =================
    FAQ / ABOUT headers (page-specific)
