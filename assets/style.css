@@ -2771,7 +2771,7 @@ html{
 
 .footer-legal{
   display:flex;
-  gap:14px;
+  gap:8px;
   flex-wrap:wrap;
   justify-content:flex-start;
   font-size:0.9rem;
