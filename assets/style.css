@@ -794,14 +794,6 @@ a.hero-entry:hover {
   align-items:start;
 }
 
-.page-home .account-control-section .eyebrow{
-  margin:0 0 10px;
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:0.02em;
-  opacity:0.65;
-}
-
 .page-home .account-control-section h2{
   margin:0;
   font-size:clamp(28px, 3.2vw, 40px);
@@ -868,14 +860,6 @@ a.hero-entry:hover {
 
 .page-home .home-intro-copy{
   max-width:460px;
-}
-
-.page-home .home-intro-copy .eyebrow{
-  margin:0 0 10px;
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:0.02em;
-  opacity:0.65;
 }
 
 .page-home .home-intro-copy h2{
