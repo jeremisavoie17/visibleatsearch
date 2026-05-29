@@ -753,7 +753,7 @@ a.hero-entry:hover {
 .page-home .ad-examples{
   background:#fff;
   color:var(--text-dark);
-  padding:50px 0;
+  padding:58px 0 70px;
 }
 
 .page-home .ad-examples .wrap{
@@ -864,7 +864,7 @@ a.hero-entry:hover {
 
 #approach{
   background: var(--bg-light);
-  padding: 56px 0;
+  padding:76px 0 82px;
 }
 
 #approach .wrap{
@@ -881,7 +881,7 @@ a.hero-entry:hover {
 
 .approach-card{
   width: min(980px, 100%);
-  padding: 18px 0;
+  padding: 26px 0 0;
 }
 
 .ecosystem-grid{
@@ -1186,7 +1186,7 @@ a.hero-entry:hover {
    ================= */
 
 .efficiency-section{
-  padding:56px 0 50px;
+  padding:72px 0 64px;
   background:#fff;
   text-align:center;
 }
