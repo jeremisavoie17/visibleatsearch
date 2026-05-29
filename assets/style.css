@@ -1206,9 +1206,9 @@ a.hero-entry:hover {
 .efficiency-grid{
   display:grid;
   grid-template-columns:repeat(3, minmax(0, 1fr));
-  gap:14px;
+  gap:12px;
   align-items:stretch;
-  max-width:840px;
+  max-width:760px;
   margin:0 auto;
 }
 
@@ -1217,9 +1217,9 @@ a.hero-entry:hover {
   background:rgba(0,0,0,0.025);
   border:1px solid rgba(0,0,0,0.08);
   border-radius:12px;
-  padding:24px 22px;
+  padding:22px 18px;
   text-align:left;
-  min-height:165px;
+  min-height:170px;
 }
 
 .efficiency-item h3{
@@ -1290,8 +1290,8 @@ a.hero-entry:hover {
 .support-grid{
   display:grid;
   grid-template-columns:repeat(3, minmax(0, 1fr));
-  gap:14px;
-  max-width:660px;
+  gap:12px;
+  max-width:760px;
   margin:0 auto;
 }
 
@@ -1302,8 +1302,8 @@ a.hero-entry:hover {
 }
 
 .support-item{
-  min-height:120px;
-  padding:22px 18px;
+  min-height:auto;
+  padding:18px 20px;
   border-radius:12px;
   border:1px solid rgba(0,0,0,0.09);
   background:#fff;
