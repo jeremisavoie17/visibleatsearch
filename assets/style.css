@@ -1254,6 +1254,42 @@ a.hero-entry:hover {
 }
 
 /* =================
+   HOME - SUPPORT VISUAL
+   ================= */
+
+.support-visual-section{
+  padding:10px 24px 34px;
+  background:#fff;
+}
+
+.support-visual{
+  max-width:920px;
+  margin:0 auto;
+  border-radius:18px;
+  overflow:hidden;
+  background:#f6f6f4;
+  border:1px solid rgba(0,0,0,0.08);
+  box-shadow:0 14px 34px rgba(0,0,0,0.06);
+}
+
+.support-visual img{
+  display:block;
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+}
+
+@media (max-width:820px){
+  .support-visual-section{
+    padding:4px 20px 30px;
+  }
+
+  .support-visual{
+    border-radius:14px;
+  }
+}
+
+/* =================
    HOME - SUPPORT
    ================= */
 
