@@ -1347,7 +1347,7 @@ a.hero-entry:hover {
   height:clamp(230px, 28vw, 350px);
   margin:0 auto;
   object-fit:cover;
-  object-position:50% 75%;
+  object-position:50% 72%;
   background:#f3f1ee;
 
   -webkit-mask-image: linear-gradient(
