@@ -747,105 +747,98 @@ a.hero-entry:hover {
    ================= */
 
 .page-home .ad-examples{
-  background: #fff;
-  color: var(--text-dark);
-  padding: 56px 0;
+  background:#fff;
+  color:var(--text-dark);
+  padding:50px 0;
 }
 
 .page-home .ad-examples .wrap{
-  display: block;
-  padding: 0 16px;
+  display:block;
+  padding:0 16px;
 }
 
 .page-home .ad-examples-title{
-  text-align: center;
-  margin: 0 0 10px 0;
+  text-align:center;
+  margin:0 0 8px 0;
 }
 
 .page-home .ad-examples-sub{
-  text-align: center;
-  margin: 0 auto 22px auto;
-  opacity: 0.75;
+  text-align:center;
+  margin:0 auto 20px auto;
+  opacity:0.72;
 }
 
 .page-home .ad-examples-grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  align-items: stretch;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:16px;
+  align-items:stretch;
 }
 
-/* Cartes */
 .page-home .ad-example{
-  margin: 0;
-  background: rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 18px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
+  margin:0;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.09);
+  border-radius:12px;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  cursor:pointer;
+  transition:transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
-
-/* Zone ad exemple */
 
 .page-home .ad-example-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  border-radius:8px;
 }
 
-/* Caption */
 .page-home .ad-example-caption{
-  margin-top: 12px;
-  text-align: center;
-  font-weight: 650;
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-/* Mobile */
-@media (max-width: 820px){
-  .page-home .ad-examples{ padding: 48px 0; }
-
-  .page-home .ad-examples-grid{
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .page-home .ad-example-media{
-    height: 200px;
-  }
-}
-
-/* Ad examples - hover / selectable cards */
-.page-home .ad-example{
-  cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  margin-top:10px;
+  text-align:center;
+  font-weight:650;
+  font-size:14px;
+  opacity:0.82;
 }
 
 .page-home .ad-example:hover,
 .page-home .ad-example:focus-within{
-  background: rgba(0,0,0,0.02);
-  border-color: rgba(0,0,0,0.14);
-  transform: translateY(-4px);
-  box-shadow: 0 18px 38px rgba(0,0,0,0.13);
+  border-color:rgba(0,0,0,0.16);
+  transform:translateY(-2px);
+  box-shadow:0 12px 26px rgba(0,0,0,0.09);
 }
 
 .ad-example-link{
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  text-decoration:none;
+  color:inherit;
+  display:block;
 }
 
-/* Optionnel: enlever l’effet */
-@media (prefers-reduced-motion: reduce){
-  .page-home .ad-example{
-    transition: none;
+@media (max-width:820px){
+  .page-home .ad-examples{
+    padding:46px 0;
   }
+
+  .page-home .ad-examples-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .page-home .ad-example-media{
+    height:200px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .page-home .ad-example{
+    transition:none;
+  }
+
   .page-home .ad-example:hover,
   .page-home .ad-example:focus-within{
-    transform: none;
+    transform:none;
   }
 }
 
