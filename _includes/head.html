@@ -24,14 +24,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
 
-{% if page.lang == "fr" %}
+{% if page.alt_lang_url %}
+  {% if page.lang == "fr" %}
 <link rel="alternate" hreflang="fr-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
 <link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.alt_lang_url }}" />
 <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/en/" />
-{% else %}
+  {% else %}
 <link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
 <link rel="alternate" hreflang="fr-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.alt_lang_url }}" />
 <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/en/" />
+  {% endif %}
 {% endif %}
 
 <meta property="og:title" content="{{ page.og_title | default: page.title }}">
