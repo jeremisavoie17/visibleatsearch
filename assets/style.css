@@ -781,12 +781,12 @@ a.hero-entry:hover {
    ================= */
 
 .page-home .account-control-inner > div:first-child{
-  padding-top:18px;
+  padding-top:12px;
 }
 
 .page-home .account-control-section{
   background:#eaeaea;
-  padding:76px 24px 82px;
+  padding:64px 24px 68px;
 }
 
 .page-home .account-control-inner{
@@ -794,7 +794,7 @@ a.hero-entry:hover {
   margin:0 auto;
   display:grid;
   grid-template-columns:0.8fr 1.2fr;
-  gap:42px;
+  gap:34px;
   align-items:start;
 }
 
@@ -807,14 +807,14 @@ a.hero-entry:hover {
 .page-home .account-control-points{
   display:grid;
   grid-template-columns:repeat(3, minmax(0, 1fr));
-  gap:18px;
+  gap:14px;
 }
 
 .page-home .account-control-points div{
   background:rgba(255,255,255,0.68);
   border:1px solid rgba(0,0,0,0.08);
   border-radius:14px;
-  padding:20px;
+  padding:18px;
 }
 
 .page-home .account-control-points h3{
@@ -928,7 +928,7 @@ a.hero-entry:hover {
 
 #approach{
   background: var(--bg-light);
-  padding:76px 0 82px;
+  padding:64px 0 68px;
 }
 
 #approach .wrap{
@@ -940,12 +940,12 @@ a.hero-entry:hover {
 #approach .ad-examples-title{
   width: min(980px, 100%);
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .approach-card{
   width: min(980px, 100%);
-  padding: 26px 0 0;
+  padding: 18px 0 0;
 }
 
 .ecosystem-grid{
@@ -1344,7 +1344,7 @@ a.hero-entry:hover {
   display:block;
   width:100%;
   max-width:1200px;
-  height:clamp(260px, 34vw, 420px);
+  height:clamp(230px, 28vw, 350px);
   margin:0 auto;
   object-fit:cover;
   object-position:50% 75%;
