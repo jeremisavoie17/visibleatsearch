@@ -830,7 +830,6 @@ a.hero-entry:hover {
 @media (max-width:820px){
   .page-home .ad-examples{
     padding:46px 0;
-    height:100%;
   }
 
   .page-home .ad-examples-grid{
@@ -840,6 +839,10 @@ a.hero-entry:hover {
 
   .page-home .ad-example-media{
     height:200px;
+  }
+
+  .page-home .ad-example-media img{
+    height:100%;
   }
 }
 
