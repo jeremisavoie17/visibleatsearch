@@ -780,6 +780,9 @@ a.hero-entry:hover {
    HOME - ACCOUNT CONTROL
    ================= */
 
+.page-home .account-control-inner > div:first-child{
+  padding-top:18px;
+}
 
 .page-home .account-control-section{
   background:#eaeaea;
@@ -839,6 +842,9 @@ a.hero-entry:hover {
 
   .page-home .account-control-points{
     grid-template-columns:1fr;
+  }
+  .page-home .account-control-inner > div:first-child{
+    padding-top:0;
   }
 }
 
