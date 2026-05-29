@@ -1214,8 +1214,8 @@ a.hero-entry:hover {
 
 .efficiency-item{
   margin:0;
-  background:#fff;
-  border:1px solid rgba(0,0,0,0.09);
+  background:rgba(0,0,0,0.025);
+  border:1px solid rgba(0,0,0,0.08);
   border-radius:12px;
   padding:22px;
   text-align:left;
