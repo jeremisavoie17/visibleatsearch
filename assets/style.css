@@ -1392,9 +1392,9 @@ a.hero-entry:hover {
 }
 
 .support-icon{
-  width:54px;
-  height:54px;
-  margin:0 0 12px 0;
+  width:60px;
+  height:60px;
+  margin:0 0 14px 0;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -1403,8 +1403,8 @@ a.hero-entry:hover {
 }
 
 .support-icon svg{
-  width:40px;
-  height:40px;
+  width:44px;
+  height:44px;
   fill:none;
   stroke:currentColor;
   stroke-width:1.7;
