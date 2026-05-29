@@ -1208,7 +1208,7 @@ a.hero-entry:hover {
   grid-template-columns:repeat(3, minmax(0, 1fr));
   gap:12px;
   align-items:stretch;
-  max-width:760px;
+  max-width:720px;
   margin:0 auto;
 }
 
@@ -1339,7 +1339,7 @@ a.hero-entry:hover {
 
 .support-item{
   min-height:auto;
-  padding:18px 20px;
+  padding:16px 20px;
   border-radius:12px;
   border:1px solid rgba(0,0,0,0.09);
   background:#fff;
@@ -1406,7 +1406,7 @@ a.hero-entry:hover {
   }
 
   .support-item{
-    min-height:96px;
+    min-height:0;
     padding:18px 20px;
   }
 }
