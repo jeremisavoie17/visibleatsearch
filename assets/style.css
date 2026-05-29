@@ -1171,79 +1171,83 @@ a.hero-entry:hover {
    ================= */
 
 .efficiency-section{
-  padding: 56px 0;
-  background: #fff;
-  text-align: center;
+  padding:50px 0;
+  background:#fff;
+  text-align:center;
 }
 
 .efficiency-section .container{
-  width: 100%;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 16px;
+  width:100%;
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 16px;
 }
 
 .efficiency-section h2{
-  font-size: clamp(24px, 3vw, 34px);
-  margin: 0 0 10px 0;
-  line-height: 1.15;
-  color: var(--text-dark);
+  font-size:clamp(24px, 3vw, 34px);
+  margin:0 0 8px 0;
+  line-height:1.15;
+  color:var(--text-dark);
 }
 
 .efficiency-section .subtitle{
-  margin: 0 auto 22px auto;
-  max-width: 70ch;
-  font-size: 16px;
-  line-height: 1.6;
-  opacity: 0.75;
-  color: var(--text-dark);
+  margin:0 auto 20px auto;
+  max-width:70ch;
+  font-size:16px;
+  line-height:1.6;
+  opacity:0.72;
+  color:var(--text-dark);
 }
 
 .efficiency-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  align-items: stretch;
-  max-width: 980px;
-  margin: 0 auto;
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:14px;
+  align-items:stretch;
+  max-width:980px;
+  margin:0 auto;
 }
 
 .efficiency-item{
-  margin: 0;
-  background: rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 18px;
-  padding: 24px;
-  text-align: left;
-  min-height: 150px;
+  margin:0;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.09);
+  border-radius:12px;
+  padding:22px;
+  text-align:left;
+  min-height:140px;
 }
 
 .efficiency-item h3{
-  font-size: 16px;
-  margin: 0 0 10px 0;
-  color: var(--text-dark);
-  border-bottom: 0; 
+  font-size:16px;
+  margin:0 0 10px 0;
+  color:var(--text-dark);
+  border-bottom:0;
 }
 
-/* Texte: cohérent */
 .efficiency-item p{
-   margin: 0;
-  font-size: 16px;
-  line-height: 1.7;
-  opacity: 0.78;
-  color: var(--text-dark);
+  margin:0;
+  font-size:15px;
+  line-height:1.6;
+  opacity:0.76;
+  color:var(--text-dark);
 }
 
-/* Mobile */
-@media (max-width: 820px){
-  .efficiency-section{ padding: 48px 0; }
+@media (max-width:820px){
+  .efficiency-section{
+    padding:46px 0;
+  }
 
   .efficiency-grid{
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .efficiency-item{
+    min-height:0;
+    padding:20px;
   }
 }
-
 
 /* =================
    HOME - SUPPORT
