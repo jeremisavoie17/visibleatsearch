@@ -785,15 +785,16 @@ a.hero-entry:hover {
   background:#fff;
   border:1px solid rgba(0,0,0,0.08);
   border-radius:12px;
-  padding:8px;
+  padding:10px;
   display:flex;
   flex-direction:column;
   cursor:pointer;
+  box-shadow:0 8px 22px rgba(0,0,0,0.06);
   transition:transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .page-home .ad-example-media{
-  background:#f7f7f5;
+  background:transparent;
   border-radius:8px;
   overflow:hidden;
 }
@@ -818,7 +819,7 @@ a.hero-entry:hover {
 .page-home .ad-example:focus-within{
   border-color:rgba(0,0,0,0.14);
   transform:translateY(-2px);
-  box-shadow:0 10px 22px rgba(0,0,0,0.08);
+  box-shadow:0 14px 30px rgba(0,0,0,0.10);
 }
 
 .ad-example-link{
