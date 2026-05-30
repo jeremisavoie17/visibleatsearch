@@ -694,30 +694,29 @@ a.hero-entry:hover {
 .page-home .ad-examples-grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:14px;
+  gap:16px;
   align-items:stretch;
 }
 
 .page-home .ad-example{
   margin:0;
   background:#fff;
-  border:1px solid rgba(0,0,0,0.08);
-  border-radius:12px;
-  padding:10px;
+  border:1px solid rgba(0,0,0,0.07);
+  border-radius:14px;
+  padding:0;
   display:flex;
   flex-direction:column;
   cursor:pointer;
   overflow:hidden;
-  box-shadow:0 8px 22px rgba(0,0,0,0.06);
+  box-shadow:0 10px 28px rgba(0,0,0,0.055);
   transition:transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .page-home .ad-example-media{
-  padding:0;
-  background:#fff;
-  border-radius:8px;
+  padding:26px 28px;
+  background:#f7f7f5;
   overflow:hidden;
-  aspect-ratio:1.88 / 1;
+  aspect-ratio:16 / 9;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -726,17 +725,18 @@ a.hero-entry:hover {
 .page-home .ad-example-media img{
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
-  border-radius:0;
+  border-radius:10px;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,0.10));
 }
 
 .page-home .ad-example-caption{
-  padding:12px 14px 14px;
+  padding:18px 20px 20px;
   text-align:left;
   display:flex;
   flex-direction:column;
-  gap:5px;
+  gap:6px;
   font-size:13px;
   line-height:1.45;
 }
@@ -787,6 +787,8 @@ a.hero-entry:hover {
 
   .page-home .ad-example-media{
     height:200px;
+    aspect-ratio:auto;
+    padding:22px;
   }
 
   .page-home .ad-example-media img{
@@ -804,6 +806,7 @@ a.hero-entry:hover {
     transform:none;
   }
 }
+
 /* =================
    HOME - ACCOUNT CONTROL
    ================= */
