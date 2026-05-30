@@ -277,8 +277,8 @@ body_class: page-home
       "@type": "WebPage",
       "@id": "https://visibleatsearch.com/en/#webpage",
       "url": "https://visibleatsearch.com/en/",
-      "name": "Google Ads Pricing | Setup $299 (one-time), Management $249/month - Visible at Search",
-      "description": "Complete Google Ads setup from $299 (one-time) and $249/month for management. Work directly with an expert, with no agency overhead and flexible support.",
+      "name": "Google Ads Pricing | Setup $299 (one-time), Management $249/quarter - Visible at Search",
+      "description": "Complete Google Ads setup from $299 (one-time) and management from $249/quarter. Work directly with an expert, with no agency overhead and flexible support.",
       "isPartOf": {
         "@id": "https://visibleatsearch.com/#website"
       },
@@ -302,14 +302,23 @@ body_class: page-home
         "@type": "PostalAddress",
         "addressCountry": "CA"
       },
-      "priceRange": "Starting at $299 CAD",
-      "makesOffer": {
-        "@type": "Offer",
-        "name": "Google Ads Setup",
-        "price": "299.00",
-        "priceCurrency": "CAD",
-        "description": "One-time setup for service and inventory-based businesses"
-      },
+      "priceRange": "Starting at $299 CAD for setup and $249 CAD per quarter for management",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Google Ads Setup",
+          "price": "299.00",
+          "priceCurrency": "CAD",
+          "description": "One-time Google Ads setup for service and inventory-based businesses"
+        },
+        {
+          "@type": "Offer",
+          "name": "Quarterly Google Ads Management",
+          "price": "249.00",
+          "priceCurrency": "CAD",
+          "description": "Google Ads management on a periodic basis with reporting every three months"
+        }
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
