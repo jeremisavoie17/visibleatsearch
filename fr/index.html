@@ -268,7 +268,7 @@ body_class: page-home
   </div>
 </section>
 
- <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -286,8 +286,8 @@ body_class: page-home
       "@type": "WebPage",
       "@id": "https://visibleatsearch.com/fr/#webpage",
       "url": "https://visibleatsearch.com/fr/",
-      "name": "Google Ads dès 299 $ (frais unique) | Gestion dès 249 $/mois - Visible at Search",
-      "description": "Configuration complète Google Ads dès 299 $ (frais unique) et gestion dès 249 $/mois. Travaillez directement avec un expert, sans agence ni intermédiaire.",
+      "name": "Google Ads dès 299 $ (frais unique) | Gestion dès 249 $/trimestre - Visible at Search",
+      "description": "Configuration complète Google Ads dès 299 $ (frais unique) et gestion dès 249 $/trimestre. Travaillez directement avec un expert, sans agence ni intermédiaire.",
       "isPartOf": {
         "@id": "https://visibleatsearch.com/#website"
       },
@@ -305,20 +305,29 @@ body_class: page-home
         "url": "https://visibleatsearch.com/assets/logo.png"
       },
       "image": "https://visibleatsearch.com/assets/img/search-clarity-magnifying-glass-16x9-symbol.png",
-      "description": "Services SEM et Google Ads pour convertir la demande de recherche et de produits en croissance d'entreprise.",
+      "description": "Services SEM et Google Ads pour convertir la demande de recherche et de produits en occasions de croissance pour les entreprises.",
       "email": "info@visibleatsearch.com",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "CA"
       },
-      "priceRange": "À partir de 299 $ CAD",
-      "makesOffer": {
-        "@type": "Offer",
-        "name": "Configuration Google Ads",
-        "price": "299.00",
-        "priceCurrency": "CAD",
-        "description": "Configuration complète Google Ads dès 299 $ (frais unique)"
-      },
+      "priceRange": "À partir de 299 $ CAD pour la configuration et 249 $ CAD par trimestre pour la gestion",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Configuration Google Ads",
+          "price": "299.00",
+          "priceCurrency": "CAD",
+          "description": "Configuration Google Ads à frais unique pour entreprises de services et entreprises avec inventaire"
+        },
+        {
+          "@type": "Offer",
+          "name": "Gestion Google Ads trimestrielle",
+          "price": "249.00",
+          "priceCurrency": "CAD",
+          "description": "Gestion Google Ads sur une base périodique avec rapport tous les trois mois"
+        }
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
