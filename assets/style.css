@@ -687,7 +687,7 @@ a.hero-entry:hover {
 
 .page-home .ad-examples-sub{
   text-align:center;
-  margin:0 auto 20px auto;
+  margin:0 auto 22px auto;
   opacity:0.72;
 }
 
@@ -707,11 +707,13 @@ a.hero-entry:hover {
   display:flex;
   flex-direction:column;
   cursor:pointer;
+  overflow:hidden;
   box-shadow:0 8px 22px rgba(0,0,0,0.06);
   transition:transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
 .page-home .ad-example-media{
+  padding:18px;
   background:#fff;
   border-radius:8px;
   overflow:hidden;
@@ -730,11 +732,27 @@ a.hero-entry:hover {
 }
 
 .page-home .ad-example-caption{
-  margin-top:10px;
-  text-align:center;
-  font-weight:650;
+  padding:14px 16px 16px;
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
   font-size:14px;
-  opacity:0.82;
+  line-height:1.35;
+}
+
+.page-home .ad-example-caption-title{
+  font-weight:700;
+  color:#111;
+}
+
+.page-home .ad-example-caption-link{
+  display:inline-block;
+  width:fit-content;
+  font-size:13px;
+  font-weight:600;
+  color:#444;
+  border-bottom:1px solid rgba(0,0,0,0.28);
 }
 
 .page-home .ad-example:hover,
@@ -742,6 +760,12 @@ a.hero-entry:hover {
   border-color:rgba(0,0,0,0.14);
   transform:translateY(-2px);
   box-shadow:0 14px 30px rgba(0,0,0,0.10);
+}
+
+.page-home .ad-example:hover .ad-example-caption-link,
+.page-home .ad-example:focus-within .ad-example-caption-link{
+  color:#000;
+  border-bottom-color:#000;
 }
 
 .ad-example-link{
@@ -779,7 +803,6 @@ a.hero-entry:hover {
     transform:none;
   }
 }
-
 /* =================
    HOME - ACCOUNT CONTROL
    ================= */
