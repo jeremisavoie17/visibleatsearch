@@ -713,8 +713,8 @@ a.hero-entry:hover {
 }
 
 .page-home .ad-example-media{
-  padding:16px 18px;
-  background:#f7f7f5;
+  padding:18px 22px 10px;
+  background:#fff;
   overflow:hidden;
   aspect-ratio:16 / 9;
   display:flex;
@@ -728,11 +728,10 @@ a.hero-entry:hover {
   object-fit:contain;
   display:block;
   border-radius:10px;
-  filter:drop-shadow(0 8px 16px rgba(0,0,0,0.10));
 }
 
 .page-home .ad-example-caption{
-  padding:18px 20px 20px;
+  padding:16px 20px 20px;
   text-align:left;
   display:flex;
   flex-direction:column;
@@ -788,7 +787,7 @@ a.hero-entry:hover {
   .page-home .ad-example-media{
     height:200px;
     aspect-ratio:auto;
-    padding:22px;
+    padding:16px 18px 8px;
   }
 
   .page-home .ad-example-media img{
