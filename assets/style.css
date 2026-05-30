@@ -732,27 +732,28 @@ a.hero-entry:hover {
 }
 
 .page-home .ad-example-caption{
-  padding:14px 16px 16px;
+  padding:12px 14px 14px;
   text-align:left;
   display:flex;
   flex-direction:column;
-  gap:6px;
-  font-size:14px;
-  line-height:1.35;
+  gap:5px;
+  font-size:13px;
+  line-height:1.45;
 }
 
 .page-home .ad-example-caption-title{
-  font-weight:700;
+  font-weight:600;
   color:#111;
+  letter-spacing:0;
 }
 
 .page-home .ad-example-caption-link{
   display:inline-block;
   width:fit-content;
-  font-size:13px;
-  font-weight:600;
-  color:#444;
-  border-bottom:1px solid rgba(0,0,0,0.28);
+  font-size:12px;
+  font-weight:500;
+  color:#555;
+  border-bottom:1px solid rgba(0,0,0,0.22);
 }
 
 .page-home .ad-example:hover,
