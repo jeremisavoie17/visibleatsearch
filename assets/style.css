@@ -2146,6 +2146,9 @@ a.hero-entry:hover {
     gap:24px;
     padding:24px;
   }
+   .page-about .about-email-photo img{
+  object-position:38% center;
+}
 
   .page-about .about-card-photo{
     order:-1;
