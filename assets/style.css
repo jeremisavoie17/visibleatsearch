@@ -1866,6 +1866,10 @@ a.hero-entry:hover {
   min-height:100%;
 }
 
+.compact-pricing{
+  scroll-margin-top: calc(var(--nav-h) + 24px);
+}
+
 .service-page-hero{
   padding-top:70px;
   padding-bottom:46px;
