@@ -1937,6 +1937,8 @@ a.hero-entry:hover {
   color: #fff;
   outline: none;
   font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 .contact-form input::placeholder,
@@ -1959,6 +1961,39 @@ a.hero-entry:hover {
   flex-direction: column;
   gap: 10px;
   margin-top: 14px;
+}
+
+.contact-form button.cta-btn{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.30);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contact-form button.cta-btn:hover{
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.45);
+}
+
+.contact-form button.cta-btn:active{
+  background: rgba(255,255,255,0.22);
+  transform: translateY(1px);
+}
+
+.contact-form button.cta-btn:focus-visible{
+  outline: 2px solid rgba(255,255,255,0.55);
+  outline-offset: 3px;
 }
 
 .form-note{
