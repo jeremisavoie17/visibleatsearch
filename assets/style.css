@@ -2139,6 +2139,10 @@ a.hero-entry:hover {
   box-shadow:0 14px 34px rgba(0,0,0,0.10);
 }
 
+   .page-about .about-email-photo img{
+  object-position:38% center;
+}
+
 @media (max-width:820px){
   .page-about .about-card,
   .page-about .about-card-reverse{
@@ -2146,9 +2150,6 @@ a.hero-entry:hover {
     gap:24px;
     padding:24px;
   }
-   .page-about .about-email-photo img{
-  object-position:38% center;
-}
 
   .page-about .about-card-photo{
     order:-1;
