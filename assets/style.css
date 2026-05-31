@@ -1970,9 +1970,9 @@ a.hero-entry:hover {
   justify-content: center;
   padding: 12px 18px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.10);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.30);
+  background: #fff;
+  color: #111;
+  border: 1px solid #fff;
   font: inherit;
   font-weight: 700;
   line-height: 1;
