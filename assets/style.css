@@ -1982,8 +1982,8 @@ a.hero-entry:hover {
 }
 
 .contact-form button.cta-btn:hover{
-  background: rgba(255,255,255,0.16);
-  border-color: rgba(255,255,255,0.45);
+  background: #f2f2f2;
+  border-color: #f2f2f2;
 }
 
 .contact-form button.cta-btn:active{
