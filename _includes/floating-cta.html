@@ -1,10 +1,10 @@
-<div class="floating-cta" id="floatingCta">
+<div class="floating-cta" id="floatingCta" hidden>
   {% if page.lang == "fr" %}
     <button class="floating-cta-toggle" id="floatingCtaToggle" aria-label="Ouvrir les actions rapides" aria-expanded="false" aria-controls="floatingCtaMenu">
       <span>+</span>
     </button>
 
-    <div class="floating-cta-menu" id="floatingCtaMenu">
+    <div class="floating-cta-menu" id="floatingCtaMenu" hidden>
       <a href="{{ site.baseurl }}/fr/services" class="floating-cta-link">Voir les services</a>
       <a href="{{ site.baseurl }}/fr/services/management" class="floating-cta-link">Demander une analyse</a>
       <a href="{{ site.baseurl }}/fr/contact" class="floating-cta-link">Poser une question</a>
@@ -14,7 +14,7 @@
       <span>+</span>
     </button>
 
-    <div class="floating-cta-menu" id="floatingCtaMenu">
+    <div class="floating-cta-menu" id="floatingCtaMenu" hidden>
       <a href="{{ site.baseurl }}/en/services" class="floating-cta-link">See all services</a>
       <a href="{{ site.baseurl }}/en/services/management" class="floating-cta-link">Request a review</a>
       <a href="{{ site.baseurl }}/en/contact" class="floating-cta-link">Ask a question</a>

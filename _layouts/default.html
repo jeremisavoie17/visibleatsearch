@@ -5,6 +5,7 @@
 </head>
   
 <body class="{{ page.body_class | default: '' }}">
+  <a class="skip-link" href="#main-content">{% if page.lang == "fr" %}Aller au contenu{% else %}Skip to content{% endif %}</a>
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC6L83GW"
@@ -13,7 +14,9 @@
 
   {% include nav.html %}
 
-  {{ content }}
+  <main id="main-content" tabindex="-1">
+    {{ content }}
+  </main>
 
   {% include footer.html %}
   {% include floating-cta.html %}

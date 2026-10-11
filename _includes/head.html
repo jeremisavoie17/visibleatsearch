@@ -28,11 +28,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% if page.lang == "fr" %}
 <link rel="alternate" hreflang="fr-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
 <link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.alt_lang_url }}" />
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/en/" />
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.alt_lang_url }}" />
   {% else %}
 <link rel="alternate" hreflang="en-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
 <link rel="alternate" hreflang="fr-CA" href="{{ site.url }}{{ site.baseurl }}{{ page.alt_lang_url }}" />
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/en/" />
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" />
   {% endif %}
 {% endif %}
 
