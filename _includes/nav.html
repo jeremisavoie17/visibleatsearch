@@ -1,4 +1,4 @@
-<nav class="nav" aria-label="Main navigation">
+<nav class="nav" aria-label="{% if page.lang == 'fr' %}Navigation principale{% else %}Main navigation{% endif %}">
   <div class="nav-inner">
     {% if page.lang == "fr" %}
       <a class="brand" href="{{ site.baseurl }}/fr/">Visible at Search</a>
@@ -6,19 +6,19 @@
       <a class="brand" href="{{ site.baseurl }}/en/">Visible at Search</a>
     {% endif %}
 
-    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <div class="links">
+    <div class="links" id="navLinks">
       {% if page.lang == "fr" %}
         <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/fr/">Accueil</a>
 
         <div class="nav-dropdown{% if page.nav == "services" or page.nav == "pricing" %} active{% endif %}">
-          <button class="nav-dropdown-toggle" type="button">Services et tarifs</button>
-          <div class="nav-dropdown-menu">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="servicesMenu">Services et tarifs</button>
+          <div class="nav-dropdown-menu" id="servicesMenu">
             <a href="{{ site.baseurl }}/fr/services/annonces-search">Annonces Search</a>
             <a href="{{ site.baseurl }}/fr/services/catalogue-produits">Catalogue produits</a>
             <a href="{{ site.baseurl }}/fr/services/management">Gestion</a>
@@ -34,8 +34,8 @@
         <a{% if page.nav == "home" %} class="active" aria-current="page"{% endif %} href="{{ site.baseurl }}/en/">Home</a>
 
         <div class="nav-dropdown{% if page.nav == "services" or page.nav == "pricing" %} active{% endif %}">
-         <button class="nav-dropdown-toggle" type="button">Services & Pricing</button>
-          <div class="nav-dropdown-menu">
+         <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="servicesMenu">Services & Pricing</button>
+          <div class="nav-dropdown-menu" id="servicesMenu">
             <a href="{{ site.baseurl }}/en/services/search-ads">Search Ads</a>
             <a href="{{ site.baseurl }}/en/services/product-catalog">Product Catalog</a>
             <a href="{{ site.baseurl }}/en/services/management">Management</a>
@@ -52,13 +52,13 @@
 
     <div class="lang" aria-label="Language switcher">
       {% if page.lang == "fr" %}
-        <a href="{{ site.baseurl }}{{ page.alt_lang_url }}">EN</a>
+        <a href="{{ site.baseurl }}{{ page.alt_lang_url | default: '/en/' }}">EN</a>
         <span class="sep">|</span>
         <a href="{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" aria-current="page">FR</a>
       {% else %}
         <a href="{{ site.baseurl }}{{ page.permalink | replace:'index.html','' }}" aria-current="page">EN</a>
         <span class="sep">|</span>
-        <a href="{{ site.baseurl }}{{ page.alt_lang_url }}">FR</a>
+        <a href="{{ site.baseurl }}{{ page.alt_lang_url | default: '/fr/guides' }}">FR</a>
       {% endif %}
     </div>
   </div>

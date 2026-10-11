@@ -1,0 +1,17 @@
+<section class="offer-paths"><div class="wrap">
+{% if page.lang == "fr" %}
+  <p class="offer-paths-title">Quel est votre point de départ ?</p>
+  <div class="offer-path-grid">
+    <a class="offer-path" href="{{ site.baseurl }}/fr/services/annonces-search"><h2>Vous vendez des services</h2><p>Des campagnes Search pour les recherches liées à vos services et à votre région.</p><span>Search dès 299 $ CAD →</span></a>
+    <a class="offer-path" href="{{ site.baseurl }}/fr/services/catalogue-produits"><h2>Vous vendez des produits</h2><p>Un catalogue structuré et un flux produit, selon l’admissibilité de votre inventaire.</p><span>Catalogue dès 995 $ CAD →</span></a>
+    <a class="offer-path" href="{{ site.baseurl }}/fr/services/management"><h2>Vous avez déjà un compte</h2><p>Choisissez la fréquence d’analyse et d’optimisation adaptée à vos campagnes.</p><span>Gestion dès 249 $ CAD / trimestre →</span></a>
+  </div>
+{% else %}
+  <p class="offer-paths-title">Where are you starting from?</p>
+  <div class="offer-path-grid">
+    <a class="offer-path" href="{{ site.baseurl }}/en/services/search-ads"><h2>You sell services</h2><p>Search campaigns for queries related to your services and the areas you serve.</p><span>Search from $299 CAD →</span></a>
+    <a class="offer-path" href="{{ site.baseurl }}/en/services/product-catalog"><h2>You sell products</h2><p>A structured catalog and product feed, subject to your inventory’s eligibility.</p><span>Catalog from $995 CAD →</span></a>
+    <a class="offer-path" href="{{ site.baseurl }}/en/services/management"><h2>You already have an account</h2><p>Choose the right analysis and optimization frequency for your campaigns.</p><span>Management from $249 CAD / quarter →</span></a>
+  </div>
+{% endif %}
+</div></section>

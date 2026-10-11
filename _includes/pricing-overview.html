@@ -1,0 +1,15 @@
+{% if page.lang == "fr" %}
+<div class="pricing-overview" aria-label="Comparaison rapide des forfaits">
+  <a href="#search-simple">Search · sans installation du suivi<strong>299 $ CAD</strong><small>Frais uniques</small></a>
+  <a href="#search-tracking">Search · suivi des conversions inclus<strong>749 $ CAD</strong><small>Frais uniques</small></a>
+  <a href="#quarterly-management">Gestion d’un compte existant<strong>249 $ CAD</strong><small>Par trimestre · gestion facultative</small></a>
+</div>
+<p class="pricing-disclosure">Prix en dollars canadiens. Le budget publicitaire payé à Google est séparé des frais de service. Consultez les <a href="{{ site.baseurl }}/fr/conditions-utilisation">conditions</a> pour les modalités de paiement et la <a href="{{ site.baseurl }}/fr/faq">FAQ</a> pour la gestion récurrente. Vérifiez le montant final et les taxes applicables au paiement.</p>
+{% else %}
+<div class="pricing-overview" aria-label="Quick plan comparison">
+  <a href="#search-simple">Search · without tracking setup<strong>$299 CAD</strong><small>One-time setup</small></a>
+  <a href="#search-tracking">Search · conversion tracking included<strong>$749 CAD</strong><small>One-time setup</small></a>
+  <a href="#quarterly-management">Management of an existing account<strong>$249 CAD</strong><small>Per quarter · optional management</small></a>
+</div>
+<p class="pricing-disclosure">Prices in Canadian dollars. Advertising spend paid to Google is separate from service fees. See the <a href="{{ site.baseurl }}/en/terms-of-service">terms</a> for payment details and the <a href="{{ site.baseurl }}/en/faq">FAQ</a> for recurring management. Check the final amount and applicable taxes at checkout.</p>
+{% endif %}
