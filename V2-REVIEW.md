@@ -27,3 +27,5 @@ Cet aperçu local n'est pas une compilation de production avec Jekyll. Les scrip
 3. Tester la compilation réelle, la page 404, les redirections, les formulaires et paiements, ainsi que les balises et mesures Analytics sur un environnement de prévisualisation.
 4. Après accord, fusionner les changements retenus, publier, puis contrôler le français, l'anglais et les principaux parcours.
 5. Conserver le déploiement précédent et le SHA de référence pour pouvoir restaurer la version antérieure.
+
+Les correctifs techniques et les précisions sur les offres ont été appliqués à la V1 sur `main` le 11 octobre 2026. La branche V2 intègre ces correctifs communs, mais son nouveau design reste en brouillon et attend toujours validation.
